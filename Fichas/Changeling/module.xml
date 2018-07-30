@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module sdkVersion="3.4b">
+    <id>ChangelingCastFicha</id>
+    <version>1.0</version>
+    <name>Ficha Changeling</name>
+    <description>Ficha de Changeling para o RRPG Firecast</description>
+    <author>CastielAngels</author>
+    <site>http://www.rrpg.com.br</site>
+    <contact>castieldeseraphim@gmail.com</contact>
+</module>

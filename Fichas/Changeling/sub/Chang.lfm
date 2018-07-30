@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Changelingfrm" formType="sheetTemplate" dataType="Cast.Changeling" title="Ficha Changeling" align="client" theme="dark">
+	<tabControl align="client">
+		<tab title="Primeira">
+			<import file="1.lfm"/>
+		</tab>
+		<tab title="Segunda">
+			<import file="2.lfm"/>
+		</tab>
+		<tab title="Terceira">
+			<import file="3.lfm"/>
+		</tab>
+		<tab title="Quarta">
+			<import file="4.lfm"/>
+		</tab>
+		<tab title="Créditos">
+			<import file="creditos.lfm"/>
+		</tab>
+	</tabControl>
+</form>

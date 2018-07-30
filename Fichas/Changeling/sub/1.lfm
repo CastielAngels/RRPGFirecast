@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Changeling02" align="client" theme="light">
+
+	<template name="bbolls4">
+		<imageCheckBox name="$(name)_2" field="$(field)_2" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_3" field="$(field)_3" left="12" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_4" field="$(field)_4" left="25" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_5" field="$(field)_5" left="37" width="11" height="12" checkedImage="img/bboll.png"/>
+	</template>		
+	<template name="bbolls5">
+		<imageCheckBox name="$(name)_1" field="$(field)_1" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_2" field="$(field)_2" left="12" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_3" field="$(field)_3" left="25" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_4" field="$(field)_4" left="37" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_5" field="$(field)_5" left="50" width="11" height="12" checkedImage="img/bboll.png"/>
+	</template>
+	<template name="b10side">
+		<imageCheckBox name="$(name)_1" field="$(field)_1" left="1" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_2" field="$(field)_2" left="22" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_3" field="$(field)_3" left="43" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_4" field="$(field)_4" left="65" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_5" field="$(field)_5" left="87" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_6" field="$(field)_6" left="109" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_7" field="$(field)_7" left="130" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_8" field="$(field)_8" left="152" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_9" field="$(field)_9" left="174" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_10" field="$(field)_10" left="196" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_11" field="$(field)_11" top="17" left="1" width="11" height="12" checkedImage="img/bsquare.png"/>
+		<imageCheckBox name="$(name)_12" field="$(field)_12" top="17" left="22" width="11" height="12" checkedImage="img/bsquare.png"/>
+		<imageCheckBox name="$(name)_13" field="$(field)_13" top="17" left="43" width="11" height="12" checkedImage="img/bsquare.png"/>
+		<imageCheckBox name="$(name)_14" field="$(field)_14" top="17" left="65" width="11" height="12" checkedImage="img/bsquare.png"/>
+		<imageCheckBox name="$(name)_15" field="$(field)_15" top="17" left="87" width="11" height="12" checkedImage="img/bsquare.png"/>
+		<imageCheckBox name="$(name)_16" field="$(field)_16" top="17" left="109" width="11" height="12" checkedImage="img/bsquare.png"/>
+		<imageCheckBox name="$(name)_17" field="$(field)_17" top="17" left="130" width="11" height="12" checkedImage="img/bsquare.png"/>
+		<imageCheckBox name="$(name)_18" field="$(field)_18" top="17" left="152" width="11" height="12" checkedImage="img/bsquare.png"/>
+		<imageCheckBox name="$(name)_19" field="$(field)_19" top="17" left="174" width="11" height="12" checkedImage="img/bsquare.png"/>
+		<imageCheckBox name="$(name)_20" field="$(field)_20" top="17" left="196" width="11" height="12" checkedImage="img/bsquare.png"/>
+	</template>
+
+	<scrollBox align="client">
+		<image width="883" height="1145" src="img/01.png"/>
+		
+		<layout left="62" top="100" width="760" height="980"> 
+		
+			<layout left="2" width="756" height="90">
+				<edit left="50" top="9" width="210" height="29" field="cnome" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="62" top="34" width="198" height="29" field="cjogador" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="66" top="59" width="194" height="29" field="mcronica" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="312" top="9" width="206" height="29" field="ccorte" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="363" top="34" width="155" height="29" field="cseelie" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="383" top="59" width="135" height="29" field="cunseelie" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="585" top="9" width="170" height="29" field="caspecto" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="598" top="34" width="157" height="29" field="cmixordia" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="562" top="59" width="193" height="29" field="ccasa" fontColor="#48484A" fontSize="16" transparent="true"/>
+			</layout>
+			
+			<layout left="2" top="154" width="756" height="55">
+				<layout left="188" top="4" width="49" height="12">
+					<bbolls4 name="forcan" field="forca"/>
+				</layout>
+				<layout left="188" top="23" width="49" height="12">
+					<bbolls4 name="destrezan" field="destreza"/>
+				</layout>
+				<layout left="188" top="42" width="49" height="12">
+					<bbolls4 name="vigorn" field="vigor"/>
+				</layout>
+				<layout left="449" top="3" width="49" height="12">
+					<bbolls4 name="carisman" field="carisma"/>
+				</layout>
+				<layout left="449" top="22" width="49" height="12">
+					<bbolls4 name="manipulan" field="manipula"/>
+				</layout>
+				<layout left="449" top="41" width="49" height="12">
+					<bbolls4 name="aparencian" field="aparencia"/>
+				</layout>
+				<layout left="706" top="4" width="49" height="12">
+					<bbolls4 name="percepn" field="percep"/>
+				</layout>
+				<layout left="706" top="23" width="49" height="12">
+					<bbolls4 name="inteligen" field="intelige"/>
+				</layout>
+				<layout left="706" top="42" width="49" height="12">
+					<bbolls4 name="racion" field="racio"/>
+				</layout>
+			</layout>
+			
+			<layout left="2" top="278" width="756" height="190">
+				<layout left="176" top="6" width="60" height="12">
+					<bbolls5 name="prontin" field="pronti"/>
+				</layout>
+				<layout left="176" top="25" width="60" height="12">
+					<bbolls5 name="esportn" field="esport"/>
+				</layout>
+				<layout left="176" top="43" width="60" height="12">
+					<bbolls5 name="brigan" field="briga"/>
+				</layout>
+				<layout left="176" top="62" width="60" height="12">
+					<bbolls5 name="esquivan" field="esquiva"/>
+				</layout>
+				<layout left="176" top="81" width="60" height="12">
+					<bbolls5 name="empatian" field="empatia"/>
+				</layout>
+				<layout left="176" top="99" width="60" height="12">
+					<bbolls5 name="intimin" field="intimi"/>
+				</layout>
+				<layout left="176" top="118" width="60" height="12">
+					<bbolls5 name="tinon" field="tino"/>
+				</layout>
+				<layout left="176" top="136" width="60" height="12">
+					<bbolls5 name="persuan" field="persua"/>
+				</layout>
+				<layout left="176" top="157" width="60" height="12">
+					<bbolls5 name="manhan" field="manha"/>
+				</layout>
+				<layout left="176" top="176" width="60" height="12">
+					<bbolls5 name="labian" field="labia"/>
+				</layout>
+				
+				<layout left="435" top="6" width="61" height="12">
+					<bbolls5 name="oficiosn" field="oficios"/>
+				</layout>
+				<layout left="435" top="25" width="61" height="12">
+					<bbolls5 name="conducaon" field="conducao"/>
+				</layout>
+				<layout left="435" top="43" width="61" height="12">
+					<bbolls5 name="etiquetan" field="etiqueta"/>
+				</layout>
+				<layout left="435" top="62" width="61" height="12">
+					<bbolls5 name="afogon" field="afogo"/>
+				</layout>
+				<layout left="435" top="80" width="61" height="12">
+					<bbolls5 name="lideran" field="lidera"/>
+				</layout>
+				<layout left="435" top="99" width="61" height="12">
+					<bbolls5 name="abrancasn" field="abrancas"/>
+				</layout>
+				<layout left="435" top="118" width="61" height="12">
+					<bbolls5 name="performan" field="performa"/>
+				</layout>
+				<layout left="435" top="136" width="61" height="12">
+					<bbolls5 name="seguran" field="segura"/>
+				</layout>
+				<layout left="435" top="157" width="61" height="12">
+					<bbolls5 name="furtivin" field="furtivi"/>
+				</layout>
+				<layout left="435" top="176" width="61" height="12">
+					<bbolls5 name="sobrevin" field="sobrevi"/>
+				</layout>
+				
+				<layout left="693" top="6" width="60" height="12">
+					<bbolls5 name="computan" fiel1="computa"/>
+				</layout>
+				<layout left="693" top="25" width="60" height="12">
+					<bbolls5 name="enigmasn" field="enigmas"/>
+				</layout>
+				<layout left="693" top="43" width="60" height="12">
+					<bbolls5 name="gmagican" field="gmagica"/>
+				</layout>
+				<layout left="693" top="62" width="60" height="12">
+					<bbolls5 name="investigan" field="investiga"/>
+				</layout>
+				<layout left="693" top="80" width="60" height="12">
+					<bbolls5 name="direiton" field="direito"/>
+				</layout>
+				<layout left="693" top="99" width="60" height="12">
+					<bbolls5 name="linguisn" field="linguis"/>
+				</layout>
+				<layout left="693" top="118" width="60" height="12">
+					<bbolls5 name="culturan" field="cultura"/>
+				</layout>
+				<layout left="693" top="136" width="60" height="12">
+					<bbolls5 name="medicinan" field="medicina"/>
+				</layout>
+				<layout left="693" top="157" width="60" height="12">
+					<bbolls5 name="politican" field="politica"/>
+				</layout>
+				<layout left="693" top="176" width="60" height="12">
+					<bbolls5 name="ciencian" field="ciencia"/>
+				</layout>
+			</layout>
+			
+			<layout left="2" top="530" width="756" height="135">
+				<layout left="176" top="10" width="60" height="12">
+					<bbolls5 name="antecede1n" field="antecede1"/>
+				</layout>
+				<layout left="176" top="28" width="60" height="12">
+					<bbolls5 name="antecede2n" field="antecede2"/>
+				</layout>
+				<layout left="176" top="47" width="60" height="12">
+					<bbolls5 name="antecede3n" field="antecede3"/>
+				</layout>
+				<layout left="176" top="66" width="60" height="12">
+					<bbolls5 name="antecede4n" field="antecede4"/>
+				</layout>
+				<layout left="176" top="84" width="60" height="12">
+					<bbolls5 name="antecede5n" field="antecede5"/>
+				</layout>
+				<layout left="176" top="103" width="60" height="12">
+					<bbolls5 name="antecede6n" field="antecede6"/>
+				</layout>
+				<layout left="176" top="122" width="60" height="12">
+					<bbolls5 name="antecede7n" field="antecede7"/>
+				</layout>
+				
+				<edit left="2" top="1" width="171" height="21" field="antecede1" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="20" width="171" height="21" field="antecede2" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="39" width="171" height="21" field="antecede3" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="58" width="171" height="21" field="antecede4" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="77" width="171" height="21" field="antecede5" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="96" width="171" height="21" field="antecede6" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="115" width="171" height="21" field="antecede7" fontColor="#48484A" fontSize="16" transparent="true"/>
+				
+				<layout left="437" top="10" width="60" height="12">
+					<bbolls5 name="artes1n" field="artes1"/>
+				</layout>
+				<layout left="437" top="28" width="60" height="12">
+					<bbolls5 name="artes2n" field="artes2"/>
+				</layout>
+				<layout left="437" top="47" width="60" height="12">
+					<bbolls5 name="artes3n" field="artes3"/>
+				</layout>
+				<layout left="437" top="66" width="60" height="12">
+					<bbolls5 name="artes4n" field="artes4"/>
+				</layout>
+				<layout left="437" top="84" width="60" height="12">
+					<bbolls5 name="artes5n" field="artes5"/>
+				</layout>
+				<layout left="437" top="103" width="60" height="12">
+					<bbolls5 name="artes6n" field="artes6"/>
+				</layout>
+				<layout left="437" top="122" width="60" height="12">
+					<bbolls5 name="artes7n" field="artes7"/>
+				</layout>
+
+				<edit left="263" top="1" width="171" height="21" field="artes1" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="263" top="20" width="171" height="21" field="artes2" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="263" top="39" width="171" height="21" field="artes3" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="263" top="58" width="171" height="21" field="artes4" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="263" top="77" width="171" height="21" field="artes5" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="263" top="96" width="171" height="21" field="artes6" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="263" top="115" width="171" height="21" field="artes7" fontColor="#48484A" fontSize="16" transparent="true"/>
+
+				<layout left="693" top="10" width="65" height="12">
+					<bbolls5 name="atorn" field="ator"/>
+				</layout>
+				<layout left="693" top="28" width="65" height="12">
+					<bbolls5 name="fadan" field="fada"/>
+				</layout>
+				<layout left="693" top="47" width="65" height="12">
+					<bbolls5 name="naturezan" field="natureza"/>
+				</layout>
+				<layout left="693" top="66" width="65" height="12">
+					<bbolls5 name="acessorion" field="acessorio"/>
+				</layout>
+				<layout left="693" top="84" width="65" height="12">
+					<bbolls5 name="cenan" field="cena"/>
+				</layout>
+				<layout left="693" top="103" width="65" height="12">
+					<bbolls5 name="tempon" field="tempo"/>
+				</layout>
+			</layout>
+
+			<layout left="2" top="708" width="756" height="275">
+				<layout left="176" top="19" width="60" height="12">
+					<bbolls5 name="caracteris1n" field="caracteris1"/>
+				</layout>
+				<layout left="176" top="38" width="60" height="12">
+					<bbolls5 name="caracteris2n" field="caracteris2"/>
+				</layout>
+				<layout left="176" top="57" width="60" height="12">
+					<bbolls5 name="caracteris3n" field="caracteris3"/>
+				</layout>
+				<layout left="176" top="75" width="60" height="12">
+					<bbolls5 name="caracteris4n" field="caracteris4"/>
+				</layout>
+				<layout left="176" top="94" width="60" height="12">
+					<bbolls5 name="caracteris5n" field="caracteris5"/>
+				</layout>
+				<layout left="176" top="113" width="60" height="12">
+					<bbolls5 name="caracteris6n" field="caracteris6"/>
+				</layout>
+				<layout left="176" top="134" width="60" height="12">
+					<bbolls5 name="caracteris7n" field="caracteris7"/>
+				</layout>
+				<layout left="176" top="152" width="60" height="12">
+					<bbolls5 name="caracteris8n" field="caracteris8"/>
+				</layout>
+				<layout left="176" top="171" width="60" height="12">
+					<bbolls5 name="caracteris9n" field="caracteris9"/>
+				</layout>
+
+				<rectangle left="3" top="10" width="170" height="3" color="#FDFDFD"/>
+				<rectangle left="175" width="63" height="13" color="#FDFDFD"/>
+
+				<edit left="2" top="11" width="171" height="21" field="caracteris1" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="30" width="171" height="21" field="caracteris2" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="49" width="171" height="21" field="caracteris3" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="68" width="171" height="21" field="caracteris4" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="87" width="171" height="21" field="caracteris5" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="106" width="171" height="21" field="caracteris6" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="125" width="171" height="21" field="caracteris7" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="144" width="171" height="21" field="caracteris8" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="163" width="171" height="21" field="caracteris9" fontColor="#48484A" fontSize="16" transparent="true"/>
+
+				<layout left="14" top="242" width="235" height="36">
+					<edit width="209" height="27" field="experiencia" fontColor="#48484A" fontSize="16" horzTextAlign="center" transparent="true"/>
+				</layout>
+
+				<layout left="276" top="0" width="207" height="30">
+					<b10side name="glamourn" field="glamour"/>
+				</layout>
+				<layout left="276" top="120" width="207" height="30">
+					<b10side name="vontaden" field="vontade"/>
+				</layout>
+				<layout left="276" top="241" width="207" height="30">
+					<b10side name="banalidaden" field="banalidade"/>
+				</layout>
+
+				<layout left="679" top="7" width="59" height="135">
+					<imageCheckBox name="escoriadon" field="escoriado" top="0" left="1" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="machucadon" field="machucado" top="21" left="1" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="feridon" field="ferido" top="41" left="1" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="feridogn" field="feridog" top="62" left="1" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="espancadon" field="espancado" top="81" left="1" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="aleijadon" field="aleijado" top="102" left="1" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="incapacin" field="incapaci" top="122" left="1" width="11" height="12" checkedImage="img/bsquare.png"/>
+
+					<imageCheckBox name="escoriadoqn" field="escoriadoq" top="0" left="46" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="machucadoqn" field="machucadoq" top="21" left="46" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="feridoqn" field="feridoq" top="40" left="46" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="feridogqn" field="feridogq" top="62" left="46" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="espancadoqn" field="espancadoq" top="81" left="46" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="aleijadoqn" field="aleijadoq" top="102" left="46" width="11" height="12" checkedImage="img/bsquare.png"/>
+					<imageCheckBox name="incapaciqn" field="incapaciq" top="122" left="46" width="11" height="12" checkedImage="img/bsquare.png"/>
+				</layout>
+
+				<layout left="521" top="185" width="235" height="25">
+					<edit width="235" height="25" field="direitos" fontColor="#48484A" fontSize="16" transparent="true"/>
+				</layout>
+				<layout left="521" top="247" width="235" height="25">
+					<edit width="235" height="25" field="limiar" fontColor="#48484A" fontSize="16" transparent="true"/>
+				</layout>
+				
+			</layout>
+
+		</layout>
+
+		<rectangle left="58" top="845" width="7" height="84" color="#FDFDFD"/>
+		
+	</scrollBox>
+</form>

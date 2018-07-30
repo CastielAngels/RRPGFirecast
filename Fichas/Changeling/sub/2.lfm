@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Changeling01" align="client" theme="light">
+
+	<template name="bbolls5_2">
+		<imageCheckBox name="$(name)_1" field="$(field)_1" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_2" field="$(field)_2" left="12" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_3" field="$(field)_3" left="25" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_4" field="$(field)_4" left="37" width="11" height="12" checkedImage="img/bboll.png"/>
+		<imageCheckBox name="$(name)_5" field="$(field)_5" left="50" width="11" height="12" checkedImage="img/bboll.png"/>
+	</template>
+
+	<template name="edit7side">
+		<edit left="1" top="0" width="181" height="26" name="$(name)_q1" field="$(field)_q1" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="1" top="20" width="181" height="26" name="$(name)_q2" field="$(field)_q2" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="1" top="38" width="181" height="26" name="$(name)_q3" field="$(field)_q3" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="1" top="57" width="181" height="26" name="$(name)_q4" field="$(field)_q4" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="1" top="77" width="181" height="26" name="$(name)_q5" field="$(field)_q5" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="1" top="95" width="181" height="26" name="$(name)_q6" field="$(field)_q6" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="1" top="115" width="181" height="26" name="$(name)_q7" field="$(field)_q7" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+		<edit left="194" top="0" width="112" height="26" name="$(name)_t1" field="$(field)_t1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="194" top="20" width="112" height="26" name="$(name)_t2" field="$(field)_t2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="194" top="38" width="112" height="26" name="$(name)_t3" field="$(field)_t3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="194" top="57" width="112" height="26" name="$(name)_t4" field="$(field)_t4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="194" top="77" width="112" height="26" name="$(name)_t5" field="$(field)_t5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="194" top="95" width="112" height="26" name="$(name)_t6" field="$(field)_t6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="194" top="115" width="112" height="26" name="$(name)_t7" field="$(field)_t7" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+		<edit left="318" top="0" width="42" height="26" name="$(name)_c1" field="$(field)_c1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="318" top="20" width="42" height="26" name="$(name)_c2" field="$(field)_c2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="318" top="38" width="42" height="26" name="$(name)_c3" field="$(field)_c3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="318" top="57" width="42" height="26" name="$(name)_c4" field="$(field)_c4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="318" top="77" width="42" height="26" name="$(name)_c5" field="$(field)_c5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="318" top="95" width="42" height="26" name="$(name)_c6" field="$(field)_c6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+		<edit left="318" top="115" width="42" height="26" name="$(name)_c7" field="$(field)_c7" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+	</template>
+
+	<scrollBox align="client">
+		<image width="883" height="1145" src="img/02.png"/>
+
+		<layout left="62" top="100" width="760" height="980">
+
+			<layout left="2" width="756" height="90">
+				<edit left="150" top="8" width="210" height="30" field="cconfraria" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="154" top="28" width="210" height="30" field="cmestre" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="551" top="8" width="200" height="30" field="cguildas" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="533" top="29" width="200" height="30" field="cnomeacao" fontColor="#48484A" fontSize="16" transparent="true"/>
+			</layout>
+
+			<layout left="4" top="114" width="361" height="140">
+				<edit7side name="qualidaden" field="qualidade"/>
+			</layout>
+			<layout left="398" top="114" width="361" height="140">
+				<edit7side name="defeitosn" field="defeitos"/>
+			</layout>
+
+			<layout left="1" top="297" width="756" height="98">
+				<edit left="2" top="0" width="171" height="26" name="outrascne1" field="outrasce1" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="2" top="20" width="171" height="26" name="outrascne2" field="outrasce2" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="2" top="38" width="171" height="26" name="outrascne3" field="outrasce3" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="2" top="57" width="171" height="26" name="outrascne4" field="outrasce4" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="2" top="76" width="171" height="26" name="outrascne5" field="outrasce5" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<layout left="177" top="10" width="60" height="12">
+					<bbolls5_2 name="outrascn1" field="outrasc1"/>
+				</layout>
+				<layout left="177" top="29" width="60" height="12">
+					<bbolls5_2 name="outrascn2" field="outrasc2"/>
+				</layout>
+				<layout left="177" top="47" width="60" height="12">
+					<bbolls5_2 name="outrascn3" field="outrasc3"/>
+				</layout>
+				<layout left="177" top="66" width="60" height="12">
+					<bbolls5_2 name="outrascn4" field="outrasc4"/>
+				</layout>
+				<layout left="177" top="85" width="60" height="12">
+					<bbolls5_2 name="outrascn5" field="outrasc5"/>
+				</layout>
+
+				<edit left="262" top="0" width="171" height="26" name="outrascne6" field="outrasce6" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="262" top="20" width="171" height="26" name="outrascne7" field="outrasce7" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="262" top="38" width="171" height="26" name="outrascne8" field="outrasce8" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="262" top="57" width="171" height="26" name="outrascne9" field="outrasce9" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="262" top="76" width="171" height="26" name="outrascne10" field="outrasce10" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<layout left="437" top="10" width="60" height="12">
+					<bbolls5_2 name="outrascn6" field="outrasc6"/>
+				</layout>
+				<layout left="437" top="29" width="60" height="12">
+					<bbolls5_2 name="outrascn7" field="outrasc7"/>
+				</layout>
+				<layout left="437" top="47" width="60" height="12">
+					<bbolls5_2 name="outrascn8" field="outrasc8"/>
+				</layout>
+				<layout left="437" top="66" width="60" height="12">
+					<bbolls5_2 name="outrascn9" field="outrasc9"/>
+				</layout>
+				<layout left="437" top="85" width="60" height="12">
+					<bbolls5_2 name="outrascn10" field="outrasc10"/>
+				</layout>
+
+				<edit left="519" top="0" width="171" height="26" name="outrascne11" field="outrasce11" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="519" top="20" width="171" height="26" name="outrascne12" field="outrasce12" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="519" top="38" width="171" height="26" name="outrascne13" field="outrasce13" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="519" top="57" width="171" height="26" name="outrascne14" field="outrasce14" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="519" top="76" width="171" height="26" name="outrascne15" field="outrasce15" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<layout left="694" top="10" width="60" height="12">
+					<bbolls5_2 name="outrascn11" field="outrasc11"/>
+				</layout>
+				<layout left="694" top="29" width="60" height="12">
+					<bbolls5_2 name="outrascn12" field="outrasc12"/>
+				</layout>
+				<layout left="694" top="47" width="60" height="12">
+					<bbolls5_2 name="outrascn13" field="outrasc13"/>
+				</layout>
+				<layout left="694" top="66" width="60" height="12">
+					<bbolls5_2 name="outrascn14" field="outrasc14"/>
+				</layout>
+				<layout left="694" top="85" width="60" height="12">
+					<bbolls5_2 name="outrascn15" field="outrasc15"/>
+				</layout>
+			</layout>
+
+			<layout left="5" top="459" width="360" height="153">
+				<edit left="0" top="0" width="303" height="26" name="objeton1" field="objeto1" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="0" top="19" width="303" height="26" name="objeton2" field="objeto2" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="0" top="38" width="303" height="26" name="objeton3" field="objeto3" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="0" top="57" width="303" height="26" name="objeton4" field="objeto4" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="0" top="76" width="303" height="26" name="objeton5" field="objeto5" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="0" top="95" width="303" height="26" name="objeton6" field="objeto6" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="0" top="114" width="303" height="26" name="objeton7" field="objeto7" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="0" top="133" width="303" height="26" name="objeton8" field="objeto8" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<edit left="317" top="0" width="42" height="26" name="objetonc1" field="objetoc1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="317" top="19" width="42" height="26" name="objetonc2" field="objetoc2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="317" top="38" width="42" height="26" name="objetonc3" field="objetoc3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="317" top="57" width="42" height="26" name="objetonc4" field="objetoc4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="317" top="76" width="42" height="26" name="objetonc5" field="objetoc5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="317" top="95" width="42" height="26" name="objetonc6" field="objetoc6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="317" top="114" width="42" height="26" name="objetonc7" field="objetoc7" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="317" top="133" width="42" height="26" name="objetonc8" field="objetoc8" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+			</layout>
+
+			<layout left="4" top="651" width="361" height="117">
+				<textEditor align="client" field="companhiasq" fontStyle="underline" fontColor="#48484A" fontSize="15" transparent="false"/>
+			</layout>
+
+			<layout left="398" top="451" width="360" height="317">
+				<textEditor align="client" field="experienciad" fontStyle="underline" fontColor="#48484A" fontSize="15" transparent="false"/>
+			</layout>
+
+			<layout left="10" top="834" width="514" height="142">
+				<edit left="3" width="171" height="26" name="arman1" field="arma1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="3" top="24" width="171" height="26" name="arman2" field="arma2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="3" top="48" width="171" height="26" name="arman3" field="arma3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="3" top="72" width="171" height="26" name="arman4" field="arma4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="3" top="96" width="171" height="26" name="arman5" field="arma5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="3" top="118" width="171" height="26" name="arman6" field="arma6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<edit left="175" width="61" height="26" name="armand1" field="armad1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="175" top="24" width="61" height="26" name="armand2" field="armad2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="175" top="48" width="61" height="26" name="armand3" field="armad3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="175" top="72" width="61" height="26" name="armand4" field="armad4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="175" top="96" width="61" height="26" name="armand5" field="armad5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="175" top="118" width="61" height="26" name="armand6" field="armad6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<edit left="237" width="54" height="26" name="armandn1" field="armadn1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="237" top="24" width="54" height="26" name="armandn2" field="armadn2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="237" top="48" width="54" height="26" name="armandn3" field="armadn3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="237" top="72" width="54" height="26" name="armandn4" field="armadn4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="237" top="96" width="54" height="26" name="armandn5" field="armadn5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="237" top="118" width="54" height="26" name="armandn6" field="armadn6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<edit left="292" width="57" height="26" name="armana1" field="armaa1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="292" top="24" width="57" height="26" name="armana2" field="armaa2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="292" top="48" width="57" height="26" name="armana3" field="armaa3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="292" top="72" width="57" height="26" name="armana4" field="armaa4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="292" top="96" width="57" height="26" name="armana5" field="armaa5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="292" top="118" width="57" height="26" name="armana6" field="armaa6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<edit left="350" width="52" height="26" name="armanc1" field="armac1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="350" top="24" width="52" height="26" name="armanc2" field="armac2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="350" top="48" width="52" height="26" name="armanc3" field="armac3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="350" top="72" width="52" height="26" name="armanc4" field="armac4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="350" top="96" width="52" height="26" name="armanc5" field="armac5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="350" top="118" width="52" height="26" name="armanc6" field="armac6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<edit left="403" width="44" height="26" name="armanp1" field="armap1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="403" top="24" width="44" height="26" name="armanp2" field="armap2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="403" top="48" width="44" height="26" name="armanp3" field="armap3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="403" top="72" width="44" height="26" name="armanp4" field="armap4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="403" top="96" width="44" height="26" name="armanp5" field="armap5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="403" top="118" width="44" height="26" name="armanp6" field="armap6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+
+				<edit left="448" top="0" width="64" height="26" name="armano1" field="armao1" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="448" top="24" width="64" height="26" name="armano2" field="armao2" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="448" top="48" width="64" height="26" name="armano3" field="armao3" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="448" top="72" width="64" height="26" name="armano4" field="armao4" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="448" top="96" width="64" height="26" name="armano5" field="armao5" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+				<edit left="448" top="118" width="64" height="26" name="armano6" field="armao6" horzTextAlign="center" fontColor="#48484A" fontSize="15" transparent="true"/>
+			</layout>
+
+			<layout left="538" top="834" width="220" height="142">
+				<edit left="51" top="1" width="168" height="30" name="aclassen" field="aclasse" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="70" top="21" width="149" height="30" name="aprotecaon" field="aprotecao" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="80" top="41" width="140" height="30" name="appenalidaden" field="apenalidade" fontColor="#48484A" fontSize="16" transparent="true"/>
+
+				<rectangle left="75" top="80" width="145" height="5" color="#FDFDFD"/>
+				<rectangle left="0" top="85" width="220" height="56" color="#FDFDFD"/>
+
+				<textEditor left="0" top="85" width="220" height="56" name="adescricaon" field="adescricao" fontColor="#48484A" fontSize="15" transparent="true"/>
+			</layout>
+
+		</layout>
+
+		<rectangle left="58" top="845" width="7" height="84" color="#FDFDFD"/>
+		
+	</scrollBox>
+</form>
