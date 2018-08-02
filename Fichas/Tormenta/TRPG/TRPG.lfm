@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="TormentaCastfrm" formType="sheetTemplate" dataType="Cast.Tormenta.RPGFirecast" title="Ficha Tormenta RPG" align="client" theme="dark">
+	<tabControl align="client">
+		<tab title="Características">
+			<import file="1.lfm"/>
+		</tab>
+		<tab title="Créditos">
+			<import file="creditos.lfm"/>
+		</tab>
+	</tabControl>
+</form>

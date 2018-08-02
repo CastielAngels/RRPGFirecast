@@ -5,7 +5,7 @@ require("rrpgDialogs.lua");
 require("rrpgLFM.lua");
 require("ndb.lua");
 
-function newAwakening04()
+function newChangelingC()
     __o_rrpgObjs.beginObjectsLoading();
 
     local obj = gui.fromHandle(_obj_newObject("form"));
@@ -26,7 +26,7 @@ function newAwakening04()
 
     _gui_assignInitialParentForForm(obj.handle);
     obj:beginUpdate();
-    obj:setName("Awakening04");
+    obj:setName("ChangelingC");
     obj:setAlign("client");
     obj:setTheme("dark");
 
@@ -111,7 +111,7 @@ function newAwakening04()
     obj.label3:setWidth(250);
     obj.label3:setFontColor("silver");
     obj.label3:setHeight(20);
-    obj.label3:setText("Versão: 1.0 03/07/18");
+    obj.label3:setText("Versão: 1.1b 02/08/18");
     obj.label3:setHorzTextAlign("center");
     obj.label3:setFontSize(13);
     obj.label3:setName("label3");
@@ -160,17 +160,17 @@ function newAwakening04()
     return obj;
 end;
 
-local _Awakening04 = {
-    newEditor = newAwakening04, 
-    new = newAwakening04, 
-    name = "Awakening04", 
+local _ChangelingC = {
+    newEditor = newChangelingC, 
+    new = newChangelingC, 
+    name = "ChangelingC", 
     dataType = "", 
     formType = "undefined", 
     formComponentName = "form", 
     title = "", 
     description=""};
 
-Awakening04 = _Awakening04;
-rrpg.registrarForm(_Awakening04);
+ChangelingC = _ChangelingC;
+rrpg.registrarForm(_ChangelingC);
 
-return _Awakening04;
+return _ChangelingC;

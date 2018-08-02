@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Tormenta01" align="client" theme="light">
+
+<image left="0" top="0" align="client" field="backgroundimg" style="stretch" src=""/>
+	<scrollBox align="client">
+	
+		<rectangle left="373" top="33" width="135" height="135" color="DimGray" xradius="5" yradius="5"/>
+		<label left="401" top="65" width="80" height="60" text="Sem avatar" horzTextAlign="center"/>
+		<image field="imagempersona" editable="true" style="autoFit" src="" left="373" top="33" width="135" height="135"/>
+		
+		<layout left="0" top="0" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+			<label left="8" top="5" width="238" height="20" text="Dados do Personagem" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<button left="830" top="2" width="40" height="25" text="BG" hitTest="true" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
+		</layout>
+		
+		<layout left="0" top="170" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+		</layout>
+		
+		<layout left="0" top="440" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+		</layout>
+		
+		<layout left="0" top="615" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+		</layout>
+		
+		<layout left="9" top="215" width="891" height="25">
+			<rectangle color="Silver" width="235"/>
+			<label left="13" top="2" width="210" height="20" text="======= Habilidades =======" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<rectangle left="250" color="Silver" width="485"/>
+			<label left="268" top="2" width="480" height="20" text="====================== Atributos ====================" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<rectangle left="750" color="Silver" width="135"/>
+			<label left="761" top="2" width="138" height="20" text="============" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+		</layout>
+		
+		<template name="Cabeca">
+			<rectangle left="5" top="0" color="Gainsboro" width="80" xradius="2" yradius="2"/>
+			<label left="8" top="5" width="77" height="20" text="$(texto)" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+        	<edit left="90" top="0" width="200" height="25" fontStyle="bold" fontColor="black" field="$(field)" type="$(nort)"/>
+		</template>
+		
+		<template name="Principal">
+			<rectangle left="5" top="0" color="Gainsboro" width="155" xradius="2" yradius="2"/>
+			<label left="8" top="5" width="155" height="20" text="$(texto)" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<edit left="175" top="0" width="30" height="25" field="$(field)" type="number" max="99" horzTextAlign="center"/>
+        	<edit left="210" top="0" width="30" height="25" field="$(field)_M" type="number" max="99" horzTextAlign="center"/>
+		</template>
+			
+		<layout left="0" top="30" width="900" height="125">
+			<layout left="5" top="5" width="290" height="25" >
+				<Cabeca field="nome" texto="Nome" nort="text"/>
+			</layout>
+			<layout left="580" top="5" width="290" height="25" >
+				<Cabeca field="tendencia" texto="Tendência" nort="text"/>
+			</layout>
+			<layout left="5" top="35" width="290" height="25" >
+				<Cabeca field="jogador" texto="Jogador" nort="text"/>
+			</layout>
+			<layout left="580" top="35" width="290" height="25" >
+				<Cabeca field="sexo" texto="Sexo" nort="text"/>
+			</layout>
+			<layout left="5" top="65" width="290" height="25" >
+				<Cabeca field="idade" texto="Idade" nort="number"/>
+			</layout>
+			<layout left="580" top="65" width="290" height="25" >
+				<Cabeca field="divindade" texto="Divindade" nort="text"/>
+			</layout>
+			<layout left="5" top="95" width="290" height="25" >
+				<Cabeca field="raca" texto="Raça" nort="text"/>
+			</layout>
+			<layout left="580" top="95" width="290" height="25" >
+				<Cabeca field="tamanho" texto="Tamanho" nort="text"/>
+			</layout>
+		</layout>
+		
+		<layout left="0" top="250" width="250" height="300">
+			<layout left="5" top="5" width="290" height="25" >
+				<Principal field="forca" texto="Força(FOR)"/>
+			</layout>
+			<layout left="5" top="35" width="290" height="25" >
+				<Principal field="destreza" texto="Destreza(DES)"/>
+			</layout>
+			<layout left="5" top="65" width="290" height="25" >
+				<Principal field="constituicao" texto="Constituição(CON)"/>
+			</layout>
+			<layout left="5" top="95" width="290" height="25" >
+				<Principal field="inteligencia" texto="inteligência(INT)"/>
+			</layout>
+			<layout left="5" top="125" width="290" height="25" >
+				<Principal field="sabedoria" texto="Sabedoria(SAB)"/>
+			</layout>
+			<layout left="5" top="155" width="290" height="25" >
+				<Principal field="carisma" texto="Carisma(CAR)"/>
+			</layout>
+		</layout>
+	</scrollBox>
+</form>

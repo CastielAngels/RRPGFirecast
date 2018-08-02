@@ -55,8 +55,8 @@ function newChangeling04()
     obj.rectangle1:setLeft(4);
     obj.rectangle1:setTop(55);
     obj.rectangle1:setWidth(754);
-    obj.rectangle1:setHeight(253);
-    obj.rectangle1:setColor("#FDFDFD");
+    obj.rectangle1:setHeight(248);
+    obj.rectangle1:setColor("LightGray");
     obj.rectangle1:setName("rectangle1");
 
     obj.backgroundn = gui.fromHandle(_obj_newObject("richEdit"));
@@ -65,6 +65,7 @@ function newChangeling04()
     obj.backgroundn:setTop(55);
     obj.backgroundn:setWidth(754);
     obj.backgroundn:setHeight(253);
+    lfm_setPropAsString(obj.backgroundn, "backgroundColor",  "LightGray");
     obj.backgroundn:setName("backgroundn");
     obj.backgroundn:setField("background");
 
@@ -79,6 +80,7 @@ function newChangeling04()
     obj.datatitulan:setFontColor("#48484A");
     obj.datatitulan:setHorzTextAlign("center");
     obj.datatitulan:setFontSize(15);
+    lfm_setPropAsString(obj.datatitulan, "fontStyle",  "bold");
     obj.datatitulan:setTransparent(true);
 
     obj.sociedadesn = gui.fromHandle(_obj_newObject("edit"));
@@ -91,6 +93,7 @@ function newChangeling04()
     obj.sociedadesn:setField("sociedades");
     obj.sociedadesn:setFontColor("#48484A");
     obj.sociedadesn:setFontSize(15);
+    lfm_setPropAsString(obj.sociedadesn, "fontStyle",  "bold");
     obj.sociedadesn:setTransparent(true);
 
     obj.layout2 = gui.fromHandle(_obj_newObject("layout"));
@@ -111,6 +114,7 @@ function newChangeling04()
     obj.nverdadeiron:setField("nverdadeiro");
     obj.nverdadeiron:setFontColor("#48484A");
     obj.nverdadeiron:setFontSize(15);
+    lfm_setPropAsString(obj.nverdadeiron, "fontStyle",  "bold");
     obj.nverdadeiron:setTransparent(true);
 
     obj.idadecn = gui.fromHandle(_obj_newObject("edit"));
@@ -123,6 +127,7 @@ function newChangeling04()
     obj.idadecn:setField("idadec");
     obj.idadecn:setFontColor("#48484A");
     obj.idadecn:setFontSize(15);
+    lfm_setPropAsString(obj.idadecn, "fontStyle",  "bold");
     obj.idadecn:setTransparent(true);
 
     obj.idadean = gui.fromHandle(_obj_newObject("edit"));
@@ -135,6 +140,7 @@ function newChangeling04()
     obj.idadean:setField("idadea");
     obj.idadean:setFontColor("#48484A");
     obj.idadean:setFontSize(15);
+    lfm_setPropAsString(obj.idadean, "fontStyle",  "bold");
     obj.idadean:setTransparent(true);
 
     obj.datadenan = gui.fromHandle(_obj_newObject("edit"));
@@ -147,6 +153,7 @@ function newChangeling04()
     obj.datadenan:setField("datadena");
     obj.datadenan:setFontColor("#48484A");
     obj.datadenan:setFontSize(15);
+    lfm_setPropAsString(obj.datadenan, "fontStyle",  "bold");
     obj.datadenan:setTransparent(true);
 
     obj.cabelosn = gui.fromHandle(_obj_newObject("edit"));
@@ -159,6 +166,7 @@ function newChangeling04()
     obj.cabelosn:setField("cabelos");
     obj.cabelosn:setFontColor("#48484A");
     obj.cabelosn:setFontSize(15);
+    lfm_setPropAsString(obj.cabelosn, "fontStyle",  "bold");
     obj.cabelosn:setTransparent(true);
 
     obj.olhosn = gui.fromHandle(_obj_newObject("edit"));
@@ -171,6 +179,7 @@ function newChangeling04()
     obj.olhosn:setField("olhos");
     obj.olhosn:setFontColor("#48484A");
     obj.olhosn:setFontSize(15);
+    lfm_setPropAsString(obj.olhosn, "fontStyle",  "bold");
     obj.olhosn:setTransparent(true);
 
     obj.racan = gui.fromHandle(_obj_newObject("edit"));
@@ -183,6 +192,7 @@ function newChangeling04()
     obj.racan:setField("raca");
     obj.racan:setFontColor("#48484A");
     obj.racan:setFontSize(15);
+    lfm_setPropAsString(obj.racan, "fontStyle",  "bold");
     obj.racan:setTransparent(true);
 
     obj.nacionalidan = gui.fromHandle(_obj_newObject("edit"));
@@ -195,6 +205,7 @@ function newChangeling04()
     obj.nacionalidan:setField("nacionalida");
     obj.nacionalidan:setFontColor("#48484A");
     obj.nacionalidan:setFontSize(15);
+    lfm_setPropAsString(obj.nacionalidan, "fontStyle",  "bold");
     obj.nacionalidan:setTransparent(true);
 
     obj.alturan = gui.fromHandle(_obj_newObject("edit"));
@@ -207,6 +218,7 @@ function newChangeling04()
     obj.alturan:setField("altura");
     obj.alturan:setFontColor("#48484A");
     obj.alturan:setFontSize(15);
+    lfm_setPropAsString(obj.alturan, "fontStyle",  "bold");
     obj.alturan:setTransparent(true);
 
     obj.peson = gui.fromHandle(_obj_newObject("edit"));
@@ -219,6 +231,7 @@ function newChangeling04()
     obj.peson:setField("peso");
     obj.peson:setFontColor("#48484A");
     obj.peson:setFontSize(15);
+    lfm_setPropAsString(obj.peson, "fontStyle",  "bold");
     obj.peson:setTransparent(true);
 
     obj.generon = gui.fromHandle(_obj_newObject("edit"));
@@ -231,6 +244,7 @@ function newChangeling04()
     obj.generon:setField("genero");
     obj.generon:setFontColor("#48484A");
     obj.generon:setFontSize(15);
+    lfm_setPropAsString(obj.generon, "fontStyle",  "bold");
     obj.generon:setTransparent(true);
 
     obj.layout3 = gui.fromHandle(_obj_newObject("layout"));
@@ -268,6 +282,7 @@ function newChangeling04()
     obj.aparenciamn:setField("aparenciam");
     obj.aparenciamn:setFontColor("#48484A");
     obj.aparenciamn:setFontSize(15);
+    lfm_setPropAsString(obj.aparenciamn, "fontStyle",  "bold");
 
     obj.aparenciafn = gui.fromHandle(_obj_newObject("textEditor"));
     obj.aparenciafn:setParent(obj.layout3);
@@ -278,6 +293,7 @@ function newChangeling04()
     obj.aparenciafn:setField("aparenciaf");
     obj.aparenciafn:setFontColor("#48484A");
     obj.aparenciafn:setFontSize(15);
+    lfm_setPropAsString(obj.aparenciafn, "fontStyle",  "bold");
 
     obj.limagen = gui.fromHandle(_obj_newObject("image"));
     obj.limagen:setParent(obj.layout1);

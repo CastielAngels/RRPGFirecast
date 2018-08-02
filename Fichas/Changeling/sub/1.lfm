@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Changeling02" align="client" theme="light">
+<form name="Changeling01" align="client" theme="light">
 
 	<template name="bbolls4">
 		<imageCheckBox name="$(name)_2" field="$(field)_2" width="11" height="12" checkedImage="img/bboll.png"/>
@@ -43,15 +43,15 @@
 		<layout left="62" top="100" width="760" height="980"> 
 		
 			<layout left="2" width="756" height="90">
-				<edit left="50" top="9" width="210" height="29" field="cnome" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="62" top="34" width="198" height="29" field="cjogador" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="66" top="59" width="194" height="29" field="mcronica" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="312" top="9" width="206" height="29" field="ccorte" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="363" top="34" width="155" height="29" field="cseelie" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="383" top="59" width="135" height="29" field="cunseelie" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="585" top="9" width="170" height="29" field="caspecto" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="598" top="34" width="157" height="29" field="cmixordia" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="562" top="59" width="193" height="29" field="ccasa" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="50" top="9" width="210" height="29" field="cnome" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="62" top="34" width="198" height="29" field="cjogador" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="66" top="59" width="194" height="29" field="mcronica" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="312" top="9" width="206" height="29" field="ccorte" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="363" top="34" width="155" height="29" field="cseelie" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="383" top="59" width="135" height="29" field="cunseelie" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="585" top="9" width="170" height="29" field="caspecto" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="598" top="34" width="157" height="29" field="cmixordia" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="562" top="59" width="193" height="29" field="ccasa" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
 			</layout>
 			
 			<layout left="2" top="154" width="756" height="55">
@@ -202,13 +202,13 @@
 					<bbolls5 name="antecede7n" field="antecede7"/>
 				</layout>
 				
-				<edit left="2" top="1" width="171" height="21" field="antecede1" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="20" width="171" height="21" field="antecede2" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="39" width="171" height="21" field="antecede3" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="58" width="171" height="21" field="antecede4" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="77" width="171" height="21" field="antecede5" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="96" width="171" height="21" field="antecede6" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="115" width="171" height="21" field="antecede7" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="1" width="171" height="21" field="antecede1" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="20" width="171" height="21" field="antecede2" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="39" width="171" height="21" field="antecede3" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="58" width="171" height="21" field="antecede4" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="77" width="171" height="21" field="antecede5" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="96" width="171" height="21" field="antecede6" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="115" width="171" height="21" field="antecede7" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
 				
 				<layout left="437" top="10" width="60" height="12">
 					<bbolls5 name="artes1n" field="artes1"/>
@@ -232,13 +232,13 @@
 					<bbolls5 name="artes7n" field="artes7"/>
 				</layout>
 
-				<edit left="263" top="1" width="171" height="21" field="artes1" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="263" top="20" width="171" height="21" field="artes2" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="263" top="39" width="171" height="21" field="artes3" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="263" top="58" width="171" height="21" field="artes4" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="263" top="77" width="171" height="21" field="artes5" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="263" top="96" width="171" height="21" field="artes6" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="263" top="115" width="171" height="21" field="artes7" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="263" top="1" width="171" height="21" field="artes1" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="263" top="20" width="171" height="21" field="artes2" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="263" top="39" width="171" height="21" field="artes3" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="263" top="58" width="171" height="21" field="artes4" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="263" top="77" width="171" height="21" field="artes5" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="263" top="96" width="171" height="21" field="artes6" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="263" top="115" width="171" height="21" field="artes7" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
 
 				<layout left="693" top="10" width="65" height="12">
 					<bbolls5 name="atorn" field="ator"/>
@@ -292,18 +292,18 @@
 				<rectangle left="3" top="10" width="170" height="3" color="#FDFDFD"/>
 				<rectangle left="175" width="63" height="13" color="#FDFDFD"/>
 
-				<edit left="2" top="11" width="171" height="21" field="caracteris1" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="30" width="171" height="21" field="caracteris2" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="49" width="171" height="21" field="caracteris3" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="68" width="171" height="21" field="caracteris4" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="87" width="171" height="21" field="caracteris5" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="106" width="171" height="21" field="caracteris6" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="125" width="171" height="21" field="caracteris7" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="144" width="171" height="21" field="caracteris8" fontColor="#48484A" fontSize="16" transparent="true"/>
-				<edit left="2" top="163" width="171" height="21" field="caracteris9" fontColor="#48484A" fontSize="16" transparent="true"/>
+				<edit left="2" top="11" width="171" height="21" field="caracteris1" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="30" width="171" height="21" field="caracteris2" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="49" width="171" height="21" field="caracteris3" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="68" width="171" height="21" field="caracteris4" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="87" width="171" height="21" field="caracteris5" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="106" width="171" height="21" field="caracteris6" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="125" width="171" height="21" field="caracteris7" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="144" width="171" height="21" field="caracteris8" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
+				<edit left="2" top="163" width="171" height="21" field="caracteris9" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
 
 				<layout left="14" top="242" width="235" height="36">
-					<edit width="209" height="27" field="experiencia" fontColor="#48484A" fontSize="16" horzTextAlign="center" transparent="true"/>
+					<edit width="209" height="27" field="experiencia" fontColor="#48484A" fontSize="16" fontStyle="bold" horzTextAlign="center" transparent="true"/>
 				</layout>
 
 				<layout left="276" top="0" width="207" height="30">
@@ -335,10 +335,10 @@
 				</layout>
 
 				<layout left="521" top="185" width="235" height="25">
-					<edit width="235" height="25" field="direitos" fontColor="#48484A" fontSize="16" transparent="true"/>
+					<edit width="235" height="25" field="direitos" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
 				</layout>
 				<layout left="521" top="247" width="235" height="25">
-					<edit width="235" height="25" field="limiar" fontColor="#48484A" fontSize="16" transparent="true"/>
+					<edit width="235" height="25" field="limiar" fontColor="#48484A" fontSize="16" fontStyle="bold" transparent="true"/>
 				</layout>
 				
 			</layout>

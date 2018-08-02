@@ -43,14 +43,14 @@ function newChangelingfrm()
     obj.tab1:setTitle("Primeira");
     obj.tab1:setName("tab1");
 
-    obj.Changeling02 = gui.fromHandle(_obj_newObject("form"));
-    obj.Changeling02:setParent(obj.tab1);
-    obj.Changeling02:setName("Changeling02");
-    obj.Changeling02:setAlign("client");
-    obj.Changeling02:setTheme("light");
+    obj.Changeling01 = gui.fromHandle(_obj_newObject("form"));
+    obj.Changeling01:setParent(obj.tab1);
+    obj.Changeling01:setName("Changeling01");
+    obj.Changeling01:setAlign("client");
+    obj.Changeling01:setTheme("light");
 
     obj.scrollBox1 = gui.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox1:setParent(obj.Changeling02);
+    obj.scrollBox1:setParent(obj.Changeling01);
     obj.scrollBox1:setAlign("client");
     obj.scrollBox1:setName("scrollBox1");
 
@@ -85,6 +85,7 @@ function newChangelingfrm()
     obj.edit1:setField("cnome");
     obj.edit1:setFontColor("#48484A");
     obj.edit1:setFontSize(16);
+    lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
     obj.edit1:setTransparent(true);
     obj.edit1:setName("edit1");
 
@@ -97,6 +98,7 @@ function newChangelingfrm()
     obj.edit2:setField("cjogador");
     obj.edit2:setFontColor("#48484A");
     obj.edit2:setFontSize(16);
+    lfm_setPropAsString(obj.edit2, "fontStyle",  "bold");
     obj.edit2:setTransparent(true);
     obj.edit2:setName("edit2");
 
@@ -109,6 +111,7 @@ function newChangelingfrm()
     obj.edit3:setField("mcronica");
     obj.edit3:setFontColor("#48484A");
     obj.edit3:setFontSize(16);
+    lfm_setPropAsString(obj.edit3, "fontStyle",  "bold");
     obj.edit3:setTransparent(true);
     obj.edit3:setName("edit3");
 
@@ -121,6 +124,7 @@ function newChangelingfrm()
     obj.edit4:setField("ccorte");
     obj.edit4:setFontColor("#48484A");
     obj.edit4:setFontSize(16);
+    lfm_setPropAsString(obj.edit4, "fontStyle",  "bold");
     obj.edit4:setTransparent(true);
     obj.edit4:setName("edit4");
 
@@ -133,6 +137,7 @@ function newChangelingfrm()
     obj.edit5:setField("cseelie");
     obj.edit5:setFontColor("#48484A");
     obj.edit5:setFontSize(16);
+    lfm_setPropAsString(obj.edit5, "fontStyle",  "bold");
     obj.edit5:setTransparent(true);
     obj.edit5:setName("edit5");
 
@@ -145,6 +150,7 @@ function newChangelingfrm()
     obj.edit6:setField("cunseelie");
     obj.edit6:setFontColor("#48484A");
     obj.edit6:setFontSize(16);
+    lfm_setPropAsString(obj.edit6, "fontStyle",  "bold");
     obj.edit6:setTransparent(true);
     obj.edit6:setName("edit6");
 
@@ -157,6 +163,7 @@ function newChangelingfrm()
     obj.edit7:setField("caspecto");
     obj.edit7:setFontColor("#48484A");
     obj.edit7:setFontSize(16);
+    lfm_setPropAsString(obj.edit7, "fontStyle",  "bold");
     obj.edit7:setTransparent(true);
     obj.edit7:setName("edit7");
 
@@ -169,6 +176,7 @@ function newChangelingfrm()
     obj.edit8:setField("cmixordia");
     obj.edit8:setFontColor("#48484A");
     obj.edit8:setFontSize(16);
+    lfm_setPropAsString(obj.edit8, "fontStyle",  "bold");
     obj.edit8:setTransparent(true);
     obj.edit8:setName("edit8");
 
@@ -181,6 +189,7 @@ function newChangelingfrm()
     obj.edit9:setField("ccasa");
     obj.edit9:setFontColor("#48484A");
     obj.edit9:setFontSize(16);
+    lfm_setPropAsString(obj.edit9, "fontStyle",  "bold");
     obj.edit9:setTransparent(true);
     obj.edit9:setName("edit9");
 
@@ -2528,6 +2537,7 @@ function newChangelingfrm()
     obj.edit10:setField("antecede1");
     obj.edit10:setFontColor("#48484A");
     obj.edit10:setFontSize(16);
+    lfm_setPropAsString(obj.edit10, "fontStyle",  "bold");
     obj.edit10:setTransparent(true);
     obj.edit10:setName("edit10");
 
@@ -2540,6 +2550,7 @@ function newChangelingfrm()
     obj.edit11:setField("antecede2");
     obj.edit11:setFontColor("#48484A");
     obj.edit11:setFontSize(16);
+    lfm_setPropAsString(obj.edit11, "fontStyle",  "bold");
     obj.edit11:setTransparent(true);
     obj.edit11:setName("edit11");
 
@@ -2552,6 +2563,7 @@ function newChangelingfrm()
     obj.edit12:setField("antecede3");
     obj.edit12:setFontColor("#48484A");
     obj.edit12:setFontSize(16);
+    lfm_setPropAsString(obj.edit12, "fontStyle",  "bold");
     obj.edit12:setTransparent(true);
     obj.edit12:setName("edit12");
 
@@ -2564,6 +2576,7 @@ function newChangelingfrm()
     obj.edit13:setField("antecede4");
     obj.edit13:setFontColor("#48484A");
     obj.edit13:setFontSize(16);
+    lfm_setPropAsString(obj.edit13, "fontStyle",  "bold");
     obj.edit13:setTransparent(true);
     obj.edit13:setName("edit13");
 
@@ -2576,6 +2589,7 @@ function newChangelingfrm()
     obj.edit14:setField("antecede5");
     obj.edit14:setFontColor("#48484A");
     obj.edit14:setFontSize(16);
+    lfm_setPropAsString(obj.edit14, "fontStyle",  "bold");
     obj.edit14:setTransparent(true);
     obj.edit14:setName("edit14");
 
@@ -2588,6 +2602,7 @@ function newChangelingfrm()
     obj.edit15:setField("antecede6");
     obj.edit15:setFontColor("#48484A");
     obj.edit15:setFontSize(16);
+    lfm_setPropAsString(obj.edit15, "fontStyle",  "bold");
     obj.edit15:setTransparent(true);
     obj.edit15:setName("edit15");
 
@@ -2600,6 +2615,7 @@ function newChangelingfrm()
     obj.edit16:setField("antecede7");
     obj.edit16:setFontColor("#48484A");
     obj.edit16:setFontSize(16);
+    lfm_setPropAsString(obj.edit16, "fontStyle",  "bold");
     obj.edit16:setTransparent(true);
     obj.edit16:setName("edit16");
 
@@ -2976,6 +2992,7 @@ function newChangelingfrm()
     obj.edit17:setField("artes1");
     obj.edit17:setFontColor("#48484A");
     obj.edit17:setFontSize(16);
+    lfm_setPropAsString(obj.edit17, "fontStyle",  "bold");
     obj.edit17:setTransparent(true);
     obj.edit17:setName("edit17");
 
@@ -2988,6 +3005,7 @@ function newChangelingfrm()
     obj.edit18:setField("artes2");
     obj.edit18:setFontColor("#48484A");
     obj.edit18:setFontSize(16);
+    lfm_setPropAsString(obj.edit18, "fontStyle",  "bold");
     obj.edit18:setTransparent(true);
     obj.edit18:setName("edit18");
 
@@ -3000,6 +3018,7 @@ function newChangelingfrm()
     obj.edit19:setField("artes3");
     obj.edit19:setFontColor("#48484A");
     obj.edit19:setFontSize(16);
+    lfm_setPropAsString(obj.edit19, "fontStyle",  "bold");
     obj.edit19:setTransparent(true);
     obj.edit19:setName("edit19");
 
@@ -3012,6 +3031,7 @@ function newChangelingfrm()
     obj.edit20:setField("artes4");
     obj.edit20:setFontColor("#48484A");
     obj.edit20:setFontSize(16);
+    lfm_setPropAsString(obj.edit20, "fontStyle",  "bold");
     obj.edit20:setTransparent(true);
     obj.edit20:setName("edit20");
 
@@ -3024,6 +3044,7 @@ function newChangelingfrm()
     obj.edit21:setField("artes5");
     obj.edit21:setFontColor("#48484A");
     obj.edit21:setFontSize(16);
+    lfm_setPropAsString(obj.edit21, "fontStyle",  "bold");
     obj.edit21:setTransparent(true);
     obj.edit21:setName("edit21");
 
@@ -3036,6 +3057,7 @@ function newChangelingfrm()
     obj.edit22:setField("artes6");
     obj.edit22:setFontColor("#48484A");
     obj.edit22:setFontSize(16);
+    lfm_setPropAsString(obj.edit22, "fontStyle",  "bold");
     obj.edit22:setTransparent(true);
     obj.edit22:setName("edit22");
 
@@ -3048,6 +3070,7 @@ function newChangelingfrm()
     obj.edit23:setField("artes7");
     obj.edit23:setFontColor("#48484A");
     obj.edit23:setFontSize(16);
+    lfm_setPropAsString(obj.edit23, "fontStyle",  "bold");
     obj.edit23:setTransparent(true);
     obj.edit23:setName("edit23");
 
@@ -3865,6 +3888,7 @@ function newChangelingfrm()
     obj.edit24:setField("caracteris1");
     obj.edit24:setFontColor("#48484A");
     obj.edit24:setFontSize(16);
+    lfm_setPropAsString(obj.edit24, "fontStyle",  "bold");
     obj.edit24:setTransparent(true);
     obj.edit24:setName("edit24");
 
@@ -3877,6 +3901,7 @@ function newChangelingfrm()
     obj.edit25:setField("caracteris2");
     obj.edit25:setFontColor("#48484A");
     obj.edit25:setFontSize(16);
+    lfm_setPropAsString(obj.edit25, "fontStyle",  "bold");
     obj.edit25:setTransparent(true);
     obj.edit25:setName("edit25");
 
@@ -3889,6 +3914,7 @@ function newChangelingfrm()
     obj.edit26:setField("caracteris3");
     obj.edit26:setFontColor("#48484A");
     obj.edit26:setFontSize(16);
+    lfm_setPropAsString(obj.edit26, "fontStyle",  "bold");
     obj.edit26:setTransparent(true);
     obj.edit26:setName("edit26");
 
@@ -3901,6 +3927,7 @@ function newChangelingfrm()
     obj.edit27:setField("caracteris4");
     obj.edit27:setFontColor("#48484A");
     obj.edit27:setFontSize(16);
+    lfm_setPropAsString(obj.edit27, "fontStyle",  "bold");
     obj.edit27:setTransparent(true);
     obj.edit27:setName("edit27");
 
@@ -3913,6 +3940,7 @@ function newChangelingfrm()
     obj.edit28:setField("caracteris5");
     obj.edit28:setFontColor("#48484A");
     obj.edit28:setFontSize(16);
+    lfm_setPropAsString(obj.edit28, "fontStyle",  "bold");
     obj.edit28:setTransparent(true);
     obj.edit28:setName("edit28");
 
@@ -3925,6 +3953,7 @@ function newChangelingfrm()
     obj.edit29:setField("caracteris6");
     obj.edit29:setFontColor("#48484A");
     obj.edit29:setFontSize(16);
+    lfm_setPropAsString(obj.edit29, "fontStyle",  "bold");
     obj.edit29:setTransparent(true);
     obj.edit29:setName("edit29");
 
@@ -3937,6 +3966,7 @@ function newChangelingfrm()
     obj.edit30:setField("caracteris7");
     obj.edit30:setFontColor("#48484A");
     obj.edit30:setFontSize(16);
+    lfm_setPropAsString(obj.edit30, "fontStyle",  "bold");
     obj.edit30:setTransparent(true);
     obj.edit30:setName("edit30");
 
@@ -3949,6 +3979,7 @@ function newChangelingfrm()
     obj.edit31:setField("caracteris8");
     obj.edit31:setFontColor("#48484A");
     obj.edit31:setFontSize(16);
+    lfm_setPropAsString(obj.edit31, "fontStyle",  "bold");
     obj.edit31:setTransparent(true);
     obj.edit31:setName("edit31");
 
@@ -3961,6 +3992,7 @@ function newChangelingfrm()
     obj.edit32:setField("caracteris9");
     obj.edit32:setFontColor("#48484A");
     obj.edit32:setFontSize(16);
+    lfm_setPropAsString(obj.edit32, "fontStyle",  "bold");
     obj.edit32:setTransparent(true);
     obj.edit32:setName("edit32");
 
@@ -3979,6 +4011,7 @@ function newChangelingfrm()
     obj.edit33:setField("experiencia");
     obj.edit33:setFontColor("#48484A");
     obj.edit33:setFontSize(16);
+    lfm_setPropAsString(obj.edit33, "fontStyle",  "bold");
     obj.edit33:setHorzTextAlign("center");
     obj.edit33:setTransparent(true);
     obj.edit33:setName("edit33");
@@ -4740,6 +4773,7 @@ function newChangelingfrm()
     obj.edit34:setField("direitos");
     obj.edit34:setFontColor("#48484A");
     obj.edit34:setFontSize(16);
+    lfm_setPropAsString(obj.edit34, "fontStyle",  "bold");
     obj.edit34:setTransparent(true);
     obj.edit34:setName("edit34");
 
@@ -4758,6 +4792,7 @@ function newChangelingfrm()
     obj.edit35:setField("limiar");
     obj.edit35:setFontColor("#48484A");
     obj.edit35:setFontSize(16);
+    lfm_setPropAsString(obj.edit35, "fontStyle",  "bold");
     obj.edit35:setTransparent(true);
     obj.edit35:setName("edit35");
 
@@ -4775,14 +4810,14 @@ function newChangelingfrm()
     obj.tab2:setTitle("Segunda");
     obj.tab2:setName("tab2");
 
-    obj.Changeling01 = gui.fromHandle(_obj_newObject("form"));
-    obj.Changeling01:setParent(obj.tab2);
-    obj.Changeling01:setName("Changeling01");
-    obj.Changeling01:setAlign("client");
-    obj.Changeling01:setTheme("light");
+    obj.Changeling02 = gui.fromHandle(_obj_newObject("form"));
+    obj.Changeling02:setParent(obj.tab2);
+    obj.Changeling02:setName("Changeling02");
+    obj.Changeling02:setAlign("client");
+    obj.Changeling02:setTheme("light");
 
     obj.scrollBox2 = gui.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox2:setParent(obj.Changeling01);
+    obj.scrollBox2:setParent(obj.Changeling02);
     obj.scrollBox2:setAlign("client");
     obj.scrollBox2:setName("scrollBox2");
 
@@ -4817,6 +4852,7 @@ function newChangelingfrm()
     obj.edit36:setField("cconfraria");
     obj.edit36:setFontColor("#48484A");
     obj.edit36:setFontSize(16);
+    lfm_setPropAsString(obj.edit36, "fontStyle",  "bold");
     obj.edit36:setTransparent(true);
     obj.edit36:setName("edit36");
 
@@ -4829,6 +4865,7 @@ function newChangelingfrm()
     obj.edit37:setField("cmestre");
     obj.edit37:setFontColor("#48484A");
     obj.edit37:setFontSize(16);
+    lfm_setPropAsString(obj.edit37, "fontStyle",  "bold");
     obj.edit37:setTransparent(true);
     obj.edit37:setName("edit37");
 
@@ -4841,6 +4878,7 @@ function newChangelingfrm()
     obj.edit38:setField("cguildas");
     obj.edit38:setFontColor("#48484A");
     obj.edit38:setFontSize(16);
+    lfm_setPropAsString(obj.edit38, "fontStyle",  "bold");
     obj.edit38:setTransparent(true);
     obj.edit38:setName("edit38");
 
@@ -4853,6 +4891,7 @@ function newChangelingfrm()
     obj.edit39:setField("cnomeacao");
     obj.edit39:setFontColor("#48484A");
     obj.edit39:setFontSize(16);
+    lfm_setPropAsString(obj.edit39, "fontStyle",  "bold");
     obj.edit39:setTransparent(true);
     obj.edit39:setName("edit39");
 
@@ -4874,6 +4913,7 @@ function newChangelingfrm()
     obj.qualidaden_q1:setField("qualidade_q1");
     obj.qualidaden_q1:setFontColor("#48484A");
     obj.qualidaden_q1:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_q1, "fontStyle",  "bold");
     obj.qualidaden_q1:setTransparent(true);
 
     obj.qualidaden_q2 = gui.fromHandle(_obj_newObject("edit"));
@@ -4886,6 +4926,7 @@ function newChangelingfrm()
     obj.qualidaden_q2:setField("qualidade_q2");
     obj.qualidaden_q2:setFontColor("#48484A");
     obj.qualidaden_q2:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_q2, "fontStyle",  "bold");
     obj.qualidaden_q2:setTransparent(true);
 
     obj.qualidaden_q3 = gui.fromHandle(_obj_newObject("edit"));
@@ -4898,6 +4939,7 @@ function newChangelingfrm()
     obj.qualidaden_q3:setField("qualidade_q3");
     obj.qualidaden_q3:setFontColor("#48484A");
     obj.qualidaden_q3:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_q3, "fontStyle",  "bold");
     obj.qualidaden_q3:setTransparent(true);
 
     obj.qualidaden_q4 = gui.fromHandle(_obj_newObject("edit"));
@@ -4910,6 +4952,7 @@ function newChangelingfrm()
     obj.qualidaden_q4:setField("qualidade_q4");
     obj.qualidaden_q4:setFontColor("#48484A");
     obj.qualidaden_q4:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_q4, "fontStyle",  "bold");
     obj.qualidaden_q4:setTransparent(true);
 
     obj.qualidaden_q5 = gui.fromHandle(_obj_newObject("edit"));
@@ -4922,6 +4965,7 @@ function newChangelingfrm()
     obj.qualidaden_q5:setField("qualidade_q5");
     obj.qualidaden_q5:setFontColor("#48484A");
     obj.qualidaden_q5:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_q5, "fontStyle",  "bold");
     obj.qualidaden_q5:setTransparent(true);
 
     obj.qualidaden_q6 = gui.fromHandle(_obj_newObject("edit"));
@@ -4934,6 +4978,7 @@ function newChangelingfrm()
     obj.qualidaden_q6:setField("qualidade_q6");
     obj.qualidaden_q6:setFontColor("#48484A");
     obj.qualidaden_q6:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_q6, "fontStyle",  "bold");
     obj.qualidaden_q6:setTransparent(true);
 
     obj.qualidaden_q7 = gui.fromHandle(_obj_newObject("edit"));
@@ -4946,6 +4991,7 @@ function newChangelingfrm()
     obj.qualidaden_q7:setField("qualidade_q7");
     obj.qualidaden_q7:setFontColor("#48484A");
     obj.qualidaden_q7:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_q7, "fontStyle",  "bold");
     obj.qualidaden_q7:setTransparent(true);
 
     obj.qualidaden_t1 = gui.fromHandle(_obj_newObject("edit"));
@@ -4959,6 +5005,7 @@ function newChangelingfrm()
     obj.qualidaden_t1:setHorzTextAlign("center");
     obj.qualidaden_t1:setFontColor("#48484A");
     obj.qualidaden_t1:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_t1, "fontStyle",  "bold");
     obj.qualidaden_t1:setTransparent(true);
 
     obj.qualidaden_t2 = gui.fromHandle(_obj_newObject("edit"));
@@ -4972,6 +5019,7 @@ function newChangelingfrm()
     obj.qualidaden_t2:setHorzTextAlign("center");
     obj.qualidaden_t2:setFontColor("#48484A");
     obj.qualidaden_t2:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_t2, "fontStyle",  "bold");
     obj.qualidaden_t2:setTransparent(true);
 
     obj.qualidaden_t3 = gui.fromHandle(_obj_newObject("edit"));
@@ -4985,6 +5033,7 @@ function newChangelingfrm()
     obj.qualidaden_t3:setHorzTextAlign("center");
     obj.qualidaden_t3:setFontColor("#48484A");
     obj.qualidaden_t3:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_t3, "fontStyle",  "bold");
     obj.qualidaden_t3:setTransparent(true);
 
     obj.qualidaden_t4 = gui.fromHandle(_obj_newObject("edit"));
@@ -4998,6 +5047,7 @@ function newChangelingfrm()
     obj.qualidaden_t4:setHorzTextAlign("center");
     obj.qualidaden_t4:setFontColor("#48484A");
     obj.qualidaden_t4:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_t4, "fontStyle",  "bold");
     obj.qualidaden_t4:setTransparent(true);
 
     obj.qualidaden_t5 = gui.fromHandle(_obj_newObject("edit"));
@@ -5011,6 +5061,7 @@ function newChangelingfrm()
     obj.qualidaden_t5:setHorzTextAlign("center");
     obj.qualidaden_t5:setFontColor("#48484A");
     obj.qualidaden_t5:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_t5, "fontStyle",  "bold");
     obj.qualidaden_t5:setTransparent(true);
 
     obj.qualidaden_t6 = gui.fromHandle(_obj_newObject("edit"));
@@ -5024,6 +5075,7 @@ function newChangelingfrm()
     obj.qualidaden_t6:setHorzTextAlign("center");
     obj.qualidaden_t6:setFontColor("#48484A");
     obj.qualidaden_t6:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_t6, "fontStyle",  "bold");
     obj.qualidaden_t6:setTransparent(true);
 
     obj.qualidaden_t7 = gui.fromHandle(_obj_newObject("edit"));
@@ -5037,6 +5089,7 @@ function newChangelingfrm()
     obj.qualidaden_t7:setHorzTextAlign("center");
     obj.qualidaden_t7:setFontColor("#48484A");
     obj.qualidaden_t7:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_t7, "fontStyle",  "bold");
     obj.qualidaden_t7:setTransparent(true);
 
     obj.qualidaden_c1 = gui.fromHandle(_obj_newObject("edit"));
@@ -5050,6 +5103,7 @@ function newChangelingfrm()
     obj.qualidaden_c1:setHorzTextAlign("center");
     obj.qualidaden_c1:setFontColor("#48484A");
     obj.qualidaden_c1:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_c1, "fontStyle",  "bold");
     obj.qualidaden_c1:setTransparent(true);
 
     obj.qualidaden_c2 = gui.fromHandle(_obj_newObject("edit"));
@@ -5063,6 +5117,7 @@ function newChangelingfrm()
     obj.qualidaden_c2:setHorzTextAlign("center");
     obj.qualidaden_c2:setFontColor("#48484A");
     obj.qualidaden_c2:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_c2, "fontStyle",  "bold");
     obj.qualidaden_c2:setTransparent(true);
 
     obj.qualidaden_c3 = gui.fromHandle(_obj_newObject("edit"));
@@ -5076,6 +5131,7 @@ function newChangelingfrm()
     obj.qualidaden_c3:setHorzTextAlign("center");
     obj.qualidaden_c3:setFontColor("#48484A");
     obj.qualidaden_c3:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_c3, "fontStyle",  "bold");
     obj.qualidaden_c3:setTransparent(true);
 
     obj.qualidaden_c4 = gui.fromHandle(_obj_newObject("edit"));
@@ -5089,6 +5145,7 @@ function newChangelingfrm()
     obj.qualidaden_c4:setHorzTextAlign("center");
     obj.qualidaden_c4:setFontColor("#48484A");
     obj.qualidaden_c4:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_c4, "fontStyle",  "bold");
     obj.qualidaden_c4:setTransparent(true);
 
     obj.qualidaden_c5 = gui.fromHandle(_obj_newObject("edit"));
@@ -5102,6 +5159,7 @@ function newChangelingfrm()
     obj.qualidaden_c5:setHorzTextAlign("center");
     obj.qualidaden_c5:setFontColor("#48484A");
     obj.qualidaden_c5:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_c5, "fontStyle",  "bold");
     obj.qualidaden_c5:setTransparent(true);
 
     obj.qualidaden_c6 = gui.fromHandle(_obj_newObject("edit"));
@@ -5115,6 +5173,7 @@ function newChangelingfrm()
     obj.qualidaden_c6:setHorzTextAlign("center");
     obj.qualidaden_c6:setFontColor("#48484A");
     obj.qualidaden_c6:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_c6, "fontStyle",  "bold");
     obj.qualidaden_c6:setTransparent(true);
 
     obj.qualidaden_c7 = gui.fromHandle(_obj_newObject("edit"));
@@ -5128,6 +5187,7 @@ function newChangelingfrm()
     obj.qualidaden_c7:setHorzTextAlign("center");
     obj.qualidaden_c7:setFontColor("#48484A");
     obj.qualidaden_c7:setFontSize(15);
+    lfm_setPropAsString(obj.qualidaden_c7, "fontStyle",  "bold");
     obj.qualidaden_c7:setTransparent(true);
 
     obj.layout85 = gui.fromHandle(_obj_newObject("layout"));
@@ -5148,6 +5208,7 @@ function newChangelingfrm()
     obj.defeitosn_q1:setField("defeitos_q1");
     obj.defeitosn_q1:setFontColor("#48484A");
     obj.defeitosn_q1:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_q1, "fontStyle",  "bold");
     obj.defeitosn_q1:setTransparent(true);
 
     obj.defeitosn_q2 = gui.fromHandle(_obj_newObject("edit"));
@@ -5160,6 +5221,7 @@ function newChangelingfrm()
     obj.defeitosn_q2:setField("defeitos_q2");
     obj.defeitosn_q2:setFontColor("#48484A");
     obj.defeitosn_q2:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_q2, "fontStyle",  "bold");
     obj.defeitosn_q2:setTransparent(true);
 
     obj.defeitosn_q3 = gui.fromHandle(_obj_newObject("edit"));
@@ -5172,6 +5234,7 @@ function newChangelingfrm()
     obj.defeitosn_q3:setField("defeitos_q3");
     obj.defeitosn_q3:setFontColor("#48484A");
     obj.defeitosn_q3:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_q3, "fontStyle",  "bold");
     obj.defeitosn_q3:setTransparent(true);
 
     obj.defeitosn_q4 = gui.fromHandle(_obj_newObject("edit"));
@@ -5184,6 +5247,7 @@ function newChangelingfrm()
     obj.defeitosn_q4:setField("defeitos_q4");
     obj.defeitosn_q4:setFontColor("#48484A");
     obj.defeitosn_q4:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_q4, "fontStyle",  "bold");
     obj.defeitosn_q4:setTransparent(true);
 
     obj.defeitosn_q5 = gui.fromHandle(_obj_newObject("edit"));
@@ -5196,6 +5260,7 @@ function newChangelingfrm()
     obj.defeitosn_q5:setField("defeitos_q5");
     obj.defeitosn_q5:setFontColor("#48484A");
     obj.defeitosn_q5:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_q5, "fontStyle",  "bold");
     obj.defeitosn_q5:setTransparent(true);
 
     obj.defeitosn_q6 = gui.fromHandle(_obj_newObject("edit"));
@@ -5208,6 +5273,7 @@ function newChangelingfrm()
     obj.defeitosn_q6:setField("defeitos_q6");
     obj.defeitosn_q6:setFontColor("#48484A");
     obj.defeitosn_q6:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_q6, "fontStyle",  "bold");
     obj.defeitosn_q6:setTransparent(true);
 
     obj.defeitosn_q7 = gui.fromHandle(_obj_newObject("edit"));
@@ -5220,6 +5286,7 @@ function newChangelingfrm()
     obj.defeitosn_q7:setField("defeitos_q7");
     obj.defeitosn_q7:setFontColor("#48484A");
     obj.defeitosn_q7:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_q7, "fontStyle",  "bold");
     obj.defeitosn_q7:setTransparent(true);
 
     obj.defeitosn_t1 = gui.fromHandle(_obj_newObject("edit"));
@@ -5233,6 +5300,7 @@ function newChangelingfrm()
     obj.defeitosn_t1:setHorzTextAlign("center");
     obj.defeitosn_t1:setFontColor("#48484A");
     obj.defeitosn_t1:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_t1, "fontStyle",  "bold");
     obj.defeitosn_t1:setTransparent(true);
 
     obj.defeitosn_t2 = gui.fromHandle(_obj_newObject("edit"));
@@ -5246,6 +5314,7 @@ function newChangelingfrm()
     obj.defeitosn_t2:setHorzTextAlign("center");
     obj.defeitosn_t2:setFontColor("#48484A");
     obj.defeitosn_t2:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_t2, "fontStyle",  "bold");
     obj.defeitosn_t2:setTransparent(true);
 
     obj.defeitosn_t3 = gui.fromHandle(_obj_newObject("edit"));
@@ -5259,6 +5328,7 @@ function newChangelingfrm()
     obj.defeitosn_t3:setHorzTextAlign("center");
     obj.defeitosn_t3:setFontColor("#48484A");
     obj.defeitosn_t3:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_t3, "fontStyle",  "bold");
     obj.defeitosn_t3:setTransparent(true);
 
     obj.defeitosn_t4 = gui.fromHandle(_obj_newObject("edit"));
@@ -5272,6 +5342,7 @@ function newChangelingfrm()
     obj.defeitosn_t4:setHorzTextAlign("center");
     obj.defeitosn_t4:setFontColor("#48484A");
     obj.defeitosn_t4:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_t4, "fontStyle",  "bold");
     obj.defeitosn_t4:setTransparent(true);
 
     obj.defeitosn_t5 = gui.fromHandle(_obj_newObject("edit"));
@@ -5285,6 +5356,7 @@ function newChangelingfrm()
     obj.defeitosn_t5:setHorzTextAlign("center");
     obj.defeitosn_t5:setFontColor("#48484A");
     obj.defeitosn_t5:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_t5, "fontStyle",  "bold");
     obj.defeitosn_t5:setTransparent(true);
 
     obj.defeitosn_t6 = gui.fromHandle(_obj_newObject("edit"));
@@ -5298,6 +5370,7 @@ function newChangelingfrm()
     obj.defeitosn_t6:setHorzTextAlign("center");
     obj.defeitosn_t6:setFontColor("#48484A");
     obj.defeitosn_t6:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_t6, "fontStyle",  "bold");
     obj.defeitosn_t6:setTransparent(true);
 
     obj.defeitosn_t7 = gui.fromHandle(_obj_newObject("edit"));
@@ -5311,6 +5384,7 @@ function newChangelingfrm()
     obj.defeitosn_t7:setHorzTextAlign("center");
     obj.defeitosn_t7:setFontColor("#48484A");
     obj.defeitosn_t7:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_t7, "fontStyle",  "bold");
     obj.defeitosn_t7:setTransparent(true);
 
     obj.defeitosn_c1 = gui.fromHandle(_obj_newObject("edit"));
@@ -5324,6 +5398,7 @@ function newChangelingfrm()
     obj.defeitosn_c1:setHorzTextAlign("center");
     obj.defeitosn_c1:setFontColor("#48484A");
     obj.defeitosn_c1:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_c1, "fontStyle",  "bold");
     obj.defeitosn_c1:setTransparent(true);
 
     obj.defeitosn_c2 = gui.fromHandle(_obj_newObject("edit"));
@@ -5337,6 +5412,7 @@ function newChangelingfrm()
     obj.defeitosn_c2:setHorzTextAlign("center");
     obj.defeitosn_c2:setFontColor("#48484A");
     obj.defeitosn_c2:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_c2, "fontStyle",  "bold");
     obj.defeitosn_c2:setTransparent(true);
 
     obj.defeitosn_c3 = gui.fromHandle(_obj_newObject("edit"));
@@ -5350,6 +5426,7 @@ function newChangelingfrm()
     obj.defeitosn_c3:setHorzTextAlign("center");
     obj.defeitosn_c3:setFontColor("#48484A");
     obj.defeitosn_c3:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_c3, "fontStyle",  "bold");
     obj.defeitosn_c3:setTransparent(true);
 
     obj.defeitosn_c4 = gui.fromHandle(_obj_newObject("edit"));
@@ -5363,6 +5440,7 @@ function newChangelingfrm()
     obj.defeitosn_c4:setHorzTextAlign("center");
     obj.defeitosn_c4:setFontColor("#48484A");
     obj.defeitosn_c4:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_c4, "fontStyle",  "bold");
     obj.defeitosn_c4:setTransparent(true);
 
     obj.defeitosn_c5 = gui.fromHandle(_obj_newObject("edit"));
@@ -5376,6 +5454,7 @@ function newChangelingfrm()
     obj.defeitosn_c5:setHorzTextAlign("center");
     obj.defeitosn_c5:setFontColor("#48484A");
     obj.defeitosn_c5:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_c5, "fontStyle",  "bold");
     obj.defeitosn_c5:setTransparent(true);
 
     obj.defeitosn_c6 = gui.fromHandle(_obj_newObject("edit"));
@@ -5389,6 +5468,7 @@ function newChangelingfrm()
     obj.defeitosn_c6:setHorzTextAlign("center");
     obj.defeitosn_c6:setFontColor("#48484A");
     obj.defeitosn_c6:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_c6, "fontStyle",  "bold");
     obj.defeitosn_c6:setTransparent(true);
 
     obj.defeitosn_c7 = gui.fromHandle(_obj_newObject("edit"));
@@ -5402,6 +5482,7 @@ function newChangelingfrm()
     obj.defeitosn_c7:setHorzTextAlign("center");
     obj.defeitosn_c7:setFontColor("#48484A");
     obj.defeitosn_c7:setFontSize(15);
+    lfm_setPropAsString(obj.defeitosn_c7, "fontStyle",  "bold");
     obj.defeitosn_c7:setTransparent(true);
 
     obj.layout86 = gui.fromHandle(_obj_newObject("layout"));
@@ -5422,6 +5503,7 @@ function newChangelingfrm()
     obj.outrascne1:setField("outrasce1");
     obj.outrascne1:setFontColor("#48484A");
     obj.outrascne1:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne1, "fontStyle",  "bold");
     obj.outrascne1:setTransparent(true);
 
     obj.outrascne2 = gui.fromHandle(_obj_newObject("edit"));
@@ -5434,6 +5516,7 @@ function newChangelingfrm()
     obj.outrascne2:setField("outrasce2");
     obj.outrascne2:setFontColor("#48484A");
     obj.outrascne2:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne2, "fontStyle",  "bold");
     obj.outrascne2:setTransparent(true);
 
     obj.outrascne3 = gui.fromHandle(_obj_newObject("edit"));
@@ -5446,6 +5529,7 @@ function newChangelingfrm()
     obj.outrascne3:setField("outrasce3");
     obj.outrascne3:setFontColor("#48484A");
     obj.outrascne3:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne3, "fontStyle",  "bold");
     obj.outrascne3:setTransparent(true);
 
     obj.outrascne4 = gui.fromHandle(_obj_newObject("edit"));
@@ -5458,6 +5542,7 @@ function newChangelingfrm()
     obj.outrascne4:setField("outrasce4");
     obj.outrascne4:setFontColor("#48484A");
     obj.outrascne4:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne4, "fontStyle",  "bold");
     obj.outrascne4:setTransparent(true);
 
     obj.outrascne5 = gui.fromHandle(_obj_newObject("edit"));
@@ -5470,6 +5555,7 @@ function newChangelingfrm()
     obj.outrascne5:setField("outrasce5");
     obj.outrascne5:setFontColor("#48484A");
     obj.outrascne5:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne5, "fontStyle",  "bold");
     obj.outrascne5:setTransparent(true);
 
     obj.layout87 = gui.fromHandle(_obj_newObject("layout"));
@@ -5742,6 +5828,7 @@ function newChangelingfrm()
     obj.outrascne6:setField("outrasce6");
     obj.outrascne6:setFontColor("#48484A");
     obj.outrascne6:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne6, "fontStyle",  "bold");
     obj.outrascne6:setTransparent(true);
 
     obj.outrascne7 = gui.fromHandle(_obj_newObject("edit"));
@@ -5754,6 +5841,7 @@ function newChangelingfrm()
     obj.outrascne7:setField("outrasce7");
     obj.outrascne7:setFontColor("#48484A");
     obj.outrascne7:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne7, "fontStyle",  "bold");
     obj.outrascne7:setTransparent(true);
 
     obj.outrascne8 = gui.fromHandle(_obj_newObject("edit"));
@@ -5766,6 +5854,7 @@ function newChangelingfrm()
     obj.outrascne8:setField("outrasce8");
     obj.outrascne8:setFontColor("#48484A");
     obj.outrascne8:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne8, "fontStyle",  "bold");
     obj.outrascne8:setTransparent(true);
 
     obj.outrascne9 = gui.fromHandle(_obj_newObject("edit"));
@@ -5778,6 +5867,7 @@ function newChangelingfrm()
     obj.outrascne9:setField("outrasce9");
     obj.outrascne9:setFontColor("#48484A");
     obj.outrascne9:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne9, "fontStyle",  "bold");
     obj.outrascne9:setTransparent(true);
 
     obj.outrascne10 = gui.fromHandle(_obj_newObject("edit"));
@@ -5790,6 +5880,7 @@ function newChangelingfrm()
     obj.outrascne10:setField("outrasce10");
     obj.outrascne10:setFontColor("#48484A");
     obj.outrascne10:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne10, "fontStyle",  "bold");
     obj.outrascne10:setTransparent(true);
 
     obj.layout92 = gui.fromHandle(_obj_newObject("layout"));
@@ -6062,6 +6153,7 @@ function newChangelingfrm()
     obj.outrascne11:setField("outrasce11");
     obj.outrascne11:setFontColor("#48484A");
     obj.outrascne11:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne11, "fontStyle",  "bold");
     obj.outrascne11:setTransparent(true);
 
     obj.outrascne12 = gui.fromHandle(_obj_newObject("edit"));
@@ -6074,6 +6166,7 @@ function newChangelingfrm()
     obj.outrascne12:setField("outrasce12");
     obj.outrascne12:setFontColor("#48484A");
     obj.outrascne12:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne12, "fontStyle",  "bold");
     obj.outrascne12:setTransparent(true);
 
     obj.outrascne13 = gui.fromHandle(_obj_newObject("edit"));
@@ -6086,6 +6179,7 @@ function newChangelingfrm()
     obj.outrascne13:setField("outrasce13");
     obj.outrascne13:setFontColor("#48484A");
     obj.outrascne13:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne13, "fontStyle",  "bold");
     obj.outrascne13:setTransparent(true);
 
     obj.outrascne14 = gui.fromHandle(_obj_newObject("edit"));
@@ -6098,6 +6192,7 @@ function newChangelingfrm()
     obj.outrascne14:setField("outrasce14");
     obj.outrascne14:setFontColor("#48484A");
     obj.outrascne14:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne14, "fontStyle",  "bold");
     obj.outrascne14:setTransparent(true);
 
     obj.outrascne15 = gui.fromHandle(_obj_newObject("edit"));
@@ -6110,6 +6205,7 @@ function newChangelingfrm()
     obj.outrascne15:setField("outrasce15");
     obj.outrascne15:setFontColor("#48484A");
     obj.outrascne15:setFontSize(15);
+    lfm_setPropAsString(obj.outrascne15, "fontStyle",  "bold");
     obj.outrascne15:setTransparent(true);
 
     obj.layout97 = gui.fromHandle(_obj_newObject("layout"));
@@ -6390,6 +6486,7 @@ function newChangelingfrm()
     obj.objeton1:setField("objeto1");
     obj.objeton1:setFontColor("#48484A");
     obj.objeton1:setFontSize(15);
+    lfm_setPropAsString(obj.objeton1, "fontStyle",  "bold");
     obj.objeton1:setTransparent(true);
 
     obj.objeton2 = gui.fromHandle(_obj_newObject("edit"));
@@ -6402,6 +6499,7 @@ function newChangelingfrm()
     obj.objeton2:setField("objeto2");
     obj.objeton2:setFontColor("#48484A");
     obj.objeton2:setFontSize(15);
+    lfm_setPropAsString(obj.objeton2, "fontStyle",  "bold");
     obj.objeton2:setTransparent(true);
 
     obj.objeton3 = gui.fromHandle(_obj_newObject("edit"));
@@ -6414,6 +6512,7 @@ function newChangelingfrm()
     obj.objeton3:setField("objeto3");
     obj.objeton3:setFontColor("#48484A");
     obj.objeton3:setFontSize(15);
+    lfm_setPropAsString(obj.objeton3, "fontStyle",  "bold");
     obj.objeton3:setTransparent(true);
 
     obj.objeton4 = gui.fromHandle(_obj_newObject("edit"));
@@ -6426,6 +6525,7 @@ function newChangelingfrm()
     obj.objeton4:setField("objeto4");
     obj.objeton4:setFontColor("#48484A");
     obj.objeton4:setFontSize(15);
+    lfm_setPropAsString(obj.objeton4, "fontStyle",  "bold");
     obj.objeton4:setTransparent(true);
 
     obj.objeton5 = gui.fromHandle(_obj_newObject("edit"));
@@ -6438,6 +6538,7 @@ function newChangelingfrm()
     obj.objeton5:setField("objeto5");
     obj.objeton5:setFontColor("#48484A");
     obj.objeton5:setFontSize(15);
+    lfm_setPropAsString(obj.objeton5, "fontStyle",  "bold");
     obj.objeton5:setTransparent(true);
 
     obj.objeton6 = gui.fromHandle(_obj_newObject("edit"));
@@ -6450,6 +6551,7 @@ function newChangelingfrm()
     obj.objeton6:setField("objeto6");
     obj.objeton6:setFontColor("#48484A");
     obj.objeton6:setFontSize(15);
+    lfm_setPropAsString(obj.objeton6, "fontStyle",  "bold");
     obj.objeton6:setTransparent(true);
 
     obj.objeton7 = gui.fromHandle(_obj_newObject("edit"));
@@ -6462,6 +6564,7 @@ function newChangelingfrm()
     obj.objeton7:setField("objeto7");
     obj.objeton7:setFontColor("#48484A");
     obj.objeton7:setFontSize(15);
+    lfm_setPropAsString(obj.objeton7, "fontStyle",  "bold");
     obj.objeton7:setTransparent(true);
 
     obj.objeton8 = gui.fromHandle(_obj_newObject("edit"));
@@ -6474,6 +6577,7 @@ function newChangelingfrm()
     obj.objeton8:setField("objeto8");
     obj.objeton8:setFontColor("#48484A");
     obj.objeton8:setFontSize(15);
+    lfm_setPropAsString(obj.objeton8, "fontStyle",  "bold");
     obj.objeton8:setTransparent(true);
 
     obj.objetonc1 = gui.fromHandle(_obj_newObject("edit"));
@@ -6487,6 +6591,7 @@ function newChangelingfrm()
     obj.objetonc1:setHorzTextAlign("center");
     obj.objetonc1:setFontColor("#48484A");
     obj.objetonc1:setFontSize(15);
+    lfm_setPropAsString(obj.objetonc1, "fontStyle",  "bold");
     obj.objetonc1:setTransparent(true);
 
     obj.objetonc2 = gui.fromHandle(_obj_newObject("edit"));
@@ -6500,6 +6605,7 @@ function newChangelingfrm()
     obj.objetonc2:setHorzTextAlign("center");
     obj.objetonc2:setFontColor("#48484A");
     obj.objetonc2:setFontSize(15);
+    lfm_setPropAsString(obj.objetonc2, "fontStyle",  "bold");
     obj.objetonc2:setTransparent(true);
 
     obj.objetonc3 = gui.fromHandle(_obj_newObject("edit"));
@@ -6513,6 +6619,7 @@ function newChangelingfrm()
     obj.objetonc3:setHorzTextAlign("center");
     obj.objetonc3:setFontColor("#48484A");
     obj.objetonc3:setFontSize(15);
+    lfm_setPropAsString(obj.objetonc3, "fontStyle",  "bold");
     obj.objetonc3:setTransparent(true);
 
     obj.objetonc4 = gui.fromHandle(_obj_newObject("edit"));
@@ -6526,6 +6633,7 @@ function newChangelingfrm()
     obj.objetonc4:setHorzTextAlign("center");
     obj.objetonc4:setFontColor("#48484A");
     obj.objetonc4:setFontSize(15);
+    lfm_setPropAsString(obj.objetonc4, "fontStyle",  "bold");
     obj.objetonc4:setTransparent(true);
 
     obj.objetonc5 = gui.fromHandle(_obj_newObject("edit"));
@@ -6539,6 +6647,7 @@ function newChangelingfrm()
     obj.objetonc5:setHorzTextAlign("center");
     obj.objetonc5:setFontColor("#48484A");
     obj.objetonc5:setFontSize(15);
+    lfm_setPropAsString(obj.objetonc5, "fontStyle",  "bold");
     obj.objetonc5:setTransparent(true);
 
     obj.objetonc6 = gui.fromHandle(_obj_newObject("edit"));
@@ -6552,6 +6661,7 @@ function newChangelingfrm()
     obj.objetonc6:setHorzTextAlign("center");
     obj.objetonc6:setFontColor("#48484A");
     obj.objetonc6:setFontSize(15);
+    lfm_setPropAsString(obj.objetonc6, "fontStyle",  "bold");
     obj.objetonc6:setTransparent(true);
 
     obj.objetonc7 = gui.fromHandle(_obj_newObject("edit"));
@@ -6565,6 +6675,7 @@ function newChangelingfrm()
     obj.objetonc7:setHorzTextAlign("center");
     obj.objetonc7:setFontColor("#48484A");
     obj.objetonc7:setFontSize(15);
+    lfm_setPropAsString(obj.objetonc7, "fontStyle",  "bold");
     obj.objetonc7:setTransparent(true);
 
     obj.objetonc8 = gui.fromHandle(_obj_newObject("edit"));
@@ -6578,6 +6689,7 @@ function newChangelingfrm()
     obj.objetonc8:setHorzTextAlign("center");
     obj.objetonc8:setFontColor("#48484A");
     obj.objetonc8:setFontSize(15);
+    lfm_setPropAsString(obj.objetonc8, "fontStyle",  "bold");
     obj.objetonc8:setTransparent(true);
 
     obj.layout103 = gui.fromHandle(_obj_newObject("layout"));
@@ -6592,9 +6704,9 @@ function newChangelingfrm()
     obj.textEditor1:setParent(obj.layout103);
     obj.textEditor1:setAlign("client");
     obj.textEditor1:setField("companhiasq");
-    lfm_setPropAsString(obj.textEditor1, "fontStyle",  "underline");
     obj.textEditor1:setFontColor("#48484A");
     obj.textEditor1:setFontSize(15);
+    lfm_setPropAsString(obj.textEditor1, "fontStyle",  "bold");
     obj.textEditor1:setTransparent(false);
     obj.textEditor1:setName("textEditor1");
 
@@ -6610,9 +6722,9 @@ function newChangelingfrm()
     obj.textEditor2:setParent(obj.layout104);
     obj.textEditor2:setAlign("client");
     obj.textEditor2:setField("experienciad");
-    lfm_setPropAsString(obj.textEditor2, "fontStyle",  "underline");
     obj.textEditor2:setFontColor("#48484A");
     obj.textEditor2:setFontSize(15);
+    lfm_setPropAsString(obj.textEditor2, "fontStyle",  "bold");
     obj.textEditor2:setTransparent(false);
     obj.textEditor2:setName("textEditor2");
 
@@ -6634,6 +6746,7 @@ function newChangelingfrm()
     obj.arman1:setHorzTextAlign("center");
     obj.arman1:setFontColor("#48484A");
     obj.arman1:setFontSize(15);
+    lfm_setPropAsString(obj.arman1, "fontStyle",  "bold");
     obj.arman1:setTransparent(true);
 
     obj.arman2 = gui.fromHandle(_obj_newObject("edit"));
@@ -6647,6 +6760,7 @@ function newChangelingfrm()
     obj.arman2:setHorzTextAlign("center");
     obj.arman2:setFontColor("#48484A");
     obj.arman2:setFontSize(15);
+    lfm_setPropAsString(obj.arman2, "fontStyle",  "bold");
     obj.arman2:setTransparent(true);
 
     obj.arman3 = gui.fromHandle(_obj_newObject("edit"));
@@ -6660,6 +6774,7 @@ function newChangelingfrm()
     obj.arman3:setHorzTextAlign("center");
     obj.arman3:setFontColor("#48484A");
     obj.arman3:setFontSize(15);
+    lfm_setPropAsString(obj.arman3, "fontStyle",  "bold");
     obj.arman3:setTransparent(true);
 
     obj.arman4 = gui.fromHandle(_obj_newObject("edit"));
@@ -6673,6 +6788,7 @@ function newChangelingfrm()
     obj.arman4:setHorzTextAlign("center");
     obj.arman4:setFontColor("#48484A");
     obj.arman4:setFontSize(15);
+    lfm_setPropAsString(obj.arman4, "fontStyle",  "bold");
     obj.arman4:setTransparent(true);
 
     obj.arman5 = gui.fromHandle(_obj_newObject("edit"));
@@ -6686,6 +6802,7 @@ function newChangelingfrm()
     obj.arman5:setHorzTextAlign("center");
     obj.arman5:setFontColor("#48484A");
     obj.arman5:setFontSize(15);
+    lfm_setPropAsString(obj.arman5, "fontStyle",  "bold");
     obj.arman5:setTransparent(true);
 
     obj.arman6 = gui.fromHandle(_obj_newObject("edit"));
@@ -6699,6 +6816,7 @@ function newChangelingfrm()
     obj.arman6:setHorzTextAlign("center");
     obj.arman6:setFontColor("#48484A");
     obj.arman6:setFontSize(15);
+    lfm_setPropAsString(obj.arman6, "fontStyle",  "bold");
     obj.arman6:setTransparent(true);
 
     obj.armand1 = gui.fromHandle(_obj_newObject("edit"));
@@ -6711,6 +6829,7 @@ function newChangelingfrm()
     obj.armand1:setHorzTextAlign("center");
     obj.armand1:setFontColor("#48484A");
     obj.armand1:setFontSize(15);
+    lfm_setPropAsString(obj.armand1, "fontStyle",  "bold");
     obj.armand1:setTransparent(true);
 
     obj.armand2 = gui.fromHandle(_obj_newObject("edit"));
@@ -6724,6 +6843,7 @@ function newChangelingfrm()
     obj.armand2:setHorzTextAlign("center");
     obj.armand2:setFontColor("#48484A");
     obj.armand2:setFontSize(15);
+    lfm_setPropAsString(obj.armand2, "fontStyle",  "bold");
     obj.armand2:setTransparent(true);
 
     obj.armand3 = gui.fromHandle(_obj_newObject("edit"));
@@ -6737,6 +6857,7 @@ function newChangelingfrm()
     obj.armand3:setHorzTextAlign("center");
     obj.armand3:setFontColor("#48484A");
     obj.armand3:setFontSize(15);
+    lfm_setPropAsString(obj.armand3, "fontStyle",  "bold");
     obj.armand3:setTransparent(true);
 
     obj.armand4 = gui.fromHandle(_obj_newObject("edit"));
@@ -6750,6 +6871,7 @@ function newChangelingfrm()
     obj.armand4:setHorzTextAlign("center");
     obj.armand4:setFontColor("#48484A");
     obj.armand4:setFontSize(15);
+    lfm_setPropAsString(obj.armand4, "fontStyle",  "bold");
     obj.armand4:setTransparent(true);
 
     obj.armand5 = gui.fromHandle(_obj_newObject("edit"));
@@ -6763,6 +6885,7 @@ function newChangelingfrm()
     obj.armand5:setHorzTextAlign("center");
     obj.armand5:setFontColor("#48484A");
     obj.armand5:setFontSize(15);
+    lfm_setPropAsString(obj.armand5, "fontStyle",  "bold");
     obj.armand5:setTransparent(true);
 
     obj.armand6 = gui.fromHandle(_obj_newObject("edit"));
@@ -6776,6 +6899,7 @@ function newChangelingfrm()
     obj.armand6:setHorzTextAlign("center");
     obj.armand6:setFontColor("#48484A");
     obj.armand6:setFontSize(15);
+    lfm_setPropAsString(obj.armand6, "fontStyle",  "bold");
     obj.armand6:setTransparent(true);
 
     obj.armandn1 = gui.fromHandle(_obj_newObject("edit"));
@@ -6788,6 +6912,7 @@ function newChangelingfrm()
     obj.armandn1:setHorzTextAlign("center");
     obj.armandn1:setFontColor("#48484A");
     obj.armandn1:setFontSize(15);
+    lfm_setPropAsString(obj.armandn1, "fontStyle",  "bold");
     obj.armandn1:setTransparent(true);
 
     obj.armandn2 = gui.fromHandle(_obj_newObject("edit"));
@@ -6801,6 +6926,7 @@ function newChangelingfrm()
     obj.armandn2:setHorzTextAlign("center");
     obj.armandn2:setFontColor("#48484A");
     obj.armandn2:setFontSize(15);
+    lfm_setPropAsString(obj.armandn2, "fontStyle",  "bold");
     obj.armandn2:setTransparent(true);
 
     obj.armandn3 = gui.fromHandle(_obj_newObject("edit"));
@@ -6814,6 +6940,7 @@ function newChangelingfrm()
     obj.armandn3:setHorzTextAlign("center");
     obj.armandn3:setFontColor("#48484A");
     obj.armandn3:setFontSize(15);
+    lfm_setPropAsString(obj.armandn3, "fontStyle",  "bold");
     obj.armandn3:setTransparent(true);
 
     obj.armandn4 = gui.fromHandle(_obj_newObject("edit"));
@@ -6827,6 +6954,7 @@ function newChangelingfrm()
     obj.armandn4:setHorzTextAlign("center");
     obj.armandn4:setFontColor("#48484A");
     obj.armandn4:setFontSize(15);
+    lfm_setPropAsString(obj.armandn4, "fontStyle",  "bold");
     obj.armandn4:setTransparent(true);
 
     obj.armandn5 = gui.fromHandle(_obj_newObject("edit"));
@@ -6840,6 +6968,7 @@ function newChangelingfrm()
     obj.armandn5:setHorzTextAlign("center");
     obj.armandn5:setFontColor("#48484A");
     obj.armandn5:setFontSize(15);
+    lfm_setPropAsString(obj.armandn5, "fontStyle",  "bold");
     obj.armandn5:setTransparent(true);
 
     obj.armandn6 = gui.fromHandle(_obj_newObject("edit"));
@@ -6853,6 +6982,7 @@ function newChangelingfrm()
     obj.armandn6:setHorzTextAlign("center");
     obj.armandn6:setFontColor("#48484A");
     obj.armandn6:setFontSize(15);
+    lfm_setPropAsString(obj.armandn6, "fontStyle",  "bold");
     obj.armandn6:setTransparent(true);
 
     obj.armana1 = gui.fromHandle(_obj_newObject("edit"));
@@ -6865,6 +6995,7 @@ function newChangelingfrm()
     obj.armana1:setHorzTextAlign("center");
     obj.armana1:setFontColor("#48484A");
     obj.armana1:setFontSize(15);
+    lfm_setPropAsString(obj.armana1, "fontStyle",  "bold");
     obj.armana1:setTransparent(true);
 
     obj.armana2 = gui.fromHandle(_obj_newObject("edit"));
@@ -6878,6 +7009,7 @@ function newChangelingfrm()
     obj.armana2:setHorzTextAlign("center");
     obj.armana2:setFontColor("#48484A");
     obj.armana2:setFontSize(15);
+    lfm_setPropAsString(obj.armana2, "fontStyle",  "bold");
     obj.armana2:setTransparent(true);
 
     obj.armana3 = gui.fromHandle(_obj_newObject("edit"));
@@ -6891,6 +7023,7 @@ function newChangelingfrm()
     obj.armana3:setHorzTextAlign("center");
     obj.armana3:setFontColor("#48484A");
     obj.armana3:setFontSize(15);
+    lfm_setPropAsString(obj.armana3, "fontStyle",  "bold");
     obj.armana3:setTransparent(true);
 
     obj.armana4 = gui.fromHandle(_obj_newObject("edit"));
@@ -6904,6 +7037,7 @@ function newChangelingfrm()
     obj.armana4:setHorzTextAlign("center");
     obj.armana4:setFontColor("#48484A");
     obj.armana4:setFontSize(15);
+    lfm_setPropAsString(obj.armana4, "fontStyle",  "bold");
     obj.armana4:setTransparent(true);
 
     obj.armana5 = gui.fromHandle(_obj_newObject("edit"));
@@ -6917,6 +7051,7 @@ function newChangelingfrm()
     obj.armana5:setHorzTextAlign("center");
     obj.armana5:setFontColor("#48484A");
     obj.armana5:setFontSize(15);
+    lfm_setPropAsString(obj.armana5, "fontStyle",  "bold");
     obj.armana5:setTransparent(true);
 
     obj.armana6 = gui.fromHandle(_obj_newObject("edit"));
@@ -6930,6 +7065,7 @@ function newChangelingfrm()
     obj.armana6:setHorzTextAlign("center");
     obj.armana6:setFontColor("#48484A");
     obj.armana6:setFontSize(15);
+    lfm_setPropAsString(obj.armana6, "fontStyle",  "bold");
     obj.armana6:setTransparent(true);
 
     obj.armanc1 = gui.fromHandle(_obj_newObject("edit"));
@@ -6942,6 +7078,7 @@ function newChangelingfrm()
     obj.armanc1:setHorzTextAlign("center");
     obj.armanc1:setFontColor("#48484A");
     obj.armanc1:setFontSize(15);
+    lfm_setPropAsString(obj.armanc1, "fontStyle",  "bold");
     obj.armanc1:setTransparent(true);
 
     obj.armanc2 = gui.fromHandle(_obj_newObject("edit"));
@@ -6955,6 +7092,7 @@ function newChangelingfrm()
     obj.armanc2:setHorzTextAlign("center");
     obj.armanc2:setFontColor("#48484A");
     obj.armanc2:setFontSize(15);
+    lfm_setPropAsString(obj.armanc2, "fontStyle",  "bold");
     obj.armanc2:setTransparent(true);
 
     obj.armanc3 = gui.fromHandle(_obj_newObject("edit"));
@@ -6968,6 +7106,7 @@ function newChangelingfrm()
     obj.armanc3:setHorzTextAlign("center");
     obj.armanc3:setFontColor("#48484A");
     obj.armanc3:setFontSize(15);
+    lfm_setPropAsString(obj.armanc3, "fontStyle",  "bold");
     obj.armanc3:setTransparent(true);
 
     obj.armanc4 = gui.fromHandle(_obj_newObject("edit"));
@@ -6981,6 +7120,7 @@ function newChangelingfrm()
     obj.armanc4:setHorzTextAlign("center");
     obj.armanc4:setFontColor("#48484A");
     obj.armanc4:setFontSize(15);
+    lfm_setPropAsString(obj.armanc4, "fontStyle",  "bold");
     obj.armanc4:setTransparent(true);
 
     obj.armanc5 = gui.fromHandle(_obj_newObject("edit"));
@@ -6994,6 +7134,7 @@ function newChangelingfrm()
     obj.armanc5:setHorzTextAlign("center");
     obj.armanc5:setFontColor("#48484A");
     obj.armanc5:setFontSize(15);
+    lfm_setPropAsString(obj.armanc5, "fontStyle",  "bold");
     obj.armanc5:setTransparent(true);
 
     obj.armanc6 = gui.fromHandle(_obj_newObject("edit"));
@@ -7007,6 +7148,7 @@ function newChangelingfrm()
     obj.armanc6:setHorzTextAlign("center");
     obj.armanc6:setFontColor("#48484A");
     obj.armanc6:setFontSize(15);
+    lfm_setPropAsString(obj.armanc6, "fontStyle",  "bold");
     obj.armanc6:setTransparent(true);
 
     obj.armanp1 = gui.fromHandle(_obj_newObject("edit"));
@@ -7019,6 +7161,7 @@ function newChangelingfrm()
     obj.armanp1:setHorzTextAlign("center");
     obj.armanp1:setFontColor("#48484A");
     obj.armanp1:setFontSize(15);
+    lfm_setPropAsString(obj.armanp1, "fontStyle",  "bold");
     obj.armanp1:setTransparent(true);
 
     obj.armanp2 = gui.fromHandle(_obj_newObject("edit"));
@@ -7032,6 +7175,7 @@ function newChangelingfrm()
     obj.armanp2:setHorzTextAlign("center");
     obj.armanp2:setFontColor("#48484A");
     obj.armanp2:setFontSize(15);
+    lfm_setPropAsString(obj.armanp2, "fontStyle",  "bold");
     obj.armanp2:setTransparent(true);
 
     obj.armanp3 = gui.fromHandle(_obj_newObject("edit"));
@@ -7045,6 +7189,7 @@ function newChangelingfrm()
     obj.armanp3:setHorzTextAlign("center");
     obj.armanp3:setFontColor("#48484A");
     obj.armanp3:setFontSize(15);
+    lfm_setPropAsString(obj.armanp3, "fontStyle",  "bold");
     obj.armanp3:setTransparent(true);
 
     obj.armanp4 = gui.fromHandle(_obj_newObject("edit"));
@@ -7058,6 +7203,7 @@ function newChangelingfrm()
     obj.armanp4:setHorzTextAlign("center");
     obj.armanp4:setFontColor("#48484A");
     obj.armanp4:setFontSize(15);
+    lfm_setPropAsString(obj.armanp4, "fontStyle",  "bold");
     obj.armanp4:setTransparent(true);
 
     obj.armanp5 = gui.fromHandle(_obj_newObject("edit"));
@@ -7071,6 +7217,7 @@ function newChangelingfrm()
     obj.armanp5:setHorzTextAlign("center");
     obj.armanp5:setFontColor("#48484A");
     obj.armanp5:setFontSize(15);
+    lfm_setPropAsString(obj.armanp5, "fontStyle",  "bold");
     obj.armanp5:setTransparent(true);
 
     obj.armanp6 = gui.fromHandle(_obj_newObject("edit"));
@@ -7084,6 +7231,7 @@ function newChangelingfrm()
     obj.armanp6:setHorzTextAlign("center");
     obj.armanp6:setFontColor("#48484A");
     obj.armanp6:setFontSize(15);
+    lfm_setPropAsString(obj.armanp6, "fontStyle",  "bold");
     obj.armanp6:setTransparent(true);
 
     obj.armano1 = gui.fromHandle(_obj_newObject("edit"));
@@ -7097,6 +7245,7 @@ function newChangelingfrm()
     obj.armano1:setHorzTextAlign("center");
     obj.armano1:setFontColor("#48484A");
     obj.armano1:setFontSize(15);
+    lfm_setPropAsString(obj.armano1, "fontStyle",  "bold");
     obj.armano1:setTransparent(true);
 
     obj.armano2 = gui.fromHandle(_obj_newObject("edit"));
@@ -7110,6 +7259,7 @@ function newChangelingfrm()
     obj.armano2:setHorzTextAlign("center");
     obj.armano2:setFontColor("#48484A");
     obj.armano2:setFontSize(15);
+    lfm_setPropAsString(obj.armano2, "fontStyle",  "bold");
     obj.armano2:setTransparent(true);
 
     obj.armano3 = gui.fromHandle(_obj_newObject("edit"));
@@ -7123,6 +7273,7 @@ function newChangelingfrm()
     obj.armano3:setHorzTextAlign("center");
     obj.armano3:setFontColor("#48484A");
     obj.armano3:setFontSize(15);
+    lfm_setPropAsString(obj.armano3, "fontStyle",  "bold");
     obj.armano3:setTransparent(true);
 
     obj.armano4 = gui.fromHandle(_obj_newObject("edit"));
@@ -7136,6 +7287,7 @@ function newChangelingfrm()
     obj.armano4:setHorzTextAlign("center");
     obj.armano4:setFontColor("#48484A");
     obj.armano4:setFontSize(15);
+    lfm_setPropAsString(obj.armano4, "fontStyle",  "bold");
     obj.armano4:setTransparent(true);
 
     obj.armano5 = gui.fromHandle(_obj_newObject("edit"));
@@ -7149,6 +7301,7 @@ function newChangelingfrm()
     obj.armano5:setHorzTextAlign("center");
     obj.armano5:setFontColor("#48484A");
     obj.armano5:setFontSize(15);
+    lfm_setPropAsString(obj.armano5, "fontStyle",  "bold");
     obj.armano5:setTransparent(true);
 
     obj.armano6 = gui.fromHandle(_obj_newObject("edit"));
@@ -7162,6 +7315,7 @@ function newChangelingfrm()
     obj.armano6:setHorzTextAlign("center");
     obj.armano6:setFontColor("#48484A");
     obj.armano6:setFontSize(15);
+    lfm_setPropAsString(obj.armano6, "fontStyle",  "bold");
     obj.armano6:setTransparent(true);
 
     obj.layout106 = gui.fromHandle(_obj_newObject("layout"));
@@ -7182,6 +7336,7 @@ function newChangelingfrm()
     obj.aclassen:setField("aclasse");
     obj.aclassen:setFontColor("#48484A");
     obj.aclassen:setFontSize(16);
+    lfm_setPropAsString(obj.aclassen, "fontStyle",  "bold");
     obj.aclassen:setTransparent(true);
 
     obj.aprotecaon = gui.fromHandle(_obj_newObject("edit"));
@@ -7194,6 +7349,7 @@ function newChangelingfrm()
     obj.aprotecaon:setField("aprotecao");
     obj.aprotecaon:setFontColor("#48484A");
     obj.aprotecaon:setFontSize(16);
+    lfm_setPropAsString(obj.aprotecaon, "fontStyle",  "bold");
     obj.aprotecaon:setTransparent(true);
 
     obj.appenalidaden = gui.fromHandle(_obj_newObject("edit"));
@@ -7206,6 +7362,7 @@ function newChangelingfrm()
     obj.appenalidaden:setField("apenalidade");
     obj.appenalidaden:setFontColor("#48484A");
     obj.appenalidaden:setFontSize(16);
+    lfm_setPropAsString(obj.appenalidaden, "fontStyle",  "bold");
     obj.appenalidaden:setTransparent(true);
 
     obj.rectangle4 = gui.fromHandle(_obj_newObject("rectangle"));
@@ -7236,6 +7393,7 @@ function newChangelingfrm()
     obj.adescricaon:setField("adescricao");
     obj.adescricaon:setFontColor("#48484A");
     obj.adescricaon:setFontSize(15);
+    lfm_setPropAsString(obj.adescricaon, "fontStyle",  "bold");
     obj.adescricaon:setTransparent(true);
 
     obj.rectangle6 = gui.fromHandle(_obj_newObject("rectangle"));
@@ -7288,6 +7446,7 @@ function newChangelingfrm()
     obj.aliadosn:setField("aliados");
     obj.aliadosn:setFontColor("#48484A");
     obj.aliadosn:setFontSize(15);
+    lfm_setPropAsString(obj.aliadosn, "fontStyle",  "bold");
     obj.aliadosn:setTransparent(false);
 
     obj.juramentosn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7300,6 +7459,7 @@ function newChangelingfrm()
     obj.juramentosn:setField("juramentos");
     obj.juramentosn:setFontColor("#48484A");
     obj.juramentosn:setFontSize(15);
+    lfm_setPropAsString(obj.juramentosn, "fontStyle",  "bold");
     obj.juramentosn:setTransparent(false);
 
     obj.contatosn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7312,6 +7472,7 @@ function newChangelingfrm()
     obj.contatosn:setField("contatos");
     obj.contatosn:setFontColor("#48484A");
     obj.contatosn:setFontSize(15);
+    lfm_setPropAsString(obj.contatosn, "fontStyle",  "bold");
     obj.contatosn:setTransparent(false);
 
     obj.lemorancasn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7324,6 +7485,7 @@ function newChangelingfrm()
     obj.lemorancasn:setField("lemorancas");
     obj.lemorancasn:setFontColor("#48484A");
     obj.lemorancasn:setFontSize(15);
+    lfm_setPropAsString(obj.lemorancasn, "fontStyle",  "bold");
     obj.lemorancasn:setTransparent(false);
 
     obj.sonhadoresn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7336,6 +7498,7 @@ function newChangelingfrm()
     obj.sonhadoresn:setField("sonhadores");
     obj.sonhadoresn:setFontColor("#48484A");
     obj.sonhadoresn:setFontSize(15);
+    lfm_setPropAsString(obj.sonhadoresn, "fontStyle",  "bold");
     obj.sonhadoresn:setTransparent(false);
 
     obj.recursosn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7348,6 +7511,7 @@ function newChangelingfrm()
     obj.recursosn:setField("recursos");
     obj.recursosn:setFontColor("#48484A");
     obj.recursosn:setFontSize(15);
+    lfm_setPropAsString(obj.recursosn, "fontStyle",  "bold");
     obj.recursosn:setTransparent(false);
 
     obj.possesn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7360,6 +7524,7 @@ function newChangelingfrm()
     obj.possesn:setField("posses");
     obj.possesn:setFontColor("#48484A");
     obj.possesn:setFontSize(15);
+    lfm_setPropAsString(obj.possesn, "fontStyle",  "bold");
     obj.possesn:setTransparent(false);
 
     obj.sequiton = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7372,6 +7537,7 @@ function newChangelingfrm()
     obj.sequiton:setField("sequito");
     obj.sequiton:setFontColor("#48484A");
     obj.sequiton:setFontSize(15);
+    lfm_setPropAsString(obj.sequiton, "fontStyle",  "bold");
     obj.sequiton:setTransparent(false);
 
     obj.outroanln = gui.fromHandle(_obj_newObject("edit"));
@@ -7385,6 +7551,7 @@ function newChangelingfrm()
     obj.outroanln:setFontColor("#48484A");
     obj.outroanln:setHorzTextAlign("center");
     obj.outroanln:setFontSize(18);
+    lfm_setPropAsString(obj.outroanln, "fontStyle",  "bold");
     obj.outroanln:setTransparent(true);
 
     obj.mentorn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7397,6 +7564,7 @@ function newChangelingfrm()
     obj.mentorn:setField("mentor");
     obj.mentorn:setFontColor("#48484A");
     obj.mentorn:setFontSize(15);
+    lfm_setPropAsString(obj.mentorn, "fontStyle",  "bold");
     obj.mentorn:setTransparent(false);
 
     obj.outroann = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7409,6 +7577,7 @@ function newChangelingfrm()
     obj.outroann:setField("outroan");
     obj.outroann:setFontColor("#48484A");
     obj.outroann:setFontSize(15);
+    lfm_setPropAsString(obj.outroann, "fontStyle",  "bold");
     obj.outroann:setTransparent(false);
 
     obj.equipamentoscn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7421,6 +7590,7 @@ function newChangelingfrm()
     obj.equipamentoscn:setField("equipamentosc");
     obj.equipamentoscn:setFontColor("#48484A");
     obj.equipamentoscn:setFontSize(15);
+    lfm_setPropAsString(obj.equipamentoscn, "fontStyle",  "bold");
     obj.equipamentoscn:setTransparent(false);
 
     obj.equipamentospn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7433,6 +7603,7 @@ function newChangelingfrm()
     obj.equipamentospn:setField("equipamentopc");
     obj.equipamentospn:setFontColor("#48484A");
     obj.equipamentospn:setFontSize(15);
+    lfm_setPropAsString(obj.equipamentospn, "fontStyle",  "bold");
     obj.equipamentospn:setTransparent(false);
 
     obj.tesourosn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7445,6 +7616,7 @@ function newChangelingfrm()
     obj.tesourosn:setField("tesouros");
     obj.tesourosn:setFontColor("#48484A");
     obj.tesourosn:setFontSize(15);
+    lfm_setPropAsString(obj.tesourosn, "fontStyle",  "bold");
     obj.tesourosn:setTransparent(false);
 
     obj.outrospertenn = gui.fromHandle(_obj_newObject("textEditor"));
@@ -7457,6 +7629,7 @@ function newChangelingfrm()
     obj.outrospertenn:setField("outrosperten");
     obj.outrospertenn:setFontColor("#48484A");
     obj.outrospertenn:setFontSize(15);
+    lfm_setPropAsString(obj.outrospertenn, "fontStyle",  "bold");
     obj.outrospertenn:setTransparent(false);
 
     obj.propriedan1 = gui.fromHandle(_obj_newObject("edit"));
@@ -7469,6 +7642,7 @@ function newChangelingfrm()
     obj.propriedan1:setField("proprieda1");
     obj.propriedan1:setFontColor("#48484A");
     obj.propriedan1:setFontSize(15);
+    lfm_setPropAsString(obj.propriedan1, "fontStyle",  "bold");
     obj.propriedan1:setTransparent(true);
 
     obj.propriedan2 = gui.fromHandle(_obj_newObject("edit"));
@@ -7481,6 +7655,7 @@ function newChangelingfrm()
     obj.propriedan2:setField("proprieda2");
     obj.propriedan2:setFontColor("#48484A");
     obj.propriedan2:setFontSize(15);
+    lfm_setPropAsString(obj.propriedan2, "fontStyle",  "bold");
     obj.propriedan2:setTransparent(true);
 
     obj.propriedan3 = gui.fromHandle(_obj_newObject("edit"));
@@ -7493,6 +7668,7 @@ function newChangelingfrm()
     obj.propriedan3:setField("proprieda3");
     obj.propriedan3:setFontColor("#48484A");
     obj.propriedan3:setFontSize(15);
+    lfm_setPropAsString(obj.propriedan3, "fontStyle",  "bold");
     obj.propriedan3:setTransparent(true);
 
     obj.propriedadn1 = gui.fromHandle(_obj_newObject("edit"));
@@ -7505,6 +7681,7 @@ function newChangelingfrm()
     obj.propriedadn1:setField("propriedad1");
     obj.propriedadn1:setFontColor("#48484A");
     obj.propriedadn1:setFontSize(15);
+    lfm_setPropAsString(obj.propriedadn1, "fontStyle",  "bold");
     obj.propriedadn1:setTransparent(true);
 
     obj.propriedadn2 = gui.fromHandle(_obj_newObject("edit"));
@@ -7517,6 +7694,7 @@ function newChangelingfrm()
     obj.propriedadn2:setField("propriedad2");
     obj.propriedadn2:setFontColor("#48484A");
     obj.propriedadn2:setFontSize(15);
+    lfm_setPropAsString(obj.propriedadn2, "fontStyle",  "bold");
     obj.propriedadn2:setTransparent(true);
 
     obj.propriedadn3 = gui.fromHandle(_obj_newObject("edit"));
@@ -7529,6 +7707,7 @@ function newChangelingfrm()
     obj.propriedadn3:setField("propriedad3");
     obj.propriedadn3:setFontColor("#48484A");
     obj.propriedadn3:setFontSize(15);
+    lfm_setPropAsString(obj.propriedadn3, "fontStyle",  "bold");
     obj.propriedadn3:setTransparent(true);
 
     obj.rectangle7 = gui.fromHandle(_obj_newObject("rectangle"));
@@ -7576,8 +7755,8 @@ function newChangelingfrm()
     obj.rectangle8:setLeft(4);
     obj.rectangle8:setTop(55);
     obj.rectangle8:setWidth(754);
-    obj.rectangle8:setHeight(253);
-    obj.rectangle8:setColor("#FDFDFD");
+    obj.rectangle8:setHeight(248);
+    obj.rectangle8:setColor("LightGray");
     obj.rectangle8:setName("rectangle8");
 
     obj.backgroundn = gui.fromHandle(_obj_newObject("richEdit"));
@@ -7586,6 +7765,7 @@ function newChangelingfrm()
     obj.backgroundn:setTop(55);
     obj.backgroundn:setWidth(754);
     obj.backgroundn:setHeight(253);
+    lfm_setPropAsString(obj.backgroundn, "backgroundColor",  "LightGray");
     obj.backgroundn:setName("backgroundn");
     obj.backgroundn:setField("background");
 
@@ -7600,6 +7780,7 @@ function newChangelingfrm()
     obj.datatitulan:setFontColor("#48484A");
     obj.datatitulan:setHorzTextAlign("center");
     obj.datatitulan:setFontSize(15);
+    lfm_setPropAsString(obj.datatitulan, "fontStyle",  "bold");
     obj.datatitulan:setTransparent(true);
 
     obj.sociedadesn = gui.fromHandle(_obj_newObject("edit"));
@@ -7612,6 +7793,7 @@ function newChangelingfrm()
     obj.sociedadesn:setField("sociedades");
     obj.sociedadesn:setFontColor("#48484A");
     obj.sociedadesn:setFontSize(15);
+    lfm_setPropAsString(obj.sociedadesn, "fontStyle",  "bold");
     obj.sociedadesn:setTransparent(true);
 
     obj.layout109 = gui.fromHandle(_obj_newObject("layout"));
@@ -7632,6 +7814,7 @@ function newChangelingfrm()
     obj.nverdadeiron:setField("nverdadeiro");
     obj.nverdadeiron:setFontColor("#48484A");
     obj.nverdadeiron:setFontSize(15);
+    lfm_setPropAsString(obj.nverdadeiron, "fontStyle",  "bold");
     obj.nverdadeiron:setTransparent(true);
 
     obj.idadecn = gui.fromHandle(_obj_newObject("edit"));
@@ -7644,6 +7827,7 @@ function newChangelingfrm()
     obj.idadecn:setField("idadec");
     obj.idadecn:setFontColor("#48484A");
     obj.idadecn:setFontSize(15);
+    lfm_setPropAsString(obj.idadecn, "fontStyle",  "bold");
     obj.idadecn:setTransparent(true);
 
     obj.idadean = gui.fromHandle(_obj_newObject("edit"));
@@ -7656,6 +7840,7 @@ function newChangelingfrm()
     obj.idadean:setField("idadea");
     obj.idadean:setFontColor("#48484A");
     obj.idadean:setFontSize(15);
+    lfm_setPropAsString(obj.idadean, "fontStyle",  "bold");
     obj.idadean:setTransparent(true);
 
     obj.datadenan = gui.fromHandle(_obj_newObject("edit"));
@@ -7668,6 +7853,7 @@ function newChangelingfrm()
     obj.datadenan:setField("datadena");
     obj.datadenan:setFontColor("#48484A");
     obj.datadenan:setFontSize(15);
+    lfm_setPropAsString(obj.datadenan, "fontStyle",  "bold");
     obj.datadenan:setTransparent(true);
 
     obj.cabelosn = gui.fromHandle(_obj_newObject("edit"));
@@ -7680,6 +7866,7 @@ function newChangelingfrm()
     obj.cabelosn:setField("cabelos");
     obj.cabelosn:setFontColor("#48484A");
     obj.cabelosn:setFontSize(15);
+    lfm_setPropAsString(obj.cabelosn, "fontStyle",  "bold");
     obj.cabelosn:setTransparent(true);
 
     obj.olhosn = gui.fromHandle(_obj_newObject("edit"));
@@ -7692,6 +7879,7 @@ function newChangelingfrm()
     obj.olhosn:setField("olhos");
     obj.olhosn:setFontColor("#48484A");
     obj.olhosn:setFontSize(15);
+    lfm_setPropAsString(obj.olhosn, "fontStyle",  "bold");
     obj.olhosn:setTransparent(true);
 
     obj.racan = gui.fromHandle(_obj_newObject("edit"));
@@ -7704,6 +7892,7 @@ function newChangelingfrm()
     obj.racan:setField("raca");
     obj.racan:setFontColor("#48484A");
     obj.racan:setFontSize(15);
+    lfm_setPropAsString(obj.racan, "fontStyle",  "bold");
     obj.racan:setTransparent(true);
 
     obj.nacionalidan = gui.fromHandle(_obj_newObject("edit"));
@@ -7716,6 +7905,7 @@ function newChangelingfrm()
     obj.nacionalidan:setField("nacionalida");
     obj.nacionalidan:setFontColor("#48484A");
     obj.nacionalidan:setFontSize(15);
+    lfm_setPropAsString(obj.nacionalidan, "fontStyle",  "bold");
     obj.nacionalidan:setTransparent(true);
 
     obj.alturan = gui.fromHandle(_obj_newObject("edit"));
@@ -7728,6 +7918,7 @@ function newChangelingfrm()
     obj.alturan:setField("altura");
     obj.alturan:setFontColor("#48484A");
     obj.alturan:setFontSize(15);
+    lfm_setPropAsString(obj.alturan, "fontStyle",  "bold");
     obj.alturan:setTransparent(true);
 
     obj.peson = gui.fromHandle(_obj_newObject("edit"));
@@ -7740,6 +7931,7 @@ function newChangelingfrm()
     obj.peson:setField("peso");
     obj.peson:setFontColor("#48484A");
     obj.peson:setFontSize(15);
+    lfm_setPropAsString(obj.peson, "fontStyle",  "bold");
     obj.peson:setTransparent(true);
 
     obj.generon = gui.fromHandle(_obj_newObject("edit"));
@@ -7752,6 +7944,7 @@ function newChangelingfrm()
     obj.generon:setField("genero");
     obj.generon:setFontColor("#48484A");
     obj.generon:setFontSize(15);
+    lfm_setPropAsString(obj.generon, "fontStyle",  "bold");
     obj.generon:setTransparent(true);
 
     obj.layout110 = gui.fromHandle(_obj_newObject("layout"));
@@ -7789,6 +7982,7 @@ function newChangelingfrm()
     obj.aparenciamn:setField("aparenciam");
     obj.aparenciamn:setFontColor("#48484A");
     obj.aparenciamn:setFontSize(15);
+    lfm_setPropAsString(obj.aparenciamn, "fontStyle",  "bold");
 
     obj.aparenciafn = gui.fromHandle(_obj_newObject("textEditor"));
     obj.aparenciafn:setParent(obj.layout110);
@@ -7799,6 +7993,7 @@ function newChangelingfrm()
     obj.aparenciafn:setField("aparenciaf");
     obj.aparenciafn:setFontColor("#48484A");
     obj.aparenciafn:setFontSize(15);
+    lfm_setPropAsString(obj.aparenciafn, "fontStyle",  "bold");
 
     obj.limagen = gui.fromHandle(_obj_newObject("image"));
     obj.limagen:setParent(obj.layout108);
@@ -7836,21 +8031,21 @@ function newChangelingfrm()
     obj.tab5:setTitle("Créditos");
     obj.tab5:setName("tab5");
 
-    obj.Awakening04 = gui.fromHandle(_obj_newObject("form"));
-    obj.Awakening04:setParent(obj.tab5);
-    obj.Awakening04:setName("Awakening04");
-    obj.Awakening04:setAlign("client");
-    obj.Awakening04:setTheme("dark");
+    obj.ChangelingC = gui.fromHandle(_obj_newObject("form"));
+    obj.ChangelingC:setParent(obj.tab5);
+    obj.ChangelingC:setName("ChangelingC");
+    obj.ChangelingC:setAlign("client");
+    obj.ChangelingC:setTheme("dark");
 
     obj.rectangle12 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle12:setParent(obj.Awakening04);
+    obj.rectangle12:setParent(obj.ChangelingC);
     obj.rectangle12:setAlign("top");
     obj.rectangle12:setHeight(30);
     obj.rectangle12:setColor("gray");
     obj.rectangle12:setName("rectangle12");
 
     obj.flowLayout1 = gui.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout1:setParent(obj.Awakening04);
+    obj.flowLayout1:setParent(obj.ChangelingC);
     obj.flowLayout1:setAlign("client");
     obj.flowLayout1:setHorzAlign("center");
     obj.flowLayout1:setName("flowLayout1");
@@ -7923,7 +8118,7 @@ function newChangelingfrm()
     obj.label3:setWidth(250);
     obj.label3:setFontColor("silver");
     obj.label3:setHeight(20);
-    obj.label3:setText("Versão: 1.0 03/07/18");
+    obj.label3:setText("Versão: 1.1b 02/08/18");
     obj.label3:setHorzTextAlign("center");
     obj.label3:setFontSize(13);
     obj.label3:setName("label3");
@@ -8750,7 +8945,6 @@ function newChangelingfrm()
         if self.artes6n_2 ~= nil then self.artes6n_2:destroy(); self.artes6n_2 = nil; end;
         if self.outrascn13_5 ~= nil then self.outrascn13_5:destroy(); self.outrascn13_5 = nil; end;
         if self.arman2 ~= nil then self.arman2:destroy(); self.arman2 = nil; end;
-        if self.Awakening04 ~= nil then self.Awakening04:destroy(); self.Awakening04 = nil; end;
         if self.caracteris7n_3 ~= nil then self.caracteris7n_3:destroy(); self.caracteris7n_3 = nil; end;
         if self.outrascn4_3 ~= nil then self.outrascn4_3:destroy(); self.outrascn4_3 = nil; end;
         if self.artes2n_3 ~= nil then self.artes2n_3:destroy(); self.artes2n_3 = nil; end;
@@ -8761,6 +8955,7 @@ function newChangelingfrm()
         if self.limagen ~= nil then self.limagen:destroy(); self.limagen = nil; end;
         if self.outrascn8_2 ~= nil then self.outrascn8_2:destroy(); self.outrascn8_2 = nil; end;
         if self.layout96 ~= nil then self.layout96:destroy(); self.layout96 = nil; end;
+        if self.ChangelingC ~= nil then self.ChangelingC:destroy(); self.ChangelingC = nil; end;
         if self.gmagican_1 ~= nil then self.gmagican_1:destroy(); self.gmagican_1 = nil; end;
         if self.armana2 ~= nil then self.armana2:destroy(); self.armana2 = nil; end;
         if self.ciencian_1 ~= nil then self.ciencian_1:destroy(); self.ciencian_1 = nil; end;
