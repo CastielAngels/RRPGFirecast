@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="OsMundosDosMortosfrm" formType="sheetTemplate" dataType="Cast.OsMundosDosMortos" title="Ficha Os Mundos Dos Mortos" align="client" theme="dark">
+	<tabControl align="client">
+		<tab title="Base">
+			<import file="1.lfm"/>
+		</tab>
+		<tab title="Créditos">
+			<import file="creditos.lfm"/>
+		</tab>
+	</tabControl>
+</form>

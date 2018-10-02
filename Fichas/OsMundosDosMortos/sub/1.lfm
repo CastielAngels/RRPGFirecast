@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="OsMundosDosMortos1" align="client" theme="dark">
+
+	<template name="Cabeca">
+		<rectangle left="5" top="0" color="Gainsboro" width="80" xradius="2" yradius="2"/>
+		<label left="8" top="5" width="77" height="20" text="$(texto)" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+        <edit left="90" top="0" width="200" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
+	</template>
+
+	<image left="0" top="0" align="client" field="backgroundimg" style="stretch" src=""/>
+
+	<scrollBox align="client">
+
+		<rectangle left="20" height="30" width="880" color="gray"/>
+		<rectangle left="373" top="33" width="135" height="135" color="DimGray" xradius="5" yradius="5"/>
+		<label left="401" top="65" width="80" height="60" text="Sem Avatar" horzTextAlign="center"/>
+		<image field="imagempersona" editable="true" style="autoFit" src="" left="373" top="33" width="135" height="135"/>
+
+		<layout left="0" top="0" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+			<label left="18" top="5" width="138" height="20" text="Dados do Personagem" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+
+			<button left="780" top="2" width="40" height="25" hint="Bloqueia a ficha." text="Lock" canFocus="false"/>
+
+			<button left="830" top="2" width="40" height="25" text="BG" hitTest="true" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
+		</layout>
+
+		<layout left="0" top="170" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+			<label left="8" top="5" width="138" height="20" text="Tendências" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<label left="640" top="5" width="138" height="20" text="Pontos de Experiência:" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<edit left="780" top="2" width="40" height="25" type="number" field="exptotal" horzTextAlign="center"/>
+			<edit left="830" top="2" width="40" height="25" type="number" field="expatual" horzTextAlign="center"/>
+		</layout>
+
+		<layout left="0" top="415" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+			<label left="8" top="5" width="168" height="20" text="Limites" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+		</layout>
+		
+		<layout left="0" top="615" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+			<label left="8" top="5" width="168" height="20" text="Anotações" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+		</layout>
+
+		<layout left="0" top="38" width="900" height="125">
+			<layout left="5" top="5" width="290" height="25" >
+				<Cabeca field="nome" texto="Nome" nort="text"/>
+			</layout>
+			<layout left="580" top="5" width="290" height="25" >
+				<Cabeca field="classe" texto="Classe" nort="text"/>
+			</layout>
+			<layout left="5" top="35" width="290" height="25" >
+				<Cabeca field="persona" texto="Caráter" nort="text"/>
+			</layout>
+			<layout left="580" top="35" width="290" height="25" >
+				<Cabeca field="nvclasse" texto="Nv da Classe" nort="number"/>
+			</layout>
+			<layout left="5" top="65" width="290" height="25" >
+				<Cabeca field="conceito" texto="Conceito" nort="text"/>
+			</layout>
+			<layout left="580" top="65" width="290" height="25" >
+				<Cabeca field="tribo" texto="Tribo" nort="text"/>
+			</layout>
+			<layout left="5" top="95" width="290" height="25" >
+				<Cabeca field="recurso" texto="Recurso" nort="text"/>
+			</layout>
+			<layout left="580" top="95" width="290" height="25" >
+				<Cabeca field="idade" texto="Idade" nort="number"/>
+			</layout>
+		</layout>
+
+	</scrollBox>
+
+</form>
