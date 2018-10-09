@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="OsMundosDosMortos2" align="client" theme="dark">
+
+	<image align="client" field="backgroundimg" style="stretch" src=""/>
+
+	<scrollBox align="client">
+
+	</scrollBox>
+
+</form>

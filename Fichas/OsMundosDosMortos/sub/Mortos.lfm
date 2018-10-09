@@ -4,6 +4,9 @@
 		<tab title="Base">
 			<import file="1.lfm"/>
 		</tab>
+		<tab title="Verso">
+			<import file="2.lfm"/>
+		</tab>
 		<tab title="Créditos">
 			<import file="creditos.lfm"/>
 		</tab>

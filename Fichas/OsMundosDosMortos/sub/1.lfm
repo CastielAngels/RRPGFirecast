@@ -73,10 +73,57 @@
 
 		<layout left="8" top="245" width="235" height="160">
 			<rectangle align="client"/>
+			<label left="86" top="11" width="65" height="20" text="Músculos" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
+			<checkBox field="musc1" left="17" top="30"/>
+			<checkBox field="musc2" left="37" top="30"/>>
+			<checkBox field="musc3" left="57" top="30"/>>
+			<checkBox field="musc4" left="77" top="30"/>>
+			<checkBox field="musc5" left="97" top="30"/>>
+			<checkBox field="musc6" left="117" top="30"/>>
+			<checkBox field="musc7" left="137" top="30"/>>
+			<checkBox field="musc8" left="157" top="30"/>>
+			<checkBox field="musc9" left="177" top="30"/>>
+			<checkBox field="musc10" left="197" top="30"/>>
+			<label left="91" top="56" width="60" height="20" text="Cérebro" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
+			<checkBox field="cereb1" left="17" top="75"/>
+			<checkBox field="cereb2" left="37" top="75"/>>
+			<checkBox field="cereb3" left="57" top="75"/>>
+			<checkBox field="cereb4" left="77" top="75"/>>
+			<checkBox field="cereb5" left="97" top="75"/>>
+			<checkBox field="cereb6" left="117" top="75"/>>
+			<checkBox field="cereb7" left="137" top="75"/>>
+			<checkBox field="cereb8" left="157" top="75"/>>
+			<checkBox field="cereb9" left="177" top="75"/>>
+			<checkBox field="cereb10" left="197" top="75"/>>
+			<label left="91" top="101" width="60" height="20" text="Coração" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
+			<checkBox field="corac1" left="17" top="120"/>
+			<checkBox field="corac2" left="37" top="120"/>>
+			<checkBox field="corac3" left="57" top="120"/>>
+			<checkBox field="corac4" left="77" top="120"/>>
+			<checkBox field="corac5" left="97" top="120"/>>
+			<checkBox field="corac6" left="117" top="120"/>>
+			<checkBox field="corac7" left="137" top="120"/>>
+			<checkBox field="corac8" left="157" top="120"/>>
+			<checkBox field="corac9" left="177" top="120"/>>
+			<checkBox field="corac10" left="197" top="120"/>>
 		</layout>
 
 		<layout left="254" top="245" width="370" height="160">
 			<rectangle align="client"/>
+			<label left="38" top="11" width="70" height="20" text="Sanidade" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
+			<edit field="sanidade" left="50" top="32" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
+
+			<label left="25" top="81" width="100" height="20" text="Autocontrole" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
+			<edit field="autocontrole" left="50" top="102" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
+
+			<label left="125" top="46" width="130" height="20" text="Força de Vontade" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
+			<edit field="forcadevontade" left="165" top="67" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
+
+			<label left="273" top="11" width="70" height="20" text="Energia" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
+			<edit field="energia" left="280" top="32" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
+
+			<label left="248" top="81" width="130" height="20" text="Pontos de Vida" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
+			<edit field="pontosdevida" left="280" top="102" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
 		</layout>
 
 		<layout left="635" top="245" width="235" height="160">
