@@ -112,18 +112,23 @@
 			<rectangle align="client"/>
 			<label left="38" top="11" width="70" height="20" text="Sanidade" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="sanidade" left="50" top="32" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
+			<image left="47" top="31" width="45" height="45" src="img/blackhole.png"/>
 
 			<label left="25" top="81" width="100" height="20" text="Autocontrole" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="autocontrole" left="50" top="102" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
+			<image left="47" top="101" width="45" height="45" src="img/blackhole.png"/>
 
 			<label left="125" top="46" width="130" height="20" text="Força de Vontade" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="forcadevontade" left="165" top="67" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
+			<image left="162" top="66" width="45" height="45" src="img/blackhole.png"/>
 
 			<label left="273" top="11" width="70" height="20" text="Energia" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="energia" left="280" top="32" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
+			<image left="277" top="31" width="45" height="45" src="img/blackhole.png"/>
 
 			<label left="248" top="81" width="130" height="20" text="Pontos de Vida" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="pontosdevida" left="280" top="102" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
+			<image left="277" top="101" width="45" height="45" src="img/blackhole.png"/>
 		</layout>
 
 		<layout left="635" top="245" width="235" height="160">
@@ -132,6 +137,8 @@
 
 		<layout left="10" top="457" width="860" height="320">
 			<rectangle align="client"/>
+			<label left="40" top="10" width="120" height="20" text="Minhas habilidades" horzTextAlign="leading" fontStyle="bold" fontSize="13" fontColor="black"/>
+			<label left="680" top="10" width="140" height="20" text="Habilidades de Classe" horzTextAlign="trailing" fontStyle="bold" fontSize="13" fontColor="black"/>
 		</layout>
 
 	</scrollBox>

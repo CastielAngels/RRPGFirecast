@@ -7,6 +7,9 @@
 		<tab title="Verso">
 			<import file="2.lfm"/>
 		</tab>
+		<tab title="Objetos">
+			<import file="3.lfm"/>
+		</tab>
 		<tab title="Créditos">
 			<import file="creditos.lfm"/>
 		</tab>

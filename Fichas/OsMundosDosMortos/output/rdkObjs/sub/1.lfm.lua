@@ -923,6 +923,15 @@ function newOsMundosDosMortos1()
     lfm_setPropAsString(obj.edit11, "fontStyle",  "bold");
     obj.edit11:setName("edit11");
 
+    obj.image3 = gui.fromHandle(_obj_newObject("image"));
+    obj.image3:setParent(obj.layout15);
+    obj.image3:setLeft(47);
+    obj.image3:setTop(31);
+    obj.image3:setWidth(45);
+    obj.image3:setHeight(45);
+    obj.image3:setSRC("/sub/img/blackhole.png");
+    obj.image3:setName("image3");
+
     obj.label21 = gui.fromHandle(_obj_newObject("label"));
     obj.label21:setParent(obj.layout15);
     obj.label21:setLeft(25);
@@ -951,6 +960,15 @@ function newOsMundosDosMortos1()
     obj.edit12:setFontColor("black");
     lfm_setPropAsString(obj.edit12, "fontStyle",  "bold");
     obj.edit12:setName("edit12");
+
+    obj.image4 = gui.fromHandle(_obj_newObject("image"));
+    obj.image4:setParent(obj.layout15);
+    obj.image4:setLeft(47);
+    obj.image4:setTop(101);
+    obj.image4:setWidth(45);
+    obj.image4:setHeight(45);
+    obj.image4:setSRC("/sub/img/blackhole.png");
+    obj.image4:setName("image4");
 
     obj.label22 = gui.fromHandle(_obj_newObject("label"));
     obj.label22:setParent(obj.layout15);
@@ -981,6 +999,15 @@ function newOsMundosDosMortos1()
     lfm_setPropAsString(obj.edit13, "fontStyle",  "bold");
     obj.edit13:setName("edit13");
 
+    obj.image5 = gui.fromHandle(_obj_newObject("image"));
+    obj.image5:setParent(obj.layout15);
+    obj.image5:setLeft(162);
+    obj.image5:setTop(66);
+    obj.image5:setWidth(45);
+    obj.image5:setHeight(45);
+    obj.image5:setSRC("/sub/img/blackhole.png");
+    obj.image5:setName("image5");
+
     obj.label23 = gui.fromHandle(_obj_newObject("label"));
     obj.label23:setParent(obj.layout15);
     obj.label23:setLeft(273);
@@ -1009,6 +1036,15 @@ function newOsMundosDosMortos1()
     obj.edit14:setFontColor("black");
     lfm_setPropAsString(obj.edit14, "fontStyle",  "bold");
     obj.edit14:setName("edit14");
+
+    obj.image6 = gui.fromHandle(_obj_newObject("image"));
+    obj.image6:setParent(obj.layout15);
+    obj.image6:setLeft(277);
+    obj.image6:setTop(31);
+    obj.image6:setWidth(45);
+    obj.image6:setHeight(45);
+    obj.image6:setSRC("/sub/img/blackhole.png");
+    obj.image6:setName("image6");
 
     obj.label24 = gui.fromHandle(_obj_newObject("label"));
     obj.label24:setParent(obj.layout15);
@@ -1039,6 +1075,15 @@ function newOsMundosDosMortos1()
     lfm_setPropAsString(obj.edit15, "fontStyle",  "bold");
     obj.edit15:setName("edit15");
 
+    obj.image7 = gui.fromHandle(_obj_newObject("image"));
+    obj.image7:setParent(obj.layout15);
+    obj.image7:setLeft(277);
+    obj.image7:setTop(101);
+    obj.image7:setWidth(45);
+    obj.image7:setHeight(45);
+    obj.image7:setSRC("/sub/img/blackhole.png");
+    obj.image7:setName("image7");
+
     obj.layout16 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout16:setParent(obj.scrollBox1);
     obj.layout16:setLeft(635);
@@ -1064,6 +1109,32 @@ function newOsMundosDosMortos1()
     obj.rectangle19:setParent(obj.layout17);
     obj.rectangle19:setAlign("client");
     obj.rectangle19:setName("rectangle19");
+
+    obj.label25 = gui.fromHandle(_obj_newObject("label"));
+    obj.label25:setParent(obj.layout17);
+    obj.label25:setLeft(40);
+    obj.label25:setTop(10);
+    obj.label25:setWidth(120);
+    obj.label25:setHeight(20);
+    obj.label25:setText("Minhas habilidades");
+    obj.label25:setHorzTextAlign("leading");
+    lfm_setPropAsString(obj.label25, "fontStyle",  "bold");
+    obj.label25:setFontSize(13);
+    obj.label25:setFontColor("black");
+    obj.label25:setName("label25");
+
+    obj.label26 = gui.fromHandle(_obj_newObject("label"));
+    obj.label26:setParent(obj.layout17);
+    obj.label26:setLeft(680);
+    obj.label26:setTop(10);
+    obj.label26:setWidth(140);
+    obj.label26:setHeight(20);
+    obj.label26:setText("Habilidades de Classe");
+    obj.label26:setHorzTextAlign("trailing");
+    lfm_setPropAsString(obj.label26, "fontStyle",  "bold");
+    obj.label26:setFontSize(13);
+    obj.label26:setFontColor("black");
+    obj.label26:setName("label26");
 
     obj._e_event0 = obj.button2:addEventListener("onClick",
         function (self)
@@ -1091,11 +1162,14 @@ function newOsMundosDosMortos1()
         if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
         if self.checkBox18 ~= nil then self.checkBox18:destroy(); self.checkBox18 = nil; end;
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
+        if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
+        if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
         if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
         if self.checkBox29 ~= nil then self.checkBox29:destroy(); self.checkBox29 = nil; end;
         if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
         if self.checkBox27 ~= nil then self.checkBox27:destroy(); self.checkBox27 = nil; end;
+        if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
         if self.rectangle16 ~= nil then self.rectangle16:destroy(); self.rectangle16 = nil; end;
         if self.checkBox11 ~= nil then self.checkBox11:destroy(); self.checkBox11 = nil; end;
         if self.checkBox6 ~= nil then self.checkBox6:destroy(); self.checkBox6 = nil; end;
@@ -1113,6 +1187,7 @@ function newOsMundosDosMortos1()
         if self.checkBox7 ~= nil then self.checkBox7:destroy(); self.checkBox7 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
         if self.checkBox8 ~= nil then self.checkBox8:destroy(); self.checkBox8 = nil; end;
+        if self.image6 ~= nil then self.image6:destroy(); self.image6 = nil; end;
         if self.rectangle19 ~= nil then self.rectangle19:destroy(); self.rectangle19 = nil; end;
         if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
         if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
@@ -1147,6 +1222,7 @@ function newOsMundosDosMortos1()
         if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
         if self.checkBox14 ~= nil then self.checkBox14:destroy(); self.checkBox14 = nil; end;
         if self.checkBox3 ~= nil then self.checkBox3:destroy(); self.checkBox3 = nil; end;
+        if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
         if self.checkBox21 ~= nil then self.checkBox21:destroy(); self.checkBox21 = nil; end;
         if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
         if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
@@ -1178,6 +1254,7 @@ function newOsMundosDosMortos1()
         if self.checkBox26 ~= nil then self.checkBox26:destroy(); self.checkBox26 = nil; end;
         if self.checkBox28 ~= nil then self.checkBox28:destroy(); self.checkBox28 = nil; end;
         if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
+        if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
         if self.label18 ~= nil then self.label18:destroy(); self.label18 = nil; end;
         if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
         if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
@@ -1187,6 +1264,7 @@ function newOsMundosDosMortos1()
         if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
         if self.rectangle13 ~= nil then self.rectangle13:destroy(); self.rectangle13 = nil; end;
         if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
+        if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
         if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
         if self.checkBox4 ~= nil then self.checkBox4:destroy(); self.checkBox4 = nil; end;
         if self.checkBox1 ~= nil then self.checkBox1:destroy(); self.checkBox1 = nil; end;
