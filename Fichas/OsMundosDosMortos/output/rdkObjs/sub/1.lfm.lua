@@ -104,26 +104,15 @@ function newOsMundosDosMortos1()
 
     obj.button1 = gui.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.layout1);
-    obj.button1:setLeft(780);
+    obj.button1:setLeft(830);
     obj.button1:setTop(2);
     obj.button1:setWidth(40);
     obj.button1:setHeight(25);
-    obj.button1:setHint("Bloqueia a ficha.");
-    obj.button1:setText("Lock");
+    obj.button1:setText("BG");
+    obj.button1:setHitTest(true);
     obj.button1:setCanFocus(false);
+    obj.button1:setHint("Altera a imagem de fundo da ficha.");
     obj.button1:setName("button1");
-
-    obj.button2 = gui.fromHandle(_obj_newObject("button"));
-    obj.button2:setParent(obj.layout1);
-    obj.button2:setLeft(830);
-    obj.button2:setTop(2);
-    obj.button2:setWidth(40);
-    obj.button2:setHeight(25);
-    obj.button2:setText("BG");
-    obj.button2:setHitTest(true);
-    obj.button2:setCanFocus(false);
-    obj.button2:setHint("Altera a imagem de fundo da ficha.");
-    obj.button2:setName("button2");
 
     obj.layout2 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.scrollBox1);
@@ -645,74 +634,71 @@ function newOsMundosDosMortos1()
     obj.label17:setFontColor("black");
     obj.label17:setName("label17");
 
+    obj.layout15 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout15:setParent(obj.layout14);
+    obj.layout15:setTop(30);
+    obj.layout15:setWidth(215);
+    obj.layout15:setHeight(20);
+    obj.layout15:setName("layout15");
+
     obj.checkBox1 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox1:setParent(obj.layout14);
-    obj.checkBox1:setField("musc1");
+    obj.checkBox1:setParent(obj.layout15);
+    obj.checkBox1:setField("musc_1");
     obj.checkBox1:setLeft(17);
-    obj.checkBox1:setTop(30);
     obj.checkBox1:setName("checkBox1");
 
     obj.checkBox2 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox2:setParent(obj.layout14);
-    obj.checkBox2:setField("musc2");
+    obj.checkBox2:setParent(obj.layout15);
+    obj.checkBox2:setField("musc_2");
     obj.checkBox2:setLeft(37);
-    obj.checkBox2:setTop(30);
     obj.checkBox2:setName("checkBox2");
 
     obj.checkBox3 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox3:setParent(obj.layout14);
-    obj.checkBox3:setField("musc3");
+    obj.checkBox3:setParent(obj.layout15);
+    obj.checkBox3:setField("musc_3");
     obj.checkBox3:setLeft(57);
-    obj.checkBox3:setTop(30);
     obj.checkBox3:setName("checkBox3");
 
     obj.checkBox4 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox4:setParent(obj.layout14);
-    obj.checkBox4:setField("musc4");
+    obj.checkBox4:setParent(obj.layout15);
+    obj.checkBox4:setField("musc_4");
     obj.checkBox4:setLeft(77);
-    obj.checkBox4:setTop(30);
     obj.checkBox4:setName("checkBox4");
 
     obj.checkBox5 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox5:setParent(obj.layout14);
-    obj.checkBox5:setField("musc5");
+    obj.checkBox5:setParent(obj.layout15);
+    obj.checkBox5:setField("musc_5");
     obj.checkBox5:setLeft(97);
-    obj.checkBox5:setTop(30);
     obj.checkBox5:setName("checkBox5");
 
     obj.checkBox6 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox6:setParent(obj.layout14);
-    obj.checkBox6:setField("musc6");
+    obj.checkBox6:setParent(obj.layout15);
+    obj.checkBox6:setField("musc_6");
     obj.checkBox6:setLeft(117);
-    obj.checkBox6:setTop(30);
     obj.checkBox6:setName("checkBox6");
 
     obj.checkBox7 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox7:setParent(obj.layout14);
-    obj.checkBox7:setField("musc7");
+    obj.checkBox7:setParent(obj.layout15);
+    obj.checkBox7:setField("musc_7");
     obj.checkBox7:setLeft(137);
-    obj.checkBox7:setTop(30);
     obj.checkBox7:setName("checkBox7");
 
     obj.checkBox8 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox8:setParent(obj.layout14);
-    obj.checkBox8:setField("musc8");
+    obj.checkBox8:setParent(obj.layout15);
+    obj.checkBox8:setField("musc_8");
     obj.checkBox8:setLeft(157);
-    obj.checkBox8:setTop(30);
     obj.checkBox8:setName("checkBox8");
 
     obj.checkBox9 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox9:setParent(obj.layout14);
-    obj.checkBox9:setField("musc9");
+    obj.checkBox9:setParent(obj.layout15);
+    obj.checkBox9:setField("musc_9");
     obj.checkBox9:setLeft(177);
-    obj.checkBox9:setTop(30);
     obj.checkBox9:setName("checkBox9");
 
     obj.checkBox10 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox10:setParent(obj.layout14);
-    obj.checkBox10:setField("musc10");
+    obj.checkBox10:setParent(obj.layout15);
+    obj.checkBox10:setField("musc_10");
     obj.checkBox10:setLeft(197);
-    obj.checkBox10:setTop(30);
     obj.checkBox10:setName("checkBox10");
 
     obj.label18 = gui.fromHandle(_obj_newObject("label"));
@@ -728,74 +714,71 @@ function newOsMundosDosMortos1()
     obj.label18:setFontColor("black");
     obj.label18:setName("label18");
 
+    obj.layout16 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout16:setParent(obj.layout14);
+    obj.layout16:setTop(75);
+    obj.layout16:setWidth(215);
+    obj.layout16:setHeight(20);
+    obj.layout16:setName("layout16");
+
     obj.checkBox11 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox11:setParent(obj.layout14);
-    obj.checkBox11:setField("cereb1");
+    obj.checkBox11:setParent(obj.layout16);
+    obj.checkBox11:setField("cereb_1");
     obj.checkBox11:setLeft(17);
-    obj.checkBox11:setTop(75);
     obj.checkBox11:setName("checkBox11");
 
     obj.checkBox12 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox12:setParent(obj.layout14);
-    obj.checkBox12:setField("cereb2");
+    obj.checkBox12:setParent(obj.layout16);
+    obj.checkBox12:setField("cereb_2");
     obj.checkBox12:setLeft(37);
-    obj.checkBox12:setTop(75);
     obj.checkBox12:setName("checkBox12");
 
     obj.checkBox13 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox13:setParent(obj.layout14);
-    obj.checkBox13:setField("cereb3");
+    obj.checkBox13:setParent(obj.layout16);
+    obj.checkBox13:setField("cereb_3");
     obj.checkBox13:setLeft(57);
-    obj.checkBox13:setTop(75);
     obj.checkBox13:setName("checkBox13");
 
     obj.checkBox14 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox14:setParent(obj.layout14);
-    obj.checkBox14:setField("cereb4");
+    obj.checkBox14:setParent(obj.layout16);
+    obj.checkBox14:setField("cereb_4");
     obj.checkBox14:setLeft(77);
-    obj.checkBox14:setTop(75);
     obj.checkBox14:setName("checkBox14");
 
     obj.checkBox15 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox15:setParent(obj.layout14);
-    obj.checkBox15:setField("cereb5");
+    obj.checkBox15:setParent(obj.layout16);
+    obj.checkBox15:setField("cereb_5");
     obj.checkBox15:setLeft(97);
-    obj.checkBox15:setTop(75);
     obj.checkBox15:setName("checkBox15");
 
     obj.checkBox16 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox16:setParent(obj.layout14);
-    obj.checkBox16:setField("cereb6");
+    obj.checkBox16:setParent(obj.layout16);
+    obj.checkBox16:setField("cereb_6");
     obj.checkBox16:setLeft(117);
-    obj.checkBox16:setTop(75);
     obj.checkBox16:setName("checkBox16");
 
     obj.checkBox17 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox17:setParent(obj.layout14);
-    obj.checkBox17:setField("cereb7");
+    obj.checkBox17:setParent(obj.layout16);
+    obj.checkBox17:setField("cereb_7");
     obj.checkBox17:setLeft(137);
-    obj.checkBox17:setTop(75);
     obj.checkBox17:setName("checkBox17");
 
     obj.checkBox18 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox18:setParent(obj.layout14);
-    obj.checkBox18:setField("cereb8");
+    obj.checkBox18:setParent(obj.layout16);
+    obj.checkBox18:setField("cereb_8");
     obj.checkBox18:setLeft(157);
-    obj.checkBox18:setTop(75);
     obj.checkBox18:setName("checkBox18");
 
     obj.checkBox19 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox19:setParent(obj.layout14);
-    obj.checkBox19:setField("cereb9");
+    obj.checkBox19:setParent(obj.layout16);
+    obj.checkBox19:setField("cereb_9");
     obj.checkBox19:setLeft(177);
-    obj.checkBox19:setTop(75);
     obj.checkBox19:setName("checkBox19");
 
     obj.checkBox20 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox20:setParent(obj.layout14);
-    obj.checkBox20:setField("cereb10");
+    obj.checkBox20:setParent(obj.layout16);
+    obj.checkBox20:setField("cereb_10");
     obj.checkBox20:setLeft(197);
-    obj.checkBox20:setTop(75);
     obj.checkBox20:setName("checkBox20");
 
     obj.label19 = gui.fromHandle(_obj_newObject("label"));
@@ -811,91 +794,88 @@ function newOsMundosDosMortos1()
     obj.label19:setFontColor("black");
     obj.label19:setName("label19");
 
+    obj.layout17 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout17:setParent(obj.layout14);
+    obj.layout17:setTop(120);
+    obj.layout17:setWidth(215);
+    obj.layout17:setHeight(20);
+    obj.layout17:setName("layout17");
+
     obj.checkBox21 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox21:setParent(obj.layout14);
-    obj.checkBox21:setField("corac1");
+    obj.checkBox21:setParent(obj.layout17);
+    obj.checkBox21:setField("corac_1");
     obj.checkBox21:setLeft(17);
-    obj.checkBox21:setTop(120);
     obj.checkBox21:setName("checkBox21");
 
     obj.checkBox22 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox22:setParent(obj.layout14);
-    obj.checkBox22:setField("corac2");
+    obj.checkBox22:setParent(obj.layout17);
+    obj.checkBox22:setField("corac_2");
     obj.checkBox22:setLeft(37);
-    obj.checkBox22:setTop(120);
     obj.checkBox22:setName("checkBox22");
 
     obj.checkBox23 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox23:setParent(obj.layout14);
-    obj.checkBox23:setField("corac3");
+    obj.checkBox23:setParent(obj.layout17);
+    obj.checkBox23:setField("corac_3");
     obj.checkBox23:setLeft(57);
-    obj.checkBox23:setTop(120);
     obj.checkBox23:setName("checkBox23");
 
     obj.checkBox24 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox24:setParent(obj.layout14);
-    obj.checkBox24:setField("corac4");
+    obj.checkBox24:setParent(obj.layout17);
+    obj.checkBox24:setField("corac_4");
     obj.checkBox24:setLeft(77);
-    obj.checkBox24:setTop(120);
     obj.checkBox24:setName("checkBox24");
 
     obj.checkBox25 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox25:setParent(obj.layout14);
-    obj.checkBox25:setField("corac5");
+    obj.checkBox25:setParent(obj.layout17);
+    obj.checkBox25:setField("corac_5");
     obj.checkBox25:setLeft(97);
-    obj.checkBox25:setTop(120);
     obj.checkBox25:setName("checkBox25");
 
     obj.checkBox26 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox26:setParent(obj.layout14);
-    obj.checkBox26:setField("corac6");
+    obj.checkBox26:setParent(obj.layout17);
+    obj.checkBox26:setField("corac_6");
     obj.checkBox26:setLeft(117);
-    obj.checkBox26:setTop(120);
     obj.checkBox26:setName("checkBox26");
 
     obj.checkBox27 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox27:setParent(obj.layout14);
-    obj.checkBox27:setField("corac7");
+    obj.checkBox27:setParent(obj.layout17);
+    obj.checkBox27:setField("corac_7");
     obj.checkBox27:setLeft(137);
-    obj.checkBox27:setTop(120);
     obj.checkBox27:setName("checkBox27");
 
     obj.checkBox28 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox28:setParent(obj.layout14);
-    obj.checkBox28:setField("corac8");
+    obj.checkBox28:setParent(obj.layout17);
+    obj.checkBox28:setField("corac_8");
     obj.checkBox28:setLeft(157);
-    obj.checkBox28:setTop(120);
     obj.checkBox28:setName("checkBox28");
 
     obj.checkBox29 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox29:setParent(obj.layout14);
-    obj.checkBox29:setField("corac9");
+    obj.checkBox29:setParent(obj.layout17);
+    obj.checkBox29:setField("corac_9");
     obj.checkBox29:setLeft(177);
-    obj.checkBox29:setTop(120);
     obj.checkBox29:setName("checkBox29");
 
     obj.checkBox30 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox30:setParent(obj.layout14);
-    obj.checkBox30:setField("corac10");
+    obj.checkBox30:setParent(obj.layout17);
+    obj.checkBox30:setField("corac_10");
     obj.checkBox30:setLeft(197);
-    obj.checkBox30:setTop(120);
     obj.checkBox30:setName("checkBox30");
 
-    obj.layout15 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout15:setParent(obj.scrollBox1);
-    obj.layout15:setLeft(254);
-    obj.layout15:setTop(245);
-    obj.layout15:setWidth(370);
-    obj.layout15:setHeight(160);
-    obj.layout15:setName("layout15");
+    obj.layout18 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout18:setParent(obj.scrollBox1);
+    obj.layout18:setLeft(254);
+    obj.layout18:setTop(245);
+    obj.layout18:setWidth(370);
+    obj.layout18:setHeight(160);
+    obj.layout18:setName("layout18");
 
     obj.rectangle17 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle17:setParent(obj.layout15);
+    obj.rectangle17:setParent(obj.layout18);
     obj.rectangle17:setAlign("client");
     obj.rectangle17:setName("rectangle17");
 
     obj.label20 = gui.fromHandle(_obj_newObject("label"));
-    obj.label20:setParent(obj.layout15);
+    obj.label20:setParent(obj.layout18);
     obj.label20:setLeft(38);
     obj.label20:setTop(11);
     obj.label20:setWidth(70);
@@ -908,7 +888,7 @@ function newOsMundosDosMortos1()
     obj.label20:setName("label20");
 
     obj.edit11 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit11:setParent(obj.layout15);
+    obj.edit11:setParent(obj.layout18);
     obj.edit11:setField("sanidade");
     obj.edit11:setLeft(50);
     obj.edit11:setTop(32);
@@ -924,7 +904,7 @@ function newOsMundosDosMortos1()
     obj.edit11:setName("edit11");
 
     obj.image3 = gui.fromHandle(_obj_newObject("image"));
-    obj.image3:setParent(obj.layout15);
+    obj.image3:setParent(obj.layout18);
     obj.image3:setLeft(47);
     obj.image3:setTop(31);
     obj.image3:setWidth(45);
@@ -933,7 +913,7 @@ function newOsMundosDosMortos1()
     obj.image3:setName("image3");
 
     obj.label21 = gui.fromHandle(_obj_newObject("label"));
-    obj.label21:setParent(obj.layout15);
+    obj.label21:setParent(obj.layout18);
     obj.label21:setLeft(25);
     obj.label21:setTop(81);
     obj.label21:setWidth(100);
@@ -946,7 +926,7 @@ function newOsMundosDosMortos1()
     obj.label21:setName("label21");
 
     obj.edit12 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit12:setParent(obj.layout15);
+    obj.edit12:setParent(obj.layout18);
     obj.edit12:setField("autocontrole");
     obj.edit12:setLeft(50);
     obj.edit12:setTop(102);
@@ -962,7 +942,7 @@ function newOsMundosDosMortos1()
     obj.edit12:setName("edit12");
 
     obj.image4 = gui.fromHandle(_obj_newObject("image"));
-    obj.image4:setParent(obj.layout15);
+    obj.image4:setParent(obj.layout18);
     obj.image4:setLeft(47);
     obj.image4:setTop(101);
     obj.image4:setWidth(45);
@@ -971,7 +951,7 @@ function newOsMundosDosMortos1()
     obj.image4:setName("image4");
 
     obj.label22 = gui.fromHandle(_obj_newObject("label"));
-    obj.label22:setParent(obj.layout15);
+    obj.label22:setParent(obj.layout18);
     obj.label22:setLeft(125);
     obj.label22:setTop(46);
     obj.label22:setWidth(130);
@@ -984,7 +964,7 @@ function newOsMundosDosMortos1()
     obj.label22:setName("label22");
 
     obj.edit13 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit13:setParent(obj.layout15);
+    obj.edit13:setParent(obj.layout18);
     obj.edit13:setField("forcadevontade");
     obj.edit13:setLeft(165);
     obj.edit13:setTop(67);
@@ -1000,7 +980,7 @@ function newOsMundosDosMortos1()
     obj.edit13:setName("edit13");
 
     obj.image5 = gui.fromHandle(_obj_newObject("image"));
-    obj.image5:setParent(obj.layout15);
+    obj.image5:setParent(obj.layout18);
     obj.image5:setLeft(162);
     obj.image5:setTop(66);
     obj.image5:setWidth(45);
@@ -1009,7 +989,7 @@ function newOsMundosDosMortos1()
     obj.image5:setName("image5");
 
     obj.label23 = gui.fromHandle(_obj_newObject("label"));
-    obj.label23:setParent(obj.layout15);
+    obj.label23:setParent(obj.layout18);
     obj.label23:setLeft(273);
     obj.label23:setTop(11);
     obj.label23:setWidth(70);
@@ -1022,7 +1002,7 @@ function newOsMundosDosMortos1()
     obj.label23:setName("label23");
 
     obj.edit14 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit14:setParent(obj.layout15);
+    obj.edit14:setParent(obj.layout18);
     obj.edit14:setField("energia");
     obj.edit14:setLeft(280);
     obj.edit14:setTop(32);
@@ -1038,7 +1018,7 @@ function newOsMundosDosMortos1()
     obj.edit14:setName("edit14");
 
     obj.image6 = gui.fromHandle(_obj_newObject("image"));
-    obj.image6:setParent(obj.layout15);
+    obj.image6:setParent(obj.layout18);
     obj.image6:setLeft(277);
     obj.image6:setTop(31);
     obj.image6:setWidth(45);
@@ -1047,7 +1027,7 @@ function newOsMundosDosMortos1()
     obj.image6:setName("image6");
 
     obj.label24 = gui.fromHandle(_obj_newObject("label"));
-    obj.label24:setParent(obj.layout15);
+    obj.label24:setParent(obj.layout18);
     obj.label24:setLeft(248);
     obj.label24:setTop(81);
     obj.label24:setWidth(130);
@@ -1060,7 +1040,7 @@ function newOsMundosDosMortos1()
     obj.label24:setName("label24");
 
     obj.edit15 = gui.fromHandle(_obj_newObject("edit"));
-    obj.edit15:setParent(obj.layout15);
+    obj.edit15:setParent(obj.layout18);
     obj.edit15:setField("pontosdevida");
     obj.edit15:setLeft(280);
     obj.edit15:setTop(102);
@@ -1076,7 +1056,7 @@ function newOsMundosDosMortos1()
     obj.edit15:setName("edit15");
 
     obj.image7 = gui.fromHandle(_obj_newObject("image"));
-    obj.image7:setParent(obj.layout15);
+    obj.image7:setParent(obj.layout18);
     obj.image7:setLeft(277);
     obj.image7:setTop(101);
     obj.image7:setWidth(45);
@@ -1084,35 +1064,35 @@ function newOsMundosDosMortos1()
     obj.image7:setSRC("/sub/img/blackhole.png");
     obj.image7:setName("image7");
 
-    obj.layout16 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout16:setParent(obj.scrollBox1);
-    obj.layout16:setLeft(635);
-    obj.layout16:setTop(245);
-    obj.layout16:setWidth(235);
-    obj.layout16:setHeight(160);
-    obj.layout16:setName("layout16");
+    obj.layout19 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout19:setParent(obj.scrollBox1);
+    obj.layout19:setLeft(635);
+    obj.layout19:setTop(245);
+    obj.layout19:setWidth(235);
+    obj.layout19:setHeight(160);
+    obj.layout19:setName("layout19");
 
     obj.rectangle18 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle18:setParent(obj.layout16);
+    obj.rectangle18:setParent(obj.layout19);
     obj.rectangle18:setAlign("client");
     obj.rectangle18:setName("rectangle18");
 
-    obj.layout17 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout17:setParent(obj.scrollBox1);
-    obj.layout17:setLeft(10);
-    obj.layout17:setTop(457);
-    obj.layout17:setWidth(860);
-    obj.layout17:setHeight(320);
-    obj.layout17:setName("layout17");
+    obj.layout20 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout20:setParent(obj.scrollBox1);
+    obj.layout20:setLeft(10);
+    obj.layout20:setTop(457);
+    obj.layout20:setWidth(860);
+    obj.layout20:setHeight(320);
+    obj.layout20:setName("layout20");
 
     obj.rectangle19 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle19:setParent(obj.layout17);
+    obj.rectangle19:setParent(obj.layout20);
     obj.rectangle19:setAlign("client");
     obj.rectangle19:setName("rectangle19");
 
     obj.label25 = gui.fromHandle(_obj_newObject("label"));
-    obj.label25:setParent(obj.layout17);
-    obj.label25:setLeft(40);
+    obj.label25:setParent(obj.layout20);
+    obj.label25:setLeft(100);
     obj.label25:setTop(10);
     obj.label25:setWidth(120);
     obj.label25:setHeight(20);
@@ -1124,8 +1104,8 @@ function newOsMundosDosMortos1()
     obj.label25:setName("label25");
 
     obj.label26 = gui.fromHandle(_obj_newObject("label"));
-    obj.label26:setParent(obj.layout17);
-    obj.label26:setLeft(680);
+    obj.label26:setParent(obj.layout20);
+    obj.label26:setLeft(620);
     obj.label26:setTop(10);
     obj.label26:setWidth(140);
     obj.label26:setHeight(20);
@@ -1136,7 +1116,1025 @@ function newOsMundosDosMortos1()
     obj.label26:setFontColor("black");
     obj.label26:setName("label26");
 
-    obj._e_event0 = obj.button2:addEventListener("onClick",
+    obj.layout21 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout21:setParent(obj.layout20);
+    obj.layout21:setLeft(38);
+    obj.layout21:setTop(36);
+    obj.layout21:setWidth(260);
+    obj.layout21:setHeight(250);
+    obj.layout21:setName("layout21");
+
+    obj.layout22 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout22:setParent(obj.layout21);
+    obj.layout22:setLeft(10);
+    obj.layout22:setTop(11);
+    obj.layout22:setWidth(245);
+    obj.layout22:setHeight(20);
+    obj.layout22:setName("layout22");
+
+    obj.horzLine1 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine1:setParent(obj.layout22);
+    obj.horzLine1:setTop(18);
+    obj.horzLine1:setWidth(130);
+    obj.horzLine1:setStrokeSize(2);
+    obj.horzLine1:setStrokeColor("black");
+    obj.horzLine1:setName("horzLine1");
+
+    obj.edit16 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit16:setParent(obj.layout22);
+    obj.edit16:setField("mhabilidades1_e");
+    obj.edit16:setLeft(2);
+    obj.edit16:setTop(0);
+    obj.edit16:setWidth(125);
+    obj.edit16:setHeight(20);
+    lfm_setPropAsString(obj.edit16, "fontStyle",  "bold");
+    obj.edit16:setFontColor("black");
+    obj.edit16:setFontSize(14);
+    obj.edit16:setHorzTextAlign("center");
+    obj.edit16:setTransparent(true);
+    obj.edit16:setName("edit16");
+
+    obj.imageCheckBox1 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox1:setParent(obj.layout22);
+    obj.imageCheckBox1:setField("mhabilidades1_1");
+    obj.imageCheckBox1:setLeft(137);
+    obj.imageCheckBox1:setTop(4);
+    obj.imageCheckBox1:setWidth(15);
+    obj.imageCheckBox1:setHeight(15);
+    obj.imageCheckBox1:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox1:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox1:setName("imageCheckBox1");
+
+    obj.imageCheckBox2 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox2:setParent(obj.layout22);
+    obj.imageCheckBox2:setField("mhabilidades1_2");
+    obj.imageCheckBox2:setLeft(155);
+    obj.imageCheckBox2:setTop(4);
+    obj.imageCheckBox2:setWidth(15);
+    obj.imageCheckBox2:setHeight(15);
+    obj.imageCheckBox2:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox2:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox2:setName("imageCheckBox2");
+
+    obj.imageCheckBox3 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox3:setParent(obj.layout22);
+    obj.imageCheckBox3:setField("mhabilidades1_3");
+    obj.imageCheckBox3:setLeft(173);
+    obj.imageCheckBox3:setTop(4);
+    obj.imageCheckBox3:setWidth(15);
+    obj.imageCheckBox3:setHeight(15);
+    obj.imageCheckBox3:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox3:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox3:setName("imageCheckBox3");
+
+    obj.imageCheckBox4 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox4:setParent(obj.layout22);
+    obj.imageCheckBox4:setField("mhabilidades1_4");
+    obj.imageCheckBox4:setLeft(191);
+    obj.imageCheckBox4:setTop(4);
+    obj.imageCheckBox4:setWidth(15);
+    obj.imageCheckBox4:setHeight(15);
+    obj.imageCheckBox4:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox4:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox4:setName("imageCheckBox4");
+
+    obj.imageCheckBox5 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox5:setParent(obj.layout22);
+    obj.imageCheckBox5:setField("mhabilidades1_5");
+    obj.imageCheckBox5:setLeft(209);
+    obj.imageCheckBox5:setTop(4);
+    obj.imageCheckBox5:setWidth(15);
+    obj.imageCheckBox5:setHeight(15);
+    obj.imageCheckBox5:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox5:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox5:setName("imageCheckBox5");
+
+    obj.imageCheckBox6 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox6:setParent(obj.layout22);
+    obj.imageCheckBox6:setField("mhabilidades1_6");
+    obj.imageCheckBox6:setLeft(227);
+    obj.imageCheckBox6:setTop(4);
+    obj.imageCheckBox6:setWidth(15);
+    obj.imageCheckBox6:setHeight(15);
+    obj.imageCheckBox6:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox6:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox6:setName("imageCheckBox6");
+
+    obj.layout23 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout23:setParent(obj.layout21);
+    obj.layout23:setLeft(10);
+    obj.layout23:setTop(41);
+    obj.layout23:setWidth(245);
+    obj.layout23:setHeight(20);
+    obj.layout23:setName("layout23");
+
+    obj.horzLine2 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine2:setParent(obj.layout23);
+    obj.horzLine2:setTop(18);
+    obj.horzLine2:setWidth(130);
+    obj.horzLine2:setStrokeSize(2);
+    obj.horzLine2:setStrokeColor("black");
+    obj.horzLine2:setName("horzLine2");
+
+    obj.edit17 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit17:setParent(obj.layout23);
+    obj.edit17:setField("mhabilidades2_e");
+    obj.edit17:setLeft(2);
+    obj.edit17:setTop(0);
+    obj.edit17:setWidth(125);
+    obj.edit17:setHeight(20);
+    lfm_setPropAsString(obj.edit17, "fontStyle",  "bold");
+    obj.edit17:setFontColor("black");
+    obj.edit17:setFontSize(14);
+    obj.edit17:setHorzTextAlign("center");
+    obj.edit17:setTransparent(true);
+    obj.edit17:setName("edit17");
+
+    obj.imageCheckBox7 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox7:setParent(obj.layout23);
+    obj.imageCheckBox7:setField("mhabilidades2_1");
+    obj.imageCheckBox7:setLeft(137);
+    obj.imageCheckBox7:setTop(4);
+    obj.imageCheckBox7:setWidth(15);
+    obj.imageCheckBox7:setHeight(15);
+    obj.imageCheckBox7:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox7:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox7:setName("imageCheckBox7");
+
+    obj.imageCheckBox8 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox8:setParent(obj.layout23);
+    obj.imageCheckBox8:setField("mhabilidades2_2");
+    obj.imageCheckBox8:setLeft(155);
+    obj.imageCheckBox8:setTop(4);
+    obj.imageCheckBox8:setWidth(15);
+    obj.imageCheckBox8:setHeight(15);
+    obj.imageCheckBox8:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox8:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox8:setName("imageCheckBox8");
+
+    obj.imageCheckBox9 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox9:setParent(obj.layout23);
+    obj.imageCheckBox9:setField("mhabilidades2_3");
+    obj.imageCheckBox9:setLeft(173);
+    obj.imageCheckBox9:setTop(4);
+    obj.imageCheckBox9:setWidth(15);
+    obj.imageCheckBox9:setHeight(15);
+    obj.imageCheckBox9:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox9:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox9:setName("imageCheckBox9");
+
+    obj.imageCheckBox10 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox10:setParent(obj.layout23);
+    obj.imageCheckBox10:setField("mhabilidades2_4");
+    obj.imageCheckBox10:setLeft(191);
+    obj.imageCheckBox10:setTop(4);
+    obj.imageCheckBox10:setWidth(15);
+    obj.imageCheckBox10:setHeight(15);
+    obj.imageCheckBox10:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox10:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox10:setName("imageCheckBox10");
+
+    obj.imageCheckBox11 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox11:setParent(obj.layout23);
+    obj.imageCheckBox11:setField("mhabilidades2_5");
+    obj.imageCheckBox11:setLeft(209);
+    obj.imageCheckBox11:setTop(4);
+    obj.imageCheckBox11:setWidth(15);
+    obj.imageCheckBox11:setHeight(15);
+    obj.imageCheckBox11:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox11:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox11:setName("imageCheckBox11");
+
+    obj.imageCheckBox12 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox12:setParent(obj.layout23);
+    obj.imageCheckBox12:setField("mhabilidades2_6");
+    obj.imageCheckBox12:setLeft(227);
+    obj.imageCheckBox12:setTop(4);
+    obj.imageCheckBox12:setWidth(15);
+    obj.imageCheckBox12:setHeight(15);
+    obj.imageCheckBox12:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox12:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox12:setName("imageCheckBox12");
+
+    obj.layout24 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout24:setParent(obj.layout21);
+    obj.layout24:setLeft(10);
+    obj.layout24:setTop(71);
+    obj.layout24:setWidth(245);
+    obj.layout24:setHeight(20);
+    obj.layout24:setName("layout24");
+
+    obj.horzLine3 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine3:setParent(obj.layout24);
+    obj.horzLine3:setTop(18);
+    obj.horzLine3:setWidth(130);
+    obj.horzLine3:setStrokeSize(2);
+    obj.horzLine3:setStrokeColor("black");
+    obj.horzLine3:setName("horzLine3");
+
+    obj.edit18 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit18:setParent(obj.layout24);
+    obj.edit18:setField("mhabilidades3_e");
+    obj.edit18:setLeft(2);
+    obj.edit18:setTop(0);
+    obj.edit18:setWidth(125);
+    obj.edit18:setHeight(20);
+    lfm_setPropAsString(obj.edit18, "fontStyle",  "bold");
+    obj.edit18:setFontColor("black");
+    obj.edit18:setFontSize(14);
+    obj.edit18:setHorzTextAlign("center");
+    obj.edit18:setTransparent(true);
+    obj.edit18:setName("edit18");
+
+    obj.imageCheckBox13 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox13:setParent(obj.layout24);
+    obj.imageCheckBox13:setField("mhabilidades3_1");
+    obj.imageCheckBox13:setLeft(137);
+    obj.imageCheckBox13:setTop(4);
+    obj.imageCheckBox13:setWidth(15);
+    obj.imageCheckBox13:setHeight(15);
+    obj.imageCheckBox13:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox13:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox13:setName("imageCheckBox13");
+
+    obj.imageCheckBox14 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox14:setParent(obj.layout24);
+    obj.imageCheckBox14:setField("mhabilidades3_2");
+    obj.imageCheckBox14:setLeft(155);
+    obj.imageCheckBox14:setTop(4);
+    obj.imageCheckBox14:setWidth(15);
+    obj.imageCheckBox14:setHeight(15);
+    obj.imageCheckBox14:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox14:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox14:setName("imageCheckBox14");
+
+    obj.imageCheckBox15 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox15:setParent(obj.layout24);
+    obj.imageCheckBox15:setField("mhabilidades3_3");
+    obj.imageCheckBox15:setLeft(173);
+    obj.imageCheckBox15:setTop(4);
+    obj.imageCheckBox15:setWidth(15);
+    obj.imageCheckBox15:setHeight(15);
+    obj.imageCheckBox15:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox15:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox15:setName("imageCheckBox15");
+
+    obj.imageCheckBox16 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox16:setParent(obj.layout24);
+    obj.imageCheckBox16:setField("mhabilidades3_4");
+    obj.imageCheckBox16:setLeft(191);
+    obj.imageCheckBox16:setTop(4);
+    obj.imageCheckBox16:setWidth(15);
+    obj.imageCheckBox16:setHeight(15);
+    obj.imageCheckBox16:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox16:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox16:setName("imageCheckBox16");
+
+    obj.imageCheckBox17 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox17:setParent(obj.layout24);
+    obj.imageCheckBox17:setField("mhabilidades3_5");
+    obj.imageCheckBox17:setLeft(209);
+    obj.imageCheckBox17:setTop(4);
+    obj.imageCheckBox17:setWidth(15);
+    obj.imageCheckBox17:setHeight(15);
+    obj.imageCheckBox17:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox17:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox17:setName("imageCheckBox17");
+
+    obj.imageCheckBox18 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox18:setParent(obj.layout24);
+    obj.imageCheckBox18:setField("mhabilidades3_6");
+    obj.imageCheckBox18:setLeft(227);
+    obj.imageCheckBox18:setTop(4);
+    obj.imageCheckBox18:setWidth(15);
+    obj.imageCheckBox18:setHeight(15);
+    obj.imageCheckBox18:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox18:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox18:setName("imageCheckBox18");
+
+    obj.layout25 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout25:setParent(obj.layout21);
+    obj.layout25:setLeft(10);
+    obj.layout25:setTop(101);
+    obj.layout25:setWidth(245);
+    obj.layout25:setHeight(20);
+    obj.layout25:setName("layout25");
+
+    obj.horzLine4 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine4:setParent(obj.layout25);
+    obj.horzLine4:setTop(18);
+    obj.horzLine4:setWidth(130);
+    obj.horzLine4:setStrokeSize(2);
+    obj.horzLine4:setStrokeColor("black");
+    obj.horzLine4:setName("horzLine4");
+
+    obj.edit19 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit19:setParent(obj.layout25);
+    obj.edit19:setField("mhabilidades4_e");
+    obj.edit19:setLeft(2);
+    obj.edit19:setTop(0);
+    obj.edit19:setWidth(125);
+    obj.edit19:setHeight(20);
+    lfm_setPropAsString(obj.edit19, "fontStyle",  "bold");
+    obj.edit19:setFontColor("black");
+    obj.edit19:setFontSize(14);
+    obj.edit19:setHorzTextAlign("center");
+    obj.edit19:setTransparent(true);
+    obj.edit19:setName("edit19");
+
+    obj.imageCheckBox19 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox19:setParent(obj.layout25);
+    obj.imageCheckBox19:setField("mhabilidades4_1");
+    obj.imageCheckBox19:setLeft(137);
+    obj.imageCheckBox19:setTop(4);
+    obj.imageCheckBox19:setWidth(15);
+    obj.imageCheckBox19:setHeight(15);
+    obj.imageCheckBox19:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox19:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox19:setName("imageCheckBox19");
+
+    obj.imageCheckBox20 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox20:setParent(obj.layout25);
+    obj.imageCheckBox20:setField("mhabilidades4_2");
+    obj.imageCheckBox20:setLeft(155);
+    obj.imageCheckBox20:setTop(4);
+    obj.imageCheckBox20:setWidth(15);
+    obj.imageCheckBox20:setHeight(15);
+    obj.imageCheckBox20:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox20:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox20:setName("imageCheckBox20");
+
+    obj.imageCheckBox21 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox21:setParent(obj.layout25);
+    obj.imageCheckBox21:setField("mhabilidades4_3");
+    obj.imageCheckBox21:setLeft(173);
+    obj.imageCheckBox21:setTop(4);
+    obj.imageCheckBox21:setWidth(15);
+    obj.imageCheckBox21:setHeight(15);
+    obj.imageCheckBox21:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox21:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox21:setName("imageCheckBox21");
+
+    obj.imageCheckBox22 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox22:setParent(obj.layout25);
+    obj.imageCheckBox22:setField("mhabilidades4_4");
+    obj.imageCheckBox22:setLeft(191);
+    obj.imageCheckBox22:setTop(4);
+    obj.imageCheckBox22:setWidth(15);
+    obj.imageCheckBox22:setHeight(15);
+    obj.imageCheckBox22:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox22:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox22:setName("imageCheckBox22");
+
+    obj.imageCheckBox23 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox23:setParent(obj.layout25);
+    obj.imageCheckBox23:setField("mhabilidades4_5");
+    obj.imageCheckBox23:setLeft(209);
+    obj.imageCheckBox23:setTop(4);
+    obj.imageCheckBox23:setWidth(15);
+    obj.imageCheckBox23:setHeight(15);
+    obj.imageCheckBox23:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox23:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox23:setName("imageCheckBox23");
+
+    obj.imageCheckBox24 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox24:setParent(obj.layout25);
+    obj.imageCheckBox24:setField("mhabilidades4_6");
+    obj.imageCheckBox24:setLeft(227);
+    obj.imageCheckBox24:setTop(4);
+    obj.imageCheckBox24:setWidth(15);
+    obj.imageCheckBox24:setHeight(15);
+    obj.imageCheckBox24:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox24:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox24:setName("imageCheckBox24");
+
+    obj.layout26 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout26:setParent(obj.layout21);
+    obj.layout26:setLeft(10);
+    obj.layout26:setTop(131);
+    obj.layout26:setWidth(245);
+    obj.layout26:setHeight(20);
+    obj.layout26:setName("layout26");
+
+    obj.horzLine5 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine5:setParent(obj.layout26);
+    obj.horzLine5:setTop(18);
+    obj.horzLine5:setWidth(130);
+    obj.horzLine5:setStrokeSize(2);
+    obj.horzLine5:setStrokeColor("black");
+    obj.horzLine5:setName("horzLine5");
+
+    obj.edit20 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit20:setParent(obj.layout26);
+    obj.edit20:setField("mhabilidades5_e");
+    obj.edit20:setLeft(2);
+    obj.edit20:setTop(0);
+    obj.edit20:setWidth(125);
+    obj.edit20:setHeight(20);
+    lfm_setPropAsString(obj.edit20, "fontStyle",  "bold");
+    obj.edit20:setFontColor("black");
+    obj.edit20:setFontSize(14);
+    obj.edit20:setHorzTextAlign("center");
+    obj.edit20:setTransparent(true);
+    obj.edit20:setName("edit20");
+
+    obj.imageCheckBox25 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox25:setParent(obj.layout26);
+    obj.imageCheckBox25:setField("mhabilidades5_1");
+    obj.imageCheckBox25:setLeft(137);
+    obj.imageCheckBox25:setTop(4);
+    obj.imageCheckBox25:setWidth(15);
+    obj.imageCheckBox25:setHeight(15);
+    obj.imageCheckBox25:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox25:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox25:setName("imageCheckBox25");
+
+    obj.imageCheckBox26 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox26:setParent(obj.layout26);
+    obj.imageCheckBox26:setField("mhabilidades5_2");
+    obj.imageCheckBox26:setLeft(155);
+    obj.imageCheckBox26:setTop(4);
+    obj.imageCheckBox26:setWidth(15);
+    obj.imageCheckBox26:setHeight(15);
+    obj.imageCheckBox26:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox26:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox26:setName("imageCheckBox26");
+
+    obj.imageCheckBox27 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox27:setParent(obj.layout26);
+    obj.imageCheckBox27:setField("mhabilidades5_3");
+    obj.imageCheckBox27:setLeft(173);
+    obj.imageCheckBox27:setTop(4);
+    obj.imageCheckBox27:setWidth(15);
+    obj.imageCheckBox27:setHeight(15);
+    obj.imageCheckBox27:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox27:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox27:setName("imageCheckBox27");
+
+    obj.imageCheckBox28 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox28:setParent(obj.layout26);
+    obj.imageCheckBox28:setField("mhabilidades5_4");
+    obj.imageCheckBox28:setLeft(191);
+    obj.imageCheckBox28:setTop(4);
+    obj.imageCheckBox28:setWidth(15);
+    obj.imageCheckBox28:setHeight(15);
+    obj.imageCheckBox28:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox28:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox28:setName("imageCheckBox28");
+
+    obj.imageCheckBox29 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox29:setParent(obj.layout26);
+    obj.imageCheckBox29:setField("mhabilidades5_5");
+    obj.imageCheckBox29:setLeft(209);
+    obj.imageCheckBox29:setTop(4);
+    obj.imageCheckBox29:setWidth(15);
+    obj.imageCheckBox29:setHeight(15);
+    obj.imageCheckBox29:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox29:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox29:setName("imageCheckBox29");
+
+    obj.imageCheckBox30 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox30:setParent(obj.layout26);
+    obj.imageCheckBox30:setField("mhabilidades5_6");
+    obj.imageCheckBox30:setLeft(227);
+    obj.imageCheckBox30:setTop(4);
+    obj.imageCheckBox30:setWidth(15);
+    obj.imageCheckBox30:setHeight(15);
+    obj.imageCheckBox30:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox30:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox30:setName("imageCheckBox30");
+
+    obj.layout27 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout27:setParent(obj.layout21);
+    obj.layout27:setLeft(10);
+    obj.layout27:setTop(161);
+    obj.layout27:setWidth(245);
+    obj.layout27:setHeight(20);
+    obj.layout27:setName("layout27");
+
+    obj.horzLine6 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine6:setParent(obj.layout27);
+    obj.horzLine6:setTop(18);
+    obj.horzLine6:setWidth(130);
+    obj.horzLine6:setStrokeSize(2);
+    obj.horzLine6:setStrokeColor("black");
+    obj.horzLine6:setName("horzLine6");
+
+    obj.edit21 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit21:setParent(obj.layout27);
+    obj.edit21:setField("mhabilidades6_e");
+    obj.edit21:setLeft(2);
+    obj.edit21:setTop(0);
+    obj.edit21:setWidth(125);
+    obj.edit21:setHeight(20);
+    lfm_setPropAsString(obj.edit21, "fontStyle",  "bold");
+    obj.edit21:setFontColor("black");
+    obj.edit21:setFontSize(14);
+    obj.edit21:setHorzTextAlign("center");
+    obj.edit21:setTransparent(true);
+    obj.edit21:setName("edit21");
+
+    obj.imageCheckBox31 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox31:setParent(obj.layout27);
+    obj.imageCheckBox31:setField("mhabilidades6_1");
+    obj.imageCheckBox31:setLeft(137);
+    obj.imageCheckBox31:setTop(4);
+    obj.imageCheckBox31:setWidth(15);
+    obj.imageCheckBox31:setHeight(15);
+    obj.imageCheckBox31:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox31:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox31:setName("imageCheckBox31");
+
+    obj.imageCheckBox32 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox32:setParent(obj.layout27);
+    obj.imageCheckBox32:setField("mhabilidades6_2");
+    obj.imageCheckBox32:setLeft(155);
+    obj.imageCheckBox32:setTop(4);
+    obj.imageCheckBox32:setWidth(15);
+    obj.imageCheckBox32:setHeight(15);
+    obj.imageCheckBox32:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox32:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox32:setName("imageCheckBox32");
+
+    obj.imageCheckBox33 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox33:setParent(obj.layout27);
+    obj.imageCheckBox33:setField("mhabilidades6_3");
+    obj.imageCheckBox33:setLeft(173);
+    obj.imageCheckBox33:setTop(4);
+    obj.imageCheckBox33:setWidth(15);
+    obj.imageCheckBox33:setHeight(15);
+    obj.imageCheckBox33:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox33:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox33:setName("imageCheckBox33");
+
+    obj.imageCheckBox34 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox34:setParent(obj.layout27);
+    obj.imageCheckBox34:setField("mhabilidades6_4");
+    obj.imageCheckBox34:setLeft(191);
+    obj.imageCheckBox34:setTop(4);
+    obj.imageCheckBox34:setWidth(15);
+    obj.imageCheckBox34:setHeight(15);
+    obj.imageCheckBox34:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox34:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox34:setName("imageCheckBox34");
+
+    obj.imageCheckBox35 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox35:setParent(obj.layout27);
+    obj.imageCheckBox35:setField("mhabilidades6_5");
+    obj.imageCheckBox35:setLeft(209);
+    obj.imageCheckBox35:setTop(4);
+    obj.imageCheckBox35:setWidth(15);
+    obj.imageCheckBox35:setHeight(15);
+    obj.imageCheckBox35:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox35:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox35:setName("imageCheckBox35");
+
+    obj.imageCheckBox36 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox36:setParent(obj.layout27);
+    obj.imageCheckBox36:setField("mhabilidades6_6");
+    obj.imageCheckBox36:setLeft(227);
+    obj.imageCheckBox36:setTop(4);
+    obj.imageCheckBox36:setWidth(15);
+    obj.imageCheckBox36:setHeight(15);
+    obj.imageCheckBox36:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox36:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox36:setName("imageCheckBox36");
+
+    obj.layout28 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout28:setParent(obj.layout21);
+    obj.layout28:setLeft(10);
+    obj.layout28:setTop(191);
+    obj.layout28:setWidth(245);
+    obj.layout28:setHeight(20);
+    obj.layout28:setName("layout28");
+
+    obj.horzLine7 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine7:setParent(obj.layout28);
+    obj.horzLine7:setTop(18);
+    obj.horzLine7:setWidth(130);
+    obj.horzLine7:setStrokeSize(2);
+    obj.horzLine7:setStrokeColor("black");
+    obj.horzLine7:setName("horzLine7");
+
+    obj.edit22 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit22:setParent(obj.layout28);
+    obj.edit22:setField("mhabilidades7_e");
+    obj.edit22:setLeft(2);
+    obj.edit22:setTop(0);
+    obj.edit22:setWidth(125);
+    obj.edit22:setHeight(20);
+    lfm_setPropAsString(obj.edit22, "fontStyle",  "bold");
+    obj.edit22:setFontColor("black");
+    obj.edit22:setFontSize(14);
+    obj.edit22:setHorzTextAlign("center");
+    obj.edit22:setTransparent(true);
+    obj.edit22:setName("edit22");
+
+    obj.imageCheckBox37 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox37:setParent(obj.layout28);
+    obj.imageCheckBox37:setField("mhabilidades7_1");
+    obj.imageCheckBox37:setLeft(137);
+    obj.imageCheckBox37:setTop(4);
+    obj.imageCheckBox37:setWidth(15);
+    obj.imageCheckBox37:setHeight(15);
+    obj.imageCheckBox37:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox37:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox37:setName("imageCheckBox37");
+
+    obj.imageCheckBox38 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox38:setParent(obj.layout28);
+    obj.imageCheckBox38:setField("mhabilidades7_2");
+    obj.imageCheckBox38:setLeft(155);
+    obj.imageCheckBox38:setTop(4);
+    obj.imageCheckBox38:setWidth(15);
+    obj.imageCheckBox38:setHeight(15);
+    obj.imageCheckBox38:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox38:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox38:setName("imageCheckBox38");
+
+    obj.imageCheckBox39 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox39:setParent(obj.layout28);
+    obj.imageCheckBox39:setField("mhabilidades7_3");
+    obj.imageCheckBox39:setLeft(173);
+    obj.imageCheckBox39:setTop(4);
+    obj.imageCheckBox39:setWidth(15);
+    obj.imageCheckBox39:setHeight(15);
+    obj.imageCheckBox39:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox39:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox39:setName("imageCheckBox39");
+
+    obj.imageCheckBox40 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox40:setParent(obj.layout28);
+    obj.imageCheckBox40:setField("mhabilidades7_4");
+    obj.imageCheckBox40:setLeft(191);
+    obj.imageCheckBox40:setTop(4);
+    obj.imageCheckBox40:setWidth(15);
+    obj.imageCheckBox40:setHeight(15);
+    obj.imageCheckBox40:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox40:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox40:setName("imageCheckBox40");
+
+    obj.imageCheckBox41 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox41:setParent(obj.layout28);
+    obj.imageCheckBox41:setField("mhabilidades7_5");
+    obj.imageCheckBox41:setLeft(209);
+    obj.imageCheckBox41:setTop(4);
+    obj.imageCheckBox41:setWidth(15);
+    obj.imageCheckBox41:setHeight(15);
+    obj.imageCheckBox41:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox41:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox41:setName("imageCheckBox41");
+
+    obj.imageCheckBox42 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox42:setParent(obj.layout28);
+    obj.imageCheckBox42:setField("mhabilidades7_6");
+    obj.imageCheckBox42:setLeft(227);
+    obj.imageCheckBox42:setTop(4);
+    obj.imageCheckBox42:setWidth(15);
+    obj.imageCheckBox42:setHeight(15);
+    obj.imageCheckBox42:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox42:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox42:setName("imageCheckBox42");
+
+    obj.layout29 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout29:setParent(obj.layout21);
+    obj.layout29:setLeft(10);
+    obj.layout29:setTop(221);
+    obj.layout29:setWidth(245);
+    obj.layout29:setHeight(20);
+    obj.layout29:setName("layout29");
+
+    obj.horzLine8 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine8:setParent(obj.layout29);
+    obj.horzLine8:setTop(18);
+    obj.horzLine8:setWidth(130);
+    obj.horzLine8:setStrokeSize(2);
+    obj.horzLine8:setStrokeColor("black");
+    obj.horzLine8:setName("horzLine8");
+
+    obj.edit23 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit23:setParent(obj.layout29);
+    obj.edit23:setField("mhabilidades8_e");
+    obj.edit23:setLeft(2);
+    obj.edit23:setTop(0);
+    obj.edit23:setWidth(125);
+    obj.edit23:setHeight(20);
+    lfm_setPropAsString(obj.edit23, "fontStyle",  "bold");
+    obj.edit23:setFontColor("black");
+    obj.edit23:setFontSize(14);
+    obj.edit23:setHorzTextAlign("center");
+    obj.edit23:setTransparent(true);
+    obj.edit23:setName("edit23");
+
+    obj.imageCheckBox43 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox43:setParent(obj.layout29);
+    obj.imageCheckBox43:setField("mhabilidades8_1");
+    obj.imageCheckBox43:setLeft(137);
+    obj.imageCheckBox43:setTop(4);
+    obj.imageCheckBox43:setWidth(15);
+    obj.imageCheckBox43:setHeight(15);
+    obj.imageCheckBox43:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox43:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox43:setName("imageCheckBox43");
+
+    obj.imageCheckBox44 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox44:setParent(obj.layout29);
+    obj.imageCheckBox44:setField("mhabilidades8_2");
+    obj.imageCheckBox44:setLeft(155);
+    obj.imageCheckBox44:setTop(4);
+    obj.imageCheckBox44:setWidth(15);
+    obj.imageCheckBox44:setHeight(15);
+    obj.imageCheckBox44:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox44:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox44:setName("imageCheckBox44");
+
+    obj.imageCheckBox45 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox45:setParent(obj.layout29);
+    obj.imageCheckBox45:setField("mhabilidades8_3");
+    obj.imageCheckBox45:setLeft(173);
+    obj.imageCheckBox45:setTop(4);
+    obj.imageCheckBox45:setWidth(15);
+    obj.imageCheckBox45:setHeight(15);
+    obj.imageCheckBox45:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox45:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox45:setName("imageCheckBox45");
+
+    obj.imageCheckBox46 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox46:setParent(obj.layout29);
+    obj.imageCheckBox46:setField("mhabilidades8_4");
+    obj.imageCheckBox46:setLeft(191);
+    obj.imageCheckBox46:setTop(4);
+    obj.imageCheckBox46:setWidth(15);
+    obj.imageCheckBox46:setHeight(15);
+    obj.imageCheckBox46:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox46:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox46:setName("imageCheckBox46");
+
+    obj.imageCheckBox47 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox47:setParent(obj.layout29);
+    obj.imageCheckBox47:setField("mhabilidades8_5");
+    obj.imageCheckBox47:setLeft(209);
+    obj.imageCheckBox47:setTop(4);
+    obj.imageCheckBox47:setWidth(15);
+    obj.imageCheckBox47:setHeight(15);
+    obj.imageCheckBox47:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox47:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox47:setName("imageCheckBox47");
+
+    obj.imageCheckBox48 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox48:setParent(obj.layout29);
+    obj.imageCheckBox48:setField("mhabilidades8_6");
+    obj.imageCheckBox48:setLeft(227);
+    obj.imageCheckBox48:setTop(4);
+    obj.imageCheckBox48:setWidth(15);
+    obj.imageCheckBox48:setHeight(15);
+    obj.imageCheckBox48:setImageChecked("/sub/img/bboll2.png");
+    obj.imageCheckBox48:setImageUnchecked("/sub/img/bboll1.png");
+    obj.imageCheckBox48:setName("imageCheckBox48");
+
+    obj.layout30 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout30:setParent(obj.layout20);
+    obj.layout30:setLeft(560);
+    obj.layout30:setTop(36);
+    obj.layout30:setWidth(260);
+    obj.layout30:setHeight(250);
+    obj.layout30:setName("layout30");
+
+    obj.layout31 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout31:setParent(obj.layout30);
+    obj.layout31:setLeft(10);
+    obj.layout31:setTop(11);
+    obj.layout31:setWidth(245);
+    obj.layout31:setHeight(20);
+    obj.layout31:setName("layout31");
+
+    obj.horzLine9 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine9:setParent(obj.layout31);
+    obj.horzLine9:setTop(18);
+    obj.horzLine9:setWidth(238);
+    obj.horzLine9:setStrokeSize(2);
+    obj.horzLine9:setStrokeColor("black");
+    obj.horzLine9:setName("horzLine9");
+
+    obj.label27 = gui.fromHandle(_obj_newObject("label"));
+    obj.label27:setParent(obj.layout31);
+    obj.label27:setWidth(80);
+    obj.label27:setHeight(20);
+    obj.label27:setText("Nível 1 ->");
+    lfm_setPropAsString(obj.label27, "fontStyle",  "bold");
+    obj.label27:setFontSize(15);
+    obj.label27:setFontColor("black");
+    obj.label27:setName("label27");
+
+    obj.edit24 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit24:setParent(obj.layout31);
+    obj.edit24:setField("cnivel1");
+    obj.edit24:setLeft(70);
+    obj.edit24:setTop(0);
+    obj.edit24:setWidth(168);
+    obj.edit24:setHeight(20);
+    lfm_setPropAsString(obj.edit24, "fontStyle",  "bold");
+    obj.edit24:setFontColor("black");
+    obj.edit24:setFontSize(15);
+    obj.edit24:setTransparent(true);
+    obj.edit24:setName("edit24");
+
+    obj.layout32 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout32:setParent(obj.layout30);
+    obj.layout32:setLeft(10);
+    obj.layout32:setTop(53);
+    obj.layout32:setWidth(245);
+    obj.layout32:setHeight(20);
+    obj.layout32:setName("layout32");
+
+    obj.horzLine10 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine10:setParent(obj.layout32);
+    obj.horzLine10:setTop(18);
+    obj.horzLine10:setWidth(238);
+    obj.horzLine10:setStrokeSize(2);
+    obj.horzLine10:setStrokeColor("black");
+    obj.horzLine10:setName("horzLine10");
+
+    obj.label28 = gui.fromHandle(_obj_newObject("label"));
+    obj.label28:setParent(obj.layout32);
+    obj.label28:setWidth(80);
+    obj.label28:setHeight(20);
+    obj.label28:setText("Nível 2 ->");
+    lfm_setPropAsString(obj.label28, "fontStyle",  "bold");
+    obj.label28:setFontSize(15);
+    obj.label28:setFontColor("black");
+    obj.label28:setName("label28");
+
+    obj.edit25 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit25:setParent(obj.layout32);
+    obj.edit25:setField("cnivel2");
+    obj.edit25:setLeft(70);
+    obj.edit25:setTop(0);
+    obj.edit25:setWidth(168);
+    obj.edit25:setHeight(20);
+    lfm_setPropAsString(obj.edit25, "fontStyle",  "bold");
+    obj.edit25:setFontColor("black");
+    obj.edit25:setFontSize(15);
+    obj.edit25:setTransparent(true);
+    obj.edit25:setName("edit25");
+
+    obj.layout33 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout33:setParent(obj.layout30);
+    obj.layout33:setLeft(10);
+    obj.layout33:setTop(95);
+    obj.layout33:setWidth(245);
+    obj.layout33:setHeight(20);
+    obj.layout33:setName("layout33");
+
+    obj.horzLine11 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine11:setParent(obj.layout33);
+    obj.horzLine11:setTop(18);
+    obj.horzLine11:setWidth(238);
+    obj.horzLine11:setStrokeSize(2);
+    obj.horzLine11:setStrokeColor("black");
+    obj.horzLine11:setName("horzLine11");
+
+    obj.label29 = gui.fromHandle(_obj_newObject("label"));
+    obj.label29:setParent(obj.layout33);
+    obj.label29:setWidth(80);
+    obj.label29:setHeight(20);
+    obj.label29:setText("Nível 3 ->");
+    lfm_setPropAsString(obj.label29, "fontStyle",  "bold");
+    obj.label29:setFontSize(15);
+    obj.label29:setFontColor("black");
+    obj.label29:setName("label29");
+
+    obj.edit26 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit26:setParent(obj.layout33);
+    obj.edit26:setField("cnivel3");
+    obj.edit26:setLeft(70);
+    obj.edit26:setTop(0);
+    obj.edit26:setWidth(168);
+    obj.edit26:setHeight(20);
+    lfm_setPropAsString(obj.edit26, "fontStyle",  "bold");
+    obj.edit26:setFontColor("black");
+    obj.edit26:setFontSize(15);
+    obj.edit26:setTransparent(true);
+    obj.edit26:setName("edit26");
+
+    obj.layout34 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout34:setParent(obj.layout30);
+    obj.layout34:setLeft(10);
+    obj.layout34:setTop(137);
+    obj.layout34:setWidth(245);
+    obj.layout34:setHeight(20);
+    obj.layout34:setName("layout34");
+
+    obj.horzLine12 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine12:setParent(obj.layout34);
+    obj.horzLine12:setTop(18);
+    obj.horzLine12:setWidth(238);
+    obj.horzLine12:setStrokeSize(2);
+    obj.horzLine12:setStrokeColor("black");
+    obj.horzLine12:setName("horzLine12");
+
+    obj.label30 = gui.fromHandle(_obj_newObject("label"));
+    obj.label30:setParent(obj.layout34);
+    obj.label30:setWidth(80);
+    obj.label30:setHeight(20);
+    obj.label30:setText("Nível 4 ->");
+    lfm_setPropAsString(obj.label30, "fontStyle",  "bold");
+    obj.label30:setFontSize(15);
+    obj.label30:setFontColor("black");
+    obj.label30:setName("label30");
+
+    obj.edit27 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit27:setParent(obj.layout34);
+    obj.edit27:setField("cnivel4");
+    obj.edit27:setLeft(70);
+    obj.edit27:setTop(0);
+    obj.edit27:setWidth(168);
+    obj.edit27:setHeight(20);
+    lfm_setPropAsString(obj.edit27, "fontStyle",  "bold");
+    obj.edit27:setFontColor("black");
+    obj.edit27:setFontSize(15);
+    obj.edit27:setTransparent(true);
+    obj.edit27:setName("edit27");
+
+    obj.layout35 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout35:setParent(obj.layout30);
+    obj.layout35:setLeft(10);
+    obj.layout35:setTop(179);
+    obj.layout35:setWidth(245);
+    obj.layout35:setHeight(20);
+    obj.layout35:setName("layout35");
+
+    obj.horzLine13 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine13:setParent(obj.layout35);
+    obj.horzLine13:setTop(18);
+    obj.horzLine13:setWidth(238);
+    obj.horzLine13:setStrokeSize(2);
+    obj.horzLine13:setStrokeColor("black");
+    obj.horzLine13:setName("horzLine13");
+
+    obj.label31 = gui.fromHandle(_obj_newObject("label"));
+    obj.label31:setParent(obj.layout35);
+    obj.label31:setWidth(80);
+    obj.label31:setHeight(20);
+    obj.label31:setText("Nível 5 ->");
+    lfm_setPropAsString(obj.label31, "fontStyle",  "bold");
+    obj.label31:setFontSize(15);
+    obj.label31:setFontColor("black");
+    obj.label31:setName("label31");
+
+    obj.edit28 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit28:setParent(obj.layout35);
+    obj.edit28:setField("cnivel5");
+    obj.edit28:setLeft(70);
+    obj.edit28:setTop(0);
+    obj.edit28:setWidth(168);
+    obj.edit28:setHeight(20);
+    lfm_setPropAsString(obj.edit28, "fontStyle",  "bold");
+    obj.edit28:setFontColor("black");
+    obj.edit28:setFontSize(15);
+    obj.edit28:setTransparent(true);
+    obj.edit28:setName("edit28");
+
+    obj.layout36 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout36:setParent(obj.layout30);
+    obj.layout36:setLeft(10);
+    obj.layout36:setTop(221);
+    obj.layout36:setWidth(245);
+    obj.layout36:setHeight(20);
+    obj.layout36:setName("layout36");
+
+    obj.horzLine14 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine14:setParent(obj.layout36);
+    obj.horzLine14:setTop(18);
+    obj.horzLine14:setWidth(238);
+    obj.horzLine14:setStrokeSize(2);
+    obj.horzLine14:setStrokeColor("black");
+    obj.horzLine14:setName("horzLine14");
+
+    obj.label32 = gui.fromHandle(_obj_newObject("label"));
+    obj.label32:setParent(obj.layout36);
+    obj.label32:setWidth(80);
+    obj.label32:setHeight(20);
+    obj.label32:setText("Nível 6 ->");
+    lfm_setPropAsString(obj.label32, "fontStyle",  "bold");
+    obj.label32:setFontSize(15);
+    obj.label32:setFontColor("black");
+    obj.label32:setName("label32");
+
+    obj.edit29 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit29:setParent(obj.layout36);
+    obj.edit29:setField("cnivel6");
+    obj.edit29:setLeft(70);
+    obj.edit29:setTop(0);
+    obj.edit29:setWidth(168);
+    obj.edit29:setHeight(20);
+    lfm_setPropAsString(obj.edit29, "fontStyle",  "bold");
+    obj.edit29:setFontColor("black");
+    obj.edit29:setFontSize(15);
+    obj.edit29:setTransparent(true);
+    obj.edit29:setName("edit29");
+
+    obj._e_event0 = obj.button1:addEventListener("onClick",
         function (self)
             Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)
         end, obj);
@@ -1154,123 +2152,223 @@ function newOsMundosDosMortos1()
           self:setNodeDatabase(nil);
         end;
 
-        if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
         if self.label14 ~= nil then self.label14:destroy(); self.label14 = nil; end;
+        if self.horzLine11 ~= nil then self.horzLine11:destroy(); self.horzLine11 = nil; end;
         if self.checkBox15 ~= nil then self.checkBox15:destroy(); self.checkBox15 = nil; end;
         if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
         if self.layout10 ~= nil then self.layout10:destroy(); self.layout10 = nil; end;
-        if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
         if self.checkBox18 ~= nil then self.checkBox18:destroy(); self.checkBox18 = nil; end;
+        if self.horzLine7 ~= nil then self.horzLine7:destroy(); self.horzLine7 = nil; end;
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
+        if self.edit29 ~= nil then self.edit29:destroy(); self.edit29 = nil; end;
         if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
-        if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
+        if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
         if self.checkBox29 ~= nil then self.checkBox29:destroy(); self.checkBox29 = nil; end;
-        if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
-        if self.checkBox27 ~= nil then self.checkBox27:destroy(); self.checkBox27 = nil; end;
-        if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
         if self.rectangle16 ~= nil then self.rectangle16:destroy(); self.rectangle16 = nil; end;
+        if self.horzLine10 ~= nil then self.horzLine10:destroy(); self.horzLine10 = nil; end;
         if self.checkBox11 ~= nil then self.checkBox11:destroy(); self.checkBox11 = nil; end;
-        if self.checkBox6 ~= nil then self.checkBox6:destroy(); self.checkBox6 = nil; end;
-        if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
-        if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
-        if self.label23 ~= nil then self.label23:destroy(); self.label23 = nil; end;
+        if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
-        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
-        if self.label24 ~= nil then self.label24:destroy(); self.label24 = nil; end;
+        if self.horzLine14 ~= nil then self.horzLine14:destroy(); self.horzLine14 = nil; end;
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
-        if self.rectangle10 ~= nil then self.rectangle10:destroy(); self.rectangle10 = nil; end;
         if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
-        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
+        if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
         if self.checkBox7 ~= nil then self.checkBox7:destroy(); self.checkBox7 = nil; end;
-        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.checkBox8 ~= nil then self.checkBox8:destroy(); self.checkBox8 = nil; end;
-        if self.image6 ~= nil then self.image6:destroy(); self.image6 = nil; end;
-        if self.rectangle19 ~= nil then self.rectangle19:destroy(); self.rectangle19 = nil; end;
+        if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;
         if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
-        if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
-        if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
         if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
-        if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
+        if self.imageCheckBox45 ~= nil then self.imageCheckBox45:destroy(); self.imageCheckBox45 = nil; end;
         if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
-        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
-        if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
-        if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
+        if self.edit26 ~= nil then self.edit26:destroy(); self.edit26 = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
         if self.edit11 ~= nil then self.edit11:destroy(); self.edit11 = nil; end;
+        if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
+        if self.edit19 ~= nil then self.edit19:destroy(); self.edit19 = nil; end;
+        if self.label31 ~= nil then self.label31:destroy(); self.label31 = nil; end;
         if self.rectangle17 ~= nil then self.rectangle17:destroy(); self.rectangle17 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
-        if self.checkBox17 ~= nil then self.checkBox17:destroy(); self.checkBox17 = nil; end;
         if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
-        if self.checkBox16 ~= nil then self.checkBox16:destroy(); self.checkBox16 = nil; end;
+        if self.layout32 ~= nil then self.layout32:destroy(); self.layout32 = nil; end;
         if self.rectangle15 ~= nil then self.rectangle15:destroy(); self.rectangle15 = nil; end;
-        if self.checkBox20 ~= nil then self.checkBox20:destroy(); self.checkBox20 = nil; end;
         if self.label12 ~= nil then self.label12:destroy(); self.label12 = nil; end;
-        if self.checkBox9 ~= nil then self.checkBox9:destroy(); self.checkBox9 = nil; end;
-        if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
+        if self.layout36 ~= nil then self.layout36:destroy(); self.layout36 = nil; end;
+        if self.imageCheckBox13 ~= nil then self.imageCheckBox13:destroy(); self.imageCheckBox13 = nil; end;
+        if self.imageCheckBox34 ~= nil then self.imageCheckBox34:destroy(); self.imageCheckBox34 = nil; end;
         if self.label16 ~= nil then self.label16:destroy(); self.label16 = nil; end;
-        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
-        if self.rectangle8 ~= nil then self.rectangle8:destroy(); self.rectangle8 = nil; end;
-        if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
         if self.edit10 ~= nil then self.edit10:destroy(); self.edit10 = nil; end;
+        if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
-        if self.checkBox5 ~= nil then self.checkBox5:destroy(); self.checkBox5 = nil; end;
+        if self.layout34 ~= nil then self.layout34:destroy(); self.layout34 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
         if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
-        if self.checkBox14 ~= nil then self.checkBox14:destroy(); self.checkBox14 = nil; end;
         if self.checkBox3 ~= nil then self.checkBox3:destroy(); self.checkBox3 = nil; end;
         if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
-        if self.checkBox21 ~= nil then self.checkBox21:destroy(); self.checkBox21 = nil; end;
-        if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
-        if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
+        if self.imageCheckBox37 ~= nil then self.imageCheckBox37:destroy(); self.imageCheckBox37 = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
+        if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
+        if self.imageCheckBox24 ~= nil then self.imageCheckBox24:destroy(); self.imageCheckBox24 = nil; end;
+        if self.edit23 ~= nil then self.edit23:destroy(); self.edit23 = nil; end;
+        if self.imageCheckBox31 ~= nil then self.imageCheckBox31:destroy(); self.imageCheckBox31 = nil; end;
+        if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
+        if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
+        if self.imageCheckBox9 ~= nil then self.imageCheckBox9:destroy(); self.imageCheckBox9 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
-        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
         if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
-        if self.checkBox12 ~= nil then self.checkBox12:destroy(); self.checkBox12 = nil; end;
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
-        if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
+        if self.imageCheckBox1 ~= nil then self.imageCheckBox1:destroy(); self.imageCheckBox1 = nil; end;
+        if self.imageCheckBox17 ~= nil then self.imageCheckBox17:destroy(); self.imageCheckBox17 = nil; end;
+        if self.imageCheckBox21 ~= nil then self.imageCheckBox21:destroy(); self.imageCheckBox21 = nil; end;
+        if self.label30 ~= nil then self.label30:destroy(); self.label30 = nil; end;
+        if self.imageCheckBox26 ~= nil then self.imageCheckBox26:destroy(); self.imageCheckBox26 = nil; end;
+        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
+        if self.imageCheckBox2 ~= nil then self.imageCheckBox2:destroy(); self.imageCheckBox2 = nil; end;
         if self.label19 ~= nil then self.label19:destroy(); self.label19 = nil; end;
-        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
-        if self.checkBox22 ~= nil then self.checkBox22:destroy(); self.checkBox22 = nil; end;
         if self.rectangle12 ~= nil then self.rectangle12:destroy(); self.rectangle12 = nil; end;
         if self.checkBox24 ~= nil then self.checkBox24:destroy(); self.checkBox24 = nil; end;
-        if self.checkBox2 ~= nil then self.checkBox2:destroy(); self.checkBox2 = nil; end;
-        if self.checkBox19 ~= nil then self.checkBox19:destroy(); self.checkBox19 = nil; end;
-        if self.label11 ~= nil then self.label11:destroy(); self.label11 = nil; end;
+        if self.layout35 ~= nil then self.layout35:destroy(); self.layout35 = nil; end;
         if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
-        if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.checkBox23 ~= nil then self.checkBox23:destroy(); self.checkBox23 = nil; end;
-        if self.checkBox25 ~= nil then self.checkBox25:destroy(); self.checkBox25 = nil; end;
-        if self.label20 ~= nil then self.label20:destroy(); self.label20 = nil; end;
-        if self.edit15 ~= nil then self.edit15:destroy(); self.edit15 = nil; end;
+        if self.horzLine3 ~= nil then self.horzLine3:destroy(); self.horzLine3 = nil; end;
         if self.checkBox13 ~= nil then self.checkBox13:destroy(); self.checkBox13 = nil; end;
+        if self.imageCheckBox28 ~= nil then self.imageCheckBox28:destroy(); self.imageCheckBox28 = nil; end;
         if self.rectangle18 ~= nil then self.rectangle18:destroy(); self.rectangle18 = nil; end;
         if self.rectangle14 ~= nil then self.rectangle14:destroy(); self.rectangle14 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
-        if self.checkBox26 ~= nil then self.checkBox26:destroy(); self.checkBox26 = nil; end;
         if self.checkBox28 ~= nil then self.checkBox28:destroy(); self.checkBox28 = nil; end;
-        if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
-        if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
+        if self.imageCheckBox6 ~= nil then self.imageCheckBox6:destroy(); self.imageCheckBox6 = nil; end;
+        if self.imageCheckBox48 ~= nil then self.imageCheckBox48:destroy(); self.imageCheckBox48 = nil; end;
         if self.label18 ~= nil then self.label18:destroy(); self.label18 = nil; end;
         if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
+        if self.imageCheckBox33 ~= nil then self.imageCheckBox33:destroy(); self.imageCheckBox33 = nil; end;
         if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
+        if self.layout33 ~= nil then self.layout33:destroy(); self.layout33 = nil; end;
+        if self.imageCheckBox15 ~= nil then self.imageCheckBox15:destroy(); self.imageCheckBox15 = nil; end;
+        if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
+        if self.edit27 ~= nil then self.edit27:destroy(); self.edit27 = nil; end;
+        if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
+        if self.layout21 ~= nil then self.layout21:destroy(); self.layout21 = nil; end;
+        if self.checkBox4 ~= nil then self.checkBox4:destroy(); self.checkBox4 = nil; end;
+        if self.edit18 ~= nil then self.edit18:destroy(); self.edit18 = nil; end;
+        if self.edit25 ~= nil then self.edit25:destroy(); self.edit25 = nil; end;
+        if self.imageCheckBox12 ~= nil then self.imageCheckBox12:destroy(); self.imageCheckBox12 = nil; end;
+        if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
+        if self.imageCheckBox35 ~= nil then self.imageCheckBox35:destroy(); self.imageCheckBox35 = nil; end;
+        if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
+        if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
+        if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
+        if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
+        if self.imageCheckBox20 ~= nil then self.imageCheckBox20:destroy(); self.imageCheckBox20 = nil; end;
+        if self.imageCheckBox43 ~= nil then self.imageCheckBox43:destroy(); self.imageCheckBox43 = nil; end;
+        if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
+        if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
+        if self.imageCheckBox4 ~= nil then self.imageCheckBox4:destroy(); self.imageCheckBox4 = nil; end;
+        if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
+        if self.checkBox27 ~= nil then self.checkBox27:destroy(); self.checkBox27 = nil; end;
+        if self.imageCheckBox39 ~= nil then self.imageCheckBox39:destroy(); self.imageCheckBox39 = nil; end;
+        if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
+        if self.imageCheckBox7 ~= nil then self.imageCheckBox7:destroy(); self.imageCheckBox7 = nil; end;
+        if self.imageCheckBox30 ~= nil then self.imageCheckBox30:destroy(); self.imageCheckBox30 = nil; end;
+        if self.checkBox6 ~= nil then self.checkBox6:destroy(); self.checkBox6 = nil; end;
+        if self.label23 ~= nil then self.label23:destroy(); self.label23 = nil; end;
+        if self.rectangle19 ~= nil then self.rectangle19:destroy(); self.rectangle19 = nil; end;
+        if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
+        if self.label32 ~= nil then self.label32:destroy(); self.label32 = nil; end;
+        if self.label24 ~= nil then self.label24:destroy(); self.label24 = nil; end;
+        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
+        if self.horzLine2 ~= nil then self.horzLine2:destroy(); self.horzLine2 = nil; end;
+        if self.rectangle10 ~= nil then self.rectangle10:destroy(); self.rectangle10 = nil; end;
+        if self.checkBox8 ~= nil then self.checkBox8:destroy(); self.checkBox8 = nil; end;
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
+        if self.image6 ~= nil then self.image6:destroy(); self.image6 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.imageCheckBox38 ~= nil then self.imageCheckBox38:destroy(); self.imageCheckBox38 = nil; end;
+        if self.imageCheckBox44 ~= nil then self.imageCheckBox44:destroy(); self.imageCheckBox44 = nil; end;
+        if self.edit24 ~= nil then self.edit24:destroy(); self.edit24 = nil; end;
+        if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
+        if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
+        if self.imageCheckBox36 ~= nil then self.imageCheckBox36:destroy(); self.imageCheckBox36 = nil; end;
+        if self.imageCheckBox32 ~= nil then self.imageCheckBox32:destroy(); self.imageCheckBox32 = nil; end;
+        if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
+        if self.layout25 ~= nil then self.layout25:destroy(); self.layout25 = nil; end;
+        if self.horzLine8 ~= nil then self.horzLine8:destroy(); self.horzLine8 = nil; end;
+        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
+        if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
+        if self.imageCheckBox23 ~= nil then self.imageCheckBox23:destroy(); self.imageCheckBox23 = nil; end;
+        if self.checkBox17 ~= nil then self.checkBox17:destroy(); self.checkBox17 = nil; end;
+        if self.checkBox16 ~= nil then self.checkBox16:destroy(); self.checkBox16 = nil; end;
+        if self.imageCheckBox41 ~= nil then self.imageCheckBox41:destroy(); self.imageCheckBox41 = nil; end;
+        if self.horzLine5 ~= nil then self.horzLine5:destroy(); self.horzLine5 = nil; end;
+        if self.checkBox20 ~= nil then self.checkBox20:destroy(); self.checkBox20 = nil; end;
+        if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
+        if self.imageCheckBox18 ~= nil then self.imageCheckBox18:destroy(); self.imageCheckBox18 = nil; end;
+        if self.checkBox9 ~= nil then self.checkBox9:destroy(); self.checkBox9 = nil; end;
+        if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
+        if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
+        if self.imageCheckBox10 ~= nil then self.imageCheckBox10:destroy(); self.imageCheckBox10 = nil; end;
+        if self.layout28 ~= nil then self.layout28:destroy(); self.layout28 = nil; end;
+        if self.imageCheckBox22 ~= nil then self.imageCheckBox22:destroy(); self.imageCheckBox22 = nil; end;
+        if self.layout19 ~= nil then self.layout19:destroy(); self.layout19 = nil; end;
+        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
+        if self.rectangle8 ~= nil then self.rectangle8:destroy(); self.rectangle8 = nil; end;
+        if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
+        if self.imageCheckBox46 ~= nil then self.imageCheckBox46:destroy(); self.imageCheckBox46 = nil; end;
+        if self.imageCheckBox19 ~= nil then self.imageCheckBox19:destroy(); self.imageCheckBox19 = nil; end;
+        if self.label28 ~= nil then self.label28:destroy(); self.label28 = nil; end;
+        if self.horzLine9 ~= nil then self.horzLine9:destroy(); self.horzLine9 = nil; end;
+        if self.checkBox5 ~= nil then self.checkBox5:destroy(); self.checkBox5 = nil; end;
+        if self.imageCheckBox14 ~= nil then self.imageCheckBox14:destroy(); self.imageCheckBox14 = nil; end;
+        if self.imageCheckBox25 ~= nil then self.imageCheckBox25:destroy(); self.imageCheckBox25 = nil; end;
+        if self.edit21 ~= nil then self.edit21:destroy(); self.edit21 = nil; end;
+        if self.horzLine12 ~= nil then self.horzLine12:destroy(); self.horzLine12 = nil; end;
+        if self.checkBox14 ~= nil then self.checkBox14:destroy(); self.checkBox14 = nil; end;
+        if self.checkBox21 ~= nil then self.checkBox21:destroy(); self.checkBox21 = nil; end;
+        if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
+        if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
+        if self.imageCheckBox42 ~= nil then self.imageCheckBox42:destroy(); self.imageCheckBox42 = nil; end;
+        if self.imageCheckBox5 ~= nil then self.imageCheckBox5:destroy(); self.imageCheckBox5 = nil; end;
+        if self.imageCheckBox29 ~= nil then self.imageCheckBox29:destroy(); self.imageCheckBox29 = nil; end;
+        if self.imageCheckBox16 ~= nil then self.imageCheckBox16:destroy(); self.imageCheckBox16 = nil; end;
+        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
+        if self.checkBox12 ~= nil then self.checkBox12:destroy(); self.checkBox12 = nil; end;
+        if self.imageCheckBox27 ~= nil then self.imageCheckBox27:destroy(); self.imageCheckBox27 = nil; end;
+        if self.layout31 ~= nil then self.layout31:destroy(); self.layout31 = nil; end;
+        if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
+        if self.edit17 ~= nil then self.edit17:destroy(); self.edit17 = nil; end;
+        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
+        if self.checkBox22 ~= nil then self.checkBox22:destroy(); self.checkBox22 = nil; end;
+        if self.checkBox2 ~= nil then self.checkBox2:destroy(); self.checkBox2 = nil; end;
+        if self.imageCheckBox3 ~= nil then self.imageCheckBox3:destroy(); self.imageCheckBox3 = nil; end;
+        if self.layout29 ~= nil then self.layout29:destroy(); self.layout29 = nil; end;
+        if self.checkBox19 ~= nil then self.checkBox19:destroy(); self.checkBox19 = nil; end;
+        if self.label11 ~= nil then self.label11:destroy(); self.label11 = nil; end;
+        if self.checkBox25 ~= nil then self.checkBox25:destroy(); self.checkBox25 = nil; end;
+        if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
+        if self.label20 ~= nil then self.label20:destroy(); self.label20 = nil; end;
+        if self.edit15 ~= nil then self.edit15:destroy(); self.edit15 = nil; end;
+        if self.horzLine4 ~= nil then self.horzLine4:destroy(); self.horzLine4 = nil; end;
+        if self.checkBox26 ~= nil then self.checkBox26:destroy(); self.checkBox26 = nil; end;
+        if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
+        if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
+        if self.edit22 ~= nil then self.edit22:destroy(); self.edit22 = nil; end;
         if self.checkBox10 ~= nil then self.checkBox10:destroy(); self.checkBox10 = nil; end;
         if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
         if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
+        if self.horzLine13 ~= nil then self.horzLine13:destroy(); self.horzLine13 = nil; end;
         if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
         if self.rectangle13 ~= nil then self.rectangle13:destroy(); self.rectangle13 = nil; end;
-        if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
+        if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
+        if self.imageCheckBox11 ~= nil then self.imageCheckBox11:destroy(); self.imageCheckBox11 = nil; end;
+        if self.imageCheckBox47 ~= nil then self.imageCheckBox47:destroy(); self.imageCheckBox47 = nil; end;
         if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
-        if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
-        if self.checkBox4 ~= nil then self.checkBox4:destroy(); self.checkBox4 = nil; end;
+        if self.horzLine6 ~= nil then self.horzLine6:destroy(); self.horzLine6 = nil; end;
+        if self.imageCheckBox40 ~= nil then self.imageCheckBox40:destroy(); self.imageCheckBox40 = nil; end;
         if self.checkBox1 ~= nil then self.checkBox1:destroy(); self.checkBox1 = nil; end;
-        if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.checkBox30 ~= nil then self.checkBox30:destroy(); self.checkBox30 = nil; end;
-        if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
+        if self.edit20 ~= nil then self.edit20:destroy(); self.edit20 = nil; end;
         self:_oldLFMDestroy();
     end;
 

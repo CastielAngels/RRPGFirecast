@@ -196,7 +196,7 @@ function newOsMundosDosMortos2()
     obj.rectangle5:setLeft(5);
     obj.rectangle5:setTop(0);
     obj.rectangle5:setColor("Gainsboro");
-    obj.rectangle5:setWidth(90);
+    obj.rectangle5:setWidth(84);
     obj.rectangle5:setXradius(2);
     obj.rectangle5:setYradius(2);
     obj.rectangle5:setName("rectangle5");

@@ -111,7 +111,7 @@ function newOsMundosDosMortosC()
     obj.label3:setWidth(250);
     obj.label3:setFontColor("silver");
     obj.label3:setHeight(20);
-    obj.label3:setText("Versão: 1.0b");
+    obj.label3:setText("Versão: 1.0b 14/10/18");
     obj.label3:setHorzTextAlign("center");
     obj.label3:setFontSize(13);
     obj.label3:setName("label3");

@@ -9,7 +9,7 @@
 			<layout left="140" top="28" width="250" height="200">
 				<label left="0" top="30" width="250" fontColor="silver" height="20" text="Programador: CastielAngels" horzTextAlign="center"/>
 				<label left="0" top="55" width="250" fontColor="silver" height="20" text="Os Mundos Dos Mortos RRPG Firecast" horzTextAlign="center"/>
-				<label left="0" top="80" width="250" fontColor="silver" height="20" text="Versão: 1.0b" horzTextAlign="center" fontSize="13"/>
+				<label left="0" top="80" width="250" fontColor="silver" height="20" text="Versão: 1.0b 14/10/18" horzTextAlign="center" fontSize="13"/>
 				<label left="0" top="105" width="250" fontColor="silver" height="20" text="Por favor, mantenha seu plugin atualizado." horzTextAlign="center" fontSize="13"/>
 			</layout>
 		</flowPart>
