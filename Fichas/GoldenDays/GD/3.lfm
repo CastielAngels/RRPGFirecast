@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="GoldenDays03" align="client" theme="light">
+
+<image align="client" style="stretch" src="img/background.jpg"/>
+	<scrollBox align="client">
+
+		<layout left="0" top="0" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+			<label left="8" top="5" width="138" height="20" text="História" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+		</layout>
+		
+		<richEdit left="9" top="50" width="884" height="450" field="historia"/>
+		
+		<layout left="0" top="520" width="900" height="30">
+			<rectangle align="client" color="gray"/>
+			<label left="8" top="5" width="168" height="20" text="Poder único - " horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<edit left="90" top="2" width="200" height="25" transparent="true" field="poderunico" fontColor="black" fontStyle="bold" horzTextAlign="leading"/>
+		</layout>
+		
+		<rectangle left="10" top="560" width="135" height="135" color="DimGray" xradius="5" yradius="5"/>
+		<image field="poderunicoimagem" editable="true" style="autoFit" src="" left="10" top="560" width="135" height="135"/>
+		<textEditor left="156" top="560" width="737" height="230" field="poderunicotext"/>
+	</scrollBox>
+</form>

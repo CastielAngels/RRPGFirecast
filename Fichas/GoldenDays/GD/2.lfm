@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="GoldenDays02" align="client" theme="dark">
+
+<image align="client" style="stretch" src="img/background.jpg"/>
+	<scrollBox align="client">
+	
+		<layout left="0" top="0" width="880" height="30">
+			<rectangle align="client" color="gray"/>
+			<label left="8" top="5" width="138" height="20" text="Aparência" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+		</layout>
+		
+		<layout left="0" top="333" width="880" height="30">
+			<rectangle align="client" color="gray"/>
+			<label left="8" top="5" width="138" height="20" text="Magias" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<label left="500" top="5" width="138" height="20" text="Elementos:" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<edit left="570" top="2" width="200" height="25" field="elementos" fontStyle="bold" horzTextAlign="center"/>
+		</layout>
+		
+		<layout left="10" top="40" width="860" height="290">
+			<rectangle left="0" top="0" width="250" height="250" color="DimGray" xradius="5" yradius="5"/>
+			<rectangle left="301" top="0" width="250" height="250" color="DimGray" xradius="5" yradius="5"/>
+			<rectangle left="609" top="0" width="250" height="250" color="DimGray" xradius="5" yradius="5"/>
+			<label left="80" top="95" width="80" height="60" text="250x250" horzTextAlign="center"/>
+			<label left="380" top="95" width="80" height="60" text="250x250" horzTextAlign="center"/>
+			<label left="700" top="95" width="80" height="60" text="250x250" horzTextAlign="center"/>
+			<image field="imagempersona" style="stretch" animate="true" editable="true" src="" left="0" top="0" width="250" height="250"/>
+			<image field="imagempersona2" style="stretch" animate="true" editable="true" src="" left="301" top="0" width="250" height="250"/>
+			<image field="imagempersona3" style="stretch" animate="true" editable="true" src="" left="609" top="0" width="250" height="250"/>
+			<edit left="0" top="260" width="250" height="25" readOnly="true" field="imagempersona1" horzTextAlign="leading"/>
+			<edit left="301" top="260" width="250" height="25" readOnly="true" field="imagempersona2" horzTextAlign="leading"/>
+			<edit left="609" top="260" width="250" height="25" readOnly="true" field="imagempersona3" horzTextAlign="leading"/>
+		</layout>
+		
+		<textEditor left="9" top="375" width="861" height="420" field="magias"/>
+	</scrollBox>
+</form>
