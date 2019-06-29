@@ -51,7 +51,7 @@
 
 		<layout left="0" top="170" width="880" height="30">
 			<rectangle align="client" color="gray"/>
-			<label left="8" top="5" width="138" height="20" text="Tendências" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<label left="8" top="5" width="138" height="20" text="Atributos" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
 			<label left="695" top="5" width="148" height="20" text="Experiência:" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
 			<edit left="780" top="2" width="40" height="25" type="number" field="exptotal" horzTextAlign="center"/>
 			<edit left="830" top="2" width="40" height="25" type="number" field="expatual" horzTextAlign="center"/>

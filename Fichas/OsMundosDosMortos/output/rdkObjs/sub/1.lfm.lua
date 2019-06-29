@@ -134,7 +134,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.label3:setTop(5);
     obj.label3:setWidth(138);
     obj.label3:setHeight(20);
-    obj.label3:setText("Tendências");
+    obj.label3:setText("Atributos");
     obj.label3:setHorzTextAlign("leading");
     lfm_setPropAsString(obj.label3, "fontStyle",  "bold");
     obj.label3:setFontColor("black");

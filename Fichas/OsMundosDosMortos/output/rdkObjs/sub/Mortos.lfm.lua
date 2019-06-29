@@ -153,7 +153,7 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.label3:setTop(5);
     obj.label3:setWidth(138);
     obj.label3:setHeight(20);
-    obj.label3:setText("Tendências");
+    obj.label3:setText("Atributos");
     obj.label3:setHorzTextAlign("leading");
     lfm_setPropAsString(obj.label3, "fontStyle",  "bold");
     obj.label3:setFontColor("black");
@@ -2552,7 +2552,7 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.label41:setWidth(250);
     obj.label41:setFontColor("silver");
     obj.label41:setHeight(20);
-    obj.label41:setText("Versão: 1.1b 29/06/19");
+    obj.label41:setText("Versão: 1.3b 29/06/19");
     obj.label41:setHorzTextAlign("center");
     obj.label41:setFontSize(13);
     obj.label41:setName("label41");
