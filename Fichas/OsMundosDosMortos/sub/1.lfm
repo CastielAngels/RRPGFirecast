@@ -34,6 +34,8 @@
 	<template name="class">
 		<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
 	</template>
+	
+	<image align="client" field="backgroundimg" style="stretch" src=""/>
 
 	<scrollBox align="client">
 
@@ -44,6 +46,7 @@
 		<layout left="0" top="0" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="138" height="20" text="Dados do Personagem" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<button left="830" top="2" width="40" height="25" text="BG" hitTest="true" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
 		</layout>
 
 		<layout left="0" top="170" width="880" height="30">

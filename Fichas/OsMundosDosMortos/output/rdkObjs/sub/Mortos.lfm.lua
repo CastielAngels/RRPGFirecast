@@ -49,6 +49,14 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.OsMundosDosMortos1:setAlign("client");
     obj.OsMundosDosMortos1:setTheme("dark");
 
+    obj.image1 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image1:setParent(obj.OsMundosDosMortos1);
+    obj.image1:setAlign("client");
+    obj.image1:setField("backgroundimg");
+    obj.image1:setStyle("stretch");
+    obj.image1:setSRC("");
+    obj.image1:setName("image1");
+
     obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
     obj.scrollBox1:setParent(obj.OsMundosDosMortos1);
     obj.scrollBox1:setAlign("client");
@@ -75,17 +83,17 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.label1:setHorzTextAlign("center");
     obj.label1:setName("label1");
 
-    obj.image1 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image1:setParent(obj.scrollBox1);
-    obj.image1:setField("imagempersona");
-    obj.image1:setEditable(true);
-    obj.image1:setStyle("autoFit");
-    obj.image1:setSRC("");
-    obj.image1:setLeft(373);
-    obj.image1:setTop(33);
-    obj.image1:setWidth(135);
-    obj.image1:setHeight(135);
-    obj.image1:setName("image1");
+    obj.image2 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image2:setParent(obj.scrollBox1);
+    obj.image2:setField("imagempersona");
+    obj.image2:setEditable(true);
+    obj.image2:setStyle("autoFit");
+    obj.image2:setSRC("");
+    obj.image2:setLeft(373);
+    obj.image2:setTop(33);
+    obj.image2:setWidth(135);
+    obj.image2:setHeight(135);
+    obj.image2:setName("image2");
 
     obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout1:setParent(obj.scrollBox1);
@@ -112,6 +120,18 @@ local function constructNew_OsMundosDosMortosfrm()
     lfm_setPropAsString(obj.label2, "fontStyle",  "bold");
     obj.label2:setFontColor("black");
     obj.label2:setName("label2");
+
+    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button1:setParent(obj.layout1);
+    obj.button1:setLeft(830);
+    obj.button1:setTop(2);
+    obj.button1:setWidth(40);
+    obj.button1:setHeight(25);
+    obj.button1:setText("BG");
+    obj.button1:setHitTest(true);
+    obj.button1:setCanFocus(false);
+    obj.button1:setHint("Altera a imagem de fundo da ficha.");
+    obj.button1:setName("button1");
 
     obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.scrollBox1);
@@ -902,14 +922,14 @@ local function constructNew_OsMundosDosMortosfrm()
     lfm_setPropAsString(obj.edit11, "fontStyle",  "bold");
     obj.edit11:setName("edit11");
 
-    obj.image2 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image2:setParent(obj.layout18);
-    obj.image2:setLeft(47);
-    obj.image2:setTop(31);
-    obj.image2:setWidth(45);
-    obj.image2:setHeight(45);
-    obj.image2:setSRC("/sub/img/blackhole.png");
-    obj.image2:setName("image2");
+    obj.image3 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image3:setParent(obj.layout18);
+    obj.image3:setLeft(47);
+    obj.image3:setTop(31);
+    obj.image3:setWidth(45);
+    obj.image3:setHeight(45);
+    obj.image3:setSRC("/sub/img/blackhole.png");
+    obj.image3:setName("image3");
 
     obj.label21 = GUI.fromHandle(_obj_newObject("label"));
     obj.label21:setParent(obj.layout18);
@@ -940,14 +960,14 @@ local function constructNew_OsMundosDosMortosfrm()
     lfm_setPropAsString(obj.edit12, "fontStyle",  "bold");
     obj.edit12:setName("edit12");
 
-    obj.image3 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image3:setParent(obj.layout18);
-    obj.image3:setLeft(47);
-    obj.image3:setTop(101);
-    obj.image3:setWidth(45);
-    obj.image3:setHeight(45);
-    obj.image3:setSRC("/sub/img/blackhole.png");
-    obj.image3:setName("image3");
+    obj.image4 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image4:setParent(obj.layout18);
+    obj.image4:setLeft(47);
+    obj.image4:setTop(101);
+    obj.image4:setWidth(45);
+    obj.image4:setHeight(45);
+    obj.image4:setSRC("/sub/img/blackhole.png");
+    obj.image4:setName("image4");
 
     obj.label22 = GUI.fromHandle(_obj_newObject("label"));
     obj.label22:setParent(obj.layout18);
@@ -978,14 +998,14 @@ local function constructNew_OsMundosDosMortosfrm()
     lfm_setPropAsString(obj.edit13, "fontStyle",  "bold");
     obj.edit13:setName("edit13");
 
-    obj.image4 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image4:setParent(obj.layout18);
-    obj.image4:setLeft(162);
-    obj.image4:setTop(66);
-    obj.image4:setWidth(45);
-    obj.image4:setHeight(45);
-    obj.image4:setSRC("/sub/img/blackhole.png");
-    obj.image4:setName("image4");
+    obj.image5 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image5:setParent(obj.layout18);
+    obj.image5:setLeft(162);
+    obj.image5:setTop(66);
+    obj.image5:setWidth(45);
+    obj.image5:setHeight(45);
+    obj.image5:setSRC("/sub/img/blackhole.png");
+    obj.image5:setName("image5");
 
     obj.label23 = GUI.fromHandle(_obj_newObject("label"));
     obj.label23:setParent(obj.layout18);
@@ -1016,14 +1036,14 @@ local function constructNew_OsMundosDosMortosfrm()
     lfm_setPropAsString(obj.edit14, "fontStyle",  "bold");
     obj.edit14:setName("edit14");
 
-    obj.image5 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image5:setParent(obj.layout18);
-    obj.image5:setLeft(277);
-    obj.image5:setTop(31);
-    obj.image5:setWidth(45);
-    obj.image5:setHeight(45);
-    obj.image5:setSRC("/sub/img/blackhole.png");
-    obj.image5:setName("image5");
+    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image6:setParent(obj.layout18);
+    obj.image6:setLeft(277);
+    obj.image6:setTop(31);
+    obj.image6:setWidth(45);
+    obj.image6:setHeight(45);
+    obj.image6:setSRC("/sub/img/blackhole.png");
+    obj.image6:setName("image6");
 
     obj.label24 = GUI.fromHandle(_obj_newObject("label"));
     obj.label24:setParent(obj.layout18);
@@ -1054,14 +1074,14 @@ local function constructNew_OsMundosDosMortosfrm()
     lfm_setPropAsString(obj.edit15, "fontStyle",  "bold");
     obj.edit15:setName("edit15");
 
-    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image6:setParent(obj.layout18);
-    obj.image6:setLeft(277);
-    obj.image6:setTop(101);
-    obj.image6:setWidth(45);
-    obj.image6:setHeight(45);
-    obj.image6:setSRC("/sub/img/blackhole.png");
-    obj.image6:setName("image6");
+    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image7:setParent(obj.layout18);
+    obj.image7:setLeft(277);
+    obj.image7:setTop(101);
+    obj.image7:setWidth(45);
+    obj.image7:setHeight(45);
+    obj.image7:setSRC("/sub/img/blackhole.png");
+    obj.image7:setName("image7");
 
     obj.layout19 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout19:setParent(obj.scrollBox1);
@@ -2144,13 +2164,13 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.OsMundosDosMortos2:setAlign("client");
     obj.OsMundosDosMortos2:setTheme("dark");
 
-    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image7:setParent(obj.OsMundosDosMortos2);
-    obj.image7:setAlign("client");
-    obj.image7:setField("backgroundimg");
-    obj.image7:setStyle("stretch");
-    obj.image7:setSRC("");
-    obj.image7:setName("image7");
+    obj.image8 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image8:setParent(obj.OsMundosDosMortos2);
+    obj.image8:setAlign("client");
+    obj.image8:setField("backgroundimg");
+    obj.image8:setStyle("stretch");
+    obj.image8:setSRC("");
+    obj.image8:setName("image8");
 
     obj.scrollBox2 = GUI.fromHandle(_obj_newObject("scrollBox"));
     obj.scrollBox2:setParent(obj.OsMundosDosMortos2);
@@ -2353,12 +2373,12 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.layout42:setMargins({bottom=4});
     obj.layout42:setName("layout42");
 
-    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button1:setParent(obj.layout42);
-    obj.button1:setText("Adicionar Novo Objeto");
-    obj.button1:setWidth(150);
-    obj.button1:setAlign("left");
-    obj.button1:setName("button1");
+    obj.button2 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button2:setParent(obj.layout42);
+    obj.button2:setText("Adicionar Novo Objeto");
+    obj.button2:setWidth(150);
+    obj.button2:setAlign("left");
+    obj.button2:setName("button2");
 
     obj.rclListaDosItens = GUI.fromHandle(_obj_newObject("recordList"));
     obj.rclListaDosItens:setParent(obj.OsMundosDosMortos3);
@@ -2412,13 +2432,13 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.layout44:setHeight(130);
     obj.layout44:setName("layout44");
 
-    obj.image8 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image8:setParent(obj.layout44);
-    obj.image8:setAlign("left");
-    obj.image8:setEditable(true);
-    obj.image8:setField("campoURLImagem");
-    obj.image8:setWidth(130);
-    obj.image8:setName("image8");
+    obj.image9 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image9:setParent(obj.layout44);
+    obj.image9:setAlign("left");
+    obj.image9:setEditable(true);
+    obj.image9:setField("campoURLImagem");
+    obj.image9:setWidth(130);
+    obj.image9:setName("image9");
 
     obj.layout45 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout45:setParent(obj.layout44);
@@ -2551,10 +2571,15 @@ local function constructNew_OsMundosDosMortosfrm()
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
         function (_)
+            Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)
+        end, obj);
+
+    obj._e_event1 = obj.button2:addEventListener("onClick",
+        function (_)
             self.rclListaDosItens:append();
         end, obj);
 
-    obj._e_event1 = obj.rclListaDosItens:addEventListener("onSelect",
+    obj._e_event2 = obj.rclListaDosItens:addEventListener("onSelect",
         function (_)
             local node = self.rclListaDosItens.selectedNode;  
                                      self.boxDetalhesDoItem.node = node;                       
@@ -2562,6 +2587,7 @@ local function constructNew_OsMundosDosMortosfrm()
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event2);
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
         __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
@@ -2599,6 +2625,7 @@ local function constructNew_OsMundosDosMortosfrm()
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
         if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
         if self.layout38 ~= nil then self.layout38:destroy(); self.layout38 = nil; end;
+        if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
         if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
         if self.horzLine14 ~= nil then self.horzLine14:destroy(); self.horzLine14 = nil; end;
@@ -2643,6 +2670,7 @@ local function constructNew_OsMundosDosMortosfrm()
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
         if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
+        if self.image9 ~= nil then self.image9:destroy(); self.image9 = nil; end;
         if self.checkBox3 ~= nil then self.checkBox3:destroy(); self.checkBox3 = nil; end;
         if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
         if self.layout42 ~= nil then self.layout42:destroy(); self.layout42 = nil; end;
