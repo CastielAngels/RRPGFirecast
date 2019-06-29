@@ -1,14 +1,14 @@
-require("rrpg.lua");
+require("firecast.lua");
 local __o_rrpgObjs = require("rrpgObjs.lua");
 require("rrpgGUI.lua");
 require("rrpgDialogs.lua");
 require("rrpgLFM.lua");
 require("ndb.lua");
+require("locale.lua");
+local __o_Utils = require("utils.lua");
 
-function newOsMundosDosMortos2()
-    __o_rrpgObjs.beginObjectsLoading();
-
-    local obj = gui.fromHandle(_obj_newObject("form"));
+local function constructNew_OsMundosDosMortos2()
+    local obj = GUI.fromHandle(_obj_newObject("form"));
     local self = obj;
     local sheet = nil;
 
@@ -30,7 +30,7 @@ function newOsMundosDosMortos2()
     obj:setAlign("client");
     obj:setTheme("dark");
 
-    obj.image1 = gui.fromHandle(_obj_newObject("image"));
+    obj.image1 = GUI.fromHandle(_obj_newObject("image"));
     obj.image1:setParent(obj);
     obj.image1:setAlign("client");
     obj.image1:setField("backgroundimg");
@@ -38,12 +38,12 @@ function newOsMundosDosMortos2()
     obj.image1:setSRC("");
     obj.image1:setName("image1");
 
-    obj.scrollBox1 = gui.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
     obj.scrollBox1:setParent(obj);
     obj.scrollBox1:setAlign("client");
     obj.scrollBox1:setName("scrollBox1");
 
-    obj.layout1 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout1:setParent(obj.scrollBox1);
     obj.layout1:setLeft(0);
     obj.layout1:setTop(0);
@@ -51,13 +51,13 @@ function newOsMundosDosMortos2()
     obj.layout1:setHeight(30);
     obj.layout1:setName("layout1");
 
-    obj.rectangle1 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle1:setParent(obj.layout1);
     obj.rectangle1:setAlign("client");
     obj.rectangle1:setColor("gray");
     obj.rectangle1:setName("rectangle1");
 
-    obj.label1 = gui.fromHandle(_obj_newObject("label"));
+    obj.label1 = GUI.fromHandle(_obj_newObject("label"));
     obj.label1:setParent(obj.layout1);
     obj.label1:setLeft(8);
     obj.label1:setTop(5);
@@ -69,7 +69,7 @@ function newOsMundosDosMortos2()
     obj.label1:setFontColor("black");
     obj.label1:setName("label1");
 
-    obj.layout2 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.scrollBox1);
     obj.layout2:setLeft(10);
     obj.layout2:setTop(40);
@@ -77,7 +77,7 @@ function newOsMundosDosMortos2()
     obj.layout2:setHeight(160);
     obj.layout2:setName("layout2");
 
-    obj.rectangle2 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle2:setParent(obj.layout2);
     obj.rectangle2:setLeft(5);
     obj.rectangle2:setTop(0);
@@ -87,7 +87,7 @@ function newOsMundosDosMortos2()
     obj.rectangle2:setYradius(2);
     obj.rectangle2:setName("rectangle2");
 
-    obj.label2 = gui.fromHandle(_obj_newObject("label"));
+    obj.label2 = GUI.fromHandle(_obj_newObject("label"));
     obj.label2:setParent(obj.layout2);
     obj.label2:setLeft(7);
     obj.label2:setWidth(80);
@@ -98,7 +98,7 @@ function newOsMundosDosMortos2()
     obj.label2:setFontColor("black");
     obj.label2:setName("label2");
 
-    obj.textEditor1 = gui.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor1:setParent(obj.layout2);
     obj.textEditor1:setTop(20);
     obj.textEditor1:setWidth(860);
@@ -107,7 +107,7 @@ function newOsMundosDosMortos2()
     lfm_setPropAsString(obj.textEditor1, "fontStyle",  "bold");
     obj.textEditor1:setName("textEditor1");
 
-    obj.layout3 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout3 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout3:setParent(obj.scrollBox1);
     obj.layout3:setLeft(10);
     obj.layout3:setTop(210);
@@ -115,7 +115,7 @@ function newOsMundosDosMortos2()
     obj.layout3:setHeight(160);
     obj.layout3:setName("layout3");
 
-    obj.rectangle3 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle3:setParent(obj.layout3);
     obj.rectangle3:setLeft(5);
     obj.rectangle3:setTop(0);
@@ -125,7 +125,7 @@ function newOsMundosDosMortos2()
     obj.rectangle3:setYradius(2);
     obj.rectangle3:setName("rectangle3");
 
-    obj.label3 = gui.fromHandle(_obj_newObject("label"));
+    obj.label3 = GUI.fromHandle(_obj_newObject("label"));
     obj.label3:setParent(obj.layout3);
     obj.label3:setLeft(7);
     obj.label3:setWidth(100);
@@ -136,7 +136,7 @@ function newOsMundosDosMortos2()
     obj.label3:setFontColor("black");
     obj.label3:setName("label3");
 
-    obj.textEditor2 = gui.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor2:setParent(obj.layout3);
     obj.textEditor2:setTop(20);
     obj.textEditor2:setWidth(860);
@@ -145,7 +145,7 @@ function newOsMundosDosMortos2()
     lfm_setPropAsString(obj.textEditor2, "fontStyle",  "bold");
     obj.textEditor2:setName("textEditor2");
 
-    obj.layout4 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout4 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout4:setParent(obj.scrollBox1);
     obj.layout4:setLeft(10);
     obj.layout4:setTop(380);
@@ -153,7 +153,7 @@ function newOsMundosDosMortos2()
     obj.layout4:setHeight(160);
     obj.layout4:setName("layout4");
 
-    obj.rectangle4 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle4 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle4:setParent(obj.layout4);
     obj.rectangle4:setLeft(5);
     obj.rectangle4:setTop(0);
@@ -163,7 +163,7 @@ function newOsMundosDosMortos2()
     obj.rectangle4:setYradius(2);
     obj.rectangle4:setName("rectangle4");
 
-    obj.label4 = gui.fromHandle(_obj_newObject("label"));
+    obj.label4 = GUI.fromHandle(_obj_newObject("label"));
     obj.label4:setParent(obj.layout4);
     obj.label4:setLeft(7);
     obj.label4:setWidth(90);
@@ -174,7 +174,7 @@ function newOsMundosDosMortos2()
     obj.label4:setFontColor("black");
     obj.label4:setName("label4");
 
-    obj.textEditor3 = gui.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor3:setParent(obj.layout4);
     obj.textEditor3:setTop(20);
     obj.textEditor3:setWidth(860);
@@ -183,7 +183,7 @@ function newOsMundosDosMortos2()
     lfm_setPropAsString(obj.textEditor3, "fontStyle",  "bold");
     obj.textEditor3:setName("textEditor3");
 
-    obj.layout5 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout5 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout5:setParent(obj.scrollBox1);
     obj.layout5:setLeft(10);
     obj.layout5:setTop(550);
@@ -191,7 +191,7 @@ function newOsMundosDosMortos2()
     obj.layout5:setHeight(228);
     obj.layout5:setName("layout5");
 
-    obj.rectangle5 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle5 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle5:setParent(obj.layout5);
     obj.rectangle5:setLeft(5);
     obj.rectangle5:setTop(0);
@@ -201,7 +201,7 @@ function newOsMundosDosMortos2()
     obj.rectangle5:setYradius(2);
     obj.rectangle5:setName("rectangle5");
 
-    obj.label5 = gui.fromHandle(_obj_newObject("label"));
+    obj.label5 = GUI.fromHandle(_obj_newObject("label"));
     obj.label5:setParent(obj.layout5);
     obj.label5:setLeft(7);
     obj.label5:setWidth(90);
@@ -212,7 +212,7 @@ function newOsMundosDosMortos2()
     obj.label5:setFontColor("black");
     obj.label5:setName("label5");
 
-    obj.textEditor4 = gui.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor4 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor4:setParent(obj.layout5);
     obj.textEditor4:setTop(20);
     obj.textEditor4:setWidth(860);
@@ -259,9 +259,23 @@ function newOsMundosDosMortos2()
 
     obj:endUpdate();
 
-     __o_rrpgObjs.endObjectsLoading();
-
     return obj;
+end;
+
+function newOsMundosDosMortos2()
+    local retObj = nil;
+    __o_rrpgObjs.beginObjectsLoading();
+
+    __o_Utils.tryFinally(
+      function()
+        retObj = constructNew_OsMundosDosMortos2();
+      end,
+      function()
+        __o_rrpgObjs.endObjectsLoading();
+      end);
+
+    assert(retObj ~= nil);
+    return retObj;
 end;
 
 local _OsMundosDosMortos2 = {
@@ -275,6 +289,6 @@ local _OsMundosDosMortos2 = {
     description=""};
 
 OsMundosDosMortos2 = _OsMundosDosMortos2;
-rrpg.registrarForm(_OsMundosDosMortos2);
+Firecast.registrarForm(_OsMundosDosMortos2);
 
 return _OsMundosDosMortos2;

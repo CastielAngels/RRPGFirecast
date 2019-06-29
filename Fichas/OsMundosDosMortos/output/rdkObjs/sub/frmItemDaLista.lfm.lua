@@ -1,14 +1,14 @@
-require("rrpg.lua");
+require("firecast.lua");
 local __o_rrpgObjs = require("rrpgObjs.lua");
 require("rrpgGUI.lua");
 require("rrpgDialogs.lua");
 require("rrpgLFM.lua");
 require("ndb.lua");
+require("locale.lua");
+local __o_Utils = require("utils.lua");
 
-function newfrmItemDaLista()
-    __o_rrpgObjs.beginObjectsLoading();
-
-    local obj = gui.fromHandle(_obj_newObject("form"));
+local function constructNew_frmItemDaLista()
+    local obj = GUI.fromHandle(_obj_newObject("form"));
     local self = obj;
     local sheet = nil;
 
@@ -30,20 +30,20 @@ function newfrmItemDaLista()
     obj:setHeight(50);
     obj:setTheme("dark");
 
-    obj.layout1 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout1:setParent(obj);
     obj.layout1:setAlign("client");
     obj.layout1:setMargins({left=4, right=4, top=4, bottom=4});
     obj.layout1:setName("layout1");
 
-    obj.button1 = gui.fromHandle(_obj_newObject("button"));
+    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.layout1);
     obj.button1:setAlign("left");
     obj.button1:setWidth(32);
     obj.button1:setText("X");
     obj.button1:setName("button1");
 
-    obj.label1 = gui.fromHandle(_obj_newObject("label"));
+    obj.label1 = GUI.fromHandle(_obj_newObject("label"));
     obj.label1:setParent(obj.layout1);
     obj.label1:setAlign("client");
     obj.label1:setText("Teste de label");
@@ -52,7 +52,7 @@ function newfrmItemDaLista()
     obj.label1:setName("label1");
 
     obj._e_event0 = obj.button1:addEventListener("onDblClick",
-        function (self)
+        function (_)
             ndb.deleteNode(sheet);
         end, obj);
 
@@ -77,9 +77,23 @@ function newfrmItemDaLista()
 
     obj:endUpdate();
 
-     __o_rrpgObjs.endObjectsLoading();
-
     return obj;
+end;
+
+function newfrmItemDaLista()
+    local retObj = nil;
+    __o_rrpgObjs.beginObjectsLoading();
+
+    __o_Utils.tryFinally(
+      function()
+        retObj = constructNew_frmItemDaLista();
+      end,
+      function()
+        __o_rrpgObjs.endObjectsLoading();
+      end);
+
+    assert(retObj ~= nil);
+    return retObj;
 end;
 
 local _frmItemDaLista = {
@@ -93,6 +107,6 @@ local _frmItemDaLista = {
     description=""};
 
 frmItemDaLista = _frmItemDaLista;
-rrpg.registrarForm(_frmItemDaLista);
+Firecast.registrarForm(_frmItemDaLista);
 
 return _frmItemDaLista;

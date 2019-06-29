@@ -35,8 +35,6 @@
 		<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
 	</template>
 
-	<image align="client" field="backgroundimg" style="stretch" src=""/>
-
 	<scrollBox align="client">
 
 		<rectangle left="373" top="33" width="135" height="135" color="DimGray" xradius="5" yradius="5"/>
@@ -46,13 +44,12 @@
 		<layout left="0" top="0" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="138" height="20" text="Dados do Personagem" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<button left="830" top="2" width="40" height="25" text="BG" hitTest="true" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
 		</layout>
 
 		<layout left="0" top="170" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="138" height="20" text="Tendências" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<label left="640" top="5" width="148" height="20" text="Pontos de Experiência:" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+			<label left="695" top="5" width="148" height="20" text="Experiência:" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
 			<edit left="780" top="2" width="40" height="25" type="number" field="exptotal" horzTextAlign="center"/>
 			<edit left="830" top="2" width="40" height="25" type="number" field="expatual" horzTextAlign="center"/>
 		</layout>
@@ -64,22 +61,28 @@
 
 		<layout left="0" top="38" width="880" height="125">
 			<layout left="5" top="5" width="290" height="25" >
-				<Cabeca field="nome" texto="Nome" size="13" nort="text"/>
+				<Cabeca field="nome" texto="Nome" size="12" nort="text"/>
 			</layout>
 			<layout left="580" top="5" width="290" height="25" >
-				<Cabeca field="classe" texto="Classe" size="13" nort="text"/>
+				<Cabeca field="classe" texto="Classe" size="12" nort="text"/>
 			</layout>
 			<layout left="5" top="35" width="290" height="25" >
-				<Cabeca field="natureza" texto="Natureza" size="13" nort="text"/>
+				<Cabeca field="personalidade" texto="Personalidade" size="11" nort="text"/>
 			</layout>
 			<layout left="580" top="35" width="290" height="25" >
 				<Cabeca field="nvclasse" texto="Nv da Classe" size="12" nort="number"/>
 			</layout>
 			<layout left="5" top="65" width="290" height="25" >
-				<Cabeca field="conceito" texto="Alcunha" size="13" nort="text"/>
+				<Cabeca field="conceito" texto="Alcunha" size="12" nort="text"/>
 			</layout>
 			<layout left="580" top="65" width="290" height="25" >
-				<Cabeca field="tribo" texto="Tribo" size="13" nort="text"/>
+				<Cabeca field="tribo" texto="Tribo" size="12" nort="text"/>
+			</layout>
+			<layout left="5" top="95" width="290" height="25" >
+				<Cabeca field="altura" texto="Altura" size="12" nort="number"/>
+			</layout>
+			<layout left="580" top="95" width="290" height="25" >
+				<Cabeca field="peso" texto="Peso" size="12" nort="number"/>
 			</layout>
 		</layout>
 

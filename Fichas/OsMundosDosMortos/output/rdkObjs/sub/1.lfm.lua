@@ -1,14 +1,14 @@
-require("rrpg.lua");
+require("firecast.lua");
 local __o_rrpgObjs = require("rrpgObjs.lua");
 require("rrpgGUI.lua");
 require("rrpgDialogs.lua");
 require("rrpgLFM.lua");
 require("ndb.lua");
+require("locale.lua");
+local __o_Utils = require("utils.lua");
 
-function newOsMundosDosMortos1()
-    __o_rrpgObjs.beginObjectsLoading();
-
-    local obj = gui.fromHandle(_obj_newObject("form"));
+local function constructNew_OsMundosDosMortos1()
+    local obj = GUI.fromHandle(_obj_newObject("form"));
     local self = obj;
     local sheet = nil;
 
@@ -30,20 +30,12 @@ function newOsMundosDosMortos1()
     obj:setAlign("client");
     obj:setTheme("dark");
 
-    obj.image1 = gui.fromHandle(_obj_newObject("image"));
-    obj.image1:setParent(obj);
-    obj.image1:setAlign("client");
-    obj.image1:setField("backgroundimg");
-    obj.image1:setStyle("stretch");
-    obj.image1:setSRC("");
-    obj.image1:setName("image1");
-
-    obj.scrollBox1 = gui.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
     obj.scrollBox1:setParent(obj);
     obj.scrollBox1:setAlign("client");
     obj.scrollBox1:setName("scrollBox1");
 
-    obj.rectangle1 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle1:setParent(obj.scrollBox1);
     obj.rectangle1:setLeft(373);
     obj.rectangle1:setTop(33);
@@ -54,7 +46,7 @@ function newOsMundosDosMortos1()
     obj.rectangle1:setYradius(5);
     obj.rectangle1:setName("rectangle1");
 
-    obj.label1 = gui.fromHandle(_obj_newObject("label"));
+    obj.label1 = GUI.fromHandle(_obj_newObject("label"));
     obj.label1:setParent(obj.scrollBox1);
     obj.label1:setLeft(401);
     obj.label1:setTop(65);
@@ -64,19 +56,19 @@ function newOsMundosDosMortos1()
     obj.label1:setHorzTextAlign("center");
     obj.label1:setName("label1");
 
-    obj.image2 = gui.fromHandle(_obj_newObject("image"));
-    obj.image2:setParent(obj.scrollBox1);
-    obj.image2:setField("imagempersona");
-    obj.image2:setEditable(true);
-    obj.image2:setStyle("autoFit");
-    obj.image2:setSRC("");
-    obj.image2:setLeft(373);
-    obj.image2:setTop(33);
-    obj.image2:setWidth(135);
-    obj.image2:setHeight(135);
-    obj.image2:setName("image2");
+    obj.image1 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image1:setParent(obj.scrollBox1);
+    obj.image1:setField("imagempersona");
+    obj.image1:setEditable(true);
+    obj.image1:setStyle("autoFit");
+    obj.image1:setSRC("");
+    obj.image1:setLeft(373);
+    obj.image1:setTop(33);
+    obj.image1:setWidth(135);
+    obj.image1:setHeight(135);
+    obj.image1:setName("image1");
 
-    obj.layout1 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout1:setParent(obj.scrollBox1);
     obj.layout1:setLeft(0);
     obj.layout1:setTop(0);
@@ -84,13 +76,13 @@ function newOsMundosDosMortos1()
     obj.layout1:setHeight(30);
     obj.layout1:setName("layout1");
 
-    obj.rectangle2 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle2:setParent(obj.layout1);
     obj.rectangle2:setAlign("client");
     obj.rectangle2:setColor("gray");
     obj.rectangle2:setName("rectangle2");
 
-    obj.label2 = gui.fromHandle(_obj_newObject("label"));
+    obj.label2 = GUI.fromHandle(_obj_newObject("label"));
     obj.label2:setParent(obj.layout1);
     obj.label2:setLeft(8);
     obj.label2:setTop(5);
@@ -102,19 +94,7 @@ function newOsMundosDosMortos1()
     obj.label2:setFontColor("black");
     obj.label2:setName("label2");
 
-    obj.button1 = gui.fromHandle(_obj_newObject("button"));
-    obj.button1:setParent(obj.layout1);
-    obj.button1:setLeft(830);
-    obj.button1:setTop(2);
-    obj.button1:setWidth(40);
-    obj.button1:setHeight(25);
-    obj.button1:setText("BG");
-    obj.button1:setHitTest(true);
-    obj.button1:setCanFocus(false);
-    obj.button1:setHint("Altera a imagem de fundo da ficha.");
-    obj.button1:setName("button1");
-
-    obj.layout2 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.scrollBox1);
     obj.layout2:setLeft(0);
     obj.layout2:setTop(170);
@@ -122,13 +102,13 @@ function newOsMundosDosMortos1()
     obj.layout2:setHeight(30);
     obj.layout2:setName("layout2");
 
-    obj.rectangle3 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle3:setParent(obj.layout2);
     obj.rectangle3:setAlign("client");
     obj.rectangle3:setColor("gray");
     obj.rectangle3:setName("rectangle3");
 
-    obj.label3 = gui.fromHandle(_obj_newObject("label"));
+    obj.label3 = GUI.fromHandle(_obj_newObject("label"));
     obj.label3:setParent(obj.layout2);
     obj.label3:setLeft(8);
     obj.label3:setTop(5);
@@ -140,19 +120,19 @@ function newOsMundosDosMortos1()
     obj.label3:setFontColor("black");
     obj.label3:setName("label3");
 
-    obj.label4 = gui.fromHandle(_obj_newObject("label"));
+    obj.label4 = GUI.fromHandle(_obj_newObject("label"));
     obj.label4:setParent(obj.layout2);
-    obj.label4:setLeft(640);
+    obj.label4:setLeft(695);
     obj.label4:setTop(5);
-    obj.label4:setWidth(138);
+    obj.label4:setWidth(148);
     obj.label4:setHeight(20);
-    obj.label4:setText("Pontos de Experiência:");
+    obj.label4:setText("Experiência:");
     obj.label4:setHorzTextAlign("leading");
     lfm_setPropAsString(obj.label4, "fontStyle",  "bold");
     obj.label4:setFontColor("black");
     obj.label4:setName("label4");
 
-    obj.edit1 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit1:setParent(obj.layout2);
     obj.edit1:setLeft(780);
     obj.edit1:setTop(2);
@@ -163,7 +143,7 @@ function newOsMundosDosMortos1()
     obj.edit1:setHorzTextAlign("center");
     obj.edit1:setName("edit1");
 
-    obj.edit2 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.layout2);
     obj.edit2:setLeft(830);
     obj.edit2:setTop(2);
@@ -174,7 +154,7 @@ function newOsMundosDosMortos1()
     obj.edit2:setHorzTextAlign("center");
     obj.edit2:setName("edit2");
 
-    obj.layout3 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout3 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout3:setParent(obj.scrollBox1);
     obj.layout3:setLeft(0);
     obj.layout3:setTop(415);
@@ -182,13 +162,13 @@ function newOsMundosDosMortos1()
     obj.layout3:setHeight(30);
     obj.layout3:setName("layout3");
 
-    obj.rectangle4 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle4 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle4:setParent(obj.layout3);
     obj.rectangle4:setAlign("client");
     obj.rectangle4:setColor("gray");
     obj.rectangle4:setName("rectangle4");
 
-    obj.label5 = gui.fromHandle(_obj_newObject("label"));
+    obj.label5 = GUI.fromHandle(_obj_newObject("label"));
     obj.label5:setParent(obj.layout3);
     obj.label5:setLeft(8);
     obj.label5:setTop(5);
@@ -200,7 +180,7 @@ function newOsMundosDosMortos1()
     obj.label5:setFontColor("black");
     obj.label5:setName("label5");
 
-    obj.layout4 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout4 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout4:setParent(obj.scrollBox1);
     obj.layout4:setLeft(0);
     obj.layout4:setTop(38);
@@ -208,7 +188,7 @@ function newOsMundosDosMortos1()
     obj.layout4:setHeight(125);
     obj.layout4:setName("layout4");
 
-    obj.layout5 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout5 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout5:setParent(obj.layout4);
     obj.layout5:setLeft(5);
     obj.layout5:setTop(5);
@@ -216,7 +196,7 @@ function newOsMundosDosMortos1()
     obj.layout5:setHeight(25);
     obj.layout5:setName("layout5");
 
-    obj.rectangle5 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle5 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle5:setParent(obj.layout5);
     obj.rectangle5:setLeft(5);
     obj.rectangle5:setTop(0);
@@ -226,7 +206,7 @@ function newOsMundosDosMortos1()
     obj.rectangle5:setYradius(2);
     obj.rectangle5:setName("rectangle5");
 
-    obj.label6 = gui.fromHandle(_obj_newObject("label"));
+    obj.label6 = GUI.fromHandle(_obj_newObject("label"));
     obj.label6:setParent(obj.layout5);
     obj.label6:setLeft(8);
     obj.label6:setTop(5);
@@ -234,12 +214,12 @@ function newOsMundosDosMortos1()
     obj.label6:setHeight(20);
     obj.label6:setText("Nome");
     obj.label6:setHorzTextAlign("leading");
-    obj.label6:setFontSize(13);
+    obj.label6:setFontSize(12);
     lfm_setPropAsString(obj.label6, "fontStyle",  "bold");
     obj.label6:setFontColor("black");
     obj.label6:setName("label6");
 
-    obj.edit3 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit3 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit3:setParent(obj.layout5);
     obj.edit3:setLeft(90);
     obj.edit3:setTop(0);
@@ -250,7 +230,7 @@ function newOsMundosDosMortos1()
     obj.edit3:setType("text");
     obj.edit3:setName("edit3");
 
-    obj.layout6 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout6 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout6:setParent(obj.layout4);
     obj.layout6:setLeft(580);
     obj.layout6:setTop(5);
@@ -258,7 +238,7 @@ function newOsMundosDosMortos1()
     obj.layout6:setHeight(25);
     obj.layout6:setName("layout6");
 
-    obj.rectangle6 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle6 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle6:setParent(obj.layout6);
     obj.rectangle6:setLeft(5);
     obj.rectangle6:setTop(0);
@@ -268,7 +248,7 @@ function newOsMundosDosMortos1()
     obj.rectangle6:setYradius(2);
     obj.rectangle6:setName("rectangle6");
 
-    obj.label7 = gui.fromHandle(_obj_newObject("label"));
+    obj.label7 = GUI.fromHandle(_obj_newObject("label"));
     obj.label7:setParent(obj.layout6);
     obj.label7:setLeft(8);
     obj.label7:setTop(5);
@@ -276,12 +256,12 @@ function newOsMundosDosMortos1()
     obj.label7:setHeight(20);
     obj.label7:setText("Classe");
     obj.label7:setHorzTextAlign("leading");
-    obj.label7:setFontSize(13);
+    obj.label7:setFontSize(12);
     lfm_setPropAsString(obj.label7, "fontStyle",  "bold");
     obj.label7:setFontColor("black");
     obj.label7:setName("label7");
 
-    obj.edit4 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit4 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit4:setParent(obj.layout6);
     obj.edit4:setLeft(90);
     obj.edit4:setTop(0);
@@ -292,7 +272,7 @@ function newOsMundosDosMortos1()
     obj.edit4:setType("text");
     obj.edit4:setName("edit4");
 
-    obj.layout7 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout7 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout7:setParent(obj.layout4);
     obj.layout7:setLeft(5);
     obj.layout7:setTop(35);
@@ -300,7 +280,7 @@ function newOsMundosDosMortos1()
     obj.layout7:setHeight(25);
     obj.layout7:setName("layout7");
 
-    obj.rectangle7 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle7 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle7:setParent(obj.layout7);
     obj.rectangle7:setLeft(5);
     obj.rectangle7:setTop(0);
@@ -310,31 +290,31 @@ function newOsMundosDosMortos1()
     obj.rectangle7:setYradius(2);
     obj.rectangle7:setName("rectangle7");
 
-    obj.label8 = gui.fromHandle(_obj_newObject("label"));
+    obj.label8 = GUI.fromHandle(_obj_newObject("label"));
     obj.label8:setParent(obj.layout7);
     obj.label8:setLeft(8);
     obj.label8:setTop(5);
     obj.label8:setWidth(77);
     obj.label8:setHeight(20);
-    obj.label8:setText("Natureza");
+    obj.label8:setText("Personalidade");
     obj.label8:setHorzTextAlign("leading");
-    obj.label8:setFontSize(13);
+    obj.label8:setFontSize(11);
     lfm_setPropAsString(obj.label8, "fontStyle",  "bold");
     obj.label8:setFontColor("black");
     obj.label8:setName("label8");
 
-    obj.edit5 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit5 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit5:setParent(obj.layout7);
     obj.edit5:setLeft(90);
     obj.edit5:setTop(0);
     obj.edit5:setWidth(200);
     obj.edit5:setHeight(25);
     lfm_setPropAsString(obj.edit5, "fontStyle",  "bold");
-    obj.edit5:setField("natureza");
+    obj.edit5:setField("personalidade");
     obj.edit5:setType("text");
     obj.edit5:setName("edit5");
 
-    obj.layout8 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout8:setParent(obj.layout4);
     obj.layout8:setLeft(580);
     obj.layout8:setTop(35);
@@ -342,7 +322,7 @@ function newOsMundosDosMortos1()
     obj.layout8:setHeight(25);
     obj.layout8:setName("layout8");
 
-    obj.rectangle8 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle8 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle8:setParent(obj.layout8);
     obj.rectangle8:setLeft(5);
     obj.rectangle8:setTop(0);
@@ -352,7 +332,7 @@ function newOsMundosDosMortos1()
     obj.rectangle8:setYradius(2);
     obj.rectangle8:setName("rectangle8");
 
-    obj.label9 = gui.fromHandle(_obj_newObject("label"));
+    obj.label9 = GUI.fromHandle(_obj_newObject("label"));
     obj.label9:setParent(obj.layout8);
     obj.label9:setLeft(8);
     obj.label9:setTop(5);
@@ -365,7 +345,7 @@ function newOsMundosDosMortos1()
     obj.label9:setFontColor("black");
     obj.label9:setName("label9");
 
-    obj.edit6 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit6 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit6:setParent(obj.layout8);
     obj.edit6:setLeft(90);
     obj.edit6:setTop(0);
@@ -376,7 +356,7 @@ function newOsMundosDosMortos1()
     obj.edit6:setType("number");
     obj.edit6:setName("edit6");
 
-    obj.layout9 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout9 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout9:setParent(obj.layout4);
     obj.layout9:setLeft(5);
     obj.layout9:setTop(65);
@@ -384,7 +364,7 @@ function newOsMundosDosMortos1()
     obj.layout9:setHeight(25);
     obj.layout9:setName("layout9");
 
-    obj.rectangle9 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle9 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle9:setParent(obj.layout9);
     obj.rectangle9:setLeft(5);
     obj.rectangle9:setTop(0);
@@ -394,20 +374,20 @@ function newOsMundosDosMortos1()
     obj.rectangle9:setYradius(2);
     obj.rectangle9:setName("rectangle9");
 
-    obj.label10 = gui.fromHandle(_obj_newObject("label"));
+    obj.label10 = GUI.fromHandle(_obj_newObject("label"));
     obj.label10:setParent(obj.layout9);
     obj.label10:setLeft(8);
     obj.label10:setTop(5);
     obj.label10:setWidth(77);
     obj.label10:setHeight(20);
-    obj.label10:setText("Conceito");
+    obj.label10:setText("Alcunha");
     obj.label10:setHorzTextAlign("leading");
-    obj.label10:setFontSize(13);
+    obj.label10:setFontSize(12);
     lfm_setPropAsString(obj.label10, "fontStyle",  "bold");
     obj.label10:setFontColor("black");
     obj.label10:setName("label10");
 
-    obj.edit7 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit7 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit7:setParent(obj.layout9);
     obj.edit7:setLeft(90);
     obj.edit7:setTop(0);
@@ -418,7 +398,7 @@ function newOsMundosDosMortos1()
     obj.edit7:setType("text");
     obj.edit7:setName("edit7");
 
-    obj.layout10 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout10 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout10:setParent(obj.layout4);
     obj.layout10:setLeft(580);
     obj.layout10:setTop(65);
@@ -426,7 +406,7 @@ function newOsMundosDosMortos1()
     obj.layout10:setHeight(25);
     obj.layout10:setName("layout10");
 
-    obj.rectangle10 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle10 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle10:setParent(obj.layout10);
     obj.rectangle10:setLeft(5);
     obj.rectangle10:setTop(0);
@@ -436,7 +416,7 @@ function newOsMundosDosMortos1()
     obj.rectangle10:setYradius(2);
     obj.rectangle10:setName("rectangle10");
 
-    obj.label11 = gui.fromHandle(_obj_newObject("label"));
+    obj.label11 = GUI.fromHandle(_obj_newObject("label"));
     obj.label11:setParent(obj.layout10);
     obj.label11:setLeft(8);
     obj.label11:setTop(5);
@@ -444,12 +424,12 @@ function newOsMundosDosMortos1()
     obj.label11:setHeight(20);
     obj.label11:setText("Tribo");
     obj.label11:setHorzTextAlign("leading");
-    obj.label11:setFontSize(13);
+    obj.label11:setFontSize(12);
     lfm_setPropAsString(obj.label11, "fontStyle",  "bold");
     obj.label11:setFontColor("black");
     obj.label11:setName("label11");
 
-    obj.edit8 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit8 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit8:setParent(obj.layout10);
     obj.edit8:setLeft(90);
     obj.edit8:setTop(0);
@@ -460,7 +440,7 @@ function newOsMundosDosMortos1()
     obj.edit8:setType("text");
     obj.edit8:setName("edit8");
 
-    obj.layout11 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout11:setParent(obj.layout4);
     obj.layout11:setLeft(5);
     obj.layout11:setTop(95);
@@ -468,7 +448,7 @@ function newOsMundosDosMortos1()
     obj.layout11:setHeight(25);
     obj.layout11:setName("layout11");
 
-    obj.rectangle11 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle11 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle11:setParent(obj.layout11);
     obj.rectangle11:setLeft(5);
     obj.rectangle11:setTop(0);
@@ -478,31 +458,31 @@ function newOsMundosDosMortos1()
     obj.rectangle11:setYradius(2);
     obj.rectangle11:setName("rectangle11");
 
-    obj.label12 = gui.fromHandle(_obj_newObject("label"));
+    obj.label12 = GUI.fromHandle(_obj_newObject("label"));
     obj.label12:setParent(obj.layout11);
     obj.label12:setLeft(8);
     obj.label12:setTop(5);
     obj.label12:setWidth(77);
     obj.label12:setHeight(20);
-    obj.label12:setText("Recurso");
+    obj.label12:setText("Altura");
     obj.label12:setHorzTextAlign("leading");
-    obj.label12:setFontSize(13);
+    obj.label12:setFontSize(12);
     lfm_setPropAsString(obj.label12, "fontStyle",  "bold");
     obj.label12:setFontColor("black");
     obj.label12:setName("label12");
 
-    obj.edit9 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit9 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit9:setParent(obj.layout11);
     obj.edit9:setLeft(90);
     obj.edit9:setTop(0);
     obj.edit9:setWidth(200);
     obj.edit9:setHeight(25);
     lfm_setPropAsString(obj.edit9, "fontStyle",  "bold");
-    obj.edit9:setField("recurso");
-    obj.edit9:setType("text");
+    obj.edit9:setField("altura");
+    obj.edit9:setType("number");
     obj.edit9:setName("edit9");
 
-    obj.layout12 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout12 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout12:setParent(obj.layout4);
     obj.layout12:setLeft(580);
     obj.layout12:setTop(95);
@@ -510,7 +490,7 @@ function newOsMundosDosMortos1()
     obj.layout12:setHeight(25);
     obj.layout12:setName("layout12");
 
-    obj.rectangle12 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle12 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle12:setParent(obj.layout12);
     obj.rectangle12:setLeft(5);
     obj.rectangle12:setTop(0);
@@ -520,45 +500,45 @@ function newOsMundosDosMortos1()
     obj.rectangle12:setYradius(2);
     obj.rectangle12:setName("rectangle12");
 
-    obj.label13 = gui.fromHandle(_obj_newObject("label"));
+    obj.label13 = GUI.fromHandle(_obj_newObject("label"));
     obj.label13:setParent(obj.layout12);
     obj.label13:setLeft(8);
     obj.label13:setTop(5);
     obj.label13:setWidth(77);
     obj.label13:setHeight(20);
-    obj.label13:setText("Idade");
+    obj.label13:setText("Peso");
     obj.label13:setHorzTextAlign("leading");
-    obj.label13:setFontSize(13);
+    obj.label13:setFontSize(12);
     lfm_setPropAsString(obj.label13, "fontStyle",  "bold");
     obj.label13:setFontColor("black");
     obj.label13:setName("label13");
 
-    obj.edit10 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit10 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit10:setParent(obj.layout12);
     obj.edit10:setLeft(90);
     obj.edit10:setTop(0);
     obj.edit10:setWidth(200);
     obj.edit10:setHeight(25);
     lfm_setPropAsString(obj.edit10, "fontStyle",  "bold");
-    obj.edit10:setField("idade");
+    obj.edit10:setField("peso");
     obj.edit10:setType("number");
     obj.edit10:setName("edit10");
 
-    obj.layout13 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout13 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout13:setParent(obj.scrollBox1);
     obj.layout13:setTop(211);
     obj.layout13:setWidth(880);
     obj.layout13:setHeight(25);
     obj.layout13:setName("layout13");
 
-    obj.rectangle13 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle13 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle13:setParent(obj.layout13);
     obj.rectangle13:setLeft(8);
     obj.rectangle13:setColor("Silver");
     obj.rectangle13:setWidth(235);
     obj.rectangle13:setName("rectangle13");
 
-    obj.label14 = gui.fromHandle(_obj_newObject("label"));
+    obj.label14 = GUI.fromHandle(_obj_newObject("label"));
     obj.label14:setParent(obj.layout13);
     obj.label14:setLeft(23);
     obj.label14:setTop(2);
@@ -570,14 +550,14 @@ function newOsMundosDosMortos1()
     obj.label14:setFontColor("black");
     obj.label14:setName("label14");
 
-    obj.rectangle14 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle14 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle14:setParent(obj.layout13);
     obj.rectangle14:setLeft(254);
     obj.rectangle14:setColor("Silver");
     obj.rectangle14:setWidth(370);
     obj.rectangle14:setName("rectangle14");
 
-    obj.label15 = gui.fromHandle(_obj_newObject("label"));
+    obj.label15 = GUI.fromHandle(_obj_newObject("label"));
     obj.label15:setParent(obj.layout13);
     obj.label15:setLeft(267);
     obj.label15:setTop(2);
@@ -589,14 +569,14 @@ function newOsMundosDosMortos1()
     obj.label15:setFontColor("black");
     obj.label15:setName("label15");
 
-    obj.rectangle15 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle15 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle15:setParent(obj.layout13);
     obj.rectangle15:setLeft(635);
     obj.rectangle15:setColor("Silver");
     obj.rectangle15:setWidth(235);
     obj.rectangle15:setName("rectangle15");
 
-    obj.label16 = gui.fromHandle(_obj_newObject("label"));
+    obj.label16 = GUI.fromHandle(_obj_newObject("label"));
     obj.label16:setParent(obj.layout13);
     obj.label16:setLeft(650);
     obj.label16:setTop(2);
@@ -608,7 +588,7 @@ function newOsMundosDosMortos1()
     obj.label16:setFontColor("black");
     obj.label16:setName("label16");
 
-    obj.layout14 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout14 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout14:setParent(obj.scrollBox1);
     obj.layout14:setLeft(8);
     obj.layout14:setTop(245);
@@ -616,12 +596,12 @@ function newOsMundosDosMortos1()
     obj.layout14:setHeight(160);
     obj.layout14:setName("layout14");
 
-    obj.rectangle16 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle16 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle16:setParent(obj.layout14);
     obj.rectangle16:setAlign("client");
     obj.rectangle16:setName("rectangle16");
 
-    obj.label17 = gui.fromHandle(_obj_newObject("label"));
+    obj.label17 = GUI.fromHandle(_obj_newObject("label"));
     obj.label17:setParent(obj.layout14);
     obj.label17:setLeft(86);
     obj.label17:setTop(11);
@@ -634,74 +614,74 @@ function newOsMundosDosMortos1()
     obj.label17:setFontColor("black");
     obj.label17:setName("label17");
 
-    obj.layout15 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout15 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout15:setParent(obj.layout14);
     obj.layout15:setTop(30);
     obj.layout15:setWidth(215);
     obj.layout15:setHeight(20);
     obj.layout15:setName("layout15");
 
-    obj.checkBox1 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox1 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox1:setParent(obj.layout15);
     obj.checkBox1:setField("musc_1");
     obj.checkBox1:setLeft(17);
     obj.checkBox1:setName("checkBox1");
 
-    obj.checkBox2 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox2 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox2:setParent(obj.layout15);
     obj.checkBox2:setField("musc_2");
     obj.checkBox2:setLeft(37);
     obj.checkBox2:setName("checkBox2");
 
-    obj.checkBox3 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox3 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox3:setParent(obj.layout15);
     obj.checkBox3:setField("musc_3");
     obj.checkBox3:setLeft(57);
     obj.checkBox3:setName("checkBox3");
 
-    obj.checkBox4 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox4 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox4:setParent(obj.layout15);
     obj.checkBox4:setField("musc_4");
     obj.checkBox4:setLeft(77);
     obj.checkBox4:setName("checkBox4");
 
-    obj.checkBox5 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox5 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox5:setParent(obj.layout15);
     obj.checkBox5:setField("musc_5");
     obj.checkBox5:setLeft(97);
     obj.checkBox5:setName("checkBox5");
 
-    obj.checkBox6 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox6 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox6:setParent(obj.layout15);
     obj.checkBox6:setField("musc_6");
     obj.checkBox6:setLeft(117);
     obj.checkBox6:setName("checkBox6");
 
-    obj.checkBox7 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox7 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox7:setParent(obj.layout15);
     obj.checkBox7:setField("musc_7");
     obj.checkBox7:setLeft(137);
     obj.checkBox7:setName("checkBox7");
 
-    obj.checkBox8 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox8 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox8:setParent(obj.layout15);
     obj.checkBox8:setField("musc_8");
     obj.checkBox8:setLeft(157);
     obj.checkBox8:setName("checkBox8");
 
-    obj.checkBox9 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox9 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox9:setParent(obj.layout15);
     obj.checkBox9:setField("musc_9");
     obj.checkBox9:setLeft(177);
     obj.checkBox9:setName("checkBox9");
 
-    obj.checkBox10 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox10 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox10:setParent(obj.layout15);
     obj.checkBox10:setField("musc_10");
     obj.checkBox10:setLeft(197);
     obj.checkBox10:setName("checkBox10");
 
-    obj.label18 = gui.fromHandle(_obj_newObject("label"));
+    obj.label18 = GUI.fromHandle(_obj_newObject("label"));
     obj.label18:setParent(obj.layout14);
     obj.label18:setLeft(91);
     obj.label18:setTop(56);
@@ -714,74 +694,74 @@ function newOsMundosDosMortos1()
     obj.label18:setFontColor("black");
     obj.label18:setName("label18");
 
-    obj.layout16 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout16 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout16:setParent(obj.layout14);
     obj.layout16:setTop(75);
     obj.layout16:setWidth(215);
     obj.layout16:setHeight(20);
     obj.layout16:setName("layout16");
 
-    obj.checkBox11 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox11 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox11:setParent(obj.layout16);
     obj.checkBox11:setField("cereb_1");
     obj.checkBox11:setLeft(17);
     obj.checkBox11:setName("checkBox11");
 
-    obj.checkBox12 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox12 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox12:setParent(obj.layout16);
     obj.checkBox12:setField("cereb_2");
     obj.checkBox12:setLeft(37);
     obj.checkBox12:setName("checkBox12");
 
-    obj.checkBox13 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox13 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox13:setParent(obj.layout16);
     obj.checkBox13:setField("cereb_3");
     obj.checkBox13:setLeft(57);
     obj.checkBox13:setName("checkBox13");
 
-    obj.checkBox14 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox14 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox14:setParent(obj.layout16);
     obj.checkBox14:setField("cereb_4");
     obj.checkBox14:setLeft(77);
     obj.checkBox14:setName("checkBox14");
 
-    obj.checkBox15 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox15 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox15:setParent(obj.layout16);
     obj.checkBox15:setField("cereb_5");
     obj.checkBox15:setLeft(97);
     obj.checkBox15:setName("checkBox15");
 
-    obj.checkBox16 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox16 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox16:setParent(obj.layout16);
     obj.checkBox16:setField("cereb_6");
     obj.checkBox16:setLeft(117);
     obj.checkBox16:setName("checkBox16");
 
-    obj.checkBox17 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox17 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox17:setParent(obj.layout16);
     obj.checkBox17:setField("cereb_7");
     obj.checkBox17:setLeft(137);
     obj.checkBox17:setName("checkBox17");
 
-    obj.checkBox18 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox18 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox18:setParent(obj.layout16);
     obj.checkBox18:setField("cereb_8");
     obj.checkBox18:setLeft(157);
     obj.checkBox18:setName("checkBox18");
 
-    obj.checkBox19 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox19 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox19:setParent(obj.layout16);
     obj.checkBox19:setField("cereb_9");
     obj.checkBox19:setLeft(177);
     obj.checkBox19:setName("checkBox19");
 
-    obj.checkBox20 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox20 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox20:setParent(obj.layout16);
     obj.checkBox20:setField("cereb_10");
     obj.checkBox20:setLeft(197);
     obj.checkBox20:setName("checkBox20");
 
-    obj.label19 = gui.fromHandle(_obj_newObject("label"));
+    obj.label19 = GUI.fromHandle(_obj_newObject("label"));
     obj.label19:setParent(obj.layout14);
     obj.label19:setLeft(91);
     obj.label19:setTop(101);
@@ -794,74 +774,74 @@ function newOsMundosDosMortos1()
     obj.label19:setFontColor("black");
     obj.label19:setName("label19");
 
-    obj.layout17 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout17 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout17:setParent(obj.layout14);
     obj.layout17:setTop(120);
     obj.layout17:setWidth(215);
     obj.layout17:setHeight(20);
     obj.layout17:setName("layout17");
 
-    obj.checkBox21 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox21 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox21:setParent(obj.layout17);
     obj.checkBox21:setField("corac_1");
     obj.checkBox21:setLeft(17);
     obj.checkBox21:setName("checkBox21");
 
-    obj.checkBox22 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox22 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox22:setParent(obj.layout17);
     obj.checkBox22:setField("corac_2");
     obj.checkBox22:setLeft(37);
     obj.checkBox22:setName("checkBox22");
 
-    obj.checkBox23 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox23 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox23:setParent(obj.layout17);
     obj.checkBox23:setField("corac_3");
     obj.checkBox23:setLeft(57);
     obj.checkBox23:setName("checkBox23");
 
-    obj.checkBox24 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox24 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox24:setParent(obj.layout17);
     obj.checkBox24:setField("corac_4");
     obj.checkBox24:setLeft(77);
     obj.checkBox24:setName("checkBox24");
 
-    obj.checkBox25 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox25 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox25:setParent(obj.layout17);
     obj.checkBox25:setField("corac_5");
     obj.checkBox25:setLeft(97);
     obj.checkBox25:setName("checkBox25");
 
-    obj.checkBox26 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox26 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox26:setParent(obj.layout17);
     obj.checkBox26:setField("corac_6");
     obj.checkBox26:setLeft(117);
     obj.checkBox26:setName("checkBox26");
 
-    obj.checkBox27 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox27 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox27:setParent(obj.layout17);
     obj.checkBox27:setField("corac_7");
     obj.checkBox27:setLeft(137);
     obj.checkBox27:setName("checkBox27");
 
-    obj.checkBox28 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox28 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox28:setParent(obj.layout17);
     obj.checkBox28:setField("corac_8");
     obj.checkBox28:setLeft(157);
     obj.checkBox28:setName("checkBox28");
 
-    obj.checkBox29 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox29 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox29:setParent(obj.layout17);
     obj.checkBox29:setField("corac_9");
     obj.checkBox29:setLeft(177);
     obj.checkBox29:setName("checkBox29");
 
-    obj.checkBox30 = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox30 = GUI.fromHandle(_obj_newObject("checkBox"));
     obj.checkBox30:setParent(obj.layout17);
     obj.checkBox30:setField("corac_10");
     obj.checkBox30:setLeft(197);
     obj.checkBox30:setName("checkBox30");
 
-    obj.layout18 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout18 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout18:setParent(obj.scrollBox1);
     obj.layout18:setLeft(254);
     obj.layout18:setTop(245);
@@ -869,12 +849,12 @@ function newOsMundosDosMortos1()
     obj.layout18:setHeight(160);
     obj.layout18:setName("layout18");
 
-    obj.rectangle17 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle17 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle17:setParent(obj.layout18);
     obj.rectangle17:setAlign("client");
     obj.rectangle17:setName("rectangle17");
 
-    obj.label20 = gui.fromHandle(_obj_newObject("label"));
+    obj.label20 = GUI.fromHandle(_obj_newObject("label"));
     obj.label20:setParent(obj.layout18);
     obj.label20:setLeft(38);
     obj.label20:setTop(11);
@@ -887,7 +867,7 @@ function newOsMundosDosMortos1()
     obj.label20:setFontColor("black");
     obj.label20:setName("label20");
 
-    obj.edit11 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit11 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit11:setParent(obj.layout18);
     obj.edit11:setField("sanidade");
     obj.edit11:setLeft(50);
@@ -903,16 +883,16 @@ function newOsMundosDosMortos1()
     lfm_setPropAsString(obj.edit11, "fontStyle",  "bold");
     obj.edit11:setName("edit11");
 
-    obj.image3 = gui.fromHandle(_obj_newObject("image"));
-    obj.image3:setParent(obj.layout18);
-    obj.image3:setLeft(47);
-    obj.image3:setTop(31);
-    obj.image3:setWidth(45);
-    obj.image3:setHeight(45);
-    obj.image3:setSRC("/sub/img/blackhole.png");
-    obj.image3:setName("image3");
+    obj.image2 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image2:setParent(obj.layout18);
+    obj.image2:setLeft(47);
+    obj.image2:setTop(31);
+    obj.image2:setWidth(45);
+    obj.image2:setHeight(45);
+    obj.image2:setSRC("/sub/img/blackhole.png");
+    obj.image2:setName("image2");
 
-    obj.label21 = gui.fromHandle(_obj_newObject("label"));
+    obj.label21 = GUI.fromHandle(_obj_newObject("label"));
     obj.label21:setParent(obj.layout18);
     obj.label21:setLeft(25);
     obj.label21:setTop(81);
@@ -925,7 +905,7 @@ function newOsMundosDosMortos1()
     obj.label21:setFontColor("black");
     obj.label21:setName("label21");
 
-    obj.edit12 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit12 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit12:setParent(obj.layout18);
     obj.edit12:setField("autocontrole");
     obj.edit12:setLeft(50);
@@ -941,16 +921,16 @@ function newOsMundosDosMortos1()
     lfm_setPropAsString(obj.edit12, "fontStyle",  "bold");
     obj.edit12:setName("edit12");
 
-    obj.image4 = gui.fromHandle(_obj_newObject("image"));
-    obj.image4:setParent(obj.layout18);
-    obj.image4:setLeft(47);
-    obj.image4:setTop(101);
-    obj.image4:setWidth(45);
-    obj.image4:setHeight(45);
-    obj.image4:setSRC("/sub/img/blackhole.png");
-    obj.image4:setName("image4");
+    obj.image3 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image3:setParent(obj.layout18);
+    obj.image3:setLeft(47);
+    obj.image3:setTop(101);
+    obj.image3:setWidth(45);
+    obj.image3:setHeight(45);
+    obj.image3:setSRC("/sub/img/blackhole.png");
+    obj.image3:setName("image3");
 
-    obj.label22 = gui.fromHandle(_obj_newObject("label"));
+    obj.label22 = GUI.fromHandle(_obj_newObject("label"));
     obj.label22:setParent(obj.layout18);
     obj.label22:setLeft(125);
     obj.label22:setTop(46);
@@ -963,7 +943,7 @@ function newOsMundosDosMortos1()
     obj.label22:setFontColor("black");
     obj.label22:setName("label22");
 
-    obj.edit13 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit13 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit13:setParent(obj.layout18);
     obj.edit13:setField("forcadevontade");
     obj.edit13:setLeft(165);
@@ -979,16 +959,16 @@ function newOsMundosDosMortos1()
     lfm_setPropAsString(obj.edit13, "fontStyle",  "bold");
     obj.edit13:setName("edit13");
 
-    obj.image5 = gui.fromHandle(_obj_newObject("image"));
-    obj.image5:setParent(obj.layout18);
-    obj.image5:setLeft(162);
-    obj.image5:setTop(66);
-    obj.image5:setWidth(45);
-    obj.image5:setHeight(45);
-    obj.image5:setSRC("/sub/img/blackhole.png");
-    obj.image5:setName("image5");
+    obj.image4 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image4:setParent(obj.layout18);
+    obj.image4:setLeft(162);
+    obj.image4:setTop(66);
+    obj.image4:setWidth(45);
+    obj.image4:setHeight(45);
+    obj.image4:setSRC("/sub/img/blackhole.png");
+    obj.image4:setName("image4");
 
-    obj.label23 = gui.fromHandle(_obj_newObject("label"));
+    obj.label23 = GUI.fromHandle(_obj_newObject("label"));
     obj.label23:setParent(obj.layout18);
     obj.label23:setLeft(273);
     obj.label23:setTop(11);
@@ -1001,7 +981,7 @@ function newOsMundosDosMortos1()
     obj.label23:setFontColor("black");
     obj.label23:setName("label23");
 
-    obj.edit14 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit14 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit14:setParent(obj.layout18);
     obj.edit14:setField("energia");
     obj.edit14:setLeft(280);
@@ -1017,16 +997,16 @@ function newOsMundosDosMortos1()
     lfm_setPropAsString(obj.edit14, "fontStyle",  "bold");
     obj.edit14:setName("edit14");
 
-    obj.image6 = gui.fromHandle(_obj_newObject("image"));
-    obj.image6:setParent(obj.layout18);
-    obj.image6:setLeft(277);
-    obj.image6:setTop(31);
-    obj.image6:setWidth(45);
-    obj.image6:setHeight(45);
-    obj.image6:setSRC("/sub/img/blackhole.png");
-    obj.image6:setName("image6");
+    obj.image5 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image5:setParent(obj.layout18);
+    obj.image5:setLeft(277);
+    obj.image5:setTop(31);
+    obj.image5:setWidth(45);
+    obj.image5:setHeight(45);
+    obj.image5:setSRC("/sub/img/blackhole.png");
+    obj.image5:setName("image5");
 
-    obj.label24 = gui.fromHandle(_obj_newObject("label"));
+    obj.label24 = GUI.fromHandle(_obj_newObject("label"));
     obj.label24:setParent(obj.layout18);
     obj.label24:setLeft(248);
     obj.label24:setTop(81);
@@ -1039,7 +1019,7 @@ function newOsMundosDosMortos1()
     obj.label24:setFontColor("black");
     obj.label24:setName("label24");
 
-    obj.edit15 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit15 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit15:setParent(obj.layout18);
     obj.edit15:setField("pontosdevida");
     obj.edit15:setLeft(280);
@@ -1055,16 +1035,16 @@ function newOsMundosDosMortos1()
     lfm_setPropAsString(obj.edit15, "fontStyle",  "bold");
     obj.edit15:setName("edit15");
 
-    obj.image7 = gui.fromHandle(_obj_newObject("image"));
-    obj.image7:setParent(obj.layout18);
-    obj.image7:setLeft(277);
-    obj.image7:setTop(101);
-    obj.image7:setWidth(45);
-    obj.image7:setHeight(45);
-    obj.image7:setSRC("/sub/img/blackhole.png");
-    obj.image7:setName("image7");
+    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image6:setParent(obj.layout18);
+    obj.image6:setLeft(277);
+    obj.image6:setTop(101);
+    obj.image6:setWidth(45);
+    obj.image6:setHeight(45);
+    obj.image6:setSRC("/sub/img/blackhole.png");
+    obj.image6:setName("image6");
 
-    obj.layout19 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout19 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout19:setParent(obj.scrollBox1);
     obj.layout19:setLeft(635);
     obj.layout19:setTop(245);
@@ -1072,12 +1052,12 @@ function newOsMundosDosMortos1()
     obj.layout19:setHeight(160);
     obj.layout19:setName("layout19");
 
-    obj.rectangle18 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle18 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle18:setParent(obj.layout19);
     obj.rectangle18:setAlign("client");
     obj.rectangle18:setName("rectangle18");
 
-    obj.layout20 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout20 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout20:setParent(obj.scrollBox1);
     obj.layout20:setLeft(10);
     obj.layout20:setTop(457);
@@ -1085,12 +1065,12 @@ function newOsMundosDosMortos1()
     obj.layout20:setHeight(320);
     obj.layout20:setName("layout20");
 
-    obj.rectangle19 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle19 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle19:setParent(obj.layout20);
     obj.rectangle19:setAlign("client");
     obj.rectangle19:setName("rectangle19");
 
-    obj.label25 = gui.fromHandle(_obj_newObject("label"));
+    obj.label25 = GUI.fromHandle(_obj_newObject("label"));
     obj.label25:setParent(obj.layout20);
     obj.label25:setLeft(100);
     obj.label25:setTop(10);
@@ -1103,7 +1083,7 @@ function newOsMundosDosMortos1()
     obj.label25:setFontColor("black");
     obj.label25:setName("label25");
 
-    obj.label26 = gui.fromHandle(_obj_newObject("label"));
+    obj.label26 = GUI.fromHandle(_obj_newObject("label"));
     obj.label26:setParent(obj.layout20);
     obj.label26:setLeft(620);
     obj.label26:setTop(10);
@@ -1116,7 +1096,7 @@ function newOsMundosDosMortos1()
     obj.label26:setFontColor("black");
     obj.label26:setName("label26");
 
-    obj.layout21 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout21 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout21:setParent(obj.layout20);
     obj.layout21:setLeft(38);
     obj.layout21:setTop(36);
@@ -1124,7 +1104,7 @@ function newOsMundosDosMortos1()
     obj.layout21:setHeight(250);
     obj.layout21:setName("layout21");
 
-    obj.layout22 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout22 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout22:setParent(obj.layout21);
     obj.layout22:setLeft(10);
     obj.layout22:setTop(11);
@@ -1132,7 +1112,7 @@ function newOsMundosDosMortos1()
     obj.layout22:setHeight(20);
     obj.layout22:setName("layout22");
 
-    obj.horzLine1 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine1 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine1:setParent(obj.layout22);
     obj.horzLine1:setTop(18);
     obj.horzLine1:setWidth(130);
@@ -1140,7 +1120,7 @@ function newOsMundosDosMortos1()
     obj.horzLine1:setStrokeColor("black");
     obj.horzLine1:setName("horzLine1");
 
-    obj.edit16 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit16 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit16:setParent(obj.layout22);
     obj.edit16:setField("mhabilidades1_e");
     obj.edit16:setLeft(2);
@@ -1154,7 +1134,7 @@ function newOsMundosDosMortos1()
     obj.edit16:setTransparent(true);
     obj.edit16:setName("edit16");
 
-    obj.imageCheckBox1 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox1 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox1:setParent(obj.layout22);
     obj.imageCheckBox1:setField("mhabilidades1_1");
     obj.imageCheckBox1:setLeft(137);
@@ -1165,7 +1145,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox1:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox1:setName("imageCheckBox1");
 
-    obj.imageCheckBox2 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox2 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox2:setParent(obj.layout22);
     obj.imageCheckBox2:setField("mhabilidades1_2");
     obj.imageCheckBox2:setLeft(155);
@@ -1176,7 +1156,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox2:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox2:setName("imageCheckBox2");
 
-    obj.imageCheckBox3 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox3 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox3:setParent(obj.layout22);
     obj.imageCheckBox3:setField("mhabilidades1_3");
     obj.imageCheckBox3:setLeft(173);
@@ -1187,7 +1167,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox3:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox3:setName("imageCheckBox3");
 
-    obj.imageCheckBox4 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox4 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox4:setParent(obj.layout22);
     obj.imageCheckBox4:setField("mhabilidades1_4");
     obj.imageCheckBox4:setLeft(191);
@@ -1198,7 +1178,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox4:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox4:setName("imageCheckBox4");
 
-    obj.imageCheckBox5 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox5 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox5:setParent(obj.layout22);
     obj.imageCheckBox5:setField("mhabilidades1_5");
     obj.imageCheckBox5:setLeft(209);
@@ -1209,7 +1189,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox5:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox5:setName("imageCheckBox5");
 
-    obj.imageCheckBox6 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox6 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox6:setParent(obj.layout22);
     obj.imageCheckBox6:setField("mhabilidades1_6");
     obj.imageCheckBox6:setLeft(227);
@@ -1220,7 +1200,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox6:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox6:setName("imageCheckBox6");
 
-    obj.layout23 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout23 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout23:setParent(obj.layout21);
     obj.layout23:setLeft(10);
     obj.layout23:setTop(41);
@@ -1228,7 +1208,7 @@ function newOsMundosDosMortos1()
     obj.layout23:setHeight(20);
     obj.layout23:setName("layout23");
 
-    obj.horzLine2 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine2 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine2:setParent(obj.layout23);
     obj.horzLine2:setTop(18);
     obj.horzLine2:setWidth(130);
@@ -1236,7 +1216,7 @@ function newOsMundosDosMortos1()
     obj.horzLine2:setStrokeColor("black");
     obj.horzLine2:setName("horzLine2");
 
-    obj.edit17 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit17 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit17:setParent(obj.layout23);
     obj.edit17:setField("mhabilidades2_e");
     obj.edit17:setLeft(2);
@@ -1250,7 +1230,7 @@ function newOsMundosDosMortos1()
     obj.edit17:setTransparent(true);
     obj.edit17:setName("edit17");
 
-    obj.imageCheckBox7 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox7 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox7:setParent(obj.layout23);
     obj.imageCheckBox7:setField("mhabilidades2_1");
     obj.imageCheckBox7:setLeft(137);
@@ -1261,7 +1241,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox7:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox7:setName("imageCheckBox7");
 
-    obj.imageCheckBox8 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox8 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox8:setParent(obj.layout23);
     obj.imageCheckBox8:setField("mhabilidades2_2");
     obj.imageCheckBox8:setLeft(155);
@@ -1272,7 +1252,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox8:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox8:setName("imageCheckBox8");
 
-    obj.imageCheckBox9 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox9 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox9:setParent(obj.layout23);
     obj.imageCheckBox9:setField("mhabilidades2_3");
     obj.imageCheckBox9:setLeft(173);
@@ -1283,7 +1263,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox9:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox9:setName("imageCheckBox9");
 
-    obj.imageCheckBox10 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox10 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox10:setParent(obj.layout23);
     obj.imageCheckBox10:setField("mhabilidades2_4");
     obj.imageCheckBox10:setLeft(191);
@@ -1294,7 +1274,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox10:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox10:setName("imageCheckBox10");
 
-    obj.imageCheckBox11 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox11 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox11:setParent(obj.layout23);
     obj.imageCheckBox11:setField("mhabilidades2_5");
     obj.imageCheckBox11:setLeft(209);
@@ -1305,7 +1285,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox11:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox11:setName("imageCheckBox11");
 
-    obj.imageCheckBox12 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox12 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox12:setParent(obj.layout23);
     obj.imageCheckBox12:setField("mhabilidades2_6");
     obj.imageCheckBox12:setLeft(227);
@@ -1316,7 +1296,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox12:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox12:setName("imageCheckBox12");
 
-    obj.layout24 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout24 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout24:setParent(obj.layout21);
     obj.layout24:setLeft(10);
     obj.layout24:setTop(71);
@@ -1324,7 +1304,7 @@ function newOsMundosDosMortos1()
     obj.layout24:setHeight(20);
     obj.layout24:setName("layout24");
 
-    obj.horzLine3 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine3 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine3:setParent(obj.layout24);
     obj.horzLine3:setTop(18);
     obj.horzLine3:setWidth(130);
@@ -1332,7 +1312,7 @@ function newOsMundosDosMortos1()
     obj.horzLine3:setStrokeColor("black");
     obj.horzLine3:setName("horzLine3");
 
-    obj.edit18 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit18 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit18:setParent(obj.layout24);
     obj.edit18:setField("mhabilidades3_e");
     obj.edit18:setLeft(2);
@@ -1346,7 +1326,7 @@ function newOsMundosDosMortos1()
     obj.edit18:setTransparent(true);
     obj.edit18:setName("edit18");
 
-    obj.imageCheckBox13 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox13 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox13:setParent(obj.layout24);
     obj.imageCheckBox13:setField("mhabilidades3_1");
     obj.imageCheckBox13:setLeft(137);
@@ -1357,7 +1337,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox13:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox13:setName("imageCheckBox13");
 
-    obj.imageCheckBox14 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox14 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox14:setParent(obj.layout24);
     obj.imageCheckBox14:setField("mhabilidades3_2");
     obj.imageCheckBox14:setLeft(155);
@@ -1368,7 +1348,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox14:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox14:setName("imageCheckBox14");
 
-    obj.imageCheckBox15 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox15 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox15:setParent(obj.layout24);
     obj.imageCheckBox15:setField("mhabilidades3_3");
     obj.imageCheckBox15:setLeft(173);
@@ -1379,7 +1359,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox15:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox15:setName("imageCheckBox15");
 
-    obj.imageCheckBox16 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox16 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox16:setParent(obj.layout24);
     obj.imageCheckBox16:setField("mhabilidades3_4");
     obj.imageCheckBox16:setLeft(191);
@@ -1390,7 +1370,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox16:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox16:setName("imageCheckBox16");
 
-    obj.imageCheckBox17 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox17 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox17:setParent(obj.layout24);
     obj.imageCheckBox17:setField("mhabilidades3_5");
     obj.imageCheckBox17:setLeft(209);
@@ -1401,7 +1381,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox17:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox17:setName("imageCheckBox17");
 
-    obj.imageCheckBox18 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox18 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox18:setParent(obj.layout24);
     obj.imageCheckBox18:setField("mhabilidades3_6");
     obj.imageCheckBox18:setLeft(227);
@@ -1412,7 +1392,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox18:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox18:setName("imageCheckBox18");
 
-    obj.layout25 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout25 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout25:setParent(obj.layout21);
     obj.layout25:setLeft(10);
     obj.layout25:setTop(101);
@@ -1420,7 +1400,7 @@ function newOsMundosDosMortos1()
     obj.layout25:setHeight(20);
     obj.layout25:setName("layout25");
 
-    obj.horzLine4 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine4 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine4:setParent(obj.layout25);
     obj.horzLine4:setTop(18);
     obj.horzLine4:setWidth(130);
@@ -1428,7 +1408,7 @@ function newOsMundosDosMortos1()
     obj.horzLine4:setStrokeColor("black");
     obj.horzLine4:setName("horzLine4");
 
-    obj.edit19 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit19 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit19:setParent(obj.layout25);
     obj.edit19:setField("mhabilidades4_e");
     obj.edit19:setLeft(2);
@@ -1442,7 +1422,7 @@ function newOsMundosDosMortos1()
     obj.edit19:setTransparent(true);
     obj.edit19:setName("edit19");
 
-    obj.imageCheckBox19 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox19 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox19:setParent(obj.layout25);
     obj.imageCheckBox19:setField("mhabilidades4_1");
     obj.imageCheckBox19:setLeft(137);
@@ -1453,7 +1433,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox19:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox19:setName("imageCheckBox19");
 
-    obj.imageCheckBox20 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox20 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox20:setParent(obj.layout25);
     obj.imageCheckBox20:setField("mhabilidades4_2");
     obj.imageCheckBox20:setLeft(155);
@@ -1464,7 +1444,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox20:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox20:setName("imageCheckBox20");
 
-    obj.imageCheckBox21 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox21 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox21:setParent(obj.layout25);
     obj.imageCheckBox21:setField("mhabilidades4_3");
     obj.imageCheckBox21:setLeft(173);
@@ -1475,7 +1455,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox21:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox21:setName("imageCheckBox21");
 
-    obj.imageCheckBox22 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox22 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox22:setParent(obj.layout25);
     obj.imageCheckBox22:setField("mhabilidades4_4");
     obj.imageCheckBox22:setLeft(191);
@@ -1486,7 +1466,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox22:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox22:setName("imageCheckBox22");
 
-    obj.imageCheckBox23 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox23 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox23:setParent(obj.layout25);
     obj.imageCheckBox23:setField("mhabilidades4_5");
     obj.imageCheckBox23:setLeft(209);
@@ -1497,7 +1477,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox23:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox23:setName("imageCheckBox23");
 
-    obj.imageCheckBox24 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox24 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox24:setParent(obj.layout25);
     obj.imageCheckBox24:setField("mhabilidades4_6");
     obj.imageCheckBox24:setLeft(227);
@@ -1508,7 +1488,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox24:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox24:setName("imageCheckBox24");
 
-    obj.layout26 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout26 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout26:setParent(obj.layout21);
     obj.layout26:setLeft(10);
     obj.layout26:setTop(131);
@@ -1516,7 +1496,7 @@ function newOsMundosDosMortos1()
     obj.layout26:setHeight(20);
     obj.layout26:setName("layout26");
 
-    obj.horzLine5 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine5 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine5:setParent(obj.layout26);
     obj.horzLine5:setTop(18);
     obj.horzLine5:setWidth(130);
@@ -1524,7 +1504,7 @@ function newOsMundosDosMortos1()
     obj.horzLine5:setStrokeColor("black");
     obj.horzLine5:setName("horzLine5");
 
-    obj.edit20 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit20 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit20:setParent(obj.layout26);
     obj.edit20:setField("mhabilidades5_e");
     obj.edit20:setLeft(2);
@@ -1538,7 +1518,7 @@ function newOsMundosDosMortos1()
     obj.edit20:setTransparent(true);
     obj.edit20:setName("edit20");
 
-    obj.imageCheckBox25 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox25 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox25:setParent(obj.layout26);
     obj.imageCheckBox25:setField("mhabilidades5_1");
     obj.imageCheckBox25:setLeft(137);
@@ -1549,7 +1529,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox25:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox25:setName("imageCheckBox25");
 
-    obj.imageCheckBox26 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox26 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox26:setParent(obj.layout26);
     obj.imageCheckBox26:setField("mhabilidades5_2");
     obj.imageCheckBox26:setLeft(155);
@@ -1560,7 +1540,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox26:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox26:setName("imageCheckBox26");
 
-    obj.imageCheckBox27 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox27 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox27:setParent(obj.layout26);
     obj.imageCheckBox27:setField("mhabilidades5_3");
     obj.imageCheckBox27:setLeft(173);
@@ -1571,7 +1551,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox27:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox27:setName("imageCheckBox27");
 
-    obj.imageCheckBox28 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox28 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox28:setParent(obj.layout26);
     obj.imageCheckBox28:setField("mhabilidades5_4");
     obj.imageCheckBox28:setLeft(191);
@@ -1582,7 +1562,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox28:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox28:setName("imageCheckBox28");
 
-    obj.imageCheckBox29 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox29 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox29:setParent(obj.layout26);
     obj.imageCheckBox29:setField("mhabilidades5_5");
     obj.imageCheckBox29:setLeft(209);
@@ -1593,7 +1573,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox29:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox29:setName("imageCheckBox29");
 
-    obj.imageCheckBox30 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox30 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox30:setParent(obj.layout26);
     obj.imageCheckBox30:setField("mhabilidades5_6");
     obj.imageCheckBox30:setLeft(227);
@@ -1604,7 +1584,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox30:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox30:setName("imageCheckBox30");
 
-    obj.layout27 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout27 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout27:setParent(obj.layout21);
     obj.layout27:setLeft(10);
     obj.layout27:setTop(161);
@@ -1612,7 +1592,7 @@ function newOsMundosDosMortos1()
     obj.layout27:setHeight(20);
     obj.layout27:setName("layout27");
 
-    obj.horzLine6 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine6 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine6:setParent(obj.layout27);
     obj.horzLine6:setTop(18);
     obj.horzLine6:setWidth(130);
@@ -1620,7 +1600,7 @@ function newOsMundosDosMortos1()
     obj.horzLine6:setStrokeColor("black");
     obj.horzLine6:setName("horzLine6");
 
-    obj.edit21 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit21 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit21:setParent(obj.layout27);
     obj.edit21:setField("mhabilidades6_e");
     obj.edit21:setLeft(2);
@@ -1634,7 +1614,7 @@ function newOsMundosDosMortos1()
     obj.edit21:setTransparent(true);
     obj.edit21:setName("edit21");
 
-    obj.imageCheckBox31 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox31 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox31:setParent(obj.layout27);
     obj.imageCheckBox31:setField("mhabilidades6_1");
     obj.imageCheckBox31:setLeft(137);
@@ -1645,7 +1625,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox31:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox31:setName("imageCheckBox31");
 
-    obj.imageCheckBox32 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox32 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox32:setParent(obj.layout27);
     obj.imageCheckBox32:setField("mhabilidades6_2");
     obj.imageCheckBox32:setLeft(155);
@@ -1656,7 +1636,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox32:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox32:setName("imageCheckBox32");
 
-    obj.imageCheckBox33 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox33 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox33:setParent(obj.layout27);
     obj.imageCheckBox33:setField("mhabilidades6_3");
     obj.imageCheckBox33:setLeft(173);
@@ -1667,7 +1647,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox33:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox33:setName("imageCheckBox33");
 
-    obj.imageCheckBox34 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox34 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox34:setParent(obj.layout27);
     obj.imageCheckBox34:setField("mhabilidades6_4");
     obj.imageCheckBox34:setLeft(191);
@@ -1678,7 +1658,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox34:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox34:setName("imageCheckBox34");
 
-    obj.imageCheckBox35 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox35 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox35:setParent(obj.layout27);
     obj.imageCheckBox35:setField("mhabilidades6_5");
     obj.imageCheckBox35:setLeft(209);
@@ -1689,7 +1669,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox35:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox35:setName("imageCheckBox35");
 
-    obj.imageCheckBox36 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox36 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox36:setParent(obj.layout27);
     obj.imageCheckBox36:setField("mhabilidades6_6");
     obj.imageCheckBox36:setLeft(227);
@@ -1700,7 +1680,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox36:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox36:setName("imageCheckBox36");
 
-    obj.layout28 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout28 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout28:setParent(obj.layout21);
     obj.layout28:setLeft(10);
     obj.layout28:setTop(191);
@@ -1708,7 +1688,7 @@ function newOsMundosDosMortos1()
     obj.layout28:setHeight(20);
     obj.layout28:setName("layout28");
 
-    obj.horzLine7 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine7 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine7:setParent(obj.layout28);
     obj.horzLine7:setTop(18);
     obj.horzLine7:setWidth(130);
@@ -1716,7 +1696,7 @@ function newOsMundosDosMortos1()
     obj.horzLine7:setStrokeColor("black");
     obj.horzLine7:setName("horzLine7");
 
-    obj.edit22 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit22 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit22:setParent(obj.layout28);
     obj.edit22:setField("mhabilidades7_e");
     obj.edit22:setLeft(2);
@@ -1730,7 +1710,7 @@ function newOsMundosDosMortos1()
     obj.edit22:setTransparent(true);
     obj.edit22:setName("edit22");
 
-    obj.imageCheckBox37 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox37 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox37:setParent(obj.layout28);
     obj.imageCheckBox37:setField("mhabilidades7_1");
     obj.imageCheckBox37:setLeft(137);
@@ -1741,7 +1721,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox37:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox37:setName("imageCheckBox37");
 
-    obj.imageCheckBox38 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox38 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox38:setParent(obj.layout28);
     obj.imageCheckBox38:setField("mhabilidades7_2");
     obj.imageCheckBox38:setLeft(155);
@@ -1752,7 +1732,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox38:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox38:setName("imageCheckBox38");
 
-    obj.imageCheckBox39 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox39 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox39:setParent(obj.layout28);
     obj.imageCheckBox39:setField("mhabilidades7_3");
     obj.imageCheckBox39:setLeft(173);
@@ -1763,7 +1743,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox39:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox39:setName("imageCheckBox39");
 
-    obj.imageCheckBox40 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox40 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox40:setParent(obj.layout28);
     obj.imageCheckBox40:setField("mhabilidades7_4");
     obj.imageCheckBox40:setLeft(191);
@@ -1774,7 +1754,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox40:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox40:setName("imageCheckBox40");
 
-    obj.imageCheckBox41 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox41 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox41:setParent(obj.layout28);
     obj.imageCheckBox41:setField("mhabilidades7_5");
     obj.imageCheckBox41:setLeft(209);
@@ -1785,7 +1765,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox41:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox41:setName("imageCheckBox41");
 
-    obj.imageCheckBox42 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox42 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox42:setParent(obj.layout28);
     obj.imageCheckBox42:setField("mhabilidades7_6");
     obj.imageCheckBox42:setLeft(227);
@@ -1796,7 +1776,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox42:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox42:setName("imageCheckBox42");
 
-    obj.layout29 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout29 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout29:setParent(obj.layout21);
     obj.layout29:setLeft(10);
     obj.layout29:setTop(221);
@@ -1804,7 +1784,7 @@ function newOsMundosDosMortos1()
     obj.layout29:setHeight(20);
     obj.layout29:setName("layout29");
 
-    obj.horzLine8 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine8 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine8:setParent(obj.layout29);
     obj.horzLine8:setTop(18);
     obj.horzLine8:setWidth(130);
@@ -1812,7 +1792,7 @@ function newOsMundosDosMortos1()
     obj.horzLine8:setStrokeColor("black");
     obj.horzLine8:setName("horzLine8");
 
-    obj.edit23 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit23 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit23:setParent(obj.layout29);
     obj.edit23:setField("mhabilidades8_e");
     obj.edit23:setLeft(2);
@@ -1826,7 +1806,7 @@ function newOsMundosDosMortos1()
     obj.edit23:setTransparent(true);
     obj.edit23:setName("edit23");
 
-    obj.imageCheckBox43 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox43 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox43:setParent(obj.layout29);
     obj.imageCheckBox43:setField("mhabilidades8_1");
     obj.imageCheckBox43:setLeft(137);
@@ -1837,7 +1817,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox43:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox43:setName("imageCheckBox43");
 
-    obj.imageCheckBox44 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox44 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox44:setParent(obj.layout29);
     obj.imageCheckBox44:setField("mhabilidades8_2");
     obj.imageCheckBox44:setLeft(155);
@@ -1848,7 +1828,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox44:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox44:setName("imageCheckBox44");
 
-    obj.imageCheckBox45 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox45 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox45:setParent(obj.layout29);
     obj.imageCheckBox45:setField("mhabilidades8_3");
     obj.imageCheckBox45:setLeft(173);
@@ -1859,7 +1839,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox45:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox45:setName("imageCheckBox45");
 
-    obj.imageCheckBox46 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox46 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox46:setParent(obj.layout29);
     obj.imageCheckBox46:setField("mhabilidades8_4");
     obj.imageCheckBox46:setLeft(191);
@@ -1870,7 +1850,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox46:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox46:setName("imageCheckBox46");
 
-    obj.imageCheckBox47 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox47 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox47:setParent(obj.layout29);
     obj.imageCheckBox47:setField("mhabilidades8_5");
     obj.imageCheckBox47:setLeft(209);
@@ -1881,7 +1861,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox47:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox47:setName("imageCheckBox47");
 
-    obj.imageCheckBox48 = gui.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.imageCheckBox48 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox48:setParent(obj.layout29);
     obj.imageCheckBox48:setField("mhabilidades8_6");
     obj.imageCheckBox48:setLeft(227);
@@ -1892,7 +1872,7 @@ function newOsMundosDosMortos1()
     obj.imageCheckBox48:setImageUnchecked("/sub/img/bboll1.png");
     obj.imageCheckBox48:setName("imageCheckBox48");
 
-    obj.layout30 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout30 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout30:setParent(obj.layout20);
     obj.layout30:setLeft(560);
     obj.layout30:setTop(36);
@@ -1900,7 +1880,7 @@ function newOsMundosDosMortos1()
     obj.layout30:setHeight(250);
     obj.layout30:setName("layout30");
 
-    obj.layout31 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout31 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout31:setParent(obj.layout30);
     obj.layout31:setLeft(10);
     obj.layout31:setTop(11);
@@ -1908,7 +1888,7 @@ function newOsMundosDosMortos1()
     obj.layout31:setHeight(20);
     obj.layout31:setName("layout31");
 
-    obj.horzLine9 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine9 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine9:setParent(obj.layout31);
     obj.horzLine9:setTop(18);
     obj.horzLine9:setWidth(238);
@@ -1916,7 +1896,7 @@ function newOsMundosDosMortos1()
     obj.horzLine9:setStrokeColor("black");
     obj.horzLine9:setName("horzLine9");
 
-    obj.label27 = gui.fromHandle(_obj_newObject("label"));
+    obj.label27 = GUI.fromHandle(_obj_newObject("label"));
     obj.label27:setParent(obj.layout31);
     obj.label27:setWidth(80);
     obj.label27:setHeight(20);
@@ -1926,7 +1906,7 @@ function newOsMundosDosMortos1()
     obj.label27:setFontColor("black");
     obj.label27:setName("label27");
 
-    obj.edit24 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit24 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit24:setParent(obj.layout31);
     obj.edit24:setField("cnivel1");
     obj.edit24:setLeft(70);
@@ -1939,7 +1919,7 @@ function newOsMundosDosMortos1()
     obj.edit24:setTransparent(true);
     obj.edit24:setName("edit24");
 
-    obj.layout32 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout32 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout32:setParent(obj.layout30);
     obj.layout32:setLeft(10);
     obj.layout32:setTop(53);
@@ -1947,7 +1927,7 @@ function newOsMundosDosMortos1()
     obj.layout32:setHeight(20);
     obj.layout32:setName("layout32");
 
-    obj.horzLine10 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine10 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine10:setParent(obj.layout32);
     obj.horzLine10:setTop(18);
     obj.horzLine10:setWidth(238);
@@ -1955,7 +1935,7 @@ function newOsMundosDosMortos1()
     obj.horzLine10:setStrokeColor("black");
     obj.horzLine10:setName("horzLine10");
 
-    obj.label28 = gui.fromHandle(_obj_newObject("label"));
+    obj.label28 = GUI.fromHandle(_obj_newObject("label"));
     obj.label28:setParent(obj.layout32);
     obj.label28:setWidth(80);
     obj.label28:setHeight(20);
@@ -1965,7 +1945,7 @@ function newOsMundosDosMortos1()
     obj.label28:setFontColor("black");
     obj.label28:setName("label28");
 
-    obj.edit25 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit25 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit25:setParent(obj.layout32);
     obj.edit25:setField("cnivel2");
     obj.edit25:setLeft(70);
@@ -1978,7 +1958,7 @@ function newOsMundosDosMortos1()
     obj.edit25:setTransparent(true);
     obj.edit25:setName("edit25");
 
-    obj.layout33 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout33 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout33:setParent(obj.layout30);
     obj.layout33:setLeft(10);
     obj.layout33:setTop(95);
@@ -1986,7 +1966,7 @@ function newOsMundosDosMortos1()
     obj.layout33:setHeight(20);
     obj.layout33:setName("layout33");
 
-    obj.horzLine11 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine11 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine11:setParent(obj.layout33);
     obj.horzLine11:setTop(18);
     obj.horzLine11:setWidth(238);
@@ -1994,7 +1974,7 @@ function newOsMundosDosMortos1()
     obj.horzLine11:setStrokeColor("black");
     obj.horzLine11:setName("horzLine11");
 
-    obj.label29 = gui.fromHandle(_obj_newObject("label"));
+    obj.label29 = GUI.fromHandle(_obj_newObject("label"));
     obj.label29:setParent(obj.layout33);
     obj.label29:setWidth(80);
     obj.label29:setHeight(20);
@@ -2004,7 +1984,7 @@ function newOsMundosDosMortos1()
     obj.label29:setFontColor("black");
     obj.label29:setName("label29");
 
-    obj.edit26 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit26 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit26:setParent(obj.layout33);
     obj.edit26:setField("cnivel3");
     obj.edit26:setLeft(70);
@@ -2017,7 +1997,7 @@ function newOsMundosDosMortos1()
     obj.edit26:setTransparent(true);
     obj.edit26:setName("edit26");
 
-    obj.layout34 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout34 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout34:setParent(obj.layout30);
     obj.layout34:setLeft(10);
     obj.layout34:setTop(137);
@@ -2025,7 +2005,7 @@ function newOsMundosDosMortos1()
     obj.layout34:setHeight(20);
     obj.layout34:setName("layout34");
 
-    obj.horzLine12 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine12 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine12:setParent(obj.layout34);
     obj.horzLine12:setTop(18);
     obj.horzLine12:setWidth(238);
@@ -2033,7 +2013,7 @@ function newOsMundosDosMortos1()
     obj.horzLine12:setStrokeColor("black");
     obj.horzLine12:setName("horzLine12");
 
-    obj.label30 = gui.fromHandle(_obj_newObject("label"));
+    obj.label30 = GUI.fromHandle(_obj_newObject("label"));
     obj.label30:setParent(obj.layout34);
     obj.label30:setWidth(80);
     obj.label30:setHeight(20);
@@ -2043,7 +2023,7 @@ function newOsMundosDosMortos1()
     obj.label30:setFontColor("black");
     obj.label30:setName("label30");
 
-    obj.edit27 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit27 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit27:setParent(obj.layout34);
     obj.edit27:setField("cnivel4");
     obj.edit27:setLeft(70);
@@ -2056,7 +2036,7 @@ function newOsMundosDosMortos1()
     obj.edit27:setTransparent(true);
     obj.edit27:setName("edit27");
 
-    obj.layout35 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout35 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout35:setParent(obj.layout30);
     obj.layout35:setLeft(10);
     obj.layout35:setTop(179);
@@ -2064,7 +2044,7 @@ function newOsMundosDosMortos1()
     obj.layout35:setHeight(20);
     obj.layout35:setName("layout35");
 
-    obj.horzLine13 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine13 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine13:setParent(obj.layout35);
     obj.horzLine13:setTop(18);
     obj.horzLine13:setWidth(238);
@@ -2072,7 +2052,7 @@ function newOsMundosDosMortos1()
     obj.horzLine13:setStrokeColor("black");
     obj.horzLine13:setName("horzLine13");
 
-    obj.label31 = gui.fromHandle(_obj_newObject("label"));
+    obj.label31 = GUI.fromHandle(_obj_newObject("label"));
     obj.label31:setParent(obj.layout35);
     obj.label31:setWidth(80);
     obj.label31:setHeight(20);
@@ -2082,7 +2062,7 @@ function newOsMundosDosMortos1()
     obj.label31:setFontColor("black");
     obj.label31:setName("label31");
 
-    obj.edit28 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit28 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit28:setParent(obj.layout35);
     obj.edit28:setField("cnivel5");
     obj.edit28:setLeft(70);
@@ -2095,7 +2075,7 @@ function newOsMundosDosMortos1()
     obj.edit28:setTransparent(true);
     obj.edit28:setName("edit28");
 
-    obj.layout36 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout36 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout36:setParent(obj.layout30);
     obj.layout36:setLeft(10);
     obj.layout36:setTop(221);
@@ -2103,7 +2083,7 @@ function newOsMundosDosMortos1()
     obj.layout36:setHeight(20);
     obj.layout36:setName("layout36");
 
-    obj.horzLine14 = gui.fromHandle(_obj_newObject("horzLine"));
+    obj.horzLine14 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine14:setParent(obj.layout36);
     obj.horzLine14:setTop(18);
     obj.horzLine14:setWidth(238);
@@ -2111,7 +2091,7 @@ function newOsMundosDosMortos1()
     obj.horzLine14:setStrokeColor("black");
     obj.horzLine14:setName("horzLine14");
 
-    obj.label32 = gui.fromHandle(_obj_newObject("label"));
+    obj.label32 = GUI.fromHandle(_obj_newObject("label"));
     obj.label32:setParent(obj.layout36);
     obj.label32:setWidth(80);
     obj.label32:setHeight(20);
@@ -2121,7 +2101,7 @@ function newOsMundosDosMortos1()
     obj.label32:setFontColor("black");
     obj.label32:setName("label32");
 
-    obj.edit29 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit29 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit29:setParent(obj.layout36);
     obj.edit29:setField("cnivel6");
     obj.edit29:setLeft(70);
@@ -2134,13 +2114,7 @@ function newOsMundosDosMortos1()
     obj.edit29:setTransparent(true);
     obj.edit29:setName("edit29");
 
-    obj._e_event0 = obj.button1:addEventListener("onClick",
-        function (self)
-            Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)
-        end, obj);
-
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
 
     obj._oldLFMDestroy = obj.destroy;
@@ -2162,7 +2136,6 @@ function newOsMundosDosMortos1()
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
         if self.edit29 ~= nil then self.edit29:destroy(); self.edit29 = nil; end;
-        if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
         if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
         if self.checkBox29 ~= nil then self.checkBox29:destroy(); self.checkBox29 = nil; end;
@@ -2179,7 +2152,6 @@ function newOsMundosDosMortos1()
         if self.checkBox7 ~= nil then self.checkBox7:destroy(); self.checkBox7 = nil; end;
         if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;
         if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
-        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.imageCheckBox45 ~= nil then self.imageCheckBox45:destroy(); self.imageCheckBox45 = nil; end;
         if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
         if self.edit26 ~= nil then self.edit26:destroy(); self.edit26 = nil; end;
@@ -2374,9 +2346,23 @@ function newOsMundosDosMortos1()
 
     obj:endUpdate();
 
-     __o_rrpgObjs.endObjectsLoading();
-
     return obj;
+end;
+
+function newOsMundosDosMortos1()
+    local retObj = nil;
+    __o_rrpgObjs.beginObjectsLoading();
+
+    __o_Utils.tryFinally(
+      function()
+        retObj = constructNew_OsMundosDosMortos1();
+      end,
+      function()
+        __o_rrpgObjs.endObjectsLoading();
+      end);
+
+    assert(retObj ~= nil);
+    return retObj;
 end;
 
 local _OsMundosDosMortos1 = {
@@ -2390,6 +2376,6 @@ local _OsMundosDosMortos1 = {
     description=""};
 
 OsMundosDosMortos1 = _OsMundosDosMortos1;
-rrpg.registrarForm(_OsMundosDosMortos1);
+Firecast.registrarForm(_OsMundosDosMortos1);
 
 return _OsMundosDosMortos1;

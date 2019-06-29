@@ -1,14 +1,14 @@
-require("rrpg.lua");
+require("firecast.lua");
 local __o_rrpgObjs = require("rrpgObjs.lua");
 require("rrpgGUI.lua");
 require("rrpgDialogs.lua");
 require("rrpgLFM.lua");
 require("ndb.lua");
+require("locale.lua");
+local __o_Utils = require("utils.lua");
 
-function newOsMundosDosMortos3()
-    __o_rrpgObjs.beginObjectsLoading();
-
-    local obj = gui.fromHandle(_obj_newObject("form"));
+local function constructNew_OsMundosDosMortos3()
+    local obj = GUI.fromHandle(_obj_newObject("form"));
     local self = obj;
     local sheet = nil;
 
@@ -30,21 +30,21 @@ function newOsMundosDosMortos3()
     obj:setAlign("client");
     obj:setTheme("dark");
 
-    obj.layout1 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout1:setParent(obj);
     obj.layout1:setAlign("top");
     obj.layout1:setHeight(30);
     obj.layout1:setMargins({bottom=4});
     obj.layout1:setName("layout1");
 
-    obj.button1 = gui.fromHandle(_obj_newObject("button"));
+    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.layout1);
     obj.button1:setText("Adicionar Novo Objeto");
     obj.button1:setWidth(150);
     obj.button1:setAlign("left");
     obj.button1:setName("button1");
 
-    obj.rclListaDosItens = gui.fromHandle(_obj_newObject("recordList"));
+    obj.rclListaDosItens = GUI.fromHandle(_obj_newObject("recordList"));
     obj.rclListaDosItens:setParent(obj);
     obj.rclListaDosItens:setName("rclListaDosItens");
     obj.rclListaDosItens:setField("campoDosItens");
@@ -52,7 +52,7 @@ function newOsMundosDosMortos3()
     obj.rclListaDosItens:setAlign("client");
     obj.rclListaDosItens:setSelectable(true);
 
-    obj.boxDetalhesDoItem = gui.fromHandle(_obj_newObject("dataScopeBox"));
+    obj.boxDetalhesDoItem = GUI.fromHandle(_obj_newObject("dataScopeBox"));
     obj.boxDetalhesDoItem:setParent(obj);
     obj.boxDetalhesDoItem:setName("boxDetalhesDoItem");
     obj.boxDetalhesDoItem:setVisible(false);
@@ -60,7 +60,7 @@ function newOsMundosDosMortos3()
     obj.boxDetalhesDoItem:setWidth(400);
     obj.boxDetalhesDoItem:setMargins({left=4, right=4});
 
-    obj.rectangle1 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle1:setParent(obj.boxDetalhesDoItem);
     obj.rectangle1:setAlign("top");
     obj.rectangle1:setColor("black");
@@ -70,33 +70,33 @@ function newOsMundosDosMortos3()
     obj.rectangle1:setPadding({top=3, left=3, right=3, bottom=3});
     obj.rectangle1:setName("rectangle1");
 
-    obj.layout2 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.rectangle1);
     obj.layout2:setAlign("top");
     obj.layout2:setHeight(30);
     obj.layout2:setMargins({bottom=4});
     obj.layout2:setName("layout2");
 
-    obj.label1 = gui.fromHandle(_obj_newObject("label"));
+    obj.label1 = GUI.fromHandle(_obj_newObject("label"));
     obj.label1:setParent(obj.layout2);
     obj.label1:setAlign("left");
     obj.label1:setText("  Titulo do Objeto:");
     obj.label1:setAutoSize(true);
     obj.label1:setName("label1");
 
-    obj.edit1 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit1:setParent(obj.layout2);
     obj.edit1:setAlign("client");
     obj.edit1:setField("campoTitulo");
     obj.edit1:setName("edit1");
 
-    obj.layout3 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout3 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout3:setParent(obj.rectangle1);
     obj.layout3:setAlign("top");
     obj.layout3:setHeight(130);
     obj.layout3:setName("layout3");
 
-    obj.image1 = gui.fromHandle(_obj_newObject("image"));
+    obj.image1 = GUI.fromHandle(_obj_newObject("image"));
     obj.image1:setParent(obj.layout3);
     obj.image1:setAlign("left");
     obj.image1:setEditable(true);
@@ -104,20 +104,20 @@ function newOsMundosDosMortos3()
     obj.image1:setWidth(130);
     obj.image1:setName("image1");
 
-    obj.layout4 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout4 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout4:setParent(obj.layout3);
     obj.layout4:setAlign("client");
     obj.layout4:setMargins({left=2});
     obj.layout4:setName("layout4");
 
-    obj.edit2 = gui.fromHandle(_obj_newObject("edit"));
+    obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.layout4);
     obj.edit2:setAlign("top");
     obj.edit2:setField("campoSubTitulo");
     obj.edit2:setHeight(30);
     obj.edit2:setName("edit2");
 
-    obj.textEditor1 = gui.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor1:setParent(obj.layout4);
     obj.textEditor1:setAlign("top");
     obj.textEditor1:setField("campoTextoGrande");
@@ -125,12 +125,12 @@ function newOsMundosDosMortos3()
     obj.textEditor1:setName("textEditor1");
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
-        function (self)
+        function (_)
             self.rclListaDosItens:append();
         end, obj);
 
     obj._e_event1 = obj.rclListaDosItens:addEventListener("onSelect",
-        function (self)
+        function (_)
             local node = self.rclListaDosItens.selectedNode;  
                                      self.boxDetalhesDoItem.node = node;                       
                                       self.boxDetalhesDoItem.visible = (node ~= nil);
@@ -168,9 +168,23 @@ function newOsMundosDosMortos3()
 
     obj:endUpdate();
 
-     __o_rrpgObjs.endObjectsLoading();
-
     return obj;
+end;
+
+function newOsMundosDosMortos3()
+    local retObj = nil;
+    __o_rrpgObjs.beginObjectsLoading();
+
+    __o_Utils.tryFinally(
+      function()
+        retObj = constructNew_OsMundosDosMortos3();
+      end,
+      function()
+        __o_rrpgObjs.endObjectsLoading();
+      end);
+
+    assert(retObj ~= nil);
+    return retObj;
 end;
 
 local _OsMundosDosMortos3 = {
@@ -184,6 +198,6 @@ local _OsMundosDosMortos3 = {
     description=""};
 
 OsMundosDosMortos3 = _OsMundosDosMortos3;
-rrpg.registrarForm(_OsMundosDosMortos3);
+Firecast.registrarForm(_OsMundosDosMortos3);
 
 return _OsMundosDosMortos3;
