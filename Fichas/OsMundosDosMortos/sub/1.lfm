@@ -8,16 +8,16 @@
 	</template>
 
 	<template name="Tenbox">
-		<checkBox field="$(field)_1" left="17"/>
-		<checkBox field="$(field)_2" left="37"/>
-		<checkBox field="$(field)_3" left="57"/>
-		<checkBox field="$(field)_4" left="77"/>
-		<checkBox field="$(field)_5" left="97"/>
-		<checkBox field="$(field)_6" left="117"/>
-		<checkBox field="$(field)_7" left="137"/>
-		<checkBox field="$(field)_8" left="157"/>
-		<checkBox field="$(field)_9" left="177"/>
-		<checkBox field="$(field)_10" left="197"/>
+		<imageCheckBox field="$(field)_1" left="19" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_2" left="39" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_3" left="59" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_4" left="79" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_5" left="99" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_6" left="119" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_7" left="139" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_8" left="159" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_9" left="179" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_10" left="199" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
 	</template>
 
 	<template name="bbollshor">
@@ -41,7 +41,7 @@
 
 		<rectangle left="373" top="33" width="135" height="135" color="DimGray" xradius="5" yradius="5"/>
 		<label left="401" top="65" width="80" height="60" text="Sem Avatar" horzTextAlign="center"/>
-		<image field="imagempersona" editable="true" style="autoFit" src="" left="373" top="33" width="135" height="135"/>
+		<image field="imagempersona" editable="true" animate="true" style="autoFit" src="" left="373" top="33" width="135" height="135"/>
 
 		<layout left="0" top="0" width="880" height="30">
 			<rectangle align="client" color="gray"/>
@@ -101,15 +101,15 @@
 		<layout left="8" top="245" width="235" height="160">
 			<rectangle align="client"/>
 			<label left="86" top="11" width="65" height="20" text="Músculos" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<layout top="30" width="215" height="20">
+			<layout top="32" width="215" height="20">
 				<Tenbox field="musc"/>
 			</layout>
 			<label left="91" top="56" width="60" height="20" text="Cérebro" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<layout top="75" width="215" height="20">
+			<layout top="77" width="215" height="20">
 				<Tenbox field="cereb"/>
 			</layout>
 			<label left="91" top="101" width="60" height="20" text="Coração" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<layout top="120" width="215" height="20">
+			<layout top="122" width="215" height="20">
 				<Tenbox field="corac"/>
 			</layout>
 		</layout>
