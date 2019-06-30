@@ -2,7 +2,7 @@
 <form name="OsMundosDosMortos1" align="client" theme="dark">
 
 	<template name="Cabeca">
-		<rectangle left="5" top="0" color="Gainsboro" width="80" xradius="2" yradius="2"/>
+		<rectangle left="5" top="0" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
 		<label left="8" top="5" width="77" height="20" text="$(texto)" horzTextAlign="leading" fontSize="$(size)" fontStyle="bold" fontColor="black"/>
         <edit left="90" top="0" width="200" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
 	</template>
@@ -46,15 +46,34 @@
 		<layout left="0" top="0" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="138" height="20" text="Dados do Personagem" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<button left="830" top="2" width="40" height="25" text="BG" hitTest="true" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
+			<button left="780" top="2" width="40" height="25" text="Lock" name="lockb" hitTest="true" canFocus="false" hint="Impede alterações na ficha.">
+				<event name="onClick">
+					if self.lockb.text == 'Lock' then 
+						self.lockb.text = ' '
+						self.backgroundimg.hitTest = true
+						self.exptotal.hitTest = true
+						self.expatual.hitTest = true
+						self.exptotal.readOnly = false
+						self.expatual.readOnly = false
+					else 
+						self.lockb.text = 'Lock'
+						self.backgroundimg.hitTest = false
+						self.exptotal.hitTest = false
+						self.expatual.hitTest = false
+						self.exptotal.readOnly = true
+						self.expatual.readOnly = true
+					end;
+				</event>
+			</button>
+			<button name="backgroundimg" hitTest="false" left="830" top="2" width="40" height="25" text="BG" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
 		</layout>
 
 		<layout left="0" top="170" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="138" height="20" text="Atributos" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
 			<label left="695" top="5" width="148" height="20" text="Experiência:" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<edit left="780" top="2" width="40" height="25" type="number" field="exptotal" horzTextAlign="center"/>
-			<edit left="830" top="2" width="40" height="25" type="number" field="expatual" horzTextAlign="center"/>
+			<edit name="exptotal" hitTest="false" readOnly="true" left="780" top="2" width="40" height="25" type="number" field="exptotal" horzTextAlign="center"/>
+			<edit name="expatual" hitTest="false" readOnly="true" left="830" top="2" width="40" height="25" type="number" field="expatual" horzTextAlign="center"/>
 		</layout>
 
 		<layout left="0" top="415" width="880" height="30">
@@ -143,7 +162,7 @@
 
 		<layout left="10" top="457" width="860" height="320">
 			<rectangle align="client"/>
-			<label left="100" top="10" width="120" height="20" text="Minhas habilidades" horzTextAlign="leading" fontStyle="bold" fontSize="13" fontColor="black"/>
+			<label left="100" top="10" width="120" height="20" text="Minhas Habilidades" horzTextAlign="leading" fontStyle="bold" fontSize="13" fontColor="black"/>
 			<label left="620" top="10" width="140" height="20" text="Habilidades de Classe" horzTextAlign="trailing" fontStyle="bold" fontSize="13" fontColor="black"/>
 
 			<layout left="38" top="36" width="260" height="250">

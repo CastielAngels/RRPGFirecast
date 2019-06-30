@@ -1,99 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Tormenta01" align="client" theme="light">
+<form name="Tormenta01" align="client" theme="dark">
 
-<image left="0" top="0" align="client" field="backgroundimg" style="stretch" src=""/>
-	<scrollBox align="client">
+	<template name="Principal">
+		<rectangle left="5" top="0" color="Gainsboro" width="155" xradius="2" yradius="2"/>
+		<label left="8" top="4" width="155" height="20" text="$(texto)" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+		<edit left="175" top="0" width="30" height="25" field="$(field)" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+        <edit left="210" top="0" width="30" height="25" field="$(field)_M" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+	</template>
+
+	<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
+
+	<layout left="10" top="10" width="305" height="55">
+		<rectangle left="7" top="1" color="Gainsboro" width="170" height="23" xradius="2" yradius="2"/>
+		<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Nome do Personagem"/>
+		<edit field="nome" left="1" top="23" width="300" height="30" fontSize="15.0" fontStyle="bold"/>
+	</layout>
 	
-		<rectangle left="373" top="33" width="135" height="135" color="DimGray" xradius="5" yradius="5"/>
-		<label left="401" top="65" width="80" height="60" text="Sem avatar" horzTextAlign="center"/>
-		<image field="imagempersona" editable="true" style="autoFit" src="" left="373" top="33" width="135" height="135"/>
+	<layout left="10" top="67" width="155" height="55">
+		<rectangle left="7" top="1" color="Gainsboro" width="46" height="23" xradius="2" yradius="2"/>
+		<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Raça"/>
+		<edit field="raca" left="1" top="23" width="150" height="30" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<layout left="10" top="124" width="105" height="55">
+		<rectangle left="7" top="1" color="Gainsboro" width="51" height="23" xradius="2" yradius="2"/>
+		<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Idade"/>
+		<edit field="idade" left="1" top="23" width="100" height="30" fontSize="15.0" fontStyle="bold" type="number"/>
+	</layout>
+	
+	<layout left="165" top="67" width="150" height="55">
+		<rectangle left="7" top="1" color="Gainsboro" width="84" height="23" xradius="2" yradius="2"/>
+		<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Tendência"/>
+		<edit field="tendencia" left="1" top="23" width="145" height="30" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<layout left="115" top="124" width="200" height="55">
+		<rectangle left="7" top="1" color="Gainsboro" width="45" height="23" xradius="2" yradius="2"/>
+		<label left="13" top="1" width="45" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Sexo"/>
+		<edit field="sexo" left="1" top="23" width="195" height="30" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<layout left="315" top="10" width="129" height="55">
+		<rectangle left="7" top="1" color="Gainsboro" width="76" height="23" xradius="2" yradius="2"/>
+		<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Tamanho"/>
+		<edit field="tamanho" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<layout left="315" top="67" width="129" height="55">
+		<rectangle left="7" top="1" color="Gainsboro" width="112" height="23" xradius="2" yradius="2"/>
+		<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Deslocamento"/>
+		<edit field="deslocamento" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<layout left="315" top="124" width="129" height="55">
+		<rectangle left="7" top="1" color="Gainsboro" width="84" height="23" xradius="2" yradius="2"/>
+		<label left="13" top="1" width="170" height="20" fontSize="15.0" fontStyle="bold" fontColor="black" text="Divindade"/>
+		<edit field="divindade" left="1" top="23" width="124" height="30" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<image left="530" top="30" width="400" height="147" src="img/LogoTormenta.png"/>
+	
+	<layout left="1" top="220" width="250" height="300">
+	
+		<rectangle left="57" top="3" color="Gainsboro" width="60" height="15" xradius="2" yradius="2"/>
+		<label left="59" top="5" width="65" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Habilidades"/>
 		
-		<layout left="0" top="0" width="900" height="30">
-			<rectangle align="client" color="gray"/>
-			<label left="8" top="5" width="238" height="20" text="Dados do Personagem" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<button left="830" top="2" width="40" height="25" text="BG" hitTest="true" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
+		<rectangle left="181" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
+		<label left="183" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Valor"/>
+		
+		<rectangle left="216" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
+		<label left="219" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Mod"/>
+		
+		<layout left="5" top="15" width="290" height="25" >
+			<Principal field="forca" texto="Força(FOR)"/>
 		</layout>
-		
-		<layout left="0" top="170" width="900" height="30">
-			<rectangle align="client" color="gray"/>
+		<layout left="5" top="45" width="290" height="25" >
+			<Principal field="destreza" texto="Destreza(DES)"/>
 		</layout>
-		
-		<layout left="0" top="440" width="900" height="30">
-			<rectangle align="client" color="gray"/>
+		<layout left="5" top="75" width="290" height="25" >
+			<Principal field="constituicao" texto="Constituição(CON)"/>
 		</layout>
-		
-		<layout left="0" top="615" width="900" height="30">
-			<rectangle align="client" color="gray"/>
+		<layout left="5" top="105" width="290" height="25" >
+			<Principal field="inteligencia" texto="inteligência(INT)"/>
 		</layout>
-		
-		<layout left="9" top="215" width="891" height="25">
-			<rectangle color="Silver" width="235"/>
-			<label left="13" top="2" width="210" height="20" text="======= Habilidades =======" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<rectangle left="250" color="Silver" width="485"/>
-			<label left="268" top="2" width="480" height="20" text="====================== Atributos ====================" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<rectangle left="750" color="Silver" width="135"/>
-			<label left="761" top="2" width="138" height="20" text="============" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
+		<layout left="5" top="135" width="290" height="25" >
+			<Principal field="sabedoria" texto="Sabedoria(SAB)"/>
 		</layout>
-		
-		<template name="Cabeca">
-			<rectangle left="5" top="0" color="Gainsboro" width="80" xradius="2" yradius="2"/>
-			<label left="8" top="5" width="77" height="20" text="$(texto)" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-        	<edit left="90" top="0" width="200" height="25" fontStyle="bold" fontColor="black" field="$(field)" type="$(nort)"/>
-		</template>
-		
-		<template name="Principal">
-			<rectangle left="5" top="0" color="Gainsboro" width="155" xradius="2" yradius="2"/>
-			<label left="8" top="5" width="155" height="20" text="$(texto)" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<edit left="175" top="0" width="30" height="25" field="$(field)" type="number" max="99" horzTextAlign="center"/>
-        	<edit left="210" top="0" width="30" height="25" field="$(field)_M" type="number" max="99" horzTextAlign="center"/>
-		</template>
-			
-		<layout left="0" top="30" width="900" height="125">
-			<layout left="5" top="5" width="290" height="25" >
-				<Cabeca field="nome" texto="Nome" nort="text"/>
-			</layout>
-			<layout left="580" top="5" width="290" height="25" >
-				<Cabeca field="tendencia" texto="Tendência" nort="text"/>
-			</layout>
-			<layout left="5" top="35" width="290" height="25" >
-				<Cabeca field="jogador" texto="Jogador" nort="text"/>
-			</layout>
-			<layout left="580" top="35" width="290" height="25" >
-				<Cabeca field="sexo" texto="Sexo" nort="text"/>
-			</layout>
-			<layout left="5" top="65" width="290" height="25" >
-				<Cabeca field="idade" texto="Idade" nort="number"/>
-			</layout>
-			<layout left="580" top="65" width="290" height="25" >
-				<Cabeca field="divindade" texto="Divindade" nort="text"/>
-			</layout>
-			<layout left="5" top="95" width="290" height="25" >
-				<Cabeca field="raca" texto="Raça" nort="text"/>
-			</layout>
-			<layout left="580" top="95" width="290" height="25" >
-				<Cabeca field="tamanho" texto="Tamanho" nort="text"/>
-			</layout>
+		<layout left="5" top="165" width="290" height="25" >
+			<Principal field="carisma" texto="Carisma(CAR)"/>
 		</layout>
-		
-		<layout left="0" top="250" width="250" height="300">
-			<layout left="5" top="5" width="290" height="25" >
-				<Principal field="forca" texto="Força(FOR)"/>
-			</layout>
-			<layout left="5" top="35" width="290" height="25" >
-				<Principal field="destreza" texto="Destreza(DES)"/>
-			</layout>
-			<layout left="5" top="65" width="290" height="25" >
-				<Principal field="constituicao" texto="Constituição(CON)"/>
-			</layout>
-			<layout left="5" top="95" width="290" height="25" >
-				<Principal field="inteligencia" texto="inteligência(INT)"/>
-			</layout>
-			<layout left="5" top="125" width="290" height="25" >
-				<Principal field="sabedoria" texto="Sabedoria(SAB)"/>
-			</layout>
-			<layout left="5" top="155" width="290" height="25" >
-				<Principal field="carisma" texto="Carisma(CAR)"/>
-			</layout>
-		</layout>
-	</scrollBox>
+	</layout>
+	
 </form>

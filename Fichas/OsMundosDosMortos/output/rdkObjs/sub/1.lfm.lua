@@ -103,17 +103,29 @@ local function constructNew_OsMundosDosMortos1()
     obj.label2:setFontColor("black");
     obj.label2:setName("label2");
 
-    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button1:setParent(obj.layout1);
-    obj.button1:setLeft(830);
-    obj.button1:setTop(2);
-    obj.button1:setWidth(40);
-    obj.button1:setHeight(25);
-    obj.button1:setText("BG");
-    obj.button1:setHitTest(true);
-    obj.button1:setCanFocus(false);
-    obj.button1:setHint("Altera a imagem de fundo da ficha.");
-    obj.button1:setName("button1");
+    obj.lockb = GUI.fromHandle(_obj_newObject("button"));
+    obj.lockb:setParent(obj.layout1);
+    obj.lockb:setLeft(780);
+    obj.lockb:setTop(2);
+    obj.lockb:setWidth(40);
+    obj.lockb:setHeight(25);
+    obj.lockb:setText("Lock");
+    obj.lockb:setName("lockb");
+    obj.lockb:setHitTest(true);
+    obj.lockb:setCanFocus(false);
+    obj.lockb:setHint("Impede alterações na ficha.");
+
+    obj.backgroundimg = GUI.fromHandle(_obj_newObject("button"));
+    obj.backgroundimg:setParent(obj.layout1);
+    obj.backgroundimg:setName("backgroundimg");
+    obj.backgroundimg:setHitTest(false);
+    obj.backgroundimg:setLeft(830);
+    obj.backgroundimg:setTop(2);
+    obj.backgroundimg:setWidth(40);
+    obj.backgroundimg:setHeight(25);
+    obj.backgroundimg:setText("BG");
+    obj.backgroundimg:setCanFocus(false);
+    obj.backgroundimg:setHint("Altera a imagem de fundo da ficha.");
 
     obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.scrollBox1);
@@ -153,27 +165,31 @@ local function constructNew_OsMundosDosMortos1()
     obj.label4:setFontColor("black");
     obj.label4:setName("label4");
 
-    obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit1:setParent(obj.layout2);
-    obj.edit1:setLeft(780);
-    obj.edit1:setTop(2);
-    obj.edit1:setWidth(40);
-    obj.edit1:setHeight(25);
-    obj.edit1:setType("number");
-    obj.edit1:setField("exptotal");
-    obj.edit1:setHorzTextAlign("center");
-    obj.edit1:setName("edit1");
+    obj.exptotal = GUI.fromHandle(_obj_newObject("edit"));
+    obj.exptotal:setParent(obj.layout2);
+    obj.exptotal:setName("exptotal");
+    obj.exptotal:setHitTest(false);
+    obj.exptotal:setReadOnly(true);
+    obj.exptotal:setLeft(780);
+    obj.exptotal:setTop(2);
+    obj.exptotal:setWidth(40);
+    obj.exptotal:setHeight(25);
+    obj.exptotal:setType("number");
+    obj.exptotal:setField("exptotal");
+    obj.exptotal:setHorzTextAlign("center");
 
-    obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit2:setParent(obj.layout2);
-    obj.edit2:setLeft(830);
-    obj.edit2:setTop(2);
-    obj.edit2:setWidth(40);
-    obj.edit2:setHeight(25);
-    obj.edit2:setType("number");
-    obj.edit2:setField("expatual");
-    obj.edit2:setHorzTextAlign("center");
-    obj.edit2:setName("edit2");
+    obj.expatual = GUI.fromHandle(_obj_newObject("edit"));
+    obj.expatual:setParent(obj.layout2);
+    obj.expatual:setName("expatual");
+    obj.expatual:setHitTest(false);
+    obj.expatual:setReadOnly(true);
+    obj.expatual:setLeft(830);
+    obj.expatual:setTop(2);
+    obj.expatual:setWidth(40);
+    obj.expatual:setHeight(25);
+    obj.expatual:setType("number");
+    obj.expatual:setField("expatual");
+    obj.expatual:setHorzTextAlign("center");
 
     obj.layout3 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout3:setParent(obj.scrollBox1);
@@ -223,6 +239,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.rectangle5:setTop(0);
     obj.rectangle5:setColor("Gainsboro");
     obj.rectangle5:setWidth(80);
+    obj.rectangle5:setHeight(25);
     obj.rectangle5:setXradius(2);
     obj.rectangle5:setYradius(2);
     obj.rectangle5:setName("rectangle5");
@@ -240,16 +257,16 @@ local function constructNew_OsMundosDosMortos1()
     obj.label6:setFontColor("black");
     obj.label6:setName("label6");
 
-    obj.edit3 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit3:setParent(obj.layout5);
-    obj.edit3:setLeft(90);
-    obj.edit3:setTop(0);
-    obj.edit3:setWidth(200);
-    obj.edit3:setHeight(25);
-    lfm_setPropAsString(obj.edit3, "fontStyle",  "bold");
-    obj.edit3:setField("nome");
-    obj.edit3:setType("text");
-    obj.edit3:setName("edit3");
+    obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit1:setParent(obj.layout5);
+    obj.edit1:setLeft(90);
+    obj.edit1:setTop(0);
+    obj.edit1:setWidth(200);
+    obj.edit1:setHeight(25);
+    lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
+    obj.edit1:setField("nome");
+    obj.edit1:setType("text");
+    obj.edit1:setName("edit1");
 
     obj.layout6 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout6:setParent(obj.layout4);
@@ -265,6 +282,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.rectangle6:setTop(0);
     obj.rectangle6:setColor("Gainsboro");
     obj.rectangle6:setWidth(80);
+    obj.rectangle6:setHeight(25);
     obj.rectangle6:setXradius(2);
     obj.rectangle6:setYradius(2);
     obj.rectangle6:setName("rectangle6");
@@ -282,16 +300,16 @@ local function constructNew_OsMundosDosMortos1()
     obj.label7:setFontColor("black");
     obj.label7:setName("label7");
 
-    obj.edit4 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit4:setParent(obj.layout6);
-    obj.edit4:setLeft(90);
-    obj.edit4:setTop(0);
-    obj.edit4:setWidth(200);
-    obj.edit4:setHeight(25);
-    lfm_setPropAsString(obj.edit4, "fontStyle",  "bold");
-    obj.edit4:setField("classe");
-    obj.edit4:setType("text");
-    obj.edit4:setName("edit4");
+    obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit2:setParent(obj.layout6);
+    obj.edit2:setLeft(90);
+    obj.edit2:setTop(0);
+    obj.edit2:setWidth(200);
+    obj.edit2:setHeight(25);
+    lfm_setPropAsString(obj.edit2, "fontStyle",  "bold");
+    obj.edit2:setField("classe");
+    obj.edit2:setType("text");
+    obj.edit2:setName("edit2");
 
     obj.layout7 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout7:setParent(obj.layout4);
@@ -307,6 +325,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.rectangle7:setTop(0);
     obj.rectangle7:setColor("Gainsboro");
     obj.rectangle7:setWidth(80);
+    obj.rectangle7:setHeight(25);
     obj.rectangle7:setXradius(2);
     obj.rectangle7:setYradius(2);
     obj.rectangle7:setName("rectangle7");
@@ -324,16 +343,16 @@ local function constructNew_OsMundosDosMortos1()
     obj.label8:setFontColor("black");
     obj.label8:setName("label8");
 
-    obj.edit5 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit5:setParent(obj.layout7);
-    obj.edit5:setLeft(90);
-    obj.edit5:setTop(0);
-    obj.edit5:setWidth(200);
-    obj.edit5:setHeight(25);
-    lfm_setPropAsString(obj.edit5, "fontStyle",  "bold");
-    obj.edit5:setField("personalidade");
-    obj.edit5:setType("text");
-    obj.edit5:setName("edit5");
+    obj.edit3 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit3:setParent(obj.layout7);
+    obj.edit3:setLeft(90);
+    obj.edit3:setTop(0);
+    obj.edit3:setWidth(200);
+    obj.edit3:setHeight(25);
+    lfm_setPropAsString(obj.edit3, "fontStyle",  "bold");
+    obj.edit3:setField("personalidade");
+    obj.edit3:setType("text");
+    obj.edit3:setName("edit3");
 
     obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout8:setParent(obj.layout4);
@@ -349,6 +368,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.rectangle8:setTop(0);
     obj.rectangle8:setColor("Gainsboro");
     obj.rectangle8:setWidth(80);
+    obj.rectangle8:setHeight(25);
     obj.rectangle8:setXradius(2);
     obj.rectangle8:setYradius(2);
     obj.rectangle8:setName("rectangle8");
@@ -366,16 +386,16 @@ local function constructNew_OsMundosDosMortos1()
     obj.label9:setFontColor("black");
     obj.label9:setName("label9");
 
-    obj.edit6 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit6:setParent(obj.layout8);
-    obj.edit6:setLeft(90);
-    obj.edit6:setTop(0);
-    obj.edit6:setWidth(200);
-    obj.edit6:setHeight(25);
-    lfm_setPropAsString(obj.edit6, "fontStyle",  "bold");
-    obj.edit6:setField("nvclasse");
-    obj.edit6:setType("number");
-    obj.edit6:setName("edit6");
+    obj.edit4 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit4:setParent(obj.layout8);
+    obj.edit4:setLeft(90);
+    obj.edit4:setTop(0);
+    obj.edit4:setWidth(200);
+    obj.edit4:setHeight(25);
+    lfm_setPropAsString(obj.edit4, "fontStyle",  "bold");
+    obj.edit4:setField("nvclasse");
+    obj.edit4:setType("number");
+    obj.edit4:setName("edit4");
 
     obj.layout9 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout9:setParent(obj.layout4);
@@ -391,6 +411,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.rectangle9:setTop(0);
     obj.rectangle9:setColor("Gainsboro");
     obj.rectangle9:setWidth(80);
+    obj.rectangle9:setHeight(25);
     obj.rectangle9:setXradius(2);
     obj.rectangle9:setYradius(2);
     obj.rectangle9:setName("rectangle9");
@@ -408,16 +429,16 @@ local function constructNew_OsMundosDosMortos1()
     obj.label10:setFontColor("black");
     obj.label10:setName("label10");
 
-    obj.edit7 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit7:setParent(obj.layout9);
-    obj.edit7:setLeft(90);
-    obj.edit7:setTop(0);
-    obj.edit7:setWidth(200);
-    obj.edit7:setHeight(25);
-    lfm_setPropAsString(obj.edit7, "fontStyle",  "bold");
-    obj.edit7:setField("conceito");
-    obj.edit7:setType("text");
-    obj.edit7:setName("edit7");
+    obj.edit5 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit5:setParent(obj.layout9);
+    obj.edit5:setLeft(90);
+    obj.edit5:setTop(0);
+    obj.edit5:setWidth(200);
+    obj.edit5:setHeight(25);
+    lfm_setPropAsString(obj.edit5, "fontStyle",  "bold");
+    obj.edit5:setField("conceito");
+    obj.edit5:setType("text");
+    obj.edit5:setName("edit5");
 
     obj.layout10 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout10:setParent(obj.layout4);
@@ -433,6 +454,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.rectangle10:setTop(0);
     obj.rectangle10:setColor("Gainsboro");
     obj.rectangle10:setWidth(80);
+    obj.rectangle10:setHeight(25);
     obj.rectangle10:setXradius(2);
     obj.rectangle10:setYradius(2);
     obj.rectangle10:setName("rectangle10");
@@ -450,16 +472,16 @@ local function constructNew_OsMundosDosMortos1()
     obj.label11:setFontColor("black");
     obj.label11:setName("label11");
 
-    obj.edit8 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit8:setParent(obj.layout10);
-    obj.edit8:setLeft(90);
-    obj.edit8:setTop(0);
-    obj.edit8:setWidth(200);
-    obj.edit8:setHeight(25);
-    lfm_setPropAsString(obj.edit8, "fontStyle",  "bold");
-    obj.edit8:setField("tribo");
-    obj.edit8:setType("text");
-    obj.edit8:setName("edit8");
+    obj.edit6 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit6:setParent(obj.layout10);
+    obj.edit6:setLeft(90);
+    obj.edit6:setTop(0);
+    obj.edit6:setWidth(200);
+    obj.edit6:setHeight(25);
+    lfm_setPropAsString(obj.edit6, "fontStyle",  "bold");
+    obj.edit6:setField("tribo");
+    obj.edit6:setType("text");
+    obj.edit6:setName("edit6");
 
     obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout11:setParent(obj.layout4);
@@ -475,6 +497,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.rectangle11:setTop(0);
     obj.rectangle11:setColor("Gainsboro");
     obj.rectangle11:setWidth(80);
+    obj.rectangle11:setHeight(25);
     obj.rectangle11:setXradius(2);
     obj.rectangle11:setYradius(2);
     obj.rectangle11:setName("rectangle11");
@@ -492,16 +515,16 @@ local function constructNew_OsMundosDosMortos1()
     obj.label12:setFontColor("black");
     obj.label12:setName("label12");
 
-    obj.edit9 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit9:setParent(obj.layout11);
-    obj.edit9:setLeft(90);
-    obj.edit9:setTop(0);
-    obj.edit9:setWidth(200);
-    obj.edit9:setHeight(25);
-    lfm_setPropAsString(obj.edit9, "fontStyle",  "bold");
-    obj.edit9:setField("altura");
-    obj.edit9:setType("number");
-    obj.edit9:setName("edit9");
+    obj.edit7 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit7:setParent(obj.layout11);
+    obj.edit7:setLeft(90);
+    obj.edit7:setTop(0);
+    obj.edit7:setWidth(200);
+    obj.edit7:setHeight(25);
+    lfm_setPropAsString(obj.edit7, "fontStyle",  "bold");
+    obj.edit7:setField("altura");
+    obj.edit7:setType("number");
+    obj.edit7:setName("edit7");
 
     obj.layout12 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout12:setParent(obj.layout4);
@@ -517,6 +540,7 @@ local function constructNew_OsMundosDosMortos1()
     obj.rectangle12:setTop(0);
     obj.rectangle12:setColor("Gainsboro");
     obj.rectangle12:setWidth(80);
+    obj.rectangle12:setHeight(25);
     obj.rectangle12:setXradius(2);
     obj.rectangle12:setYradius(2);
     obj.rectangle12:setName("rectangle12");
@@ -534,16 +558,16 @@ local function constructNew_OsMundosDosMortos1()
     obj.label13:setFontColor("black");
     obj.label13:setName("label13");
 
-    obj.edit10 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit10:setParent(obj.layout12);
-    obj.edit10:setLeft(90);
-    obj.edit10:setTop(0);
-    obj.edit10:setWidth(200);
-    obj.edit10:setHeight(25);
-    lfm_setPropAsString(obj.edit10, "fontStyle",  "bold");
-    obj.edit10:setField("peso");
-    obj.edit10:setType("number");
-    obj.edit10:setName("edit10");
+    obj.edit8 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit8:setParent(obj.layout12);
+    obj.edit8:setLeft(90);
+    obj.edit8:setTop(0);
+    obj.edit8:setWidth(200);
+    obj.edit8:setHeight(25);
+    lfm_setPropAsString(obj.edit8, "fontStyle",  "bold");
+    obj.edit8:setField("peso");
+    obj.edit8:setType("number");
+    obj.edit8:setName("edit8");
 
     obj.layout13 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout13:setParent(obj.scrollBox1);
@@ -1008,21 +1032,21 @@ local function constructNew_OsMundosDosMortos1()
     obj.label20:setFontColor("black");
     obj.label20:setName("label20");
 
-    obj.edit11 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit11:setParent(obj.layout18);
-    obj.edit11:setField("sanidade");
-    obj.edit11:setLeft(50);
-    obj.edit11:setTop(32);
-    obj.edit11:setWidth(40);
-    obj.edit11:setHeight(40);
-    obj.edit11:setFontSize(16);
-    obj.edit11:setHorzTextAlign("center");
-    obj.edit11:setType("number");
-    obj.edit11:setMax(999);
-    obj.edit11:setTransparent(true);
-    obj.edit11:setFontColor("black");
-    lfm_setPropAsString(obj.edit11, "fontStyle",  "bold");
-    obj.edit11:setName("edit11");
+    obj.edit9 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit9:setParent(obj.layout18);
+    obj.edit9:setField("sanidade");
+    obj.edit9:setLeft(50);
+    obj.edit9:setTop(32);
+    obj.edit9:setWidth(40);
+    obj.edit9:setHeight(40);
+    obj.edit9:setFontSize(16);
+    obj.edit9:setHorzTextAlign("center");
+    obj.edit9:setType("number");
+    obj.edit9:setMax(999);
+    obj.edit9:setTransparent(true);
+    obj.edit9:setFontColor("black");
+    lfm_setPropAsString(obj.edit9, "fontStyle",  "bold");
+    obj.edit9:setName("edit9");
 
     obj.image3 = GUI.fromHandle(_obj_newObject("image"));
     obj.image3:setParent(obj.layout18);
@@ -1046,21 +1070,21 @@ local function constructNew_OsMundosDosMortos1()
     obj.label21:setFontColor("black");
     obj.label21:setName("label21");
 
-    obj.edit12 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit12:setParent(obj.layout18);
-    obj.edit12:setField("autocontrole");
-    obj.edit12:setLeft(50);
-    obj.edit12:setTop(102);
-    obj.edit12:setWidth(40);
-    obj.edit12:setHeight(40);
-    obj.edit12:setFontSize(16);
-    obj.edit12:setHorzTextAlign("center");
-    obj.edit12:setType("number");
-    obj.edit12:setMax(999);
-    obj.edit12:setTransparent(true);
-    obj.edit12:setFontColor("black");
-    lfm_setPropAsString(obj.edit12, "fontStyle",  "bold");
-    obj.edit12:setName("edit12");
+    obj.edit10 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit10:setParent(obj.layout18);
+    obj.edit10:setField("autocontrole");
+    obj.edit10:setLeft(50);
+    obj.edit10:setTop(102);
+    obj.edit10:setWidth(40);
+    obj.edit10:setHeight(40);
+    obj.edit10:setFontSize(16);
+    obj.edit10:setHorzTextAlign("center");
+    obj.edit10:setType("number");
+    obj.edit10:setMax(999);
+    obj.edit10:setTransparent(true);
+    obj.edit10:setFontColor("black");
+    lfm_setPropAsString(obj.edit10, "fontStyle",  "bold");
+    obj.edit10:setName("edit10");
 
     obj.image4 = GUI.fromHandle(_obj_newObject("image"));
     obj.image4:setParent(obj.layout18);
@@ -1084,21 +1108,21 @@ local function constructNew_OsMundosDosMortos1()
     obj.label22:setFontColor("black");
     obj.label22:setName("label22");
 
-    obj.edit13 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit13:setParent(obj.layout18);
-    obj.edit13:setField("forcadevontade");
-    obj.edit13:setLeft(165);
-    obj.edit13:setTop(67);
-    obj.edit13:setWidth(40);
-    obj.edit13:setHeight(40);
-    obj.edit13:setFontSize(16);
-    obj.edit13:setHorzTextAlign("center");
-    obj.edit13:setType("number");
-    obj.edit13:setMax(999);
-    obj.edit13:setTransparent(true);
-    obj.edit13:setFontColor("black");
-    lfm_setPropAsString(obj.edit13, "fontStyle",  "bold");
-    obj.edit13:setName("edit13");
+    obj.edit11 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit11:setParent(obj.layout18);
+    obj.edit11:setField("forcadevontade");
+    obj.edit11:setLeft(165);
+    obj.edit11:setTop(67);
+    obj.edit11:setWidth(40);
+    obj.edit11:setHeight(40);
+    obj.edit11:setFontSize(16);
+    obj.edit11:setHorzTextAlign("center");
+    obj.edit11:setType("number");
+    obj.edit11:setMax(999);
+    obj.edit11:setTransparent(true);
+    obj.edit11:setFontColor("black");
+    lfm_setPropAsString(obj.edit11, "fontStyle",  "bold");
+    obj.edit11:setName("edit11");
 
     obj.image5 = GUI.fromHandle(_obj_newObject("image"));
     obj.image5:setParent(obj.layout18);
@@ -1122,21 +1146,21 @@ local function constructNew_OsMundosDosMortos1()
     obj.label23:setFontColor("black");
     obj.label23:setName("label23");
 
-    obj.edit14 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit14:setParent(obj.layout18);
-    obj.edit14:setField("energia");
-    obj.edit14:setLeft(280);
-    obj.edit14:setTop(32);
-    obj.edit14:setWidth(40);
-    obj.edit14:setHeight(40);
-    obj.edit14:setFontSize(16);
-    obj.edit14:setHorzTextAlign("center");
-    obj.edit14:setType("number");
-    obj.edit14:setMax(999);
-    obj.edit14:setTransparent(true);
-    obj.edit14:setFontColor("black");
-    lfm_setPropAsString(obj.edit14, "fontStyle",  "bold");
-    obj.edit14:setName("edit14");
+    obj.edit12 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit12:setParent(obj.layout18);
+    obj.edit12:setField("energia");
+    obj.edit12:setLeft(280);
+    obj.edit12:setTop(32);
+    obj.edit12:setWidth(40);
+    obj.edit12:setHeight(40);
+    obj.edit12:setFontSize(16);
+    obj.edit12:setHorzTextAlign("center");
+    obj.edit12:setType("number");
+    obj.edit12:setMax(999);
+    obj.edit12:setTransparent(true);
+    obj.edit12:setFontColor("black");
+    lfm_setPropAsString(obj.edit12, "fontStyle",  "bold");
+    obj.edit12:setName("edit12");
 
     obj.image6 = GUI.fromHandle(_obj_newObject("image"));
     obj.image6:setParent(obj.layout18);
@@ -1160,21 +1184,21 @@ local function constructNew_OsMundosDosMortos1()
     obj.label24:setFontColor("black");
     obj.label24:setName("label24");
 
-    obj.edit15 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit15:setParent(obj.layout18);
-    obj.edit15:setField("pontosdevida");
-    obj.edit15:setLeft(280);
-    obj.edit15:setTop(102);
-    obj.edit15:setWidth(40);
-    obj.edit15:setHeight(40);
-    obj.edit15:setFontSize(16);
-    obj.edit15:setHorzTextAlign("center");
-    obj.edit15:setType("number");
-    obj.edit15:setMax(999);
-    obj.edit15:setTransparent(true);
-    obj.edit15:setFontColor("black");
-    lfm_setPropAsString(obj.edit15, "fontStyle",  "bold");
-    obj.edit15:setName("edit15");
+    obj.edit13 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit13:setParent(obj.layout18);
+    obj.edit13:setField("pontosdevida");
+    obj.edit13:setLeft(280);
+    obj.edit13:setTop(102);
+    obj.edit13:setWidth(40);
+    obj.edit13:setHeight(40);
+    obj.edit13:setFontSize(16);
+    obj.edit13:setHorzTextAlign("center");
+    obj.edit13:setType("number");
+    obj.edit13:setMax(999);
+    obj.edit13:setTransparent(true);
+    obj.edit13:setFontColor("black");
+    lfm_setPropAsString(obj.edit13, "fontStyle",  "bold");
+    obj.edit13:setName("edit13");
 
     obj.image7 = GUI.fromHandle(_obj_newObject("image"));
     obj.image7:setParent(obj.layout18);
@@ -1261,19 +1285,19 @@ local function constructNew_OsMundosDosMortos1()
     obj.horzLine1:setStrokeColor("black");
     obj.horzLine1:setName("horzLine1");
 
-    obj.edit16 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit16:setParent(obj.layout22);
-    obj.edit16:setField("mhabilidades1_e");
-    obj.edit16:setLeft(2);
-    obj.edit16:setTop(0);
-    obj.edit16:setWidth(125);
-    obj.edit16:setHeight(20);
-    lfm_setPropAsString(obj.edit16, "fontStyle",  "bold");
-    obj.edit16:setFontColor("black");
-    obj.edit16:setFontSize(14);
-    obj.edit16:setHorzTextAlign("center");
-    obj.edit16:setTransparent(true);
-    obj.edit16:setName("edit16");
+    obj.edit14 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit14:setParent(obj.layout22);
+    obj.edit14:setField("mhabilidades1_e");
+    obj.edit14:setLeft(2);
+    obj.edit14:setTop(0);
+    obj.edit14:setWidth(125);
+    obj.edit14:setHeight(20);
+    lfm_setPropAsString(obj.edit14, "fontStyle",  "bold");
+    obj.edit14:setFontColor("black");
+    obj.edit14:setFontSize(14);
+    obj.edit14:setHorzTextAlign("center");
+    obj.edit14:setTransparent(true);
+    obj.edit14:setName("edit14");
 
     obj.imageCheckBox31 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox31:setParent(obj.layout22);
@@ -1357,19 +1381,19 @@ local function constructNew_OsMundosDosMortos1()
     obj.horzLine2:setStrokeColor("black");
     obj.horzLine2:setName("horzLine2");
 
-    obj.edit17 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit17:setParent(obj.layout23);
-    obj.edit17:setField("mhabilidades2_e");
-    obj.edit17:setLeft(2);
-    obj.edit17:setTop(0);
-    obj.edit17:setWidth(125);
-    obj.edit17:setHeight(20);
-    lfm_setPropAsString(obj.edit17, "fontStyle",  "bold");
-    obj.edit17:setFontColor("black");
-    obj.edit17:setFontSize(14);
-    obj.edit17:setHorzTextAlign("center");
-    obj.edit17:setTransparent(true);
-    obj.edit17:setName("edit17");
+    obj.edit15 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit15:setParent(obj.layout23);
+    obj.edit15:setField("mhabilidades2_e");
+    obj.edit15:setLeft(2);
+    obj.edit15:setTop(0);
+    obj.edit15:setWidth(125);
+    obj.edit15:setHeight(20);
+    lfm_setPropAsString(obj.edit15, "fontStyle",  "bold");
+    obj.edit15:setFontColor("black");
+    obj.edit15:setFontSize(14);
+    obj.edit15:setHorzTextAlign("center");
+    obj.edit15:setTransparent(true);
+    obj.edit15:setName("edit15");
 
     obj.imageCheckBox37 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox37:setParent(obj.layout23);
@@ -1453,19 +1477,19 @@ local function constructNew_OsMundosDosMortos1()
     obj.horzLine3:setStrokeColor("black");
     obj.horzLine3:setName("horzLine3");
 
-    obj.edit18 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit18:setParent(obj.layout24);
-    obj.edit18:setField("mhabilidades3_e");
-    obj.edit18:setLeft(2);
-    obj.edit18:setTop(0);
-    obj.edit18:setWidth(125);
-    obj.edit18:setHeight(20);
-    lfm_setPropAsString(obj.edit18, "fontStyle",  "bold");
-    obj.edit18:setFontColor("black");
-    obj.edit18:setFontSize(14);
-    obj.edit18:setHorzTextAlign("center");
-    obj.edit18:setTransparent(true);
-    obj.edit18:setName("edit18");
+    obj.edit16 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit16:setParent(obj.layout24);
+    obj.edit16:setField("mhabilidades3_e");
+    obj.edit16:setLeft(2);
+    obj.edit16:setTop(0);
+    obj.edit16:setWidth(125);
+    obj.edit16:setHeight(20);
+    lfm_setPropAsString(obj.edit16, "fontStyle",  "bold");
+    obj.edit16:setFontColor("black");
+    obj.edit16:setFontSize(14);
+    obj.edit16:setHorzTextAlign("center");
+    obj.edit16:setTransparent(true);
+    obj.edit16:setName("edit16");
 
     obj.imageCheckBox43 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox43:setParent(obj.layout24);
@@ -1549,19 +1573,19 @@ local function constructNew_OsMundosDosMortos1()
     obj.horzLine4:setStrokeColor("black");
     obj.horzLine4:setName("horzLine4");
 
-    obj.edit19 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit19:setParent(obj.layout25);
-    obj.edit19:setField("mhabilidades4_e");
-    obj.edit19:setLeft(2);
-    obj.edit19:setTop(0);
-    obj.edit19:setWidth(125);
-    obj.edit19:setHeight(20);
-    lfm_setPropAsString(obj.edit19, "fontStyle",  "bold");
-    obj.edit19:setFontColor("black");
-    obj.edit19:setFontSize(14);
-    obj.edit19:setHorzTextAlign("center");
-    obj.edit19:setTransparent(true);
-    obj.edit19:setName("edit19");
+    obj.edit17 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit17:setParent(obj.layout25);
+    obj.edit17:setField("mhabilidades4_e");
+    obj.edit17:setLeft(2);
+    obj.edit17:setTop(0);
+    obj.edit17:setWidth(125);
+    obj.edit17:setHeight(20);
+    lfm_setPropAsString(obj.edit17, "fontStyle",  "bold");
+    obj.edit17:setFontColor("black");
+    obj.edit17:setFontSize(14);
+    obj.edit17:setHorzTextAlign("center");
+    obj.edit17:setTransparent(true);
+    obj.edit17:setName("edit17");
 
     obj.imageCheckBox49 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox49:setParent(obj.layout25);
@@ -1645,19 +1669,19 @@ local function constructNew_OsMundosDosMortos1()
     obj.horzLine5:setStrokeColor("black");
     obj.horzLine5:setName("horzLine5");
 
-    obj.edit20 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit20:setParent(obj.layout26);
-    obj.edit20:setField("mhabilidades5_e");
-    obj.edit20:setLeft(2);
-    obj.edit20:setTop(0);
-    obj.edit20:setWidth(125);
-    obj.edit20:setHeight(20);
-    lfm_setPropAsString(obj.edit20, "fontStyle",  "bold");
-    obj.edit20:setFontColor("black");
-    obj.edit20:setFontSize(14);
-    obj.edit20:setHorzTextAlign("center");
-    obj.edit20:setTransparent(true);
-    obj.edit20:setName("edit20");
+    obj.edit18 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit18:setParent(obj.layout26);
+    obj.edit18:setField("mhabilidades5_e");
+    obj.edit18:setLeft(2);
+    obj.edit18:setTop(0);
+    obj.edit18:setWidth(125);
+    obj.edit18:setHeight(20);
+    lfm_setPropAsString(obj.edit18, "fontStyle",  "bold");
+    obj.edit18:setFontColor("black");
+    obj.edit18:setFontSize(14);
+    obj.edit18:setHorzTextAlign("center");
+    obj.edit18:setTransparent(true);
+    obj.edit18:setName("edit18");
 
     obj.imageCheckBox55 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox55:setParent(obj.layout26);
@@ -1741,19 +1765,19 @@ local function constructNew_OsMundosDosMortos1()
     obj.horzLine6:setStrokeColor("black");
     obj.horzLine6:setName("horzLine6");
 
-    obj.edit21 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit21:setParent(obj.layout27);
-    obj.edit21:setField("mhabilidades6_e");
-    obj.edit21:setLeft(2);
-    obj.edit21:setTop(0);
-    obj.edit21:setWidth(125);
-    obj.edit21:setHeight(20);
-    lfm_setPropAsString(obj.edit21, "fontStyle",  "bold");
-    obj.edit21:setFontColor("black");
-    obj.edit21:setFontSize(14);
-    obj.edit21:setHorzTextAlign("center");
-    obj.edit21:setTransparent(true);
-    obj.edit21:setName("edit21");
+    obj.edit19 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit19:setParent(obj.layout27);
+    obj.edit19:setField("mhabilidades6_e");
+    obj.edit19:setLeft(2);
+    obj.edit19:setTop(0);
+    obj.edit19:setWidth(125);
+    obj.edit19:setHeight(20);
+    lfm_setPropAsString(obj.edit19, "fontStyle",  "bold");
+    obj.edit19:setFontColor("black");
+    obj.edit19:setFontSize(14);
+    obj.edit19:setHorzTextAlign("center");
+    obj.edit19:setTransparent(true);
+    obj.edit19:setName("edit19");
 
     obj.imageCheckBox61 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox61:setParent(obj.layout27);
@@ -1837,19 +1861,19 @@ local function constructNew_OsMundosDosMortos1()
     obj.horzLine7:setStrokeColor("black");
     obj.horzLine7:setName("horzLine7");
 
-    obj.edit22 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit22:setParent(obj.layout28);
-    obj.edit22:setField("mhabilidades7_e");
-    obj.edit22:setLeft(2);
-    obj.edit22:setTop(0);
-    obj.edit22:setWidth(125);
-    obj.edit22:setHeight(20);
-    lfm_setPropAsString(obj.edit22, "fontStyle",  "bold");
-    obj.edit22:setFontColor("black");
-    obj.edit22:setFontSize(14);
-    obj.edit22:setHorzTextAlign("center");
-    obj.edit22:setTransparent(true);
-    obj.edit22:setName("edit22");
+    obj.edit20 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit20:setParent(obj.layout28);
+    obj.edit20:setField("mhabilidades7_e");
+    obj.edit20:setLeft(2);
+    obj.edit20:setTop(0);
+    obj.edit20:setWidth(125);
+    obj.edit20:setHeight(20);
+    lfm_setPropAsString(obj.edit20, "fontStyle",  "bold");
+    obj.edit20:setFontColor("black");
+    obj.edit20:setFontSize(14);
+    obj.edit20:setHorzTextAlign("center");
+    obj.edit20:setTransparent(true);
+    obj.edit20:setName("edit20");
 
     obj.imageCheckBox67 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox67:setParent(obj.layout28);
@@ -1933,19 +1957,19 @@ local function constructNew_OsMundosDosMortos1()
     obj.horzLine8:setStrokeColor("black");
     obj.horzLine8:setName("horzLine8");
 
-    obj.edit23 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit23:setParent(obj.layout29);
-    obj.edit23:setField("mhabilidades8_e");
-    obj.edit23:setLeft(2);
-    obj.edit23:setTop(0);
-    obj.edit23:setWidth(125);
-    obj.edit23:setHeight(20);
-    lfm_setPropAsString(obj.edit23, "fontStyle",  "bold");
-    obj.edit23:setFontColor("black");
-    obj.edit23:setFontSize(14);
-    obj.edit23:setHorzTextAlign("center");
-    obj.edit23:setTransparent(true);
-    obj.edit23:setName("edit23");
+    obj.edit21 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit21:setParent(obj.layout29);
+    obj.edit21:setField("mhabilidades8_e");
+    obj.edit21:setLeft(2);
+    obj.edit21:setTop(0);
+    obj.edit21:setWidth(125);
+    obj.edit21:setHeight(20);
+    lfm_setPropAsString(obj.edit21, "fontStyle",  "bold");
+    obj.edit21:setFontColor("black");
+    obj.edit21:setFontSize(14);
+    obj.edit21:setHorzTextAlign("center");
+    obj.edit21:setTransparent(true);
+    obj.edit21:setName("edit21");
 
     obj.imageCheckBox73 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox73:setParent(obj.layout29);
@@ -2047,18 +2071,18 @@ local function constructNew_OsMundosDosMortos1()
     obj.label27:setFontColor("black");
     obj.label27:setName("label27");
 
-    obj.edit24 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit24:setParent(obj.layout31);
-    obj.edit24:setField("cnivel1");
-    obj.edit24:setLeft(70);
-    obj.edit24:setTop(0);
-    obj.edit24:setWidth(168);
-    obj.edit24:setHeight(20);
-    lfm_setPropAsString(obj.edit24, "fontStyle",  "bold");
-    obj.edit24:setFontColor("black");
-    obj.edit24:setFontSize(15);
-    obj.edit24:setTransparent(true);
-    obj.edit24:setName("edit24");
+    obj.edit22 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit22:setParent(obj.layout31);
+    obj.edit22:setField("cnivel1");
+    obj.edit22:setLeft(70);
+    obj.edit22:setTop(0);
+    obj.edit22:setWidth(168);
+    obj.edit22:setHeight(20);
+    lfm_setPropAsString(obj.edit22, "fontStyle",  "bold");
+    obj.edit22:setFontColor("black");
+    obj.edit22:setFontSize(15);
+    obj.edit22:setTransparent(true);
+    obj.edit22:setName("edit22");
 
     obj.layout32 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout32:setParent(obj.layout30);
@@ -2086,18 +2110,18 @@ local function constructNew_OsMundosDosMortos1()
     obj.label28:setFontColor("black");
     obj.label28:setName("label28");
 
-    obj.edit25 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit25:setParent(obj.layout32);
-    obj.edit25:setField("cnivel2");
-    obj.edit25:setLeft(70);
-    obj.edit25:setTop(0);
-    obj.edit25:setWidth(168);
-    obj.edit25:setHeight(20);
-    lfm_setPropAsString(obj.edit25, "fontStyle",  "bold");
-    obj.edit25:setFontColor("black");
-    obj.edit25:setFontSize(15);
-    obj.edit25:setTransparent(true);
-    obj.edit25:setName("edit25");
+    obj.edit23 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit23:setParent(obj.layout32);
+    obj.edit23:setField("cnivel2");
+    obj.edit23:setLeft(70);
+    obj.edit23:setTop(0);
+    obj.edit23:setWidth(168);
+    obj.edit23:setHeight(20);
+    lfm_setPropAsString(obj.edit23, "fontStyle",  "bold");
+    obj.edit23:setFontColor("black");
+    obj.edit23:setFontSize(15);
+    obj.edit23:setTransparent(true);
+    obj.edit23:setName("edit23");
 
     obj.layout33 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout33:setParent(obj.layout30);
@@ -2125,18 +2149,18 @@ local function constructNew_OsMundosDosMortos1()
     obj.label29:setFontColor("black");
     obj.label29:setName("label29");
 
-    obj.edit26 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit26:setParent(obj.layout33);
-    obj.edit26:setField("cnivel3");
-    obj.edit26:setLeft(70);
-    obj.edit26:setTop(0);
-    obj.edit26:setWidth(168);
-    obj.edit26:setHeight(20);
-    lfm_setPropAsString(obj.edit26, "fontStyle",  "bold");
-    obj.edit26:setFontColor("black");
-    obj.edit26:setFontSize(15);
-    obj.edit26:setTransparent(true);
-    obj.edit26:setName("edit26");
+    obj.edit24 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit24:setParent(obj.layout33);
+    obj.edit24:setField("cnivel3");
+    obj.edit24:setLeft(70);
+    obj.edit24:setTop(0);
+    obj.edit24:setWidth(168);
+    obj.edit24:setHeight(20);
+    lfm_setPropAsString(obj.edit24, "fontStyle",  "bold");
+    obj.edit24:setFontColor("black");
+    obj.edit24:setFontSize(15);
+    obj.edit24:setTransparent(true);
+    obj.edit24:setName("edit24");
 
     obj.layout34 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout34:setParent(obj.layout30);
@@ -2164,18 +2188,18 @@ local function constructNew_OsMundosDosMortos1()
     obj.label30:setFontColor("black");
     obj.label30:setName("label30");
 
-    obj.edit27 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit27:setParent(obj.layout34);
-    obj.edit27:setField("cnivel4");
-    obj.edit27:setLeft(70);
-    obj.edit27:setTop(0);
-    obj.edit27:setWidth(168);
-    obj.edit27:setHeight(20);
-    lfm_setPropAsString(obj.edit27, "fontStyle",  "bold");
-    obj.edit27:setFontColor("black");
-    obj.edit27:setFontSize(15);
-    obj.edit27:setTransparent(true);
-    obj.edit27:setName("edit27");
+    obj.edit25 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit25:setParent(obj.layout34);
+    obj.edit25:setField("cnivel4");
+    obj.edit25:setLeft(70);
+    obj.edit25:setTop(0);
+    obj.edit25:setWidth(168);
+    obj.edit25:setHeight(20);
+    lfm_setPropAsString(obj.edit25, "fontStyle",  "bold");
+    obj.edit25:setFontColor("black");
+    obj.edit25:setFontSize(15);
+    obj.edit25:setTransparent(true);
+    obj.edit25:setName("edit25");
 
     obj.layout35 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout35:setParent(obj.layout30);
@@ -2203,18 +2227,18 @@ local function constructNew_OsMundosDosMortos1()
     obj.label31:setFontColor("black");
     obj.label31:setName("label31");
 
-    obj.edit28 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit28:setParent(obj.layout35);
-    obj.edit28:setField("cnivel5");
-    obj.edit28:setLeft(70);
-    obj.edit28:setTop(0);
-    obj.edit28:setWidth(168);
-    obj.edit28:setHeight(20);
-    lfm_setPropAsString(obj.edit28, "fontStyle",  "bold");
-    obj.edit28:setFontColor("black");
-    obj.edit28:setFontSize(15);
-    obj.edit28:setTransparent(true);
-    obj.edit28:setName("edit28");
+    obj.edit26 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit26:setParent(obj.layout35);
+    obj.edit26:setField("cnivel5");
+    obj.edit26:setLeft(70);
+    obj.edit26:setTop(0);
+    obj.edit26:setWidth(168);
+    obj.edit26:setHeight(20);
+    lfm_setPropAsString(obj.edit26, "fontStyle",  "bold");
+    obj.edit26:setFontColor("black");
+    obj.edit26:setFontSize(15);
+    obj.edit26:setTransparent(true);
+    obj.edit26:setName("edit26");
 
     obj.layout36 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout36:setParent(obj.layout30);
@@ -2242,25 +2266,45 @@ local function constructNew_OsMundosDosMortos1()
     obj.label32:setFontColor("black");
     obj.label32:setName("label32");
 
-    obj.edit29 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit29:setParent(obj.layout36);
-    obj.edit29:setField("cnivel6");
-    obj.edit29:setLeft(70);
-    obj.edit29:setTop(0);
-    obj.edit29:setWidth(168);
-    obj.edit29:setHeight(20);
-    lfm_setPropAsString(obj.edit29, "fontStyle",  "bold");
-    obj.edit29:setFontColor("black");
-    obj.edit29:setFontSize(15);
-    obj.edit29:setTransparent(true);
-    obj.edit29:setName("edit29");
+    obj.edit27 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit27:setParent(obj.layout36);
+    obj.edit27:setField("cnivel6");
+    obj.edit27:setLeft(70);
+    obj.edit27:setTop(0);
+    obj.edit27:setWidth(168);
+    obj.edit27:setHeight(20);
+    lfm_setPropAsString(obj.edit27, "fontStyle",  "bold");
+    obj.edit27:setFontColor("black");
+    obj.edit27:setFontSize(15);
+    obj.edit27:setTransparent(true);
+    obj.edit27:setName("edit27");
 
-    obj._e_event0 = obj.button1:addEventListener("onClick",
+    obj._e_event0 = obj.lockb:addEventListener("onClick",
+        function (_)
+            if self.lockb.text == 'Lock' then 
+            						self.lockb.text = ' '
+            						self.backgroundimg.hitTest = true
+            						self.exptotal.hitTest = true
+            						self.expatual.hitTest = true
+            						self.exptotal.readOnly = false
+            						self.expatual.readOnly = false
+            					else 
+            						self.lockb.text = 'Lock'
+            						self.backgroundimg.hitTest = false
+            						self.exptotal.hitTest = false
+            						self.expatual.hitTest = false
+            						self.exptotal.readOnly = true
+            						self.expatual.readOnly = true
+            					end;
+        end, obj);
+
+    obj._e_event1 = obj.backgroundimg:addEventListener("onClick",
         function (_)
             Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event1);
         __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
 
@@ -2282,11 +2326,10 @@ local function constructNew_OsMundosDosMortos1()
         if self.horzLine7 ~= nil then self.horzLine7:destroy(); self.horzLine7 = nil; end;
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
-        if self.edit29 ~= nil then self.edit29:destroy(); self.edit29 = nil; end;
-        if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
+        if self.backgroundimg ~= nil then self.backgroundimg:destroy(); self.backgroundimg = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
+        if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
         if self.imageCheckBox76 ~= nil then self.imageCheckBox76:destroy(); self.imageCheckBox76 = nil; end;
-        if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
         if self.imageCheckBox58 ~= nil then self.imageCheckBox58:destroy(); self.imageCheckBox58 = nil; end;
         if self.rectangle16 ~= nil then self.rectangle16:destroy(); self.rectangle16 = nil; end;
         if self.imageCheckBox50 ~= nil then self.imageCheckBox50:destroy(); self.imageCheckBox50 = nil; end;
@@ -2301,7 +2344,6 @@ local function constructNew_OsMundosDosMortos1()
         if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;
         if self.imageCheckBox67 ~= nil then self.imageCheckBox67:destroy(); self.imageCheckBox67 = nil; end;
         if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
-        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.imageCheckBox45 ~= nil then self.imageCheckBox45:destroy(); self.imageCheckBox45 = nil; end;
         if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
         if self.edit26 ~= nil then self.edit26:destroy(); self.edit26 = nil; end;
@@ -2370,6 +2412,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
         if self.layout33 ~= nil then self.layout33:destroy(); self.layout33 = nil; end;
         if self.imageCheckBox15 ~= nil then self.imageCheckBox15:destroy(); self.imageCheckBox15 = nil; end;
+        if self.exptotal ~= nil then self.exptotal:destroy(); self.exptotal = nil; end;
         if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
         if self.edit27 ~= nil then self.edit27:destroy(); self.edit27 = nil; end;
         if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
@@ -2382,6 +2425,7 @@ local function constructNew_OsMundosDosMortos1()
         if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
         if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
         if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
+        if self.lockb ~= nil then self.lockb:destroy(); self.lockb = nil; end;
         if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
         if self.imageCheckBox59 ~= nil then self.imageCheckBox59:destroy(); self.imageCheckBox59 = nil; end;
         if self.imageCheckBox20 ~= nil then self.imageCheckBox20:destroy(); self.imageCheckBox20 = nil; end;
@@ -2452,8 +2496,9 @@ local function constructNew_OsMundosDosMortos1()
         if self.horzLine12 ~= nil then self.horzLine12:destroy(); self.horzLine12 = nil; end;
         if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
         if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
-        if self.imageCheckBox42 ~= nil then self.imageCheckBox42:destroy(); self.imageCheckBox42 = nil; end;
+        if self.expatual ~= nil then self.expatual:destroy(); self.expatual = nil; end;
         if self.imageCheckBox5 ~= nil then self.imageCheckBox5:destroy(); self.imageCheckBox5 = nil; end;
+        if self.imageCheckBox42 ~= nil then self.imageCheckBox42:destroy(); self.imageCheckBox42 = nil; end;
         if self.imageCheckBox29 ~= nil then self.imageCheckBox29:destroy(); self.imageCheckBox29 = nil; end;
         if self.imageCheckBox16 ~= nil then self.imageCheckBox16:destroy(); self.imageCheckBox16 = nil; end;
         if self.imageCheckBox49 ~= nil then self.imageCheckBox49:destroy(); self.imageCheckBox49 = nil; end;
