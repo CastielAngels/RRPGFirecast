@@ -30,8 +30,13 @@ function newTormenta01()
     obj:setAlign("client");
     obj:setTheme("dark");
 
+    obj.scrollBox1 = gui.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox1:setParent(obj);
+    obj.scrollBox1:setAlign("client");
+    obj.scrollBox1:setName("scrollBox1");
+
     obj.rectangle1 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle1:setParent(obj);
+    obj.rectangle1:setParent(obj.scrollBox1);
     obj.rectangle1:setWidth(1010);
     obj.rectangle1:setHeight(700);
     obj.rectangle1:setColor("DimGray");
@@ -40,7 +45,7 @@ function newTormenta01()
     obj.rectangle1:setName("rectangle1");
 
     obj.layout1 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout1:setParent(obj);
+    obj.layout1:setParent(obj.scrollBox1);
     obj.layout1:setLeft(10);
     obj.layout1:setTop(10);
     obj.layout1:setWidth(305);
@@ -82,7 +87,7 @@ function newTormenta01()
     obj.edit1:setName("edit1");
 
     obj.layout2 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout2:setParent(obj);
+    obj.layout2:setParent(obj.scrollBox1);
     obj.layout2:setLeft(10);
     obj.layout2:setTop(67);
     obj.layout2:setWidth(155);
@@ -124,7 +129,7 @@ function newTormenta01()
     obj.edit2:setName("edit2");
 
     obj.layout3 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout3:setParent(obj);
+    obj.layout3:setParent(obj.scrollBox1);
     obj.layout3:setLeft(10);
     obj.layout3:setTop(124);
     obj.layout3:setWidth(105);
@@ -167,7 +172,7 @@ function newTormenta01()
     obj.edit3:setName("edit3");
 
     obj.layout4 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout4:setParent(obj);
+    obj.layout4:setParent(obj.scrollBox1);
     obj.layout4:setLeft(165);
     obj.layout4:setTop(67);
     obj.layout4:setWidth(150);
@@ -209,7 +214,7 @@ function newTormenta01()
     obj.edit4:setName("edit4");
 
     obj.layout5 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout5:setParent(obj);
+    obj.layout5:setParent(obj.scrollBox1);
     obj.layout5:setLeft(115);
     obj.layout5:setTop(124);
     obj.layout5:setWidth(200);
@@ -251,7 +256,7 @@ function newTormenta01()
     obj.edit5:setName("edit5");
 
     obj.layout6 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout6:setParent(obj);
+    obj.layout6:setParent(obj.scrollBox1);
     obj.layout6:setLeft(315);
     obj.layout6:setTop(10);
     obj.layout6:setWidth(129);
@@ -293,7 +298,7 @@ function newTormenta01()
     obj.edit6:setName("edit6");
 
     obj.layout7 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout7:setParent(obj);
+    obj.layout7:setParent(obj.scrollBox1);
     obj.layout7:setLeft(315);
     obj.layout7:setTop(67);
     obj.layout7:setWidth(129);
@@ -335,7 +340,7 @@ function newTormenta01()
     obj.edit7:setName("edit7");
 
     obj.layout8 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout8:setParent(obj);
+    obj.layout8:setParent(obj.scrollBox1);
     obj.layout8:setLeft(315);
     obj.layout8:setTop(124);
     obj.layout8:setWidth(129);
@@ -377,7 +382,7 @@ function newTormenta01()
     obj.edit8:setName("edit8");
 
     obj.image1 = gui.fromHandle(_obj_newObject("image"));
-    obj.image1:setParent(obj);
+    obj.image1:setParent(obj.scrollBox1);
     obj.image1:setLeft(530);
     obj.image1:setTop(30);
     obj.image1:setWidth(400);
@@ -386,7 +391,7 @@ function newTormenta01()
     obj.image1:setName("image1");
 
     obj.layout9 = gui.fromHandle(_obj_newObject("layout"));
-    obj.layout9:setParent(obj);
+    obj.layout9:setParent(obj.scrollBox1);
     obj.layout9:setLeft(1);
     obj.layout9:setTop(220);
     obj.layout9:setWidth(250);
@@ -851,8 +856,8 @@ function newTormenta01()
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
         if self.rectangle10 ~= nil then self.rectangle10:destroy(); self.rectangle10 = nil; end;
-        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
         if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
         if self.edit17 ~= nil then self.edit17:destroy(); self.edit17 = nil; end;
@@ -894,9 +899,10 @@ function newTormenta01()
         if self.edit10 ~= nil then self.edit10:destroy(); self.edit10 = nil; end;
         if self.rectangle8 ~= nil then self.rectangle8:destroy(); self.rectangle8 = nil; end;
         if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
-        if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
+        if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
         if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
+        if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
         if self.edit18 ~= nil then self.edit18:destroy(); self.edit18 = nil; end;
         if self.edit20 ~= nil then self.edit20:destroy(); self.edit20 = nil; end;
         self:_oldLFMDestroy();
