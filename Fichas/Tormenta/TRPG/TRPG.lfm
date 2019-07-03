@@ -4,6 +4,12 @@
 		<tab title="Características">
 			<import file="1.lfm"/>
 		</tab>
+		<tab title="Perícias e Talentos">
+			<import file="2.lfm"/>
+		</tab>
+		<tab title="Histórico">
+			<import file="5.lfm"/>
+		</tab>
 		<tab title="Créditos">
 			<import file="creditos.lfm"/>
 		</tab>

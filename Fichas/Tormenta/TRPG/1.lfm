@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Tormenta01" align="client" theme="dark">
+<form name="Tormenta01" align="client" theme="dark" lockWhileNodeIsLoading="true" onNodeReady="desCalculos();">
 
 	<scrollBox align="client">
 	
@@ -10,7 +10,7 @@
 		<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
 		<label left="8" top="4" width="155" height="20" text="$(texto)" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
 		<edit left="175" top="0" width="30" height="25" field="$(field)" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-        <edit left="210" top="0" width="30" height="25" field="$(field2)" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+        <edit left="210" top="0" width="30" height="25" name="$(field2)" field="$(field2)" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 		<edit left="245" top="0" width="30" height="25" field="$(field3)" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 	</template>
 
@@ -81,7 +81,7 @@
 			<Principal field="constituicao" field2="modconstituicao" field3="danoconstituicao" texto="Constituição(CON)"/>
 		</layout>
 		<layout left="5" top="105" width="290" height="25" >
-			<Principal field="inteligencia" field2="modinteligencia" field3="danointeligencia" texto="inteligência(INT)"/>
+			<Principal field="inteligencia" field2="modinteligencia" field3="danointeligencia" texto="Inteligência(INT)"/>
 		</layout>
 		<layout left="5" top="135" width="290" height="25" >
 			<Principal field="sabedoria" field2="modsabedoria" field3="danosabedoria" texto="Sabedoria(SAB)"/>
@@ -92,106 +92,528 @@
 	</layout>
 	
 	<dataLink fields="{'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}">
-                <event name="onChange">
-                        local mod = math.floor(((sheet.forca or 10) / 2) - 5);
-                        if (mod >= 0) then
-                                mod = "+" .. mod;
-                        end;
-                        sheet.modforca = mod;
-                </event>
-				<event name="onChange">
-                        local mod = math.floor(((sheet.destreza or 10) / 2) - 5);
-                        if (mod >= 0) then
-                                mod = "+" .. mod;
-                        end;
-                        sheet.moddestreza = mod;
-                </event>
-				<event name="onChange">
-                        local mod = math.floor(((sheet.constituicao or 10) / 2) - 5);
-                        if (mod >= 0) then
-                                mod = "+" .. mod;
-                        end;
-                        sheet.modconstituicao = mod;
-                </event>
-				<event name="onChange">
-                        local mod = math.floor(((sheet.inteligencia or 10) / 2) - 5);
-                        if (mod >= 0) then
-                                mod = "+" .. mod;
-                        end;
-                        sheet.modinteligencia = mod;
-                </event>
-				<event name="onChange">
-                        local mod = math.floor(((sheet.sabedoria or 10) / 2) - 5);
-                        if (mod >= 0) then
-                                mod = "+" .. mod;
-                        end;
-                        sheet.modsabedoria = mod;
-                </event>
-				<event name="onChange">
-                        local mod = math.floor(((sheet.carisma or 10) / 2) - 5);
-                        if (mod >= 0) then
-                                mod = "+" .. mod;
-                        end;
-                        sheet.modcarisma = mod;
-                </event>
-			</dataLink>
+        <event name="onChange">
+        	if sheet.calculos == false then
+        		local mod = math.floor(((sheet.forca or 10) / 2) - 5);
+        		if (mod >= 0) then
+                	mod = "+" .. mod;
+                end;
+                sheet.modforca = mod;
+            end;
+        </event>
+		<event name="onChange">
+			if sheet.calculos == false then
+            	local mod = math.floor(((sheet.destreza or 10) / 2) - 5);
+                if (mod >= 0) then
+                	mod = "+" .. mod;
+                end;
+                sheet.moddestreza = mod;
+        	end;
+        </event>
+		<event name="onChange">
+			if sheet.calculos == false then
+            	local mod = math.floor(((sheet.constituicao or 10) / 2) - 5);
+            	if (mod >= 0) then
+                	mod = "+" .. mod;
+                end;
+                sheet.modconstituicao = mod;
+            end;
+        </event>
+		<event name="onChange">
+			if sheet.calculos == false then
+            	local mod = math.floor(((sheet.inteligencia or 10) / 2) - 5);
+            	if (mod >= 0) then
+                	mod = "+" .. mod;
+                end;
+                sheet.modinteligencia = mod;
+            end;
+        </event>
+		<event name="onChange">
+			if sheet.calculos == false then
+            	local mod = math.floor(((sheet.sabedoria or 10) / 2) - 5);
+                if (mod >= 0) then
+                	mod = "+" .. mod;
+                end;
+                sheet.modsabedoria = mod;
+            end;
+        </event>
+		<event name="onChange">
+			if sheet.calculos == false then
+        		local mod = math.floor(((sheet.carisma or 10) / 2) - 5);
+        		if (mod >= 0) then
+                	mod = "+" .. mod;
+                end;
+                sheet.modcarisma = mod;
+            end;
+        </event>
+	</dataLink>
 	
-	<layout left="316" top="220" width="693" height="41">
+	<layout left="316" top="220" width="688" height="41">
 		<rectangle left="1" top="15" color="Gainsboro" width="100" height="25" xradius="2" yradius="2"/>
 		<label left="43" top="9" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="CA"/>
 		<label left="7" top="20" width="100" height="25" fontSize="10" fontColor="black" text="Classe de Armadura"/>
 		
 		<rectangle left="131" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
 		<label left="133" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Total"/>
-		<edit left="115" top="15" width="60" height="25" field="totalca" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		<edit left="115" top="15" width="60" height="25" name="totalca" field="totalca" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 
 		<rectangle left="190" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 		<label left="193" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
 		
 		<rectangle left="229" top="3" color="Gainsboro" width="52" height="15" xradius="2" yradius="2"/>
 		<label left="229" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="1/2 Nv+10"/>
-		<edit left="225" top="15" width="60" height="25" field="ca1" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		<edit left="225" top="15" width="60" height="25" name="ca1" field="ca1" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 		
 		<rectangle left="295" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 		<label left="298" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
 
 		<rectangle left="331" top="3" color="Gainsboro" width="48" height="15" xradius="2" yradius="2"/>
 		<label left="339" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Mod H"/>
-		<edit left="325" top="15" width="60" height="25" field="ca2" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		<edit left="325" top="15" width="60" height="25" name="ca2" field="ca2" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 
 		<rectangle left="395" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 		<label left="398" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
 
 		<rectangle left="429" top="3" color="Gainsboro" width="54" height="15" xradius="2" yradius="2"/>
 		<label left="432" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Armadura"/>
-		<edit left="426" top="15" width="60" height="25" field="ca3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		<edit left="426" top="15" width="60" height="25" name="ca3" field="ca3" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 
 		<rectangle left="496" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 		<label left="499" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
 		
 		<rectangle left="537" top="3" color="Gainsboro" width="40" height="15" xradius="2" yradius="2"/>
 		<label left="540" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Escudo"/>
-		<edit left="527" top="15" width="60" height="25" field="ca4" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		<edit left="527" top="15" width="60" height="25" name="ca4" field="ca4" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 		
 		<rectangle left="597" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 		<label left="600" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
 		
 		<rectangle left="637" top="3" color="Gainsboro" width="40" height="15" xradius="2" yradius="2"/>
 		<label left="640" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Outros"/>
-		<edit left="627" top="15" width="60" height="25" field="ca5" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-		
-		<dataLink fields="{'moddestreza', 'metadenivel', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5'}">
-			<event name="onChange">
-				sheet.ca2 = sheet.moddestreza;
-				sheet.ca1 = (sheet.metadenivel)+10;
-			</event>
-			<event name="onChange">
-				sheet.totalca = (math.floor((sheet.ca1)or 0)+math.floor((sheet.ca2)or 0)+math.floor((sheet.ca3)or 0)+math.floor((sheet.ca4)or 0)+math.floor((sheet.ca5)or 0));
-			</event>
-		</dataLink>
-
+		<edit left="627" top="15" width="60" height="25" field="ca5" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 	</layout>
 	
+	<dataLink fields="{'moddestreza', 'metadenivel', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5'}">
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.ca2 = sheet.moddestreza;
+				sheet.ca1 = (sheet.metadenivel)+10;
+			end;
+		</event>
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.totalca = (math.floor((sheet.ca1)or 0)+math.floor((sheet.ca2)or 0)+math.floor((sheet.ca3)or 0)+math.floor((sheet.ca4)or 0)+math.floor((sheet.ca5)or 0));
+			end;
+		</event>
+	</dataLink>
+	
+	<layout left="316" top="270" width="448" height="41">
+		<rectangle left="1" top="15" color="Gainsboro" width="50" height="25" xradius="2" yradius="2"/>
+		<label left="8" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="FORT"/>
+		<label left="6" top="20" width="50" height="25" fontSize="10" fontColor="black" text="Fortitude"/>
+		
+		<rectangle left="73" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
+		<label left="75" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Total"/>
+		<edit left="57" top="15" width="60" height="25" name="totalfort" field="totalfort" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+
+		<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+		
+		<rectangle left="179" top="3" color="Gainsboro" width="37" height="15" xradius="2" yradius="2"/>
+		<label left="181" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="1/2 Nv"/>
+		<edit left="167" top="15" width="60" height="25" name="fort1" field="fort1" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		
+		<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+
+		<rectangle left="263" top="3" color="Gainsboro" width="48" height="15" xradius="2" yradius="2"/>
+		<label left="271" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Mod H"/>
+		<edit left="257" top="15" width="60" height="25" name="fort2" field="fort2" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+
+		<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+
+		<rectangle left="359" top="3" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+		<label left="362" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Outros"/>
+		<edit left="348" top="15" width="60" height="25" field="fort3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<dataLink fields="{'modconstituicao', 'metadenivel', 'fort1', 'fort2', 'fort3'}">
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.fort2 = sheet.modconstituicao;
+				sheet.fort1 = sheet.metadenivel;
+			end;
+		</event>
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.totalfort = (math.floor((sheet.fort1)or 0)+math.floor((sheet.fort2)or 0)+math.floor((sheet.fort3)or 0));
+			end;
+		</event>
+	</dataLink>
+	
+	<layout left="316" top="320" width="448" height="41">
+		<rectangle left="1" top="15" color="Gainsboro" width="50" height="25" xradius="2" yradius="2"/>
+		<label left="14" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="REF"/>
+		<label left="10" top="20" width="50" height="25" fontSize="10" fontColor="black" text="Reflexo"/>
+		
+		<edit left="57" top="15" width="60" height="25" name="totalref" field="totalref" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+
+		<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+		
+		<edit left="167" top="15" width="60" height="25" name="ref1" field="ref1" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		
+		<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+
+		<edit left="257" top="15" width="60" height="25" name="ref2" field="ref2" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+
+		<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+
+		<edit left="348" top="15" width="60" height="25" field="ref3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<dataLink fields="{'moddestreza', 'metadenivel', 'ref1', 'ref2', 'ref3'}">
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.ref2 = sheet.moddestreza;
+				sheet.ref1 = sheet.metadenivel;
+			end;
+		</event>
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.totalref = (math.floor((sheet.ref1)or 0)+math.floor((sheet.ref2)or 0)+math.floor((sheet.ref3)or 0));
+			end;
+		</event>
+	</dataLink>
+	
+	<layout left="316" top="370" width="448" height="41">
+		<rectangle left="1" top="15" color="Gainsboro" width="50" height="25" xradius="2" yradius="2"/>
+		<label left="11" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="VON"/>
+		<label left="8" top="20" width="50" height="25" fontSize="10" fontColor="black" text="Vontade"/>
+		
+		<edit left="57" top="15" width="60" height="25" name="totalvon" field="totalvon" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+
+		<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+		
+		<edit left="167" top="15" width="60" height="25" name="von1" field="von1" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		
+		<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+
+		<edit left="257" top="15" width="60" height="25" name="von2" field="von2" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+
+		<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+
+		<edit left="348" top="15" width="60" height="25" field="von3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<dataLink fields="{'modsabedoria', 'metadenivel', 'von1', 'von2', 'von3'}">
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.von2 = sheet.modsabedoria;
+				sheet.von1 = sheet.metadenivel;
+			end;
+		</event>
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.totalvon = (math.floor((sheet.von1)or 0)+math.floor((sheet.von2)or 0)+math.floor((sheet.von3)or 0));
+			end;
+		</event>
+	</dataLink>
+	
+	<layout left="740" top="274" width="263" height="37">
+		<rectangle left="0" top="11" color="Gainsboro" width="125" height="25" xradius="2" yradius="2"/>
+		<label left="11" top="13" width="155" height="20" text="Pontos de Vida" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="black"/>
+		<edit left="140" top="11" width="123" height="25" field="pv" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<layout left="740" top="324" width="263" height="37">
+		<rectangle left="0" top="11" color="Gainsboro" width="125" height="25" xradius="2" yradius="2"/>
+		<label left="3" top="13" width="155" height="20" text="Pontos de Energia" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="black"/>
+		<edit left="140" top="11" width="123" height="25" field="pe" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<layout left="740" top="374" width="263" height="37">
+		<rectangle left="0" top="11" color="Gainsboro" width="125" height="25" xradius="2" yradius="2"/>
+		<label left="9" top="13" width="155" height="20" text="Pontos de Mana" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="black"/>
+		<edit left="140" top="11" width="123" height="25" field="pm" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+	</layout>
+	
+	<rectangle left="663" top="417" color="#333333" width="341" height="278" xradius="2" yradius="2"/>
+	<rectangle left="668" top="422" color="#696969" width="331" height="268" xradius="2" yradius="2"/>
+	<image left="667" top="421" field="imagempersona" editable="true" animate="true" style="stretch" src="" width="333" height="270"/>
+	
+	<layout left="6" top="421" width="688" height="41">
+		<rectangle left="5" top="15" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+		<label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Corpo-a-corpo"/>
+		
+		<layout left="118" top="0" width="688" height="41">
+		
+			<rectangle left="73" top="3" color="Gainsboro" width="28" height="15" xradius="2" yradius="2"/>
+			<label left="75" top="5" width="28" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Total"/>
+			<edit left="57" top="15" width="60" height="25" name="totalcac" field="totalcac" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+	
+			<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+		
+			<rectangle left="185" top="3" color="Gainsboro" width="25" height="15" xradius="2" yradius="2"/>
+			<label left="187" top="5" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="BBA"/>
+			<edit left="167" top="15" width="60" height="25" field="cac1" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		
+			<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+
+			<rectangle left="263" top="3" color="Gainsboro" width="48" height="15" xradius="2" yradius="2"/>
+			<label left="271" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Mod H"/>
+			<edit left="257" top="15" width="60" height="25" name="cac2" field="cac2" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+
+			<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+
+			<rectangle left="359" top="3" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="362" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Outros"/>
+			<edit left="348" top="15" width="60" height="25" field="cac3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		
+			<rectangle left="413" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+			<label left="416" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+		
+			<rectangle left="450" top="3" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="453" top="5" width="38" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Outros"/>
+			<edit left="439" top="15" width="60" height="25" field="cac4" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		
+		</layout>
+	</layout>
+	
+	<dataLink fields="{'acuidade', 'modforca', 'moddestreza', 'bba', 'cac1', 'cac2', 'cac3', 'cac4'}">
+		<event name="onChange">
+			if sheet.calculos == false then
+				if sheet.acuidade then
+					sheet.cac2 = sheet.moddestreza;
+				else
+					sheet.cac2 = sheet.modforca;
+				end;
+				sheet.cac1 = sheet.bba;
+			end;
+		</event>
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.totalcac = (math.floor((sheet.cac1)or 0)+math.floor((sheet.cac2)or 0)+math.floor((sheet.cac3)or 0)+math.floor((sheet.cac4)or 0));
+			end;
+		</event>
+	</dataLink>
+	
+	<layout left="6" top="461" width="688" height="41">
+		<rectangle left="5" top="15" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+		<label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="black" text="À Distância"/>
+		<layout left="118" top="0" width="688" height="41">
+		<edit left="57" top="15" width="60" height="25" name="totaldis" field="totaldis" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		<rectangle left="132" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="135" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+		<edit left="167" top="15" width="60" height="25" field="dis1" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<rectangle left="232" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="235" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+		<edit left="257" top="15" width="60" height="25" name="dis2" field="dis2" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		<rectangle left="322" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="325" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+		<edit left="348" top="15" width="60" height="25" field="dis3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<rectangle left="413" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+		<label left="416" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+		<edit left="439" top="15" width="60" height="25" field="dis4" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		</layout>
+	</layout>
+	
+	<dataLink fields="{'pontaria', 'modsabedoria', 'moddestreza', 'bba', 'dis1', 'dis2', 'dis3', 'dis4'}">
+		<event name="onChange">
+			if sheet.calculos == false then
+				if sheet.pontaria then
+					sheet.dis2 = sheet.modsabedoria;
+				else
+					sheet.dis2 = sheet.moddestreza;
+				end;
+				sheet.dis1 = sheet.bba;
+			end;
+		</event>
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.totaldis = (math.floor((sheet.dis1)or 0)+math.floor((sheet.dis2)or 0)+math.floor((sheet.dis3)or 0)+math.floor((sheet.dis4)or 0));
+			end;
+		</event>
+	</dataLink>
+
+	<layout left="8" top="516" width="237" height="160">
+
+		<rectangle top="6" width="235" height="153" color="Gainsboro" xradius="2" yradius="2"/>
+
+		<rectangle left="60" top="1" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+		<label left="62" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Classes"/>
+		<edit left="3" top="11" width="156" height="25" field="classe1" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<rectangle left="186" top="1" color="Gainsboro" width="29" height="15" xradius="2" yradius="2"/>
+		<label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Nível"/>
+		<edit left="172" top="11" width="60" height="25" field="nvclasse1" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<edit left="3" top="41" width="156" height="25" field="classe2" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<edit left="172" top="41" width="60" height="25" field="nvclasse2" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<edit left="3" top="71" width="156" height="25" field="classe3" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<edit left="172" top="71" width="60" height="25" field="nvclasse3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<edit left="3" top="101" width="156" height="25" field="classe4" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<edit left="172" top="101" width="60" height="25" field="nvclasse4" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<edit left="3" top="131" width="156" height="25" field="classe5" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<edit left="172" top="131" width="60" height="25" field="nvclasse5" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+	</layout>
+
+	<layout left="255" top="516" width="237" height="160">
+
+		<rectangle top="6" width="235" height="153" color="Gainsboro" xradius="2" yradius="2"/>
+
+		<rectangle left="60" top="1" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+		<label left="62" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Classes"/>
+		<edit left="3" top="11" width="156" height="25" field="classe6" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<rectangle left="186" top="1" color="Gainsboro" width="29" height="15" xradius="2" yradius="2"/>
+		<label left="188" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Nível"/>
+		<edit left="172" top="11" width="60" height="25" field="nvclasse6" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<edit left="3" top="41" width="156" height="25" field="classe7" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<edit left="172" top="41" width="60" height="25" field="nvclasse7" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<edit left="3" top="71" width="156" height="25" field="classe8" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<edit left="172" top="71" width="60" height="25" field="nvclasse8" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<edit left="3" top="101" width="156" height="25" field="classe9" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<edit left="172" top="101" width="60" height="25" field="nvclasse9" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<edit left="3" top="131" width="156" height="25" field="classe10" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+		<edit left="172" top="131" width="60" height="25" field="nvclasse10" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+	</layout>
+
+	<dataLink fields="{'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'}">
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.nivel = (math.floor((sheet.nvclasse1)or 0)+math.floor((sheet.nvclasse2)or 0)+math.floor((sheet.nvclasse3)or 0)+math.floor((sheet.nvclasse4)or 0)+math.floor((sheet.nvclasse5)or 0)+math.floor((sheet.nvclasse6)or 0)+math.floor((sheet.nvclasse7)or 0)+math.floor((sheet.nvclasse8)or 0)+math.floor((sheet.nvclasse9)or 0)+math.floor((sheet.nvclasse10)or 0));
+
+				sheet.metadenivel = math.floor(sheet.nivel / 2 or 0);
+			end;
+		</event>
+	</dataLink>
+	
+
+	<layout left="502" top="516" width="140" height="159">
+
+		<rectangle top="6" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
+
+		<rectangle left="35" top="1" color="Gainsboro" width="55" height="15" xradius="2" yradius="2"/>
+		<label left="37" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Nível Total"/>
+		<edit left="3" top="11" width="119" height="25" name="nivel" field="nivel" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+
+
+		<rectangle top="66" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
+
+		<rectangle left="23" top="61" color="Gainsboro" width="77" height="15" xradius="2" yradius="2"/>
+		<label left="25" top="62" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Pontos de Ação"/>
+		<edit left="3" top="71" width="119" height="25" field="pacao" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<rectangle top="126" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
+
+		<rectangle left="41" top="121" color="Gainsboro" width="42" height="15" xradius="2" yradius="2"/>
+		<label left="43" top="122" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Funções"/>
+		<rectangle left="3" top="131" color="#333333" width="119" height="25"/>
+		<imageCheckBox field="calculos" left="14" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos();"/>
+		<imageCheckBox field="acuidade" left="34" top="136" checkedImage="img/hand.png" uncheckedImage="img/closedhand.png" hint="Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES." width="15" height="15"/>
+		<imageCheckBox field="pontaria" left="54" top="136" checkedImage="img/wisdom.png" uncheckedImage="img/bow.png" hint="Muda o modificador em jogadas de ataque à distância. DES ou SAB." width="15" height="15"/>
+		<image left="74" top="136" name="update" animate="true" src="img/update.gif" width="15" height="15"/>
+		<button left="74" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.0a" onClick="GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');"/>
+
+	</layout>
+
+	<script>
+
+		function desCalculos();
+			if sheet.calculos then
+
+				self.modforca.hitTest = false;
+				self.moddestreza.hitTest = false;
+				self.modconstituicao.hitTest = false;
+				self.modinteligencia.hitTest = false;
+				self.modsabedoria.hitTest = false;
+				self.modcarisma.hitTest = false;
+
+				self.nivel.hitTest = false;
+
+				self.totalca.hitTest = false;
+				self.ca1.hitTest = false;
+				self.ca2.hitTest = false;
+				self.ca3.hitTest = false;
+				self.ca4.hitTest = false;
+
+				self.totalfort.hitTest = false;
+				self.fort1.hitTest = false;
+				self.fort2.hitTest = false;
+
+				self.totalref.hitTest = false;
+				self.ref1.hitTest = false;
+				self.ref2.hitTest = false;
+
+				self.totalvon.hitTest = false;
+				self.von1.hitTest = false;
+				self.von2.hitTest = false;
+
+				self.totalcac.hitTest = false;
+				self.cac2.hitTest = false;
+
+				self.totaldis.hitTest = false;
+				self.dis2.hitTest = false;
+
+			else
+				
+				self.modforca.hitTest = true;
+				self.moddestreza.hitTest = true;
+				self.modconstituicao.hitTest = true;
+				self.modinteligencia.hitTest = true;
+				self.modsabedoria.hitTest = true;
+				self.modcarisma.hitTest = true;
+
+				self.nivel.hitTest = true;
+
+				self.totalca.hitTest = true;
+				self.ca1.hitTest = true;
+				self.ca2.hitTest = true;
+				self.ca3.hitTest = true;
+				self.ca4.hitTest = true;
+
+				self.totalfort.hitTest = true;
+				self.fort1.hitTest = true;
+				self.fort2.hitTest = true;
+
+				self.totalref.hitTest = true;
+				self.ref1.hitTest = true;
+				self.ref2.hitTest = true;
+
+				self.totalvon.hitTest = true;
+				self.von1.hitTest = true;
+				self.von2.hitTest = true;
+
+				self.totalcac.hitTest = true;
+				self.cac2.hitTest = true;
+
+				self.totaldis.hitTest = true;
+				self.dis2.hitTest = true;
+
+			end;
+		end;
+	</script>
+
+
 	</scrollBox>
 	
 </form>
