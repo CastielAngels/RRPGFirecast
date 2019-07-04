@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module sdkVersion="3.3">
+    <id>IMGDROID.CAST.RRPGFIRECAST</id>
+    <version>1.0</version>
+    <name>IMGDROID</name>
+    <description>Auxilio no envio de imagens pelo RRPG Firecast para android.</description>
+    <author>CastielAngels</author>
+    <site>http://www.rrpg.com.br</site>
+    <contact>castieldeseraphim@gmail.com</contact>
+</module>
