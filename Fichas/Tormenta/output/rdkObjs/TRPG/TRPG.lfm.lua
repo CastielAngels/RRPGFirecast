@@ -3387,8 +3387,8 @@ local function constructNew_TormentaCastfrm()
     obj.layout30 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout30:setParent(obj.scrollBox3);
     obj.layout30:setLeft(10);
-    obj.layout30:setTop(10);
-    obj.layout30:setWidth(1000);
+    obj.layout30:setTop(8);
+    obj.layout30:setWidth(980);
     obj.layout30:setHeight(300);
     obj.layout30:setName("layout30");
 
@@ -3427,6 +3427,110 @@ local function constructNew_TormentaCastfrm()
     obj.richEdit1:setHeight(290);
     obj.richEdit1:setName("richEdit1");
 
+    obj.layout31 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout31:setParent(obj.scrollBox3);
+    obj.layout31:setLeft(21);
+    obj.layout31:setTop(316);
+    obj.layout31:setWidth(969);
+    obj.layout31:setHeight(358);
+    obj.layout31:setName("layout31");
+
+    obj.rectangle83 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle83:setParent(obj.layout31);
+    obj.rectangle83:setLeft(86);
+    obj.rectangle83:setTop(3);
+    obj.rectangle83:setColor("Gainsboro");
+    obj.rectangle83:setWidth(128);
+    obj.rectangle83:setHeight(28);
+    obj.rectangle83:setXradius(2);
+    obj.rectangle83:setYradius(2);
+    obj.rectangle83:setName("rectangle83");
+
+    obj.label77 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label77:setParent(obj.layout31);
+    obj.label77:setLeft(90);
+    obj.label77:setTop(6);
+    obj.label77:setWidth(120);
+    obj.label77:setHeight(20);
+    obj.label77:setFontSize(18.0);
+    lfm_setPropAsString(obj.label77, "fontStyle",  "bold");
+    obj.label77:setFontColor("black");
+    obj.label77:setText("Personalidade");
+    obj.label77:setName("label77");
+
+    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1:setParent(obj.layout31);
+    obj.textEditor1:setLeft(0);
+    obj.textEditor1:setTop(30);
+    obj.textEditor1:setWidth(300);
+    obj.textEditor1:setHeight(328);
+    obj.textEditor1:setField("personalidade");
+    obj.textEditor1:setName("textEditor1");
+
+    obj.rectangle84 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle84:setParent(obj.layout31);
+    obj.rectangle84:setLeft(435);
+    obj.rectangle84:setTop(3);
+    obj.rectangle84:setColor("Gainsboro");
+    obj.rectangle84:setWidth(93);
+    obj.rectangle84:setHeight(28);
+    obj.rectangle84:setXradius(2);
+    obj.rectangle84:setYradius(2);
+    obj.rectangle84:setName("rectangle84");
+
+    obj.label78 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label78:setParent(obj.layout31);
+    obj.label78:setLeft(439);
+    obj.label78:setTop(6);
+    obj.label78:setWidth(100);
+    obj.label78:setHeight(20);
+    obj.label78:setFontSize(18.0);
+    lfm_setPropAsString(obj.label78, "fontStyle",  "bold");
+    obj.label78:setFontColor("black");
+    obj.label78:setText("Aparência");
+    obj.label78:setName("label78");
+
+    obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor2:setParent(obj.layout31);
+    obj.textEditor2:setLeft(334);
+    obj.textEditor2:setTop(30);
+    obj.textEditor2:setWidth(300);
+    obj.textEditor2:setHeight(328);
+    obj.textEditor2:setField("aparencia");
+    obj.textEditor2:setName("textEditor2");
+
+    obj.rectangle85 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle85:setParent(obj.layout31);
+    obj.rectangle85:setLeft(770);
+    obj.rectangle85:setTop(3);
+    obj.rectangle85:setColor("Gainsboro");
+    obj.rectangle85:setWidth(97);
+    obj.rectangle85:setHeight(28);
+    obj.rectangle85:setXradius(2);
+    obj.rectangle85:setYradius(2);
+    obj.rectangle85:setName("rectangle85");
+
+    obj.label79 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label79:setParent(obj.layout31);
+    obj.label79:setLeft(774);
+    obj.label79:setTop(6);
+    obj.label79:setWidth(100);
+    obj.label79:setHeight(20);
+    obj.label79:setFontSize(18.0);
+    lfm_setPropAsString(obj.label79, "fontStyle",  "bold");
+    obj.label79:setFontColor("black");
+    obj.label79:setText("Anotações");
+    obj.label79:setName("label79");
+
+    obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor3:setParent(obj.layout31);
+    obj.textEditor3:setLeft(669);
+    obj.textEditor3:setTop(30);
+    obj.textEditor3:setWidth(300);
+    obj.textEditor3:setHeight(328);
+    obj.textEditor3:setField("anotacoes");
+    obj.textEditor3:setName("textEditor3");
+
     obj.tab4 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab4:setParent(obj.tabControl1);
     obj.tab4:setTitle("Créditos");
@@ -3438,12 +3542,12 @@ local function constructNew_TormentaCastfrm()
     obj.OsMundosDosMortosC:setAlign("client");
     obj.OsMundosDosMortosC:setTheme("dark");
 
-    obj.rectangle83 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle83:setParent(obj.OsMundosDosMortosC);
-    obj.rectangle83:setAlign("top");
-    obj.rectangle83:setHeight(30);
-    obj.rectangle83:setColor("gray");
-    obj.rectangle83:setName("rectangle83");
+    obj.rectangle86 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle86:setParent(obj.OsMundosDosMortosC);
+    obj.rectangle86:setAlign("top");
+    obj.rectangle86:setHeight(30);
+    obj.rectangle86:setColor("gray");
+    obj.rectangle86:setName("rectangle86");
 
     obj.flowLayout1 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout1:setParent(obj.OsMundosDosMortosC);
@@ -3458,15 +3562,15 @@ local function constructNew_TormentaCastfrm()
     obj.flowPart1:setHeight(350);
     obj.flowPart1:setName("flowPart1");
 
-    obj.rectangle84 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle84:setParent(obj.flowPart1);
-    obj.rectangle84:setTop(10);
-    obj.rectangle84:setWidth(500);
-    obj.rectangle84:setHeight(200);
-    obj.rectangle84:setColor("Gray");
-    obj.rectangle84:setXradius(10);
-    obj.rectangle84:setYradius(10);
-    obj.rectangle84:setName("rectangle84");
+    obj.rectangle87 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle87:setParent(obj.flowPart1);
+    obj.rectangle87:setTop(10);
+    obj.rectangle87:setWidth(500);
+    obj.rectangle87:setHeight(200);
+    obj.rectangle87:setColor("Gray");
+    obj.rectangle87:setXradius(10);
+    obj.rectangle87:setYradius(10);
+    obj.rectangle87:setName("rectangle87");
 
     obj.path1 = GUI.fromHandle(_obj_newObject("path"));
     obj.path1:setParent(obj.flowPart1);
@@ -3482,59 +3586,59 @@ local function constructNew_TormentaCastfrm()
     obj.path1:setPathData("M360 2430 c0 -5 -6 -9 -12 -7 -8 1 -12 -6 -10 -17 2 -10 0 -16 -5 -13 -5 3 -9 -2 -10 -11 -1 -26 -76 -191 -84 -186 -4 2 -5 -6 -1 -18 4 -16 2 -19 -8 -13 -10 6 -12 3 -8 -13 4 -13 -3 -40 -14 -63 -38 -79 -106 -449 -96 -525 2 -16 7 7 12 51 4 44 20 143 34 220 l27 140 6 -210 c4 -115 11 -221 17 -235 6 -14 11 -18 11 -10 1 16 53 -88 54 -107 0 -7 4 -10 9 -7 4 3 8 -3 8 -13 0 -33 -28 -188 -39 -216 -15 -39 -13 -47 4 -15 16 28 64 254 67 310 0 18 4 -7 8 -57 10 -130 21 -185 31 -160 l8 20 1 -20 c2 -17 3 -16 10 5 7 21 8 22 9 5 2 -19 2 -19 12 -1 10 16 14 12 33 -35 12 -30 28 -54 35 -54 8 0 18 -13 22 -28 6 -23 5 -26 -6 -17 -7 6 -16 7 -19 2 -12 -20 -7 -110 8 -152 32 -85 65 -185 62 -188 -6 -6 -45 68 -56 105 -13 46 -39 94 -40 73 0 -13 -1 -13 -11 0 -19 28 2 -31 38 -105 18 -38 44 -81 57 -95 20 -21 26 -43 36 -133 7 -59 18 -133 25 -163 12 -53 11 -58 -11 -97 -13 -23 -24 -54 -24 -69 0 -46 -16 -40 -37 15 -59 146 -74 231 -81 431 -3 101 -9 178 -17 192 -9 18 -11 -4 -9 -119 3 -202 45 -411 109 -549 14 -29 25 -69 25 -88 0 -19 8 -70 17 -112 l16 -78 744 0 743 0 0 1060 c0 1062 -2 1116 -34 1104 -20 -8 -64 120 -45 132 5 3 9 14 9 25 0 23 -52 129 -56 114 -1 -5 -5 -23 -9 -40 -7 -27 -8 -28 -15 -10 -12 28 -12 37 0 30 6 -3 7 1 4 9 -8 21 -31 20 -42 0 -8 -15 -10 -15 -15 0 -6 14 -37 16 -273 16 l-266 0 7 -27 c4 -16 3 -25 -1 -21 -4 4 -13 0 -20 -10 -12 -16 -13 -16 -14 0 0 9 5 20 10 23 6 3 10 13 10 21 0 11 -25 14 -144 14 -142 0 -145 0 -149 -22 l-4 -23 -2 23 c0 12 -7 22 -15 22 -9 0 -12 -7 -10 -18 3 -9 1 -28 -5 -42 -9 -23 -10 -21 -10 18 l-1 42 -205 0 c-171 0 -203 -2 -199 -14 3 -8 1 -17 -5 -21 -7 -3 -11 3 -11 15 0 19 -5 21 -52 18 -45 -3 -52 -6 -53 -25 -2 -21 -34 -67 -42 -59 -2 2 1 16 7 32 14 35 5 27 -26 -23 -32 -52 -30 -27 2 31 l26 46 -26 0 c-14 0 -26 -4 -26 -10z m343 -442 c4 -62 3 -68 -14 -68 -11 0 -19 -5 -19 -11 0 -6 8 -8 19 -4 38 12 30 -13 -12 -39 -36 -22 -39 -25 -18 -26 19 0 21 -3 12 -14 -10 -12 -6 -15 18 -21 35 -7 40 -18 36 -74 l-4 -44 59 6 c59 7 130 33 130 50 0 4 -9 6 -19 2 -16 -5 -18 -2 -14 16 5 18 3 21 -11 16 -10 -4 -15 -3 -11 3 3 6 12 10 19 10 8 0 16 10 19 21 5 19 11 21 38 15 44 -9 46 -12 18 -42 l-24 -26 25 7 c14 4 41 22 60 41 20 19 40 34 46 34 6 0 21 -34 34 -76 23 -72 48 -118 30 -52 -14 45 -4 47 10 2 24 -72 0 -297 -44 -429 -4 -11 0 -7 10 10 21 36 44 119 44 160 0 23 3 27 10 15 5 -8 10 -53 11 -100 2 -79 2 -82 9 -35 5 28 9 86 10 130 l2 80 14 -50 13 -50 -5 55 c-3 30 -9 89 -13 130 -5 41 -7 76 -6 78 6 7 35 -31 30 -39 -4 -5 -1 -9 4 -9 7 0 11 -37 11 -103 0 -106 -26 -239 -55 -280 -7 -11 -11 -26 -8 -34 3 -8 0 -13 -7 -11 -6 2 -19 -8 -27 -22 l-15 -25 21 24 c28 31 26 19 -5 -35 -14 -24 -31 -41 -36 -37 -7 3 -8 1 -4 -6 4 -6 2 -20 -4 -29 -7 -9 3 0 21 20 75 82 159 287 159 389 0 45 17 42 29 -6 12 -47 15 -224 5 -297 -6 -43 -9 -46 -83 -91 -180 -109 -433 -181 -595 -170 -44 3 -61 27 -99 143 -90 274 -105 346 -69 333 9 -4 -7 16 -35 43 -29 28 -53 55 -53 62 0 6 27 41 60 77 42 47 61 77 65 103 9 50 13 61 14 35 1 -12 5 -24 10 -27 4 -3 6 6 3 19 -3 20 -1 24 12 19 12 -4 22 7 40 48 l24 53 2 -50 3 -50 7 40 c34 180 52 244 73 257 15 9 14 13 20 -64z m-438 -106 c1 -126 5 -182 18 -229 17 -61 21 -223 6 -223 -18 0 -66 171 -75 270 -7 77 8 219 33 296 9 30 17 54 17 54 1 0 1 -75 1 -168z m1000 -871 c-14 -56 -35 -124 -46 -153 -11 -28 -18 -52 -16 -55 7 -7 47 96 65 165 17 66 17 66 20 27 5 -53 -15 -171 -39 -241 -11 -31 -17 -65 -14 -77 5 -16 4 -18 -3 -8 -8 11 -14 6 -27 -24 -8 -22 -23 -47 -32 -57 -9 -10 -13 -18 -10 -18 4 0 20 19 37 42 16 22 30 36 30 30 0 -13 -112 -182 -120 -182 -13 0 -45 87 -105 291 -9 30 -32 77 -51 105 l-34 49 33 28 c17 15 61 41 97 58 112 53 209 103 205 108 -3 2 3 10 13 17 9 7 18 9 20 4 2 -4 -9 -53 -23 -109z");
     obj.path1:setName("path1");
 
-    obj.layout31 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout31:setParent(obj.flowPart1);
-    obj.layout31:setLeft(140);
-    obj.layout31:setTop(28);
-    obj.layout31:setWidth(250);
-    obj.layout31:setHeight(200);
-    obj.layout31:setName("layout31");
-
-    obj.label77 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label77:setParent(obj.layout31);
-    obj.label77:setLeft(0);
-    obj.label77:setTop(30);
-    obj.label77:setWidth(250);
-    obj.label77:setFontColor("silver");
-    obj.label77:setHeight(20);
-    obj.label77:setText("Programador: CastielAngels");
-    obj.label77:setHorzTextAlign("center");
-    obj.label77:setName("label77");
-
-    obj.label78 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label78:setParent(obj.layout31);
-    obj.label78:setLeft(0);
-    obj.label78:setTop(55);
-    obj.label78:setWidth(250);
-    obj.label78:setFontColor("silver");
-    obj.label78:setHeight(20);
-    obj.label78:setText("Tormenta RPG RRPG Firecast");
-    obj.label78:setHorzTextAlign("center");
-    obj.label78:setName("label78");
-
-    obj.label79 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label79:setParent(obj.layout31);
-    obj.label79:setLeft(0);
-    obj.label79:setTop(80);
-    obj.label79:setWidth(250);
-    obj.label79:setFontColor("silver");
-    obj.label79:setHeight(20);
-    obj.label79:setText("Versão: 1.0a 30/06/19");
-    obj.label79:setHorzTextAlign("center");
-    obj.label79:setFontSize(13);
-    obj.label79:setName("label79");
+    obj.layout32 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout32:setParent(obj.flowPart1);
+    obj.layout32:setLeft(140);
+    obj.layout32:setTop(28);
+    obj.layout32:setWidth(250);
+    obj.layout32:setHeight(200);
+    obj.layout32:setName("layout32");
 
     obj.label80 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label80:setParent(obj.layout31);
+    obj.label80:setParent(obj.layout32);
     obj.label80:setLeft(0);
-    obj.label80:setTop(105);
+    obj.label80:setTop(30);
     obj.label80:setWidth(250);
     obj.label80:setFontColor("silver");
     obj.label80:setHeight(20);
-    obj.label80:setText("Por favor, mantenha seu plugin atualizado.");
+    obj.label80:setText("Programador: CastielAngels");
     obj.label80:setHorzTextAlign("center");
-    obj.label80:setFontSize(13);
     obj.label80:setName("label80");
+
+    obj.label81 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label81:setParent(obj.layout32);
+    obj.label81:setLeft(0);
+    obj.label81:setTop(55);
+    obj.label81:setWidth(250);
+    obj.label81:setFontColor("silver");
+    obj.label81:setHeight(20);
+    obj.label81:setText("Tormenta RPG RRPG Firecast");
+    obj.label81:setHorzTextAlign("center");
+    obj.label81:setName("label81");
+
+    obj.label82 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label82:setParent(obj.layout32);
+    obj.label82:setLeft(0);
+    obj.label82:setTop(80);
+    obj.label82:setWidth(250);
+    obj.label82:setFontColor("silver");
+    obj.label82:setHeight(20);
+    obj.label82:setText("Versão: 1.0a 30/06/19");
+    obj.label82:setHorzTextAlign("center");
+    obj.label82:setFontSize(13);
+    obj.label82:setName("label82");
+
+    obj.label83 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label83:setParent(obj.layout32);
+    obj.label83:setLeft(0);
+    obj.label83:setTop(105);
+    obj.label83:setWidth(250);
+    obj.label83:setFontColor("silver");
+    obj.label83:setHeight(20);
+    obj.label83:setText("Por favor, mantenha seu plugin atualizado.");
+    obj.label83:setHorzTextAlign("center");
+    obj.label83:setFontSize(13);
+    obj.label83:setName("label83");
 
     obj._e_event0 = obj.Tormenta01:addEventListener("onNodeReady",
         function (_)
@@ -3787,6 +3891,7 @@ local function constructNew_TormentaCastfrm()
         if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
         if self.label77 ~= nil then self.label77:destroy(); self.label77 = nil; end;
         if self.rectangle46 ~= nil then self.rectangle46:destroy(); self.rectangle46 = nil; end;
+        if self.rectangle85 ~= nil then self.rectangle85:destroy(); self.rectangle85 = nil; end;
         if self.flowLayout1 ~= nil then self.flowLayout1:destroy(); self.flowLayout1 = nil; end;
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
         if self.rectangle16 ~= nil then self.rectangle16:destroy(); self.rectangle16 = nil; end;
@@ -3838,11 +3943,14 @@ local function constructNew_TormentaCastfrm()
         if self.label49 ~= nil then self.label49:destroy(); self.label49 = nil; end;
         if self.scrollBox2 ~= nil then self.scrollBox2:destroy(); self.scrollBox2 = nil; end;
         if self.label72 ~= nil then self.label72:destroy(); self.label72 = nil; end;
+        if self.layout32 ~= nil then self.layout32:destroy(); self.layout32 = nil; end;
+        if self.rectangle87 ~= nil then self.rectangle87:destroy(); self.rectangle87 = nil; end;
         if self.rectangle15 ~= nil then self.rectangle15:destroy(); self.rectangle15 = nil; end;
         if self.label12 ~= nil then self.label12:destroy(); self.label12 = nil; end;
         if self.rectangle33 ~= nil then self.rectangle33:destroy(); self.rectangle33 = nil; end;
         if self.rectangle51 ~= nil then self.rectangle51:destroy(); self.rectangle51 = nil; end;
         if self.Tormenta02 ~= nil then self.Tormenta02:destroy(); self.Tormenta02 = nil; end;
+        if self.label82 ~= nil then self.label82:destroy(); self.label82 = nil; end;
         if self.rectangle28 ~= nil then self.rectangle28:destroy(); self.rectangle28 = nil; end;
         if self.label16 ~= nil then self.label16:destroy(); self.label16 = nil; end;
         if self.label52 ~= nil then self.label52:destroy(); self.label52 = nil; end;
@@ -3901,6 +4009,7 @@ local function constructNew_TormentaCastfrm()
         if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.scrollBox3 ~= nil then self.scrollBox3:destroy(); self.scrollBox3 = nil; end;
         if self.rectangle58 ~= nil then self.rectangle58:destroy(); self.rectangle58 = nil; end;
+        if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.rectangle18 ~= nil then self.rectangle18:destroy(); self.rectangle18 = nil; end;
         if self.rectangle14 ~= nil then self.rectangle14:destroy(); self.rectangle14 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
@@ -3930,6 +4039,7 @@ local function constructNew_TormentaCastfrm()
         if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
         if self.label33 ~= nil then self.label33:destroy(); self.label33 = nil; end;
         if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
+        if self.rectangle86 ~= nil then self.rectangle86:destroy(); self.rectangle86 = nil; end;
         if self.label44 ~= nil then self.label44:destroy(); self.label44 = nil; end;
         if self.ca3 ~= nil then self.ca3:destroy(); self.ca3 = nil; end;
         if self.edit46 ~= nil then self.edit46:destroy(); self.edit46 = nil; end;
@@ -3937,8 +4047,10 @@ local function constructNew_TormentaCastfrm()
         if self.tab3 ~= nil then self.tab3:destroy(); self.tab3 = nil; end;
         if self.rectangle56 ~= nil then self.rectangle56:destroy(); self.rectangle56 = nil; end;
         if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
+        if self.label83 ~= nil then self.label83:destroy(); self.label83 = nil; end;
         if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
         if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
+        if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
         if self.label55 ~= nil then self.label55:destroy(); self.label55 = nil; end;
         if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
         if self.rectangle21 ~= nil then self.rectangle21:destroy(); self.rectangle21 = nil; end;
@@ -3979,6 +4091,7 @@ local function constructNew_TormentaCastfrm()
         if self.edit44 ~= nil then self.edit44:destroy(); self.edit44 = nil; end;
         if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
         if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
+        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
         if self.rectangle54 ~= nil then self.rectangle54:destroy(); self.rectangle54 = nil; end;
         if self.rectangle25 ~= nil then self.rectangle25:destroy(); self.rectangle25 = nil; end;
         if self.Tormenta01 ~= nil then self.Tormenta01:destroy(); self.Tormenta01 = nil; end;
@@ -4020,6 +4133,7 @@ local function constructNew_TormentaCastfrm()
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.von2 ~= nil then self.von2:destroy(); self.von2 = nil; end;
         if self.cac2 ~= nil then self.cac2:destroy(); self.cac2 = nil; end;
+        if self.label81 ~= nil then self.label81:destroy(); self.label81 = nil; end;
         if self.rectangle27 ~= nil then self.rectangle27:destroy(); self.rectangle27 = nil; end;
         if self.rectangle73 ~= nil then self.rectangle73:destroy(); self.rectangle73 = nil; end;
         if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
