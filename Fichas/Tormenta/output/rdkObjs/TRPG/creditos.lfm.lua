@@ -30,13 +30,6 @@ local function constructNew_OsMundosDosMortosC()
     obj:setAlign("client");
     obj:setTheme("dark");
 
-    obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle1:setParent(obj);
-    obj.rectangle1:setAlign("top");
-    obj.rectangle1:setHeight(30);
-    obj.rectangle1:setColor("gray");
-    obj.rectangle1:setName("rectangle1");
-
     obj.flowLayout1 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout1:setParent(obj);
     obj.flowLayout1:setAlign("client");
@@ -50,15 +43,15 @@ local function constructNew_OsMundosDosMortosC()
     obj.flowPart1:setHeight(350);
     obj.flowPart1:setName("flowPart1");
 
-    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle2:setParent(obj.flowPart1);
-    obj.rectangle2:setTop(10);
-    obj.rectangle2:setWidth(500);
-    obj.rectangle2:setHeight(200);
-    obj.rectangle2:setColor("Gray");
-    obj.rectangle2:setXradius(10);
-    obj.rectangle2:setYradius(10);
-    obj.rectangle2:setName("rectangle2");
+    obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle1:setParent(obj.flowPart1);
+    obj.rectangle1:setTop(10);
+    obj.rectangle1:setWidth(500);
+    obj.rectangle1:setHeight(200);
+    obj.rectangle1:setColor("Gray");
+    obj.rectangle1:setXradius(10);
+    obj.rectangle1:setYradius(10);
+    obj.rectangle1:setName("rectangle1");
 
     obj.path1 = GUI.fromHandle(_obj_newObject("path"));
     obj.path1:setParent(obj.flowPart1);
@@ -77,7 +70,7 @@ local function constructNew_OsMundosDosMortosC()
     obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout1:setParent(obj.flowPart1);
     obj.layout1:setLeft(140);
-    obj.layout1:setTop(28);
+    obj.layout1:setTop(18);
     obj.layout1:setWidth(250);
     obj.layout1:setHeight(200);
     obj.layout1:setName("layout1");
@@ -128,7 +121,36 @@ local function constructNew_OsMundosDosMortosC()
     obj.label4:setFontSize(13);
     obj.label4:setName("label4");
 
+    obj.label5 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label5:setParent(obj.layout1);
+    obj.label5:setLeft(3);
+    obj.label5:setTop(130);
+    obj.label5:setWidth(250);
+    obj.label5:setFontColor("silver");
+    obj.label5:setHeight(20);
+    obj.label5:setText("Clique aqui para acessar o repositório.");
+    obj.label5:setHorzTextAlign("center");
+    obj.label5:setFontSize(13);
+    obj.label5:setName("label5");
+
+    obj.button1 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button1:setParent(obj.flowPart1);
+    obj.button1:setLeft(0);
+    obj.button1:setTop(10);
+    obj.button1:setWidth(500);
+    obj.button1:setHeight(200);
+    obj.button1:setOpacity(0.0);
+    obj.button1:setCanFocus(false);
+    obj.button1:setCursor("handPoint");
+    obj.button1:setName("button1");
+
+    obj._e_event0 = obj.button1:addEventListener("onClick",
+        function (_)
+            GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast');
+        end, obj);
+
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
 
     obj._oldLFMDestroy = obj.destroy;
@@ -141,11 +163,12 @@ local function constructNew_OsMundosDosMortosC()
         end;
 
         if self.flowLayout1 ~= nil then self.flowLayout1:destroy(); self.flowLayout1 = nil; end;
+        if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.flowPart1 ~= nil then self.flowPart1:destroy(); self.flowPart1 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.path1 ~= nil then self.path1:destroy(); self.path1 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;

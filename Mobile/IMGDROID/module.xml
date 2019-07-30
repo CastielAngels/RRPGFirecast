@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module sdkVersion="3.4b">
+    <id>IMGDROID_CAST_RRPGFIRECAST</id>
+    <version>1.0</version>
+    <name>IMGDROID</name>
+    <description>Adiciona suporte ao Firedrive.</description>
+    <author>CastielAngels</author>
+    <site>http://www.rrpg.com.br</site>
+    <contact>castieldeseraphim@gmail.com</contact>
+</module>

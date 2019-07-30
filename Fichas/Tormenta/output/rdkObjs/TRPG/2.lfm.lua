@@ -36,6 +36,27 @@ local function constructNew_Tormenta02()
     obj.scrollBox1:setAlign("client");
     obj.scrollBox1:setName("scrollBox1");
 
+    obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle1:setParent(obj.scrollBox1);
+    obj.rectangle1:setWidth(1010);
+    obj.rectangle1:setHeight(700);
+    obj.rectangle1:setColor("DimGray");
+    obj.rectangle1:setXradius(10);
+    obj.rectangle1:setYradius(10);
+    obj.rectangle1:setName("rectangle1");
+
+    obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout1:setParent(obj.scrollBox1);
+    obj.layout1:setLeft(10);
+    obj.layout1:setTop(10);
+    obj.layout1:setName("layout1");
+
+    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle2:setParent(obj.layout1);
+    obj.rectangle2:setAlign("client");
+    obj.rectangle2:setColor("Gray");
+    obj.rectangle2:setName("rectangle2");
+
     obj._e_event0 = obj:addEventListener("onNodeReady",
         function (_)
             desCalculos();
@@ -54,7 +75,10 @@ local function constructNew_Tormenta02()
           self:setNodeDatabase(nil);
         end;
 
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         self:_oldLFMDestroy();
     end;
 

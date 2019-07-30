@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="OsMundosDosMortos1" align="client" theme="dark">
-
+<form name="OsMundosDosMortos1" align="client" theme="dark" lockWhileNodeIsLoading="true">
 	<template name="Cabeca">
 		<rectangle left="5" top="0" color="Gainsboro" width="80" height="25" xradius="2" yradius="2"/>
 		<label left="8" top="5" width="77" height="20" text="$(texto)" horzTextAlign="leading" fontSize="$(size)" fontStyle="bold" fontColor="black"/>
         <edit left="90" top="0" width="200" height="25" fontStyle="bold" field="$(field)" type="$(nort)"/>
 	</template>
-
 	<template name="Tenbox">
-		<imageCheckBox field="$(field)_1" left="19" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_2" left="39" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_3" left="59" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_4" left="79" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_5" left="99" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_6" left="119" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_7" left="139" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_8" left="159" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_9" left="179" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
-		<imageCheckBox field="$(field)_10" left="199" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_1" name="$(field)_n1" left="19" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_2" name="$(field)_n2" left="39" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_3" name="$(field)_n3" left="59" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_4" name="$(field)_n4" left="79" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_5" name="$(field)_n5" left="99" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_6" name="$(field)_n6" left="119" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_7" name="$(field)_n7" left="139" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_8" name="$(field)_n8" left="159" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_9" name="$(field)_n9" left="179" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
+		<imageCheckBox field="$(field)_10" name="$(field)_n10" left="199" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png" width="15" height="15"/>
 	</template>
-
 	<template name="bbollshor">
 		<horzLine top="18" width="130" strokeSize="2" strokeColor="black"/>
 		 <edit field="$(field)_e" left="2" top="0" width="125" height="20" fontStyle="bold" fontColor="black" fontSize="14" horzTextAlign="center" transparent="true"/>
@@ -30,57 +27,30 @@
 		<imageCheckBox field="$(field)_5" left="209" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 		<imageCheckBox field="$(field)_6" left="227" top="4" width="15" height="15" checkedImage="img/bboll2.png" uncheckedImage="img/bboll1.png"/>
 	</template>
-
 	<template name="class">
 		<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
 	</template>
-	
-	<image align="client" field="backgroundimg" style="stretch" src=""/>
-
+	<image align="client" field="backgroundimg" style="stretch"/>
 	<scrollBox align="client">
-
 		<rectangle left="373" top="33" width="135" height="135" color="DimGray" xradius="5" yradius="5"/>
 		<label left="401" top="65" width="80" height="60" text="Sem Avatar" horzTextAlign="center"/>
-		<image field="imagempersona" editable="true" animate="true" style="autoFit" src="" left="373" top="33" width="135" height="135"/>
-
+		<image field="imagempersona" editable="true" style="autoFit" left="373" top="33" width="135" height="135"/>
 		<layout left="0" top="0" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="138" height="20" text="Dados do Personagem" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<button left="780" top="2" width="40" height="25" text="Lock" name="lockb" hitTest="true" canFocus="false" hint="Impede alterações na ficha.">
-				<event name="onClick">
-					if self.lockb.text == 'Lock' then 
-						self.lockb.text = ' '
-						self.backgroundimg.hitTest = true
-						self.exptotal.hitTest = true
-						self.expatual.hitTest = true
-						self.exptotal.readOnly = false
-						self.expatual.readOnly = false
-					else 
-						self.lockb.text = 'Lock'
-						self.backgroundimg.hitTest = false
-						self.exptotal.hitTest = false
-						self.expatual.hitTest = false
-						self.exptotal.readOnly = true
-						self.expatual.readOnly = true
-					end;
-				</event>
-			</button>
-			<button name="backgroundimg" hitTest="false" left="830" top="2" width="40" height="25" text="BG" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
+			<button name="backgroundimg" left="830" top="2" width="40" height="25" text="BG" canFocus="false" hint="Altera a imagem de fundo da ficha." onClick="Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)"/>
 		</layout>
-
 		<layout left="0" top="170" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="138" height="20" text="Atributos" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
 			<label left="695" top="5" width="148" height="20" text="Experiência:" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
-			<edit name="exptotal" hitTest="false" readOnly="true" left="780" top="2" width="40" height="25" type="number" field="exptotal" horzTextAlign="center"/>
-			<edit name="expatual" hitTest="false" readOnly="true" left="830" top="2" width="40" height="25" type="number" field="expatual" horzTextAlign="center"/>
+			<edit name="exptotal" left="780" top="2" width="40" height="25" type="number" field="exptotal" horzTextAlign="center"/>
+			<edit name="expatual" left="830" top="2" width="40" height="25" type="number" field="expatual" horzTextAlign="center"/>
 		</layout>
-
 		<layout left="0" top="415" width="880" height="30">
 			<rectangle align="client" color="gray"/>
 			<label left="8" top="5" width="168" height="20" text="Habilidades" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
 		</layout>
-
 		<layout left="0" top="38" width="880" height="125">
 			<layout left="5" top="5" width="290" height="25" >
 				<Cabeca field="nome" texto="Nome" size="12" nort="text"/>
@@ -107,7 +77,6 @@
 				<Cabeca field="peso" texto="Peso" size="12" nort="number"/>
 			</layout>
 		</layout>
-
 		<layout top="211" width="880" height="25">
 			<rectangle left="8" color="Silver" width="235"/>
 			<label left="23" top="2" width="220" height="20" text="======= Tendências =======" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
@@ -116,7 +85,6 @@
 			<rectangle left="635" color="Silver" width="235"/>
 			<label left="650" top="2" width="235" height="20" text="======================" horzTextAlign="leading" fontStyle="bold" fontColor="black"/>
 		</layout>
-
 		<layout left="8" top="245" width="235" height="160">
 			<rectangle align="client"/>
 			<label left="86" top="11" width="65" height="20" text="Músculos" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
@@ -132,39 +100,52 @@
 				<Tenbox field="corac"/>
 			</layout>
 		</layout>
-
 		<layout left="254" top="245" width="370" height="160">
 			<rectangle align="client"/>
 			<label left="38" top="11" width="70" height="20" text="Sanidade" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="sanidade" left="50" top="32" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
 			<image left="47" top="31" width="45" height="45" src="img/blackhole.png"/>
-
 			<label left="25" top="81" width="100" height="20" text="Autocontrole" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="autocontrole" left="50" top="102" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
 			<image left="47" top="101" width="45" height="45" src="img/blackhole.png"/>
-
 			<label left="125" top="46" width="130" height="20" text="Força de Vontade" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="forcadevontade" left="165" top="67" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
 			<image left="162" top="66" width="45" height="45" src="img/blackhole.png"/>
-
 			<label left="273" top="11" width="70" height="20" text="Energia" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="energia" left="280" top="32" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
 			<image left="277" top="31" width="45" height="45" src="img/blackhole.png"/>
-
 			<label left="248" top="81" width="130" height="20" text="Pontos de Vida" horzTextAlign="leading" fontStyle="bold" fontSize="15" fontColor="black"/>
 			<edit field="pontosdevida" left="280" top="102" width="40" height="40" fontSize="16" horzTextAlign="center" type="number" max="999" transparent="true" fontColor="black" fontStyle="bold"/>
 			<image left="277" top="101" width="45" height="45" src="img/blackhole.png"/>
 		</layout>
-
 		<layout left="635" top="245" width="235" height="160">
 			<rectangle align="client"/>
+			<label left="86" top="11" width="65" height="20" text="Músculos" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
+			<edit field="vmusculos" left="104" top="33" width="25" height="25" fontSize="16" horzTextAlign="center" hitTest="false" readOnly="true" type="number" max="10" transparent="true" fontColor="black" fontStyle="bold"/>
+			<image left="102" top="31" width="30" height="30" src="img/blackhole.png"/>
+			<label left="91" top="56" width="60" height="20" text="Cérebro" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
+			<edit field="vcerebro" left="104" top="78" width="25" height="25" fontSize="16" horzTextAlign="center" hitTest="false" readOnly="true" type="number" max="10" transparent="true" fontColor="black" fontStyle="bold"/>
+			<image left="102" top="76" width="30" height="30" src="img/blackhole.png"/>
+			<label left="91" top="101" width="60" height="20" text="Coração" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
+			<edit field="vcoracao" left="104" top="123" width="25" height="25" fontSize="16" horzTextAlign="center" hitTest="false" readOnly="true" type="number" max="10" transparent="true" fontColor="black" fontStyle="bold"/>
+			<image left="102" top="121" width="30" height="30" src="img/blackhole.png"/>
 		</layout>
+
+
+
+
+------------------
+
+
+
+
+
+
 
 		<layout left="10" top="457" width="860" height="320">
 			<rectangle align="client"/>
-			<label left="100" top="10" width="120" height="20" text="Minhas Habilidades" horzTextAlign="leading" fontStyle="bold" fontSize="13" fontColor="black"/>
+			<label left="100" top="10" width="130" height="20" text="Minhas Habilidades" horzTextAlign="leading" fontStyle="bold" fontSize="13" fontColor="black"/>
 			<label left="620" top="10" width="140" height="20" text="Habilidades de Classe" horzTextAlign="trailing" fontStyle="bold" fontSize="13" fontColor="black"/>
-
 			<layout left="38" top="36" width="260" height="250">
 				<layout left="10" top="11" width="245" height="20">
 					<bbollshor field="mhabilidades1"/>
@@ -191,7 +172,6 @@
 					<bbollshor field="mhabilidades8"/>
 				</layout>
 			</layout>
-
 			<layout left="560" top="36" width="260" height="250">
 				<layout left="10" top="11" width="245" height="20">
 					<horzLine top="18" width="238" strokeSize="2" strokeColor="black"/>
@@ -225,7 +205,5 @@
 				</layout>
 			</layout>
 		</layout>
-
 	</scrollBox>
-
 </form>

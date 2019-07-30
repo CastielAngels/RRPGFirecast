@@ -2,6 +2,11 @@
 <form name="Tormenta02" align="client" theme="dark" lockWhileNodeIsLoading="true" onNodeReady="desCalculos();">
 
 	<scrollBox align="client">
+		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
+		
+		<layout left="10" top="10">
+			<rectangle align="client" color="Gray"/>
+		</layout>
 		
 	</scrollBox>
 	
