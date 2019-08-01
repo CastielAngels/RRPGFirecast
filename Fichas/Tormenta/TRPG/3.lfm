@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="Tormenta03" align="client" theme="dark" lockWhileNodeIsLoading="true">
+
+	<scrollBox align="client">
+		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
+	</scrollBox>
+	
+</form>

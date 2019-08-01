@@ -941,11 +941,6 @@ local function constructNew_Tormenta01()
     lfm_setPropAsString(obj.edit20, "fontStyle",  "bold");
     obj.edit20:setName("edit20");
 
-    obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink1:setParent(obj.scrollBox1);
-    obj.dataLink1:setFields({'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'});
-    obj.dataLink1:setName("dataLink1");
-
     obj.layout16 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout16:setParent(obj.scrollBox1);
     obj.layout16:setLeft(316);
@@ -1325,11 +1320,6 @@ local function constructNew_Tormenta01()
     lfm_setPropAsString(obj.edit21, "fontStyle",  "bold");
     obj.edit21:setName("edit21");
 
-    obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink2:setParent(obj.scrollBox1);
-    obj.dataLink2:setFields({'moddestreza', 'metadenivel', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5'});
-    obj.dataLink2:setName("dataLink2");
-
     obj.layout17 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout17:setParent(obj.scrollBox1);
     obj.layout17:setLeft(316);
@@ -1592,11 +1582,6 @@ local function constructNew_Tormenta01()
     lfm_setPropAsString(obj.edit22, "fontStyle",  "bold");
     obj.edit22:setName("edit22");
 
-    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink3:setParent(obj.scrollBox1);
-    obj.dataLink3:setFields({'modconstituicao', 'metadenivel', 'fort1', 'fort2', 'fort3'});
-    obj.dataLink3:setName("dataLink3");
-
     obj.layout18 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout18:setParent(obj.scrollBox1);
     obj.layout18:setLeft(316);
@@ -1766,11 +1751,6 @@ local function constructNew_Tormenta01()
     obj.edit23:setFontSize(15.0);
     lfm_setPropAsString(obj.edit23, "fontStyle",  "bold");
     obj.edit23:setName("edit23");
-
-    obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink4:setParent(obj.scrollBox1);
-    obj.dataLink4:setFields({'moddestreza', 'metadenivel', 'ref1', 'ref2', 'ref3'});
-    obj.dataLink4:setName("dataLink4");
 
     obj.layout19 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout19:setParent(obj.scrollBox1);
@@ -1942,11 +1922,6 @@ local function constructNew_Tormenta01()
     lfm_setPropAsString(obj.edit24, "fontStyle",  "bold");
     obj.edit24:setName("edit24");
 
-    obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink5:setParent(obj.scrollBox1);
-    obj.dataLink5:setFields({'modsabedoria', 'metadenivel', 'von1', 'von2', 'von3'});
-    obj.dataLink5:setName("dataLink5");
-
     obj.layout20 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout20:setParent(obj.scrollBox1);
     obj.layout20:setLeft(740);
@@ -2110,7 +2085,6 @@ local function constructNew_Tormenta01()
     obj.image2:setTop(421);
     obj.image2:setField("imagempersona");
     obj.image2:setEditable(true);
-    lfm_setPropAsString(obj.image2, "animate",  "true");
     obj.image2:setStyle("stretch");
     obj.image2:setSRC("");
     obj.image2:setWidth(333);
@@ -2436,11 +2410,6 @@ local function constructNew_Tormenta01()
     lfm_setPropAsString(obj.edit30, "fontStyle",  "bold");
     obj.edit30:setName("edit30");
 
-    obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink6:setParent(obj.scrollBox1);
-    obj.dataLink6:setFields({'acuidade', 'modforca', 'moddestreza', 'bba', 'cac1', 'cac2', 'cac3', 'cac4'});
-    obj.dataLink6:setName("dataLink6");
-
     obj.layout25 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout25:setParent(obj.scrollBox1);
     obj.layout25:setLeft(6);
@@ -2644,11 +2613,6 @@ local function constructNew_Tormenta01()
     obj.edit33:setFontSize(15.0);
     lfm_setPropAsString(obj.edit33, "fontStyle",  "bold");
     obj.edit33:setName("edit33");
-
-    obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink7:setParent(obj.scrollBox1);
-    obj.dataLink7:setFields({'pontaria', 'modsabedoria', 'moddestreza', 'bba', 'dis1', 'dis2', 'dis3', 'dis4'});
-    obj.dataLink7:setName("dataLink7");
 
     obj.layout27 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout27:setParent(obj.scrollBox1);
@@ -3038,10 +3002,10 @@ local function constructNew_Tormenta01()
     lfm_setPropAsString(obj.edit53, "fontStyle",  "bold");
     obj.edit53:setName("edit53");
 
-    obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink8:setParent(obj.scrollBox1);
-    obj.dataLink8:setFields({'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'});
-    obj.dataLink8:setName("dataLink8");
+    obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink1:setParent(obj.scrollBox1);
+    obj.dataLink1:setFields({'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5', 'fort1', 'fort2', 'fort3', 'ref1', 'ref2', 'ref3', 'von1', 'von2', 'von3', 'acuidade', 'modforca', 'cac1', 'cac2', 'cac3', 'cac4', 'pontaria', 'bba', 'dis1', 'dis2', 'dis3', 'dis4', 'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'});
+    obj.dataLink1:setName("dataLink1");
 
     obj.layout29 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout29:setParent(obj.scrollBox1);
@@ -3227,7 +3191,6 @@ local function constructNew_Tormenta01()
     obj.update:setLeft(74);
     obj.update:setTop(136);
     obj.update:setName("update");
-    lfm_setPropAsString(obj.update, "animate",  "true");
     obj.update:setSRC("/TRPG/img/update.gif");
     obj.update:setWidth(15);
     obj.update:setHeight(15);
@@ -3243,7 +3206,6 @@ local function constructNew_Tormenta01()
     obj.button1:setCursor("handPoint");
     obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.0a");
     obj.button1:setName("button1");
-
 
 
 		function desCalculos();
@@ -3330,205 +3292,104 @@ local function constructNew_Tormenta01()
     obj._e_event1 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.calculos == false then
-                    		local mod = math.floor(((sheet.forca or 10) / 2) - 5);
-                    		if (mod >= 0) then
-                            	mod = "+" .. mod;
+            				-- Calculo de nivel e metade de nivel.
+            				sheet.nivel = (math.floor((sheet.nvclasse1)or 0)+math.floor((sheet.nvclasse2)or 0)+math.floor((sheet.nvclasse3)or 0)+math.floor((sheet.nvclasse4)or 0)+math.floor((sheet.nvclasse5)or 0)+math.floor((sheet.nvclasse6)or 0)+math.floor((sheet.nvclasse7)or 0)+math.floor((sheet.nvclasse8)or 0)+math.floor((sheet.nvclasse9)or 0)+math.floor((sheet.nvclasse10)or 0));
+            				sheet.metadenivel = math.floor(sheet.nivel / 2 or 0);
+            
+            				-- Modificador de Habilidades
+            				-- Forca
+            				local modfor = math.floor(((sheet.forca or 10) / 2) - 5);
+                    		if (modfor >= 0) then
+                            	modfor = "+" .. modfor;
                             end;
-                            sheet.modforca = mod;
-                        end;
-        end, obj);
-
-    obj._e_event2 = obj.dataLink1:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
-                        	local mod = math.floor(((sheet.destreza or 10) / 2) - 5);
-                            if (mod >= 0) then
-                            	mod = "+" .. mod;
+                            sheet.modforca = modfor;
+            
+            				-- Destreza
+            				local moddes = math.floor(((sheet.destreza or 10) / 2) - 5);
+                            if (moddes >= 0) then
+                            	moddes = "+" .. moddes;
                             end;
-                            sheet.moddestreza = mod;
-                    	end;
-        end, obj);
-
-    obj._e_event3 = obj.dataLink1:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
-                        	local mod = math.floor(((sheet.constituicao or 10) / 2) - 5);
-                        	if (mod >= 0) then
-                            	mod = "+" .. mod;
+                            sheet.moddestreza = moddes;
+            
+            				-- Constituicao
+            				local modcon = math.floor(((sheet.constituicao or 10) / 2) - 5);
+                        	if (modcon >= 0) then
+                            	modcon = "+" .. modcon;
                             end;
-                            sheet.modconstituicao = mod;
-                        end;
-        end, obj);
-
-    obj._e_event4 = obj.dataLink1:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
-                        	local mod = math.floor(((sheet.inteligencia or 10) / 2) - 5);
-                        	if (mod >= 0) then
-                            	mod = "+" .. mod;
+                            sheet.modconstituicao = modcon;
+            
+            				-- inteligencia
+            				local modint = math.floor(((sheet.inteligencia or 10) / 2) - 5);
+                        	if (modint >= 0) then
+                            	modint = "+" .. modint;
                             end;
-                            sheet.modinteligencia = mod;
-                        end;
-        end, obj);
-
-    obj._e_event5 = obj.dataLink1:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
-                        	local mod = math.floor(((sheet.sabedoria or 10) / 2) - 5);
-                            if (mod >= 0) then
-                            	mod = "+" .. mod;
+                            sheet.modinteligencia = modint;
+            
+            				-- Sabedoria
+            				local modsab = math.floor(((sheet.sabedoria or 10) / 2) - 5);
+                            if (modsab >= 0) then
+                            	modsab = "+" .. modsab;
                             end;
-                            sheet.modsabedoria = mod;
-                        end;
-        end, obj);
-
-    obj._e_event6 = obj.dataLink1:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
-                    		local mod = math.floor(((sheet.carisma or 10) / 2) - 5);
-                    		if (mod >= 0) then
-                            	mod = "+" .. mod;
+                            sheet.modsabedoria = modsab;
+            
+            				-- Carisma
+            				local modcar = math.floor(((sheet.carisma or 10) / 2) - 5);
+                    		if (modcar >= 0) then
+                            	modcar = "+" .. modcar;
                             end;
-                            sheet.modcarisma = mod;
-                        end;
-        end, obj);
-
-    obj._e_event7 = obj.dataLink2:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+                            sheet.modcarisma = modcar;
+            
+            				-- Classe de Armadura
             				sheet.ca2 = sheet.moddestreza;
             				sheet.ca1 = (sheet.metadenivel)+10;
-            			end;
-        end, obj);
-
-    obj._e_event8 = obj.dataLink2:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
             				sheet.totalca = (math.floor((sheet.ca1)or 0)+math.floor((sheet.ca2)or 0)+math.floor((sheet.ca3)or 0)+math.floor((sheet.ca4)or 0)+math.floor((sheet.ca5)or 0));
-            			end;
-        end, obj);
-
-    obj._e_event9 = obj.dataLink3:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            
+            				-- Fortitude
             				sheet.fort2 = sheet.modconstituicao;
             				sheet.fort1 = sheet.metadenivel;
-            			end;
-        end, obj);
-
-    obj._e_event10 = obj.dataLink3:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
             				sheet.totalfort = (math.floor((sheet.fort1)or 0)+math.floor((sheet.fort2)or 0)+math.floor((sheet.fort3)or 0));
-            			end;
-        end, obj);
-
-    obj._e_event11 = obj.dataLink4:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            
+            				-- Reflexo
             				sheet.ref2 = sheet.moddestreza;
             				sheet.ref1 = sheet.metadenivel;
-            			end;
-        end, obj);
-
-    obj._e_event12 = obj.dataLink4:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
             				sheet.totalref = (math.floor((sheet.ref1)or 0)+math.floor((sheet.ref2)or 0)+math.floor((sheet.ref3)or 0));
-            			end;
-        end, obj);
-
-    obj._e_event13 = obj.dataLink5:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            
+            				-- Vontade
             				sheet.von2 = sheet.modsabedoria;
             				sheet.von1 = sheet.metadenivel;
-            			end;
-        end, obj);
-
-    obj._e_event14 = obj.dataLink5:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
             				sheet.totalvon = (math.floor((sheet.von1)or 0)+math.floor((sheet.von2)or 0)+math.floor((sheet.von3)or 0));
-            			end;
-        end, obj);
-
-    obj._e_event15 = obj.dataLink6:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            
+            				-- Corpo a corpo
             				if sheet.acuidade then
             					sheet.cac2 = sheet.moddestreza;
             				else
             					sheet.cac2 = sheet.modforca;
             				end;
             				sheet.cac1 = sheet.bba;
-            			end;
-        end, obj);
-
-    obj._e_event16 = obj.dataLink6:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
             				sheet.totalcac = (math.floor((sheet.cac1)or 0)+math.floor((sheet.cac2)or 0)+math.floor((sheet.cac3)or 0)+math.floor((sheet.cac4)or 0));
-            			end;
-        end, obj);
-
-    obj._e_event17 = obj.dataLink7:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            
+            				-- Ataque a distancia.
             				if sheet.pontaria then
             					sheet.dis2 = sheet.modsabedoria;
             				else
             					sheet.dis2 = sheet.moddestreza;
             				end;
             				sheet.dis1 = sheet.bba;
-            			end;
-        end, obj);
-
-    obj._e_event18 = obj.dataLink7:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
             				sheet.totaldis = (math.floor((sheet.dis1)or 0)+math.floor((sheet.dis2)or 0)+math.floor((sheet.dis3)or 0)+math.floor((sheet.dis4)or 0));
             			end;
         end, obj);
 
-    obj._e_event19 = obj.dataLink8:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
-            				sheet.nivel = (math.floor((sheet.nvclasse1)or 0)+math.floor((sheet.nvclasse2)or 0)+math.floor((sheet.nvclasse3)or 0)+math.floor((sheet.nvclasse4)or 0)+math.floor((sheet.nvclasse5)or 0)+math.floor((sheet.nvclasse6)or 0)+math.floor((sheet.nvclasse7)or 0)+math.floor((sheet.nvclasse8)or 0)+math.floor((sheet.nvclasse9)or 0)+math.floor((sheet.nvclasse10)or 0));
-            
-            				sheet.metadenivel = math.floor(sheet.nivel / 2 or 0);
-            			end;
-        end, obj);
-
-    obj._e_event20 = obj.imageCheckBox1:addEventListener("onClick",
+    obj._e_event2 = obj.imageCheckBox1:addEventListener("onClick",
         function (_)
-            desCalculos();
+            desCalculos(); desCalculos2();
         end, obj);
 
-    obj._e_event21 = obj.button1:addEventListener("onClick",
+    obj._e_event3 = obj.button1:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event21);
-        __o_rrpgObjs.removeEventListenerById(self._e_event20);
-        __o_rrpgObjs.removeEventListenerById(self._e_event19);
-        __o_rrpgObjs.removeEventListenerById(self._e_event18);
-        __o_rrpgObjs.removeEventListenerById(self._e_event17);
-        __o_rrpgObjs.removeEventListenerById(self._e_event16);
-        __o_rrpgObjs.removeEventListenerById(self._e_event15);
-        __o_rrpgObjs.removeEventListenerById(self._e_event14);
-        __o_rrpgObjs.removeEventListenerById(self._e_event13);
-        __o_rrpgObjs.removeEventListenerById(self._e_event12);
-        __o_rrpgObjs.removeEventListenerById(self._e_event11);
-        __o_rrpgObjs.removeEventListenerById(self._e_event10);
-        __o_rrpgObjs.removeEventListenerById(self._e_event9);
-        __o_rrpgObjs.removeEventListenerById(self._e_event8);
-        __o_rrpgObjs.removeEventListenerById(self._e_event7);
-        __o_rrpgObjs.removeEventListenerById(self._e_event6);
-        __o_rrpgObjs.removeEventListenerById(self._e_event5);
-        __o_rrpgObjs.removeEventListenerById(self._e_event4);
         __o_rrpgObjs.removeEventListenerById(self._e_event3);
         __o_rrpgObjs.removeEventListenerById(self._e_event2);
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
@@ -3555,10 +3416,9 @@ local function constructNew_Tormenta01()
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
         if self.label40 ~= nil then self.label40:destroy(); self.label40 = nil; end;
         if self.label43 ~= nil then self.label43:destroy(); self.label43 = nil; end;
-        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
         if self.totalcac ~= nil then self.totalcac:destroy(); self.totalcac = nil; end;
-        if self.edit29 ~= nil then self.edit29:destroy(); self.edit29 = nil; end;
         if self.edit33 ~= nil then self.edit33:destroy(); self.edit33 = nil; end;
+        if self.edit29 ~= nil then self.edit29:destroy(); self.edit29 = nil; end;
         if self.edit36 ~= nil then self.edit36:destroy(); self.edit36 = nil; end;
         if self.rectangle35 ~= nil then self.rectangle35:destroy(); self.rectangle35 = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
@@ -3643,10 +3503,8 @@ local function constructNew_Tormenta01()
         if self.rectangle48 ~= nil then self.rectangle48:destroy(); self.rectangle48 = nil; end;
         if self.rectangle80 ~= nil then self.rectangle80:destroy(); self.rectangle80 = nil; end;
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
-        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.label56 ~= nil then self.label56:destroy(); self.label56 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
-        if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
         if self.rectangle23 ~= nil then self.rectangle23:destroy(); self.rectangle23 = nil; end;
@@ -3655,13 +3513,11 @@ local function constructNew_Tormenta01()
         if self.imageCheckBox1 ~= nil then self.imageCheckBox1:destroy(); self.imageCheckBox1 = nil; end;
         if self.edit40 ~= nil then self.edit40:destroy(); self.edit40 = nil; end;
         if self.label30 ~= nil then self.label30:destroy(); self.label30 = nil; end;
-        if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
-        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
         if self.label51 ~= nil then self.label51:destroy(); self.label51 = nil; end;
         if self.rectangle61 ~= nil then self.rectangle61:destroy(); self.rectangle61 = nil; end;
+        if self.imageCheckBox2 ~= nil then self.imageCheckBox2:destroy(); self.imageCheckBox2 = nil; end;
         if self.label19 ~= nil then self.label19:destroy(); self.label19 = nil; end;
         if self.rectangle52 ~= nil then self.rectangle52:destroy(); self.rectangle52 = nil; end;
-        if self.imageCheckBox2 ~= nil then self.imageCheckBox2:destroy(); self.imageCheckBox2 = nil; end;
         if self.edit38 ~= nil then self.edit38:destroy(); self.edit38 = nil; end;
         if self.rectangle12 ~= nil then self.rectangle12:destroy(); self.rectangle12 = nil; end;
         if self.rectangle50 ~= nil then self.rectangle50:destroy(); self.rectangle50 = nil; end;
@@ -3719,21 +3575,19 @@ local function constructNew_Tormenta01()
         if self.rectangle22 ~= nil then self.rectangle22:destroy(); self.rectangle22 = nil; end;
         if self.rectangle29 ~= nil then self.rectangle29:destroy(); self.rectangle29 = nil; end;
         if self.rectangle10 ~= nil then self.rectangle10:destroy(); self.rectangle10 = nil; end;
-        if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
-        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.label61 ~= nil then self.label61:destroy(); self.label61 = nil; end;
-        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.label65 ~= nil then self.label65:destroy(); self.label65 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
         if self.rectangle66 ~= nil then self.rectangle66:destroy(); self.rectangle66 = nil; end;
+        if self.edit50 ~= nil then self.edit50:destroy(); self.edit50 = nil; end;
         if self.label60 ~= nil then self.label60:destroy(); self.label60 = nil; end;
         if self.label64 ~= nil then self.label64:destroy(); self.label64 = nil; end;
         if self.edit24 ~= nil then self.edit24:destroy(); self.edit24 = nil; end;
-        if self.edit50 ~= nil then self.edit50:destroy(); self.edit50 = nil; end;
         if self.edit54 ~= nil then self.edit54:destroy(); self.edit54 = nil; end;
         if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
         if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
         if self.rectangle38 ~= nil then self.rectangle38:destroy(); self.rectangle38 = nil; end;
-        if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
         if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
         if self.layout25 ~= nil then self.layout25:destroy(); self.layout25 = nil; end;
         if self.ca4 ~= nil then self.ca4:destroy(); self.ca4 = nil; end;

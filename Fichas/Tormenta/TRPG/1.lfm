@@ -91,63 +91,6 @@
 		</layout>
 	</layout>
 	
-	<dataLink fields="{'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}">
-        <event name="onChange">
-        	if sheet.calculos == false then
-        		local mod = math.floor(((sheet.forca or 10) / 2) - 5);
-        		if (mod >= 0) then
-                	mod = "+" .. mod;
-                end;
-                sheet.modforca = mod;
-            end;
-        </event>
-		<event name="onChange">
-			if sheet.calculos == false then
-            	local mod = math.floor(((sheet.destreza or 10) / 2) - 5);
-                if (mod >= 0) then
-                	mod = "+" .. mod;
-                end;
-                sheet.moddestreza = mod;
-        	end;
-        </event>
-		<event name="onChange">
-			if sheet.calculos == false then
-            	local mod = math.floor(((sheet.constituicao or 10) / 2) - 5);
-            	if (mod >= 0) then
-                	mod = "+" .. mod;
-                end;
-                sheet.modconstituicao = mod;
-            end;
-        </event>
-		<event name="onChange">
-			if sheet.calculos == false then
-            	local mod = math.floor(((sheet.inteligencia or 10) / 2) - 5);
-            	if (mod >= 0) then
-                	mod = "+" .. mod;
-                end;
-                sheet.modinteligencia = mod;
-            end;
-        </event>
-		<event name="onChange">
-			if sheet.calculos == false then
-            	local mod = math.floor(((sheet.sabedoria or 10) / 2) - 5);
-                if (mod >= 0) then
-                	mod = "+" .. mod;
-                end;
-                sheet.modsabedoria = mod;
-            end;
-        </event>
-		<event name="onChange">
-			if sheet.calculos == false then
-        		local mod = math.floor(((sheet.carisma or 10) / 2) - 5);
-        		if (mod >= 0) then
-                	mod = "+" .. mod;
-                end;
-                sheet.modcarisma = mod;
-            end;
-        </event>
-	</dataLink>
-	
 	<layout left="316" top="220" width="688" height="41">
 		<rectangle left="1" top="15" color="Gainsboro" width="100" height="25" xradius="2" yradius="2"/>
 		<label left="43" top="9" width="25" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="CA"/>
@@ -193,20 +136,6 @@
 		<edit left="627" top="15" width="60" height="25" field="ca5" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 	</layout>
 	
-	<dataLink fields="{'moddestreza', 'metadenivel', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5'}">
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.ca2 = sheet.moddestreza;
-				sheet.ca1 = (sheet.metadenivel)+10;
-			end;
-		</event>
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.totalca = (math.floor((sheet.ca1)or 0)+math.floor((sheet.ca2)or 0)+math.floor((sheet.ca3)or 0)+math.floor((sheet.ca4)or 0)+math.floor((sheet.ca5)or 0));
-			end;
-		</event>
-	</dataLink>
-	
 	<layout left="316" top="270" width="448" height="41">
 		<rectangle left="1" top="15" color="Gainsboro" width="50" height="25" xradius="2" yradius="2"/>
 		<label left="8" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="FORT"/>
@@ -238,20 +167,6 @@
 		<edit left="348" top="15" width="60" height="25" field="fort3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 	</layout>
 	
-	<dataLink fields="{'modconstituicao', 'metadenivel', 'fort1', 'fort2', 'fort3'}">
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.fort2 = sheet.modconstituicao;
-				sheet.fort1 = sheet.metadenivel;
-			end;
-		</event>
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.totalfort = (math.floor((sheet.fort1)or 0)+math.floor((sheet.fort2)or 0)+math.floor((sheet.fort3)or 0));
-			end;
-		</event>
-	</dataLink>
-	
 	<layout left="316" top="320" width="448" height="41">
 		<rectangle left="1" top="15" color="Gainsboro" width="50" height="25" xradius="2" yradius="2"/>
 		<label left="14" top="9" width="35" height="25" fontSize="14" fontStyle="bold" fontColor="black" text="REF"/>
@@ -274,20 +189,6 @@
 
 		<edit left="348" top="15" width="60" height="25" field="ref3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 	</layout>
-	
-	<dataLink fields="{'moddestreza', 'metadenivel', 'ref1', 'ref2', 'ref3'}">
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.ref2 = sheet.moddestreza;
-				sheet.ref1 = sheet.metadenivel;
-			end;
-		</event>
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.totalref = (math.floor((sheet.ref1)or 0)+math.floor((sheet.ref2)or 0)+math.floor((sheet.ref3)or 0));
-			end;
-		</event>
-	</dataLink>
 	
 	<layout left="316" top="370" width="448" height="41">
 		<rectangle left="1" top="15" color="Gainsboro" width="50" height="25" xradius="2" yradius="2"/>
@@ -312,20 +213,6 @@
 		<edit left="348" top="15" width="60" height="25" field="von3" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 	</layout>
 	
-	<dataLink fields="{'modsabedoria', 'metadenivel', 'von1', 'von2', 'von3'}">
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.von2 = sheet.modsabedoria;
-				sheet.von1 = sheet.metadenivel;
-			end;
-		</event>
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.totalvon = (math.floor((sheet.von1)or 0)+math.floor((sheet.von2)or 0)+math.floor((sheet.von3)or 0));
-			end;
-		</event>
-	</dataLink>
-	
 	<layout left="740" top="274" width="263" height="37">
 		<rectangle left="0" top="11" color="Gainsboro" width="125" height="25" xradius="2" yradius="2"/>
 		<label left="11" top="13" width="155" height="20" text="Pontos de Vida" horzTextAlign="leading" fontSize="14.0" fontStyle="bold" fontColor="black"/>
@@ -346,7 +233,7 @@
 	
 	<rectangle left="663" top="417" color="#333333" width="341" height="278" xradius="2" yradius="2"/>
 	<rectangle left="668" top="422" color="#696969" width="331" height="268" xradius="2" yradius="2"/>
-	<image left="667" top="421" field="imagempersona" editable="true" animate="true" style="stretch" src="" width="333" height="270"/>
+	<image left="667" top="421" field="imagempersona" editable="true" style="stretch" src="" width="333" height="270"/>
 	
 	<layout left="6" top="421" width="688" height="41">
 		<rectangle left="5" top="15" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
@@ -389,24 +276,6 @@
 		</layout>
 	</layout>
 	
-	<dataLink fields="{'acuidade', 'modforca', 'moddestreza', 'bba', 'cac1', 'cac2', 'cac3', 'cac4'}">
-		<event name="onChange">
-			if sheet.calculos == false then
-				if sheet.acuidade then
-					sheet.cac2 = sheet.moddestreza;
-				else
-					sheet.cac2 = sheet.modforca;
-				end;
-				sheet.cac1 = sheet.bba;
-			end;
-		</event>
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.totalcac = (math.floor((sheet.cac1)or 0)+math.floor((sheet.cac2)or 0)+math.floor((sheet.cac3)or 0)+math.floor((sheet.cac4)or 0));
-			end;
-		</event>
-	</dataLink>
-	
 	<layout left="6" top="461" width="688" height="41">
 		<rectangle left="5" top="15" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
 		<label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="black" text="À Distância"/>
@@ -426,24 +295,6 @@
 		<edit left="439" top="15" width="60" height="25" field="dis4" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 		</layout>
 	</layout>
-	
-	<dataLink fields="{'pontaria', 'modsabedoria', 'moddestreza', 'bba', 'dis1', 'dis2', 'dis3', 'dis4'}">
-		<event name="onChange">
-			if sheet.calculos == false then
-				if sheet.pontaria then
-					sheet.dis2 = sheet.modsabedoria;
-				else
-					sheet.dis2 = sheet.moddestreza;
-				end;
-				sheet.dis1 = sheet.bba;
-			end;
-		</event>
-		<event name="onChange">
-			if sheet.calculos == false then
-				sheet.totaldis = (math.floor((sheet.dis1)or 0)+math.floor((sheet.dis2)or 0)+math.floor((sheet.dis3)or 0)+math.floor((sheet.dis4)or 0));
-			end;
-		</event>
-	</dataLink>
 
 	<layout left="8" top="516" width="237" height="160">
 
@@ -497,16 +348,96 @@
 
 	</layout>
 
-	<dataLink fields="{'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'}">
+	<dataLink fields="{'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5', 'fort1', 'fort2', 'fort3', 'ref1', 'ref2', 'ref3', 'von1', 'von2', 'von3', 'acuidade', 'modforca', 'cac1', 'cac2', 'cac3', 'cac4', 'pontaria', 'bba', 'dis1', 'dis2', 'dis3', 'dis4', 'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'}">
 		<event name="onChange">
 			if sheet.calculos == false then
+				-- Calculo de nivel e metade de nivel.
 				sheet.nivel = (math.floor((sheet.nvclasse1)or 0)+math.floor((sheet.nvclasse2)or 0)+math.floor((sheet.nvclasse3)or 0)+math.floor((sheet.nvclasse4)or 0)+math.floor((sheet.nvclasse5)or 0)+math.floor((sheet.nvclasse6)or 0)+math.floor((sheet.nvclasse7)or 0)+math.floor((sheet.nvclasse8)or 0)+math.floor((sheet.nvclasse9)or 0)+math.floor((sheet.nvclasse10)or 0));
-
 				sheet.metadenivel = math.floor(sheet.nivel / 2 or 0);
+
+				-- Modificador de Habilidades
+				-- Forca
+				local modfor = math.floor(((sheet.forca or 10) / 2) - 5);
+        		if (modfor >= 0) then
+                	modfor = "+" .. modfor;
+                end;
+                sheet.modforca = modfor;
+
+				-- Destreza
+				local moddes = math.floor(((sheet.destreza or 10) / 2) - 5);
+                if (moddes >= 0) then
+                	moddes = "+" .. moddes;
+                end;
+                sheet.moddestreza = moddes;
+
+				-- Constituicao
+				local modcon = math.floor(((sheet.constituicao or 10) / 2) - 5);
+            	if (modcon >= 0) then
+                	modcon = "+" .. modcon;
+                end;
+                sheet.modconstituicao = modcon;
+
+				-- inteligencia
+				local modint = math.floor(((sheet.inteligencia or 10) / 2) - 5);
+            	if (modint >= 0) then
+                	modint = "+" .. modint;
+                end;
+                sheet.modinteligencia = modint;
+
+				-- Sabedoria
+				local modsab = math.floor(((sheet.sabedoria or 10) / 2) - 5);
+                if (modsab >= 0) then
+                	modsab = "+" .. modsab;
+                end;
+                sheet.modsabedoria = modsab;
+
+				-- Carisma
+				local modcar = math.floor(((sheet.carisma or 10) / 2) - 5);
+        		if (modcar >= 0) then
+                	modcar = "+" .. modcar;
+                end;
+                sheet.modcarisma = modcar;
+
+				-- Classe de Armadura
+				sheet.ca2 = sheet.moddestreza;
+				sheet.ca1 = (sheet.metadenivel)+10;
+				sheet.totalca = (math.floor((sheet.ca1)or 0)+math.floor((sheet.ca2)or 0)+math.floor((sheet.ca3)or 0)+math.floor((sheet.ca4)or 0)+math.floor((sheet.ca5)or 0));
+
+				-- Fortitude
+				sheet.fort2 = sheet.modconstituicao;
+				sheet.fort1 = sheet.metadenivel;
+				sheet.totalfort = (math.floor((sheet.fort1)or 0)+math.floor((sheet.fort2)or 0)+math.floor((sheet.fort3)or 0));
+
+				-- Reflexo
+				sheet.ref2 = sheet.moddestreza;
+				sheet.ref1 = sheet.metadenivel;
+				sheet.totalref = (math.floor((sheet.ref1)or 0)+math.floor((sheet.ref2)or 0)+math.floor((sheet.ref3)or 0));
+
+				-- Vontade
+				sheet.von2 = sheet.modsabedoria;
+				sheet.von1 = sheet.metadenivel;
+				sheet.totalvon = (math.floor((sheet.von1)or 0)+math.floor((sheet.von2)or 0)+math.floor((sheet.von3)or 0));
+
+				-- Corpo a corpo
+				if sheet.acuidade then
+					sheet.cac2 = sheet.moddestreza;
+				else
+					sheet.cac2 = sheet.modforca;
+				end;
+				sheet.cac1 = sheet.bba;
+				sheet.totalcac = (math.floor((sheet.cac1)or 0)+math.floor((sheet.cac2)or 0)+math.floor((sheet.cac3)or 0)+math.floor((sheet.cac4)or 0));
+
+				-- Ataque a distancia.
+				if sheet.pontaria then
+					sheet.dis2 = sheet.modsabedoria;
+				else
+					sheet.dis2 = sheet.moddestreza;
+				end;
+				sheet.dis1 = sheet.bba;
+				sheet.totaldis = (math.floor((sheet.dis1)or 0)+math.floor((sheet.dis2)or 0)+math.floor((sheet.dis3)or 0)+math.floor((sheet.dis4)or 0));
 			end;
 		</event>
 	</dataLink>
-	
 
 	<layout left="502" top="516" width="140" height="159">
 
@@ -528,16 +459,15 @@
 		<rectangle left="41" top="121" color="Gainsboro" width="42" height="15" xradius="2" yradius="2"/>
 		<label left="43" top="122" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Funções"/>
 		<rectangle left="3" top="131" color="#333333" width="119" height="25"/>
-		<imageCheckBox field="calculos" left="14" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos();"/>
+		<imageCheckBox field="calculos" left="14" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos(); desCalculos2();"/>
 		<imageCheckBox field="acuidade" left="34" top="136" checkedImage="img/hand.png" uncheckedImage="img/closedhand.png" hint="Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES." width="15" height="15"/>
 		<imageCheckBox field="pontaria" left="54" top="136" checkedImage="img/wisdom.png" uncheckedImage="img/bow.png" hint="Muda o modificador em jogadas de ataque à distância. DES ou SAB." width="15" height="15"/>
-		<image left="74" top="136" name="update" animate="true" src="img/update.gif" width="15" height="15"/>
+		<image left="74" top="136" name="update" src="img/update.gif" width="15" height="15"/>
 		<button left="74" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.0a" onClick="GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');"/>
 
 	</layout>
-
+	</scrollBox>
 	<script>
-
 		function desCalculos();
 			if sheet.calculos then
 
@@ -613,7 +543,4 @@
 		end;
 	</script>
 
-
-	</scrollBox>
-	
 </form>

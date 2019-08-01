@@ -1,13 +1,742 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Tormenta02" align="client" theme="dark" lockWhileNodeIsLoading="true" onNodeReady="desCalculos();">
+<form name="Tormenta02" align="client" theme="dark" lockWhileNodeIsLoading="true" onNodeReady="desCalculos2();">
 
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
-		
-		<layout left="10" top="10">
-			<rectangle align="client" color="Gray"/>
+		<layout left="10" top="10" width="420" height="680">
+			<rectangle align="client" color="Gray" xradius="2" yradius="2"/>
+			<rectangle left="166" top="1" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="173" top="3" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Total"/>
+			<rectangle left="236" top="1" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="243" top="3" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Grad"/>
+			<rectangle left="306" top="1" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="309" top="3" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Mod H"/>
+			<rectangle left="376" top="1" color="Gainsboro" width="38" height="15" xradius="2" yradius="2"/>
+			<label left="379" top="3" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Outros"/>
+			<layout left="0" top="7" width="420" height="680">
+				<layout left="0" top="0" width="420" height="32">
+					<rectangle left="5" top="5" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="8" width="20" height="20" name="cbxacrobacia" field="cbxacrobacia"/>
+					<label left="28" top="7" width="150" height="20" text="Acrobacia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="5" width="40" height="25" name="totalacrobacia" field="totalacrobacia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="10" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="8" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="5" width="40" height="25" name="gradacrobacia" field="gradacrobacia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="10" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="8" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="5" width="40" height="25" name="modacrobacia" field="modacrobacia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="10" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="8" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="5" width="40" height="25" name="outrosacrobacia" field="outrosacrobacia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="35" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxadestrar" field="cbxadestrar"/>
+					<label left="28" top="2" width="150" height="20" text="Adestrar Animais" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totaladestrar" field="totaladestrar" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradadestrar" field="gradadestrar" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modadestrar" field="modadestrar" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosadestrar" field="outrosadestrar" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="65" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxatletismo" field="cbxatletismo"/>
+					<label left="28" top="2" width="150" height="20" text="Atletismo" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalatletismo" field="totalatletismo" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradatletismo" field="gradatletismo" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modatletismo" field="modatletismo" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosatletismo" field="outrosatletismo" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="95" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxatuacao1" field="cbxatuacao1"/>
+					<label left="28" top="2" width="150" height="20" text="Atuação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalatuacao1" field="totalatuacao1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradatuacao1" field="gradatuacao1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modatuacao1" field="modatuacao1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosatuacao1" field="outrosatuacao1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="125" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxatuacao2" field="cbxatuacao2"/>
+					<label left="28" top="2" width="150" height="20" text="Atuação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalatuacao2" field="totalatuacao2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradatuacao2" field="gradatuacao2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modatuacao2" field="modatuacao2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosatuacao2" field="outrosatuacao2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="155" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxcavalgar" field="cbxcavalgar"/>
+					<label left="28" top="2" width="150" height="20" text="Cavalgar" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalcavalgar" field="totalcavalgar" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradcavalgar" field="gradcavalgar" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modcavalgar" field="modcavalgar" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outroscavalgar" field="outroscavalgar" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="185" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxconhecimento1" field="cbxconhecimento1"/>
+					<label left="28" top="2" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalconhecimento1" field="totalconhecimento1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradconhecimento1" field="gradconhecimento1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modconhecimento1" field="modconhecimento1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosconhecimento1" field="outrosconhecimento1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="215" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxconhecimento2" field="cbxconhecimento2"/>
+					<label left="28" top="2" width="150" height="20" text="Conhecimento" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalconhecimento2" field="totalconhecimento2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradconhecimento2" field="gradconhecimento2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modconhecimento2" field="modconhecimento2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosconhecimento2" field="outrosconhecimento2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="245" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxcura" field="cbxcura"/>
+					<label left="28" top="2" width="150" height="20" text="Cura" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalcura" field="totalcura" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradcura" field="gradcura" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modcura" field="modcura" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outroscura" field="outroscura" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="275" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxdiplomacia" field="cbxdiplomacia"/>
+					<label left="28" top="2" width="150" height="20" text="Diplomacia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totaldiplomacia" field="totaldiplomacia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="graddiplomacia" field="graddiplomacia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="moddiplomacia" field="moddiplomacia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosdiplomacia" field="outrosdiplomacia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="305" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxenganacao" field="cbxenganacao"/>
+					<label left="28" top="2" width="150" height="20" text="Enganação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalenganacao" field="totalenganacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradenganacao" field="gradenganacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modenganacao" field="modenganacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosenganacao" field="outrosenganacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="335" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxfurtividade" field="cbxfurtividade"/>
+					<label left="28" top="2" width="150" height="20" text="Furtividade" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalfurtividade" field="totalfurtividade" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradfurtividade" field="gradfurtividade" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modfurtividade" field="modfurtividade" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosfurtividade" field="outrosfurtividade" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="365" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbximagia" field="cbximagia"/>
+					<label left="28" top="2" width="150" height="20" text="Identificar Magia" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalimagia" field="totalimagia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradimagia" field="gradimagia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modimagia" field="modimagia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosimagia" field="outrosimagia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="395" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxiniciativa" field="cbxiniciativa"/>
+					<label left="28" top="2" width="150" height="20" text="Iniciativa" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totaliniciativa" field="totaliniciativa" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradiniciativa" field="gradiniciativa" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modiniciativa" field="modiniciativa" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosiniciativa" field="outrosiniciativa" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="425" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxintimidacao" field="cbxintimidacao"/>
+					<label left="28" top="2" width="150" height="20" text="Intimidação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalintimidacao" field="totalintimidacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradintimidacao" field="gradintimidacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modintimidacao" field="modintimidacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosintimidacao" field="outrosintimidacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="455" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxintuicao" field="cbxintuicao"/>
+					<label left="28" top="2" width="150" height="20" text="Intuição" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalintuicao" field="totalintuicao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradintuicao" field="gradintuicao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modintuicao" field="modintuicao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosintuicao" field="outrosintuicao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="485" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxladinagem" field="cbxladinagem"/>
+					<label left="28" top="2" width="150" height="20" text="Ladinagem" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalladinagem" field="totalladinagem" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradladinagem" field="gradladinagem" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modladinagem" field="modladinagem" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosladinagem" field="outrosladinagem" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="515" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxoinformacao" field="cbxoinformacao"/>
+					<label left="28" top="2" width="150" height="20" text="Obter Informação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totaloinformacao" field="totaloinformacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradoinformacao" field="gradoinformacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modoinformacao" field="modoinformacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosoinformacao" field="outrosoinformacao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="545" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxoficio1" field="cbxoficio1"/>
+					<label left="28" top="2" width="150" height="20" text="Ofício" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totaloficio1" field="totaloficio1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradoficio1" field="gradoficio1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modoficio1" field="modoficio1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosoficio1" field="outrosoficio1" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="575" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxoficio2" field="cbxoficio2"/>
+					<label left="28" top="2" width="150" height="20" text="Ofício" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totaloficio2" field="totaloficio2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradoficio2" field="gradoficio2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modoficio2" field="modoficio2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosoficio2" field="outrosoficio2" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="605" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxpercepcao" field="cbxpercepcao"/>
+					<label left="28" top="2" width="150" height="20" text="Percepção" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalpercepcao" field="totalpercepcao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradpercepcao" field="gradpercepcao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modpercepcao" field="modpercepcao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrospercepcao" field="outrospercepcao" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+				<layout left="0" top="635" width="420" height="32">
+					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxsobrevivencia" field="cbxsobrevivencia"/>
+					<label left="28" top="2" width="150" height="20" text="Sobrevivência" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalsobrevivencia" field="totalsobrevivencia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
+					<edit left="235" top="0" width="40" height="25" name="gradsobrevivencia" field="gradsobrevivencia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="305" top="0" width="40" height="25" name="modsobrevivencia" field="modsobrevivencia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
+					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
+					<edit left="375" top="0" width="40" height="25" name="outrossobrevivencia" field="outrossobrevivencia" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+				</layout>
+			</layout>
+		</layout>
+
+		<layout left="435" top="10" width="565" height="680">
+			<rectangle align="client" color="Gray" xradius="2" yradius="2"/>
+
+			<rectangle left="122" top="1" color="Gainsboro" width="45" height="15" xradius="2" yradius="2"/>
+			<label left="125" top="3" width="58" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Talentos"/>
+
+			<rectangle left="377" top="1" color="Gainsboro" width="105" height="15" xradius="2" yradius="2"/>
+			<label left="380" top="3" width="98" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Habilidades de Raça"/>
+
+			<rectangle left="377" top="334" color="Gainsboro" width="107" height="15" xradius="2" yradius="2"/>
+			<label left="380" top="336" width="115" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Habilidades de Classe"/>
+			
+			<layout left="5" top="12" width="285" height="656">
+				<textEditor align="client" field="talentos" fontStyle="bold"/>
+			</layout>
+
+			<layout left="295" top="12" width="265" height="318">
+				<textEditor align="client" field="hraca" fontStyle="bold"/>
+			</layout>
+
+			<layout left="295" top="345" width="265" height="322">
+				<textEditor align="client" field="hclasse" fontStyle="bold"/>
+			</layout>
+
 		</layout>
 		
 	</scrollBox>
-	
+	<dataLink fields="{'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel'}">
+		<event name="onChange">
+			if sheet.calculos == false then
+				sheet.modacrobacia = sheet.moddestreza or 0;
+				if self.cbxacrobacia.checked then
+					sheet.gradacrobacia = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
+				else
+					sheet.gradacrobacia = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
+				end;
+				sheet.modadestrar = sheet.modcarisma or 0;
+				if self.cbxadestrar.checked then
+					sheet.gradadestrar = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totaladestrar = (math.floor((sheet.gradadestrar)or 0)+math.floor((sheet.modadestrar) or 0)+math.floor((sheet.outrosadestrar)or 0));
+				else
+					sheet.gradadestrar = (math.floor((sheet.metadenivel)or 0));
+					sheet.totaladestrar = (math.floor((sheet.gradadestrar)or 0)+math.floor((sheet.modadestrar) or 0)+math.floor((sheet.outrosadestrar)or 0));
+				end;
+				sheet.modatletismo = sheet.modforca or 0;
+				if self.cbxatletismo.checked then
+					sheet.gradatletismo = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
+				else
+					sheet.gradatletismo = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
+				end;
+				sheet.modatuacao1 = sheet.modcarisma or 0;
+				if self.cbxatuacao1.checked then
+					sheet.gradatuacao1 = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalatuacao1 = (math.floor((sheet.gradatuacao1)or 0)+math.floor((sheet.modatuacao1) or 0)+math.floor((sheet.outrosatuacao1)or 0));
+				else
+					sheet.gradatuacao1 = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalatuacao1 = (math.floor((sheet.gradatuacao1)or 0)+math.floor((sheet.modatuacao1) or 0)+math.floor((sheet.outrosatuacao1)or 0));
+				end;
+				sheet.modatuacao2 = sheet.modcarisma or 0;
+				if self.cbxatuacao2.checked then
+					sheet.gradatuacao2 = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalatuacao2 = (math.floor((sheet.gradatuacao2)or 0)+math.floor((sheet.modatuacao2) or 0)+math.floor((sheet.outrosatuacao2)or 0));
+				else
+					sheet.gradatuacao2 = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalatuacao2 = (math.floor((sheet.gradatuacao2)or 0)+math.floor((sheet.modatuacao2) or 0)+math.floor((sheet.outrosatuacao2)or 0));
+				end;
+				sheet.modcavalgar = sheet.moddestreza or 0;
+				if self.cbxcavalgar.checked then
+					sheet.gradcavalgar = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
+				else
+					sheet.gradcavalgar = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
+				end;
+				sheet.modconhecimento1 = sheet.modinteligencia or 0;
+				if self.cbxconhecimento1.checked then
+					sheet.gradconhecimento1 = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalconhecimento1 = (math.floor((sheet.gradconhecimento1)or 0)+math.floor((sheet.modconhecimento1) or 0)+math.floor((sheet.outrosconhecimento1)or 0));
+				else
+					sheet.gradconhecimento1 = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalconhecimento1 = (math.floor((sheet.gradconhecimento1)or 0)+math.floor((sheet.modconhecimento1) or 0)+math.floor((sheet.outrosconhecimento1)or 0));
+				end;
+				sheet.modconhecimento2 = sheet.modinteligencia or 0;
+				if self.cbxconhecimento2.checked then
+					sheet.gradconhecimento2 = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalconhecimento2 = (math.floor((sheet.gradconhecimento2)or 0)+math.floor((sheet.modconhecimento2) or 0)+math.floor((sheet.outrosconhecimento2)or 0));
+				else
+					sheet.gradconhecimento2 = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalconhecimento2 = (math.floor((sheet.gradconhecimento2)or 0)+math.floor((sheet.modconhecimento2) or 0)+math.floor((sheet.outrosconhecimento2)or 0));
+				end;
+				sheet.modcura = sheet.modsabedoria or 0;
+				if self.cbxcura.checked then
+					sheet.gradcura = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalcura = (math.floor((sheet.gradcura)or 0)+math.floor((sheet.modcura) or 0)+math.floor((sheet.outroscura)or 0));
+				else
+					sheet.gradcura = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalcura = (math.floor((sheet.gradcura)or 0)+math.floor((sheet.modcura) or 0)+math.floor((sheet.outroscura)or 0));
+				end;
+				sheet.moddiplomacia = sheet.modcarisma or 0;
+				if self.cbxdiplomacia.checked then
+					sheet.graddiplomacia = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totaldiplomacia = (math.floor((sheet.graddiplomacia)or 0)+math.floor((sheet.moddiplomacia) or 0)+math.floor((sheet.outrosdiplomacia)or 0));
+				else
+					sheet.graddiplomacia = (math.floor((sheet.metadenivel)or 0));
+					sheet.totaldiplomacia = (math.floor((sheet.graddiplomacia)or 0)+math.floor((sheet.moddiplomacia) or 0)+math.floor((sheet.outrosdiplomacia)or 0));
+				end;
+				sheet.modenganacao = sheet.modcarisma or 0;
+				if self.cbxenganacao.checked then
+					sheet.gradenganacao = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalenganacao = (math.floor((sheet.gradenganacao)or 0)+math.floor((sheet.modenganacao) or 0)+math.floor((sheet.outrosenganacao)or 0));
+				else
+					sheet.gradenganacao = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalenganacao = (math.floor((sheet.gradenganacao)or 0)+math.floor((sheet.modenganacao) or 0)+math.floor((sheet.outrosenganacao)or 0));
+				end;
+				sheet.modfurtividade = sheet.moddestreza or 0;
+				if self.cbxfurtividade.checked then
+					sheet.gradfurtividade = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
+				else
+					sheet.gradfurtividade = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
+				end;
+				sheet.modimagia = sheet.modinteligencia or 0;
+				if self.cbximagia.checked then
+					sheet.gradimagia = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalimagia = (math.floor((sheet.gradimagia)or 0)+math.floor((sheet.modimagia) or 0)+math.floor((sheet.outrosimagia)or 0));
+				else
+					sheet.gradimagia = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalimagia = (math.floor((sheet.gradimagia)or 0)+math.floor((sheet.modimagia) or 0)+math.floor((sheet.outrosimagia)or 0));
+				end;
+				sheet.modiniciativa = sheet.moddestreza or 0;
+				if self.cbxiniciativa.checked then
+					sheet.gradiniciativa = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
+				else
+					sheet.gradiniciativa = (math.floor((sheet.metadenivel)or 0));
+					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
+				end;
+				sheet.modintimidacao = sheet.modcarisma or 0;
+				if self.cbxintimidacao.checked then
+					sheet.gradintimidacao = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalintimidacao = (math.floor((sheet.gradintimidacao)or 0)+math.floor((sheet.modintimidacao) or 0)+math.floor((sheet.outrosintimidacao)or 0));
+				else
+					sheet.gradintimidacao = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalintimidacao = (math.floor((sheet.gradintimidacao)or 0)+math.floor((sheet.modintimidacao) or 0)+math.floor((sheet.outrosintimidacao)or 0));
+				end;
+				sheet.modintuicao = sheet.modsabedoria or 0;
+				if self.cbxintuicao.checked then
+					sheet.gradintuicao = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalintuicao = (math.floor((sheet.gradintuicao)or 0)+math.floor((sheet.modintuicao) or 0)+math.floor((sheet.outrosintuicao)or 0));
+				else
+					sheet.gradintuicao = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalintuicao = (math.floor((sheet.gradintuicao)or 0)+math.floor((sheet.modintuicao) or 0)+math.floor((sheet.outrosintuicao)or 0));
+				end;
+				sheet.modladinagem = sheet.moddestreza or 0;
+				if self.cbxladinagem.checked then
+					sheet.gradladinagem = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
+				else
+					sheet.gradladinagem = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
+				end;
+				sheet.modoinformacao = sheet.modcarisma or 0;
+				if self.cbxoinformacao.checked then
+					sheet.gradoinformacao = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totaloinformacao = (math.floor((sheet.gradoinformacao)or 0)+math.floor((sheet.modoinformacao) or 0)+math.floor((sheet.outrosoinformacao)or 0));
+				else
+					sheet.gradoinformacao = (math.floor((sheet.metadenivel)or 0));
+					sheet.totaloinformacao = (math.floor((sheet.gradoinformacao)or 0)+math.floor((sheet.modoinformacao) or 0)+math.floor((sheet.outrosoinformacao)or 0));
+				end;
+				sheet.modoficio1 = sheet.modinteligencia or 0;
+				if self.cbxoficio1.checked then
+					sheet.gradoficio1 = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totaloficio1 = (math.floor((sheet.gradoficio1)or 0)+math.floor((sheet.modoficio1) or 0)+math.floor((sheet.outrosoficio1)or 0));
+				else
+					sheet.gradoficio1 = (math.floor((sheet.metadenivel)or 0));
+					sheet.totaloficio1 = (math.floor((sheet.gradoficio1)or 0)+math.floor((sheet.modoficio1) or 0)+math.floor((sheet.outrosoficio1)or 0));
+				end;
+				sheet.modoficio2 = sheet.modinteligencia or 0;
+				if self.cbxoficio2.checked then
+					sheet.gradoficio2 = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totaloficio2 = (math.floor((sheet.gradoficio2)or 0)+math.floor((sheet.modoficio2) or 0)+math.floor((sheet.outrosoficio2)or 0));
+				else
+					sheet.gradoficio2 = (math.floor((sheet.metadenivel)or 0));
+					sheet.totaloficio2 = (math.floor((sheet.gradoficio2)or 0)+math.floor((sheet.modoficio2) or 0)+math.floor((sheet.outrosoficio2)or 0));
+				end;
+				sheet.modpercepcao = sheet.modsabedoria or 0;
+				if self.cbxpercepcao.checked then
+					sheet.gradpercepcao = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalpercepcao = (math.floor((sheet.gradpercepcao)or 0)+math.floor((sheet.modpercepcao) or 0)+math.floor((sheet.outrospercepcao)or 0));
+				else
+					sheet.gradpercepcao = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalpercepcao = (math.floor((sheet.gradpercepcao)or 0)+math.floor((sheet.modpercepcao) or 0)+math.floor((sheet.outrospercepcao)or 0));
+				end;
+				sheet.modsobrevivencia = sheet.modsabedoria or 0;
+				if self.cbxsobrevivencia.checked then
+					sheet.gradsobrevivencia = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalsobrevivencia = (math.floor((sheet.gradsobrevivencia)or 0)+math.floor((sheet.modsobrevivencia) or 0)+math.floor((sheet.outrossobrevivencia)or 0));
+				else
+					sheet.gradsobrevivencia = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalsobrevivencia = (math.floor((sheet.gradsobrevivencia)or 0)+math.floor((sheet.modsobrevivencia) or 0)+math.floor((sheet.outrossobrevivencia)or 0));
+				end;
+				
+			end;
+		</event>
+	</dataLink>
+	<script>
+		function desCalculos2()
+			if sheet.calculos then
+				self.totalacrobacia.hitTest = false;
+				self.gradacrobacia.hitTest = false;
+				self.modacrobacia.hitTest = false;
+
+				self.totaladestrar.hitTest = false;
+				self.gradadestrar.hitTest = false;
+				self.modadestrar.hitTest = false;
+
+				self.totalatletismo.hitTest = false;
+				self.gradatletismo.hitTest = false;
+				self.modatletismo.hitTest = false;
+
+				self.totalatuacao1.hitTest = false;
+				self.gradatuacao1.hitTest = false;
+				self.modatuacao1.hitTest = false;
+
+				self.totalatuacao2.hitTest = false;
+				self.gradatuacao2.hitTest = false;
+				self.modatuacao2.hitTest = false;
+
+				self.totalcavalgar.hitTest = false;
+				self.gradcavalgar.hitTest = false;
+				self.modcavalgar.hitTest = false;
+
+				self.totalconhecimento1.hitTest = false;
+				self.gradconhecimento1.hitTest = false;
+				self.modconhecimento1.hitTest = false;
+
+				self.totalconhecimento2.hitTest = false;
+				self.gradconhecimento2.hitTest = false;
+				self.modconhecimento2.hitTest = false;
+
+				self.totalcura.hitTest = false;
+				self.gradcura.hitTest = false;
+				self.modcura.hitTest = false;
+
+				self.totaldiplomacia.hitTest = false;
+				self.graddiplomacia.hitTest = false;
+				self.moddiplomacia.hitTest = false;
+
+				self.totalenganacao.hitTest = false;
+				self.gradenganacao.hitTest = false;
+				self.modenganacao.hitTest = false;
+
+				self.totalfurtividade.hitTest = false;
+				self.gradfurtividade.hitTest = false;
+				self.modfurtividade.hitTest = false;
+
+				self.totalimagia.hitTest = false;
+				self.gradimagia.hitTest = false;
+				self.modimagia.hitTest = false;
+
+				self.totaliniciativa.hitTest = false;
+				self.gradiniciativa.hitTest = false;
+				self.modiniciativa.hitTest = false;
+
+				self.totalintimidacao.hitTest = false;
+				self.gradintimidacao.hitTest = false;
+				self.modintimidacao.hitTest = false;
+
+				self.totalintuicao.hitTest = false;
+				self.gradintuicao.hitTest = false;
+				self.modintuicao.hitTest = false;
+
+				self.totalladinagem.hitTest = false;
+				self.gradladinagem.hitTest = false;
+				self.modladinagem.hitTest = false;
+
+				self.totaloinformacao.hitTest = false;
+				self.gradoinformacao.hitTest = false;
+				self.modoinformacao.hitTest = false;
+
+				self.totaloficio1.hitTest = false;
+				self.gradoficio1.hitTest = false;
+				self.modoficio1.hitTest = false;
+
+				self.totaloficio2.hitTest = false;
+				self.gradoficio2.hitTest = false;
+				self.modoficio2.hitTest = false;
+
+				self.totalpercepcao.hitTest = false;
+				self.gradpercepcao.hitTest = false;
+				self.modpercepcao.hitTest = false;
+
+				self.totalsobrevivencia.hitTest = false;
+				self.gradsobrevivencia.hitTest = false;
+				self.modsobrevivencia.hitTest = false;
+
+			else
+				self.totalacrobacia.hitTest = true;
+				self.gradacrobacia.hitTest = true;
+				self.modacrobacia.hitTest = true;
+
+				self.totaladestrar.hitTest = true;
+				self.gradadestrar.hitTest = true;
+				self.modadestrar.hitTest = true;
+
+				self.totalatletismo.hitTest = true;
+				self.gradatletismo.hitTest = true;
+				self.modatletismo.hitTest = true;
+
+				self.totalatuacao1.hitTest = true;
+				self.gradatuacao1.hitTest = true;
+				self.modatuacao1.hitTest = true;
+
+				self.totalatuacao2.hitTest = true;
+				self.gradatuacao2.hitTest = true;
+				self.modatuacao2.hitTest = true;
+
+				self.totalcavalgar.hitTest = true;
+				self.gradcavalgar.hitTest = true;
+				self.modcavalgar.hitTest = true;
+
+				self.totalconhecimento1.hitTest = true;
+				self.gradconhecimento1.hitTest = true;
+				self.modconhecimento1.hitTest = true;
+
+				self.totalconhecimento2.hitTest = true;
+				self.gradconhecimento2.hitTest = true;
+				self.modconhecimento2.hitTest = true;
+
+				self.totalcura.hitTest = true;
+				self.gradcura.hitTest = true;
+				self.modcura.hitTest = true;
+
+				self.totaldiplomacia.hitTest = true;
+				self.graddiplomacia.hitTest = true;
+				self.moddiplomacia.hitTest = true;
+
+				self.totalenganacao.hitTest = true;
+				self.gradenganacao.hitTest = true;
+				self.modenganacao.hitTest = true;
+
+				self.totalfurtividade.hitTest = true;
+				self.gradfurtividade.hitTest = true;
+				self.modfurtividade.hitTest = true;
+
+				self.totalimagia.hitTest = true;
+				self.gradimagia.hitTest = true;
+				self.modimagia.hitTest = true;
+
+				self.totaliniciativa.hitTest = true;
+				self.gradiniciativa.hitTest = true;
+				self.modiniciativa.hitTest = true;
+
+				self.totalintimidacao.hitTest = true;
+				self.gradintimidacao.hitTest = true;
+				self.modintimidacao.hitTest = true;
+
+				self.totalintuicao.hitTest = true;
+				self.gradintuicao.hitTest = true;
+				self.modintuicao.hitTest = true;
+
+				self.totalladinagem.hitTest = true;
+				self.gradladinagem.hitTest = true;
+				self.modladinagem.hitTest = true;
+
+				self.totaloinformacao.hitTest = true;
+				self.gradoinformacao.hitTest = true;
+				self.modoinformacao.hitTest = true;
+
+				self.totaloficio1.hitTest = true;
+				self.gradoficio1.hitTest = true;
+				self.modoficio1.hitTest = true;
+
+				self.totaloficio2.hitTest = true;
+				self.gradoficio2.hitTest = true;
+				self.modoficio2.hitTest = true;
+
+				self.totalpercepcao.hitTest = true;
+				self.gradpercepcao.hitTest = true;
+				self.modpercepcao.hitTest = true;
+
+				self.totalsobrevivencia.hitTest = true;
+				self.gradsobrevivencia.hitTest = true;
+				self.modsobrevivencia.hitTest = true;
+			end;
+		end;
+	</script>
 </form>
