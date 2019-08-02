@@ -3289,7 +3289,7 @@ local function constructNew_Tormenta01()
             desCalculos();
         end, obj);
 
-    obj._e_event1 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event1 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Calculo de nivel e metade de nivel.
             			if sheet.calculos == false then
@@ -3298,7 +3298,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event2 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event2 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Modificador de Habilidades
             			-- Forca
@@ -3311,7 +3311,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event3 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event3 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Destreza
             			if sheet.calculos == false then
@@ -3323,7 +3323,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event4 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event4 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Constituicao
             			if sheet.calculos == false then
@@ -3335,7 +3335,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event5 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event5 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- inteligencia
             			if sheet.calculos == false then
@@ -3347,7 +3347,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event6 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event6 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Sabedoria
             			if sheet.calculos == false then
@@ -3359,7 +3359,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event7 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event7 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Carisma
             			if sheet.calculos == false then
@@ -3371,7 +3371,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event8 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event8 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Classe de Armadura
             			if sheet.calculos == false then
@@ -3381,7 +3381,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event9 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event9 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Fortitude
             			if sheet.calculos == false then
@@ -3391,7 +3391,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event10 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event10 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Reflexo
             			if sheet.calculos == false then
@@ -3401,7 +3401,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event11 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event11 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Vontade
             			if sheet.calculos == false then
@@ -3411,7 +3411,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event12 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event12 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Corpo a corpo
             			if sheet.calculos == false then
@@ -3425,7 +3425,7 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event13 = obj.dataLink1:addEventListener("onChange",
+    obj._e_event13 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Ataque a distancia.
             			if sheet.calculos == false then
