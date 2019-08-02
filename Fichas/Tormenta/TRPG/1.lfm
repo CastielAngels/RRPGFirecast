@@ -350,75 +350,108 @@
 
 	<dataLink fields="{'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5', 'fort1', 'fort2', 'fort3', 'ref1', 'ref2', 'ref3', 'von1', 'von2', 'von3', 'acuidade', 'modforca', 'cac1', 'cac2', 'cac3', 'cac4', 'pontaria', 'bba', 'dis1', 'dis2', 'dis3', 'dis4', 'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'}">
 		<event name="onChange">
+			-- Calculo de nivel e metade de nivel.
 			if sheet.calculos == false then
-				-- Calculo de nivel e metade de nivel.
 				sheet.nivel = (math.floor((sheet.nvclasse1)or 0)+math.floor((sheet.nvclasse2)or 0)+math.floor((sheet.nvclasse3)or 0)+math.floor((sheet.nvclasse4)or 0)+math.floor((sheet.nvclasse5)or 0)+math.floor((sheet.nvclasse6)or 0)+math.floor((sheet.nvclasse7)or 0)+math.floor((sheet.nvclasse8)or 0)+math.floor((sheet.nvclasse9)or 0)+math.floor((sheet.nvclasse10)or 0));
 				sheet.metadenivel = math.floor(sheet.nivel / 2 or 0);
-
-				-- Modificador de Habilidades
-				-- Forca
+			end;
+		</event>
+		<event name="onChange">
+			-- Modificador de Habilidades
+			-- Forca
+			if sheet.calculos == false then
 				local modfor = math.floor(((sheet.forca or 10) / 2) - 5);
         		if (modfor >= 0) then
                 	modfor = "+" .. modfor;
                 end;
                 sheet.modforca = modfor;
-
-				-- Destreza
+			end;
+		</event>
+		<event name="onChange">
+			-- Destreza
+			if sheet.calculos == false then
 				local moddes = math.floor(((sheet.destreza or 10) / 2) - 5);
                 if (moddes >= 0) then
                 	moddes = "+" .. moddes;
                 end;
                 sheet.moddestreza = moddes;
-
-				-- Constituicao
+			end;
+		</event>
+		<event name="onChange">
+			-- Constituicao
+			if sheet.calculos == false then
 				local modcon = math.floor(((sheet.constituicao or 10) / 2) - 5);
             	if (modcon >= 0) then
                 	modcon = "+" .. modcon;
                 end;
                 sheet.modconstituicao = modcon;
-
-				-- inteligencia
+			end;
+		</event>
+		<event name="onChange">
+			-- inteligencia
+			if sheet.calculos == false then
 				local modint = math.floor(((sheet.inteligencia or 10) / 2) - 5);
             	if (modint >= 0) then
                 	modint = "+" .. modint;
                 end;
                 sheet.modinteligencia = modint;
-
-				-- Sabedoria
+			end;
+		</event>
+		<event name="onChange">
+			-- Sabedoria
+			if sheet.calculos == false then
 				local modsab = math.floor(((sheet.sabedoria or 10) / 2) - 5);
                 if (modsab >= 0) then
                 	modsab = "+" .. modsab;
                 end;
                 sheet.modsabedoria = modsab;
-
-				-- Carisma
+			end;
+		</event>
+		<event name="onChange">
+			-- Carisma
+			if sheet.calculos == false then
 				local modcar = math.floor(((sheet.carisma or 10) / 2) - 5);
         		if (modcar >= 0) then
                 	modcar = "+" .. modcar;
                 end;
                 sheet.modcarisma = modcar;
-
-				-- Classe de Armadura
+			end;
+		</event>
+		<event name="onChange">
+			-- Classe de Armadura
+			if sheet.calculos == false then
 				sheet.ca2 = sheet.moddestreza;
 				sheet.ca1 = (sheet.metadenivel)+10;
 				sheet.totalca = (math.floor((sheet.ca1)or 0)+math.floor((sheet.ca2)or 0)+math.floor((sheet.ca3)or 0)+math.floor((sheet.ca4)or 0)+math.floor((sheet.ca5)or 0));
-
-				-- Fortitude
+			end;
+		</event>
+		<event name="onChange">
+			-- Fortitude
+			if sheet.calculos == false then
 				sheet.fort2 = sheet.modconstituicao;
 				sheet.fort1 = sheet.metadenivel;
 				sheet.totalfort = (math.floor((sheet.fort1)or 0)+math.floor((sheet.fort2)or 0)+math.floor((sheet.fort3)or 0));
-
-				-- Reflexo
+			end;
+		</event>
+		<event name="onChange">
+			-- Reflexo
+			if sheet.calculos == false then
 				sheet.ref2 = sheet.moddestreza;
 				sheet.ref1 = sheet.metadenivel;
 				sheet.totalref = (math.floor((sheet.ref1)or 0)+math.floor((sheet.ref2)or 0)+math.floor((sheet.ref3)or 0));
-
-				-- Vontade
+			end;
+		</event>
+		<event name="onChange">
+			-- Vontade
+			if sheet.calculos == false then
 				sheet.von2 = sheet.modsabedoria;
 				sheet.von1 = sheet.metadenivel;
 				sheet.totalvon = (math.floor((sheet.von1)or 0)+math.floor((sheet.von2)or 0)+math.floor((sheet.von3)or 0));
-
-				-- Corpo a corpo
+			end;
+		</event>
+		<event name="onChange">
+			-- Corpo a corpo
+			if sheet.calculos == false then
 				if sheet.acuidade then
 					sheet.cac2 = sheet.moddestreza;
 				else
@@ -426,8 +459,11 @@
 				end;
 				sheet.cac1 = sheet.bba;
 				sheet.totalcac = (math.floor((sheet.cac1)or 0)+math.floor((sheet.cac2)or 0)+math.floor((sheet.cac3)or 0)+math.floor((sheet.cac4)or 0));
-
-				-- Ataque a distancia.
+			end;
+		</event>
+		<event name="onChange">
+			-- Ataque a distancia.
+			if sheet.calculos == false then
 				if sheet.pontaria then
 					sheet.dis2 = sheet.modsabedoria;
 				else

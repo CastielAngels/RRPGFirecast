@@ -3291,75 +3291,130 @@ local function constructNew_Tormenta01()
 
     obj._e_event1 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
-            				-- Calculo de nivel e metade de nivel.
+            -- Calculo de nivel e metade de nivel.
+            			if sheet.calculos == false then
             				sheet.nivel = (math.floor((sheet.nvclasse1)or 0)+math.floor((sheet.nvclasse2)or 0)+math.floor((sheet.nvclasse3)or 0)+math.floor((sheet.nvclasse4)or 0)+math.floor((sheet.nvclasse5)or 0)+math.floor((sheet.nvclasse6)or 0)+math.floor((sheet.nvclasse7)or 0)+math.floor((sheet.nvclasse8)or 0)+math.floor((sheet.nvclasse9)or 0)+math.floor((sheet.nvclasse10)or 0));
             				sheet.metadenivel = math.floor(sheet.nivel / 2 or 0);
-            
-            				-- Modificador de Habilidades
-            				-- Forca
+            			end;
+        end, obj);
+
+    obj._e_event2 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Modificador de Habilidades
+            			-- Forca
+            			if sheet.calculos == false then
             				local modfor = math.floor(((sheet.forca or 10) / 2) - 5);
                     		if (modfor >= 0) then
                             	modfor = "+" .. modfor;
                             end;
                             sheet.modforca = modfor;
-            
-            				-- Destreza
+            			end;
+        end, obj);
+
+    obj._e_event3 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Destreza
+            			if sheet.calculos == false then
             				local moddes = math.floor(((sheet.destreza or 10) / 2) - 5);
                             if (moddes >= 0) then
                             	moddes = "+" .. moddes;
                             end;
                             sheet.moddestreza = moddes;
-            
-            				-- Constituicao
+            			end;
+        end, obj);
+
+    obj._e_event4 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Constituicao
+            			if sheet.calculos == false then
             				local modcon = math.floor(((sheet.constituicao or 10) / 2) - 5);
                         	if (modcon >= 0) then
                             	modcon = "+" .. modcon;
                             end;
                             sheet.modconstituicao = modcon;
-            
-            				-- inteligencia
+            			end;
+        end, obj);
+
+    obj._e_event5 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- inteligencia
+            			if sheet.calculos == false then
             				local modint = math.floor(((sheet.inteligencia or 10) / 2) - 5);
                         	if (modint >= 0) then
                             	modint = "+" .. modint;
                             end;
                             sheet.modinteligencia = modint;
-            
-            				-- Sabedoria
+            			end;
+        end, obj);
+
+    obj._e_event6 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Sabedoria
+            			if sheet.calculos == false then
             				local modsab = math.floor(((sheet.sabedoria or 10) / 2) - 5);
                             if (modsab >= 0) then
                             	modsab = "+" .. modsab;
                             end;
                             sheet.modsabedoria = modsab;
-            
-            				-- Carisma
+            			end;
+        end, obj);
+
+    obj._e_event7 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Carisma
+            			if sheet.calculos == false then
             				local modcar = math.floor(((sheet.carisma or 10) / 2) - 5);
                     		if (modcar >= 0) then
                             	modcar = "+" .. modcar;
                             end;
                             sheet.modcarisma = modcar;
-            
-            				-- Classe de Armadura
+            			end;
+        end, obj);
+
+    obj._e_event8 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Classe de Armadura
+            			if sheet.calculos == false then
             				sheet.ca2 = sheet.moddestreza;
             				sheet.ca1 = (sheet.metadenivel)+10;
             				sheet.totalca = (math.floor((sheet.ca1)or 0)+math.floor((sheet.ca2)or 0)+math.floor((sheet.ca3)or 0)+math.floor((sheet.ca4)or 0)+math.floor((sheet.ca5)or 0));
-            
-            				-- Fortitude
+            			end;
+        end, obj);
+
+    obj._e_event9 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Fortitude
+            			if sheet.calculos == false then
             				sheet.fort2 = sheet.modconstituicao;
             				sheet.fort1 = sheet.metadenivel;
             				sheet.totalfort = (math.floor((sheet.fort1)or 0)+math.floor((sheet.fort2)or 0)+math.floor((sheet.fort3)or 0));
-            
-            				-- Reflexo
+            			end;
+        end, obj);
+
+    obj._e_event10 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Reflexo
+            			if sheet.calculos == false then
             				sheet.ref2 = sheet.moddestreza;
             				sheet.ref1 = sheet.metadenivel;
             				sheet.totalref = (math.floor((sheet.ref1)or 0)+math.floor((sheet.ref2)or 0)+math.floor((sheet.ref3)or 0));
-            
-            				-- Vontade
+            			end;
+        end, obj);
+
+    obj._e_event11 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Vontade
+            			if sheet.calculos == false then
             				sheet.von2 = sheet.modsabedoria;
             				sheet.von1 = sheet.metadenivel;
             				sheet.totalvon = (math.floor((sheet.von1)or 0)+math.floor((sheet.von2)or 0)+math.floor((sheet.von3)or 0));
-            
-            				-- Corpo a corpo
+            			end;
+        end, obj);
+
+    obj._e_event12 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Corpo a corpo
+            			if sheet.calculos == false then
             				if sheet.acuidade then
             					sheet.cac2 = sheet.moddestreza;
             				else
@@ -3367,8 +3422,13 @@ local function constructNew_Tormenta01()
             				end;
             				sheet.cac1 = sheet.bba;
             				sheet.totalcac = (math.floor((sheet.cac1)or 0)+math.floor((sheet.cac2)or 0)+math.floor((sheet.cac3)or 0)+math.floor((sheet.cac4)or 0));
-            
-            				-- Ataque a distancia.
+            			end;
+        end, obj);
+
+    obj._e_event13 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            -- Ataque a distancia.
+            			if sheet.calculos == false then
             				if sheet.pontaria then
             					sheet.dis2 = sheet.modsabedoria;
             				else
@@ -3379,17 +3439,29 @@ local function constructNew_Tormenta01()
             			end;
         end, obj);
 
-    obj._e_event2 = obj.imageCheckBox1:addEventListener("onClick",
+    obj._e_event14 = obj.imageCheckBox1:addEventListener("onClick",
         function (_)
             desCalculos(); desCalculos2();
         end, obj);
 
-    obj._e_event3 = obj.button1:addEventListener("onClick",
+    obj._e_event15 = obj.button1:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event15);
+        __o_rrpgObjs.removeEventListenerById(self._e_event14);
+        __o_rrpgObjs.removeEventListenerById(self._e_event13);
+        __o_rrpgObjs.removeEventListenerById(self._e_event12);
+        __o_rrpgObjs.removeEventListenerById(self._e_event11);
+        __o_rrpgObjs.removeEventListenerById(self._e_event10);
+        __o_rrpgObjs.removeEventListenerById(self._e_event9);
+        __o_rrpgObjs.removeEventListenerById(self._e_event8);
+        __o_rrpgObjs.removeEventListenerById(self._e_event7);
+        __o_rrpgObjs.removeEventListenerById(self._e_event6);
+        __o_rrpgObjs.removeEventListenerById(self._e_event5);
+        __o_rrpgObjs.removeEventListenerById(self._e_event4);
         __o_rrpgObjs.removeEventListenerById(self._e_event3);
         __o_rrpgObjs.removeEventListenerById(self._e_event2);
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
