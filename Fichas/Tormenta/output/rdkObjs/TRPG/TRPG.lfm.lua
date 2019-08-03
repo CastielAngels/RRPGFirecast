@@ -3021,11 +3021,6 @@ local function constructNew_TormentaCastfrm()
     lfm_setPropAsString(obj.edit53, "fontStyle",  "bold");
     obj.edit53:setName("edit53");
 
-    obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink1:setParent(obj.scrollBox1);
-    obj.dataLink1:setFields({'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5', 'fort1', 'fort2', 'fort3', 'ref1', 'ref2', 'ref3', 'von1', 'von2', 'von3', 'acuidade', 'modforca', 'cac1', 'cac2', 'cac3', 'cac4', 'pontaria', 'bba', 'dis1', 'dis2', 'dis3', 'dis4', 'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'});
-    obj.dataLink1:setName("dataLink1");
-
     obj.layout29 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout29:setParent(obj.scrollBox1);
     obj.layout29:setLeft(502);
@@ -3225,6 +3220,11 @@ local function constructNew_TormentaCastfrm()
     obj.button1:setCursor("handPoint");
     obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.0a");
     obj.button1:setName("button1");
+
+    obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink1:setParent(obj.Tormenta01);
+    obj.dataLink1:setFields({'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5', 'fort1', 'fort2', 'fort3', 'ref1', 'ref2', 'ref3', 'von1', 'von2', 'von3', 'acuidade', 'modforca', 'cac1', 'cac2', 'cac3', 'cac4', 'pontaria', 'bba', 'dis1', 'dis2', 'dis3', 'dis4', 'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'});
+    obj.dataLink1:setName("dataLink1");
 
 
 		function desCalculos();
@@ -7913,7 +7913,17 @@ local function constructNew_TormentaCastfrm()
             desCalculos();
         end, obj);
 
-    obj._e_event1 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event1 = obj.imageCheckBox1:addEventListener("onClick",
+        function (_)
+            desCalculos(); desCalculos2();
+        end, obj);
+
+    obj._e_event2 = obj.button1:addEventListener("onClick",
+        function (_)
+            GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');
+        end, obj);
+
+    obj._e_event3 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Calculo de nivel e metade de nivel.
             			if sheet.calculos == false then
@@ -7922,7 +7932,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event2 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event4 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Modificador de Habilidades
             			-- Forca
@@ -7935,7 +7945,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event3 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event5 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Destreza
             			if sheet.calculos == false then
@@ -7947,7 +7957,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event4 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event6 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Constituicao
             			if sheet.calculos == false then
@@ -7959,7 +7969,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event5 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event7 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- inteligencia
             			if sheet.calculos == false then
@@ -7971,7 +7981,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event6 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event8 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Sabedoria
             			if sheet.calculos == false then
@@ -7983,7 +7993,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event7 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event9 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Carisma
             			if sheet.calculos == false then
@@ -7995,7 +8005,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event8 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event10 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Classe de Armadura
             			if sheet.calculos == false then
@@ -8005,7 +8015,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event9 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event11 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Fortitude
             			if sheet.calculos == false then
@@ -8015,7 +8025,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event10 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event12 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Reflexo
             			if sheet.calculos == false then
@@ -8025,7 +8035,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event11 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event13 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Vontade
             			if sheet.calculos == false then
@@ -8035,7 +8045,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event12 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event14 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Corpo a corpo
             			if sheet.calculos == false then
@@ -8049,7 +8059,7 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event13 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event15 = obj.dataLink1:addEventListener("onPersistedChange",
         function (_, field, oldValue, newValue)
             -- Ataque a distancia.
             			if sheet.calculos == false then
@@ -8061,16 +8071,6 @@ local function constructNew_TormentaCastfrm()
             				sheet.dis1 = sheet.bba;
             				sheet.totaldis = (math.floor((sheet.dis1)or 0)+math.floor((sheet.dis2)or 0)+math.floor((sheet.dis3)or 0)+math.floor((sheet.dis4)or 0));
             			end;
-        end, obj);
-
-    obj._e_event14 = obj.imageCheckBox1:addEventListener("onClick",
-        function (_)
-            desCalculos(); desCalculos2();
-        end, obj);
-
-    obj._e_event15 = obj.button1:addEventListener("onClick",
-        function (_)
-            GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');
         end, obj);
 
     obj._e_event16 = obj.Tormenta02:addEventListener("onNodeReady",

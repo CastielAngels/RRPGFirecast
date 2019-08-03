@@ -347,7 +347,33 @@
 		<edit left="172" top="131" width="60" height="25" field="nvclasse10" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 
 	</layout>
+	<layout left="502" top="516" width="140" height="159">
 
+		<rectangle top="6" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
+
+		<rectangle left="35" top="1" color="Gainsboro" width="55" height="15" xradius="2" yradius="2"/>
+		<label left="37" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Nível Total"/>
+		<edit left="3" top="11" width="119" height="25" name="nivel" field="nivel" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+
+
+		<rectangle top="66" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
+
+		<rectangle left="23" top="61" color="Gainsboro" width="77" height="15" xradius="2" yradius="2"/>
+		<label left="25" top="62" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Pontos de Ação"/>
+		<edit left="3" top="71" width="119" height="25" field="pacao" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+
+		<rectangle top="126" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
+
+		<rectangle left="41" top="121" color="Gainsboro" width="42" height="15" xradius="2" yradius="2"/>
+		<label left="43" top="122" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Funções"/>
+		<rectangle left="3" top="131" color="#333333" width="119" height="25"/>
+		<imageCheckBox field="calculos" left="14" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos(); desCalculos2();"/>
+		<imageCheckBox field="acuidade" left="34" top="136" checkedImage="img/hand.png" uncheckedImage="img/closedhand.png" hint="Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES." width="15" height="15"/>
+		<imageCheckBox field="pontaria" left="54" top="136" checkedImage="img/wisdom.png" uncheckedImage="img/bow.png" hint="Muda o modificador em jogadas de ataque à distância. DES ou SAB." width="15" height="15"/>
+		<image left="74" top="136" name="update" src="img/update.gif" width="15" height="15"/>
+		<button left="74" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.0a" onClick="GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');"/>
+	</layout>
+	</scrollBox>
 	<dataLink fields="{'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5', 'fort1', 'fort2', 'fort3', 'ref1', 'ref2', 'ref3', 'von1', 'von2', 'von3', 'acuidade', 'modforca', 'cac1', 'cac2', 'cac3', 'cac4', 'pontaria', 'bba', 'dis1', 'dis2', 'dis3', 'dis4', 'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'}">
 		<event name="onPersistedChange">
 			-- Calculo de nivel e metade de nivel.
@@ -474,35 +500,6 @@
 			end;
 		</event>
 	</dataLink>
-
-	<layout left="502" top="516" width="140" height="159">
-
-		<rectangle top="6" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
-
-		<rectangle left="35" top="1" color="Gainsboro" width="55" height="15" xradius="2" yradius="2"/>
-		<label left="37" top="2" width="55" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Nível Total"/>
-		<edit left="3" top="11" width="119" height="25" name="nivel" field="nivel" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
-
-
-		<rectangle top="66" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
-
-		<rectangle left="23" top="61" color="Gainsboro" width="77" height="15" xradius="2" yradius="2"/>
-		<label left="25" top="62" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Pontos de Ação"/>
-		<edit left="3" top="71" width="119" height="25" field="pacao" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-
-		<rectangle top="126" color="Gainsboro" width="125" height="33" xradius="2" yradius="2"/>
-
-		<rectangle left="41" top="121" color="Gainsboro" width="42" height="15" xradius="2" yradius="2"/>
-		<label left="43" top="122" width="75" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Funções"/>
-		<rectangle left="3" top="131" color="#333333" width="119" height="25"/>
-		<imageCheckBox field="calculos" left="14" top="136" checkedImage="img/xis.png" uncheckedImage="img/Cal.png" width="15" height="15" hint="Desabilita os cálculos automáticos da ficha." onClick="desCalculos(); desCalculos2();"/>
-		<imageCheckBox field="acuidade" left="34" top="136" checkedImage="img/hand.png" uncheckedImage="img/closedhand.png" hint="Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES." width="15" height="15"/>
-		<imageCheckBox field="pontaria" left="54" top="136" checkedImage="img/wisdom.png" uncheckedImage="img/bow.png" hint="Muda o modificador em jogadas de ataque à distância. DES ou SAB." width="15" height="15"/>
-		<image left="74" top="136" name="update" src="img/update.gif" width="15" height="15"/>
-		<button left="74" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.0a" onClick="GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');"/>
-
-	</layout>
-	</scrollBox>
 	<script>
 		function desCalculos();
 			if sheet.calculos then
