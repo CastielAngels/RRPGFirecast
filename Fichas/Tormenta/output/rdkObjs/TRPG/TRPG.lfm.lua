@@ -3164,41 +3164,41 @@ local function constructNew_TormentaCastfrm()
     obj.rectangle80:setHeight(25);
     obj.rectangle80:setName("rectangle80");
 
+    obj.calculos = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.calculos:setParent(obj.layout29);
+    obj.calculos:setName("calculos");
+    obj.calculos:setField("calculos");
+    obj.calculos:setLeft(14);
+    obj.calculos:setTop(136);
+    obj.calculos:setImageChecked("/TRPG/img/xis.png");
+    obj.calculos:setImageUnchecked("/TRPG/img/Cal.png");
+    obj.calculos:setWidth(15);
+    obj.calculos:setHeight(15);
+    obj.calculos:setHint("Desabilita os cálculos automáticos da ficha.");
+
     obj.imageCheckBox1 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox1:setParent(obj.layout29);
-    obj.imageCheckBox1:setField("calculos");
-    obj.imageCheckBox1:setLeft(14);
+    obj.imageCheckBox1:setField("acuidade");
+    obj.imageCheckBox1:setLeft(34);
     obj.imageCheckBox1:setTop(136);
-    obj.imageCheckBox1:setImageChecked("/TRPG/img/xis.png");
-    obj.imageCheckBox1:setImageUnchecked("/TRPG/img/Cal.png");
+    obj.imageCheckBox1:setImageChecked("/TRPG/img/hand.png");
+    obj.imageCheckBox1:setImageUnchecked("/TRPG/img/closedhand.png");
+    obj.imageCheckBox1:setHint("Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES.");
     obj.imageCheckBox1:setWidth(15);
     obj.imageCheckBox1:setHeight(15);
-    obj.imageCheckBox1:setHint("Desabilita os cálculos automáticos da ficha.");
     obj.imageCheckBox1:setName("imageCheckBox1");
 
     obj.imageCheckBox2 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
     obj.imageCheckBox2:setParent(obj.layout29);
-    obj.imageCheckBox2:setField("acuidade");
-    obj.imageCheckBox2:setLeft(34);
+    obj.imageCheckBox2:setField("pontaria");
+    obj.imageCheckBox2:setLeft(54);
     obj.imageCheckBox2:setTop(136);
-    obj.imageCheckBox2:setImageChecked("/TRPG/img/hand.png");
-    obj.imageCheckBox2:setImageUnchecked("/TRPG/img/closedhand.png");
-    obj.imageCheckBox2:setHint("Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES.");
+    obj.imageCheckBox2:setImageChecked("/TRPG/img/wisdom.png");
+    obj.imageCheckBox2:setImageUnchecked("/TRPG/img/bow.png");
+    obj.imageCheckBox2:setHint("Muda o modificador em jogadas de ataque à distância. DES ou SAB.");
     obj.imageCheckBox2:setWidth(15);
     obj.imageCheckBox2:setHeight(15);
     obj.imageCheckBox2:setName("imageCheckBox2");
-
-    obj.imageCheckBox3 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox3:setParent(obj.layout29);
-    obj.imageCheckBox3:setField("pontaria");
-    obj.imageCheckBox3:setLeft(54);
-    obj.imageCheckBox3:setTop(136);
-    obj.imageCheckBox3:setImageChecked("/TRPG/img/wisdom.png");
-    obj.imageCheckBox3:setImageUnchecked("/TRPG/img/bow.png");
-    obj.imageCheckBox3:setHint("Muda o modificador em jogadas de ataque à distância. DES ou SAB.");
-    obj.imageCheckBox3:setWidth(15);
-    obj.imageCheckBox3:setHeight(15);
-    obj.imageCheckBox3:setName("imageCheckBox3");
 
     obj.update = GUI.fromHandle(_obj_newObject("image"));
     obj.update:setParent(obj.layout29);
@@ -3228,7 +3228,7 @@ local function constructNew_TormentaCastfrm()
 
 
 		function desCalculos();
-			if sheet.calculos then
+			if self.calculos.checked then
 
 				self.modforca.hitTest = false;
 				self.moddestreza.hitTest = false;
@@ -7300,7 +7300,7 @@ local function constructNew_TormentaCastfrm()
 
 
 		function desCalculos2()
-			if sheet.calculos then
+			if self.calculos.checked then
 				self.totalacrobacia.hitTest = false;
 				self.gradacrobacia.hitTest = false;
 				self.modacrobacia.hitTest = false;
@@ -7913,7 +7913,7 @@ local function constructNew_TormentaCastfrm()
             desCalculos();
         end, obj);
 
-    obj._e_event1 = obj.imageCheckBox1:addEventListener("onClick",
+    obj._e_event1 = obj.calculos:addEventListener("onClick",
         function (_)
             desCalculos(); desCalculos2();
         end, obj);
@@ -7923,20 +7923,20 @@ local function constructNew_TormentaCastfrm()
             GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');
         end, obj);
 
-    obj._e_event3 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event3 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Calculo de nivel e metade de nivel.
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				sheet.nivel = (math.floor((sheet.nvclasse1)or 0)+math.floor((sheet.nvclasse2)or 0)+math.floor((sheet.nvclasse3)or 0)+math.floor((sheet.nvclasse4)or 0)+math.floor((sheet.nvclasse5)or 0)+math.floor((sheet.nvclasse6)or 0)+math.floor((sheet.nvclasse7)or 0)+math.floor((sheet.nvclasse8)or 0)+math.floor((sheet.nvclasse9)or 0)+math.floor((sheet.nvclasse10)or 0));
             				sheet.metadenivel = math.floor(sheet.nivel / 2 or 0);
             			end;
         end, obj);
 
-    obj._e_event4 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event4 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Modificador de Habilidades
             			-- Forca
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				local modfor = math.floor(((sheet.forca or 10) / 2) - 5);
                     		if (modfor >= 0) then
                             	modfor = "+" .. modfor;
@@ -7945,10 +7945,10 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event5 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event5 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Destreza
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				local moddes = math.floor(((sheet.destreza or 10) / 2) - 5);
                             if (moddes >= 0) then
                             	moddes = "+" .. moddes;
@@ -7957,10 +7957,10 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event6 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event6 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Constituicao
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				local modcon = math.floor(((sheet.constituicao or 10) / 2) - 5);
                         	if (modcon >= 0) then
                             	modcon = "+" .. modcon;
@@ -7969,10 +7969,10 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event7 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event7 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- inteligencia
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				local modint = math.floor(((sheet.inteligencia or 10) / 2) - 5);
                         	if (modint >= 0) then
                             	modint = "+" .. modint;
@@ -7981,10 +7981,10 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event8 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event8 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Sabedoria
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				local modsab = math.floor(((sheet.sabedoria or 10) / 2) - 5);
                             if (modsab >= 0) then
                             	modsab = "+" .. modsab;
@@ -7993,10 +7993,10 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event9 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event9 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Carisma
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				local modcar = math.floor(((sheet.carisma or 10) / 2) - 5);
                     		if (modcar >= 0) then
                             	modcar = "+" .. modcar;
@@ -8005,50 +8005,50 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event10 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event10 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Classe de Armadura
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				sheet.ca2 = sheet.moddestreza;
             				sheet.ca1 = (sheet.metadenivel)+10;
             				sheet.totalca = (math.floor((sheet.ca1)or 0)+math.floor((sheet.ca2)or 0)+math.floor((sheet.ca3)or 0)+math.floor((sheet.ca4)or 0)+math.floor((sheet.ca5)or 0));
             			end;
         end, obj);
 
-    obj._e_event11 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event11 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Fortitude
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				sheet.fort2 = sheet.modconstituicao;
             				sheet.fort1 = sheet.metadenivel;
             				sheet.totalfort = (math.floor((sheet.fort1)or 0)+math.floor((sheet.fort2)or 0)+math.floor((sheet.fort3)or 0));
             			end;
         end, obj);
 
-    obj._e_event12 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event12 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Reflexo
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				sheet.ref2 = sheet.moddestreza;
             				sheet.ref1 = sheet.metadenivel;
             				sheet.totalref = (math.floor((sheet.ref1)or 0)+math.floor((sheet.ref2)or 0)+math.floor((sheet.ref3)or 0));
             			end;
         end, obj);
 
-    obj._e_event13 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event13 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Vontade
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				sheet.von2 = sheet.modsabedoria;
             				sheet.von1 = sheet.metadenivel;
             				sheet.totalvon = (math.floor((sheet.von1)or 0)+math.floor((sheet.von2)or 0)+math.floor((sheet.von3)or 0));
             			end;
         end, obj);
 
-    obj._e_event14 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event14 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Corpo a corpo
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				if sheet.acuidade then
             					sheet.cac2 = sheet.moddestreza;
             				else
@@ -8059,10 +8059,10 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event15 = obj.dataLink1:addEventListener("onPersistedChange",
+    obj._e_event15 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             -- Ataque a distancia.
-            			if sheet.calculos == false then
+            			if self.calculos.checked == false then
             				if sheet.pontaria then
             					sheet.dis2 = sheet.modsabedoria;
             				else
@@ -8078,9 +8078,9 @@ local function constructNew_TormentaCastfrm()
             desCalculos2();
         end, obj);
 
-    obj._e_event17 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event17 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modacrobacia = sheet.moddestreza or 0;
             				if self.cbxacrobacia.checked then
             					sheet.gradacrobacia = (math.floor((sheet.nivel)+3 or 0));
@@ -8092,9 +8092,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event18 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event18 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modadestrar = sheet.modcarisma or 0;
             				if self.cbxadestrar.checked then
             					sheet.gradadestrar = (math.floor((sheet.nivel)+3 or 0));
@@ -8106,9 +8106,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event19 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event19 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modatletismo = sheet.modforca or 0;
             				if self.cbxatletismo.checked then
             					sheet.gradatletismo = (math.floor((sheet.nivel)+3 or 0));
@@ -8120,9 +8120,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event20 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event20 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modatuacao1 = sheet.modcarisma or 0;
             				if self.cbxatuacao1.checked then
             					sheet.gradatuacao1 = (math.floor((sheet.nivel)+3 or 0));
@@ -8134,9 +8134,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event21 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event21 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modatuacao2 = sheet.modcarisma or 0;
             				if self.cbxatuacao2.checked then
             					sheet.gradatuacao2 = (math.floor((sheet.nivel)+3 or 0));
@@ -8148,9 +8148,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event22 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event22 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modcavalgar = sheet.moddestreza or 0;
             				if self.cbxcavalgar.checked then
             					sheet.gradcavalgar = (math.floor((sheet.nivel)+3 or 0));
@@ -8162,9 +8162,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event23 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event23 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modconhecimento1 = sheet.modinteligencia or 0;
             				if self.cbxconhecimento1.checked then
             					sheet.gradconhecimento1 = (math.floor((sheet.nivel)+3 or 0));
@@ -8176,9 +8176,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event24 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event24 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modconhecimento2 = sheet.modinteligencia or 0;
             				if self.cbxconhecimento2.checked then
             					sheet.gradconhecimento2 = (math.floor((sheet.nivel)+3 or 0));
@@ -8190,9 +8190,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event25 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event25 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modcura = sheet.modsabedoria or 0;
             				if self.cbxcura.checked then
             					sheet.gradcura = (math.floor((sheet.nivel)+3 or 0));
@@ -8204,9 +8204,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event26 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event26 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.moddiplomacia = sheet.modcarisma or 0;
             				if self.cbxdiplomacia.checked then
             					sheet.graddiplomacia = (math.floor((sheet.nivel)+3 or 0));
@@ -8218,9 +8218,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event27 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event27 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modenganacao = sheet.modcarisma or 0;
             				if self.cbxenganacao.checked then
             					sheet.gradenganacao = (math.floor((sheet.nivel)+3 or 0));
@@ -8232,9 +8232,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event28 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event28 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modfurtividade = sheet.moddestreza or 0;
             				if self.cbxfurtividade.checked then
             					sheet.gradfurtividade = (math.floor((sheet.nivel)+3 or 0));
@@ -8246,9 +8246,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event29 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event29 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modimagia = sheet.modinteligencia or 0;
             				if self.cbximagia.checked then
             					sheet.gradimagia = (math.floor((sheet.nivel)+3 or 0));
@@ -8260,9 +8260,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event30 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event30 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modiniciativa = sheet.moddestreza or 0;
             				if self.cbxiniciativa.checked then
             					sheet.gradiniciativa = (math.floor((sheet.nivel)+3 or 0));
@@ -8274,9 +8274,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event31 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event31 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modintimidacao = sheet.modcarisma or 0;
             				if self.cbxintimidacao.checked then
             					sheet.gradintimidacao = (math.floor((sheet.nivel)+3 or 0));
@@ -8288,9 +8288,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event32 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event32 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modintuicao = sheet.modsabedoria or 0;
             				if self.cbxintuicao.checked then
             					sheet.gradintuicao = (math.floor((sheet.nivel)+3 or 0));
@@ -8302,9 +8302,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event33 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event33 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modladinagem = sheet.moddestreza or 0;
             				if self.cbxladinagem.checked then
             					sheet.gradladinagem = (math.floor((sheet.nivel)+3 or 0));
@@ -8316,9 +8316,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event34 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event34 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modoinformacao = sheet.modcarisma or 0;
             				if self.cbxoinformacao.checked then
             					sheet.gradoinformacao = (math.floor((sheet.nivel)+3 or 0));
@@ -8330,9 +8330,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event35 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event35 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modoficio1 = sheet.modinteligencia or 0;
             				if self.cbxoficio1.checked then
             					sheet.gradoficio1 = (math.floor((sheet.nivel)+3 or 0));
@@ -8344,9 +8344,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event36 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event36 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modoficio2 = sheet.modinteligencia or 0;
             				if self.cbxoficio2.checked then
             					sheet.gradoficio2 = (math.floor((sheet.nivel)+3 or 0));
@@ -8358,9 +8358,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event37 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event37 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modpercepcao = sheet.modsabedoria or 0;
             				if self.cbxpercepcao.checked then
             					sheet.gradpercepcao = (math.floor((sheet.nivel)+3 or 0));
@@ -8372,9 +8372,9 @@ local function constructNew_TormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event38 = obj.dataLink2:addEventListener("onPersistedChange",
+    obj._e_event38 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.calculos == false then
+            if self.calculos.checked == false then
             				sheet.modsobrevivencia = sheet.modsabedoria or 0;
             				if self.cbxsobrevivencia.checked then
             					sheet.gradsobrevivencia = (math.floor((sheet.nivel)+3 or 0));
@@ -9004,6 +9004,7 @@ local function constructNew_TormentaCastfrm()
         if self.layout56 ~= nil then self.layout56:destroy(); self.layout56 = nil; end;
         if self.label173 ~= nil then self.label173:destroy(); self.label173 = nil; end;
         if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
+        if self.calculos ~= nil then self.calculos:destroy(); self.calculos = nil; end;
         if self.totalatletismo ~= nil then self.totalatletismo:destroy(); self.totalatletismo = nil; end;
         if self.label136 ~= nil then self.label136:destroy(); self.label136 = nil; end;
         if self.modimagia ~= nil then self.modimagia:destroy(); self.modimagia = nil; end;
@@ -9076,7 +9077,6 @@ local function constructNew_TormentaCastfrm()
         if self.edit48 ~= nil then self.edit48:destroy(); self.edit48 = nil; end;
         if self.label46 ~= nil then self.label46:destroy(); self.label46 = nil; end;
         if self.label85 ~= nil then self.label85:destroy(); self.label85 = nil; end;
-        if self.imageCheckBox3 ~= nil then self.imageCheckBox3:destroy(); self.imageCheckBox3 = nil; end;
         if self.gradoficio1 ~= nil then self.gradoficio1:destroy(); self.gradoficio1 = nil; end;
         if self.rectangle31 ~= nil then self.rectangle31:destroy(); self.rectangle31 = nil; end;
         if self.cbxoficio2 ~= nil then self.cbxoficio2:destroy(); self.cbxoficio2 = nil; end;
