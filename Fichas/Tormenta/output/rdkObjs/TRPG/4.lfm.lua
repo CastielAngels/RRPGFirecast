@@ -61,7 +61,7 @@ local function constructNew_Tormenta04()
     obj.label1:setLeft(183);
     obj.label1:setTop(7);
     obj.label1:setWidth(160);
-    obj.label1:setHeight(20);
+    obj.label1:setHeight(23);
     obj.label1:setFontSize(16.0);
     lfm_setPropAsString(obj.label1, "fontStyle",  "bold");
     obj.label1:setFontColor("black");
@@ -99,7 +99,7 @@ local function constructNew_Tormenta04()
     obj.label2:setLeft(683);
     obj.label2:setTop(7);
     obj.label2:setWidth(160);
-    obj.label2:setHeight(20);
+    obj.label2:setHeight(23);
     obj.label2:setFontSize(16.0);
     lfm_setPropAsString(obj.label2, "fontStyle",  "bold");
     obj.label2:setFontColor("black");

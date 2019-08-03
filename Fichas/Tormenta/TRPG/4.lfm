@@ -4,12 +4,12 @@
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
 		<rectangle left="175" top="6" color="Gainsboro" width="160" height="28" xradius="2" yradius="2"/>
-		<label left="183" top="7" width="160" height="20" fontSize="16.0" fontStyle="bold" fontColor="black" text="Magias Conhecidas"/>
+		<label left="183" top="7" width="160" height="23" fontSize="16.0" fontStyle="bold" fontColor="black" text="Magias Conhecidas"/>
 		<layout left="10" top="32" width="490" height="656">
 			<textEditor align="client" field="mconhecidas" fontStyle="bold"/>
 		</layout>
 		<rectangle left="675" top="6" color="Gainsboro" width="160" height="28" xradius="2" yradius="2"/>
-		<label left="683" top="7" width="160" height="20" fontSize="16.0" fontStyle="bold" fontColor="black" text="Magias Preparadas"/>
+		<label left="683" top="7" width="160" height="23" fontSize="16.0" fontStyle="bold" fontColor="black" text="Magias Preparadas"/>
 		<layout left="510" top="32" width="490" height="656">
 			<textEditor align="client" field="mpreparadas" fontStyle="bold"/>
 		</layout>

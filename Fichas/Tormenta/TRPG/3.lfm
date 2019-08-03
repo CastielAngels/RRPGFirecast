@@ -3,6 +3,25 @@
 
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
+
+		<layout left="10" top="13" width="585" height="677">
+			
+		</layout>
+
+		<layout left="605" top="0" width="395" height="700">
+			<rectangle left="150" top="1" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
+			<label left="153" top="1" width="98" height="12" fontSize="10" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Equipamentos"/>
+			<layout left="0" top="13" width="395" height="418">
+				<textEditor align="client" field="equipamentos" fontStyle="bold"/>
+			</layout>
+
+			<rectangle left="150" top="439" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
+			<label left="153" top="439" width="98" height="12" fontSize="10" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Anotações"/>
+			<layout left="0" top="451" width="395" height="240">
+				<textEditor align="client" field="eqanotacoes" fontStyle="bold"/>
+			</layout>
+		</layout>
+
 	</scrollBox>
 	
 </form>

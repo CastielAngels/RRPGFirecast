@@ -2221,7 +2221,7 @@ local function constructNew_Tormenta01()
     obj.edit28:setTop(15);
     obj.edit28:setWidth(60);
     obj.edit28:setHeight(25);
-    obj.edit28:setField("cac1");
+    obj.edit28:setField("bba");
     obj.edit28:setType("number");
     obj.edit28:setMax(99);
     obj.edit28:setHorzTextAlign("center");
@@ -2494,7 +2494,7 @@ local function constructNew_Tormenta01()
     obj.edit31:setTop(15);
     obj.edit31:setWidth(60);
     obj.edit31:setHeight(25);
-    obj.edit31:setField("dis1");
+    obj.edit31:setField("bba");
     obj.edit31:setType("number");
     obj.edit31:setMax(99);
     obj.edit31:setHorzTextAlign("center");
@@ -3157,29 +3157,29 @@ local function constructNew_Tormenta01()
     obj.calculos:setHeight(15);
     obj.calculos:setHint("Desabilita os cálculos automáticos da ficha.");
 
-    obj.imageCheckBox1 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox1:setParent(obj.layout29);
-    obj.imageCheckBox1:setField("acuidade");
-    obj.imageCheckBox1:setLeft(34);
-    obj.imageCheckBox1:setTop(136);
-    obj.imageCheckBox1:setImageChecked("/TRPG/img/hand.png");
-    obj.imageCheckBox1:setImageUnchecked("/TRPG/img/closedhand.png");
-    obj.imageCheckBox1:setHint("Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES.");
-    obj.imageCheckBox1:setWidth(15);
-    obj.imageCheckBox1:setHeight(15);
-    obj.imageCheckBox1:setName("imageCheckBox1");
+    obj.acuidade = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.acuidade:setParent(obj.layout29);
+    obj.acuidade:setName("acuidade");
+    obj.acuidade:setField("acuidade");
+    obj.acuidade:setLeft(34);
+    obj.acuidade:setTop(136);
+    obj.acuidade:setImageChecked("/TRPG/img/hand.png");
+    obj.acuidade:setImageUnchecked("/TRPG/img/closedhand.png");
+    obj.acuidade:setHint("Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES.");
+    obj.acuidade:setWidth(15);
+    obj.acuidade:setHeight(15);
 
-    obj.imageCheckBox2 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox2:setParent(obj.layout29);
-    obj.imageCheckBox2:setField("pontaria");
-    obj.imageCheckBox2:setLeft(54);
-    obj.imageCheckBox2:setTop(136);
-    obj.imageCheckBox2:setImageChecked("/TRPG/img/wisdom.png");
-    obj.imageCheckBox2:setImageUnchecked("/TRPG/img/bow.png");
-    obj.imageCheckBox2:setHint("Muda o modificador em jogadas de ataque à distância. DES ou SAB.");
-    obj.imageCheckBox2:setWidth(15);
-    obj.imageCheckBox2:setHeight(15);
-    obj.imageCheckBox2:setName("imageCheckBox2");
+    obj.pontaria = GUI.fromHandle(_obj_newObject("imageCheckBox"));
+    obj.pontaria:setParent(obj.layout29);
+    obj.pontaria:setName("pontaria");
+    obj.pontaria:setField("pontaria");
+    obj.pontaria:setLeft(54);
+    obj.pontaria:setTop(136);
+    obj.pontaria:setImageChecked("/TRPG/img/wisdom.png");
+    obj.pontaria:setImageUnchecked("/TRPG/img/bow.png");
+    obj.pontaria:setHint("Muda o modificador em jogadas de ataque à distância. DES ou SAB.");
+    obj.pontaria:setWidth(15);
+    obj.pontaria:setHeight(15);
 
     obj.update = GUI.fromHandle(_obj_newObject("image"));
     obj.update:setParent(obj.layout29);
@@ -3425,13 +3425,12 @@ local function constructNew_Tormenta01()
         function (_, field, oldValue, newValue)
             -- Corpo a corpo
             			if self.calculos.checked == false then
-            				if sheet.acuidade then
+            				if self.acuidade.checked then
             					sheet.cac2 = sheet.moddestreza;
             				else
             					sheet.cac2 = sheet.modforca;
             				end;
-            				sheet.cac1 = sheet.bba;
-            				sheet.totalcac = (math.floor((sheet.cac1)or 0)+math.floor((sheet.cac2)or 0)+math.floor((sheet.cac3)or 0)+math.floor((sheet.cac4)or 0));
+            				sheet.totalcac = (math.floor((sheet.bba)or 0)+math.floor((sheet.cac2)or 0)+math.floor((sheet.cac3)or 0)+math.floor((sheet.cac4)or 0));
             			end;
         end, obj);
 
@@ -3444,8 +3443,7 @@ local function constructNew_Tormenta01()
             				else
             					sheet.dis2 = sheet.moddestreza;
             				end;
-            				sheet.dis1 = sheet.bba;
-            				sheet.totaldis = (math.floor((sheet.dis1)or 0)+math.floor((sheet.dis2)or 0)+math.floor((sheet.dis3)or 0)+math.floor((sheet.dis4)or 0));
+            				sheet.totaldis = (math.floor((sheet.bba)or 0)+math.floor((sheet.dis2)or 0)+math.floor((sheet.dis3)or 0)+math.floor((sheet.dis4)or 0));
             			end;
         end, obj);
 
@@ -3574,6 +3572,7 @@ local function constructNew_Tormenta01()
         if self.edit23 ~= nil then self.edit23:destroy(); self.edit23 = nil; end;
         if self.rectangle48 ~= nil then self.rectangle48:destroy(); self.rectangle48 = nil; end;
         if self.rectangle80 ~= nil then self.rectangle80:destroy(); self.rectangle80 = nil; end;
+        if self.pontaria ~= nil then self.pontaria:destroy(); self.pontaria = nil; end;
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
         if self.label56 ~= nil then self.label56:destroy(); self.label56 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
@@ -3582,12 +3581,10 @@ local function constructNew_Tormenta01()
         if self.rectangle23 ~= nil then self.rectangle23:destroy(); self.rectangle23 = nil; end;
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
         if self.moddestreza ~= nil then self.moddestreza:destroy(); self.moddestreza = nil; end;
-        if self.imageCheckBox1 ~= nil then self.imageCheckBox1:destroy(); self.imageCheckBox1 = nil; end;
         if self.edit40 ~= nil then self.edit40:destroy(); self.edit40 = nil; end;
         if self.label30 ~= nil then self.label30:destroy(); self.label30 = nil; end;
         if self.label51 ~= nil then self.label51:destroy(); self.label51 = nil; end;
         if self.rectangle61 ~= nil then self.rectangle61:destroy(); self.rectangle61 = nil; end;
-        if self.imageCheckBox2 ~= nil then self.imageCheckBox2:destroy(); self.imageCheckBox2 = nil; end;
         if self.label19 ~= nil then self.label19:destroy(); self.label19 = nil; end;
         if self.rectangle52 ~= nil then self.rectangle52:destroy(); self.rectangle52 = nil; end;
         if self.edit38 ~= nil then self.edit38:destroy(); self.edit38 = nil; end;
@@ -3671,6 +3668,7 @@ local function constructNew_Tormenta01()
         if self.rectangle25 ~= nil then self.rectangle25:destroy(); self.rectangle25 = nil; end;
         if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
         if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
+        if self.acuidade ~= nil then self.acuidade:destroy(); self.acuidade = nil; end;
         if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
         if self.rectangle45 ~= nil then self.rectangle45:destroy(); self.rectangle45 = nil; end;
         if self.edit45 ~= nil then self.edit45:destroy(); self.edit45 = nil; end;
