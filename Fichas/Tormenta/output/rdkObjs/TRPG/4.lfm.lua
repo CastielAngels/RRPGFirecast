@@ -1,14 +1,14 @@
-require("firecast.lua");
+require("rrpg.lua");
 local __o_rrpgObjs = require("rrpgObjs.lua");
 require("rrpgGUI.lua");
 require("rrpgDialogs.lua");
 require("rrpgLFM.lua");
 require("ndb.lua");
-require("locale.lua");
-local __o_Utils = require("utils.lua");
 
-local function constructNew_Tormenta04()
-    local obj = GUI.fromHandle(_obj_newObject("form"));
+function newTormenta04()
+    __o_rrpgObjs.beginObjectsLoading();
+
+    local obj = gui.fromHandle(_obj_newObject("form"));
     local self = obj;
     local sheet = nil;
 
@@ -31,12 +31,12 @@ local function constructNew_Tormenta04()
     obj:setTheme("dark");
     obj:setLockWhileNodeIsLoading(true);
 
-    obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox1 = gui.fromHandle(_obj_newObject("scrollBox"));
     obj.scrollBox1:setParent(obj);
     obj.scrollBox1:setAlign("client");
     obj.scrollBox1:setName("scrollBox1");
 
-    obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle1 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle1:setParent(obj.scrollBox1);
     obj.rectangle1:setWidth(1010);
     obj.rectangle1:setHeight(700);
@@ -45,7 +45,7 @@ local function constructNew_Tormenta04()
     obj.rectangle1:setYradius(10);
     obj.rectangle1:setName("rectangle1");
 
-    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle2 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle2:setParent(obj.scrollBox1);
     obj.rectangle2:setLeft(175);
     obj.rectangle2:setTop(6);
@@ -56,7 +56,7 @@ local function constructNew_Tormenta04()
     obj.rectangle2:setYradius(2);
     obj.rectangle2:setName("rectangle2");
 
-    obj.label1 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label1 = gui.fromHandle(_obj_newObject("label"));
     obj.label1:setParent(obj.scrollBox1);
     obj.label1:setLeft(183);
     obj.label1:setTop(7);
@@ -68,7 +68,7 @@ local function constructNew_Tormenta04()
     obj.label1:setText("Magias Conhecidas");
     obj.label1:setName("label1");
 
-    obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout1 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout1:setParent(obj.scrollBox1);
     obj.layout1:setLeft(10);
     obj.layout1:setTop(32);
@@ -76,14 +76,14 @@ local function constructNew_Tormenta04()
     obj.layout1:setHeight(656);
     obj.layout1:setName("layout1");
 
-    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1 = gui.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor1:setParent(obj.layout1);
     obj.textEditor1:setAlign("client");
     obj.textEditor1:setField("mconhecidas");
     lfm_setPropAsString(obj.textEditor1, "fontStyle",  "bold");
     obj.textEditor1:setName("textEditor1");
 
-    obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle3 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle3:setParent(obj.scrollBox1);
     obj.rectangle3:setLeft(675);
     obj.rectangle3:setTop(6);
@@ -94,7 +94,7 @@ local function constructNew_Tormenta04()
     obj.rectangle3:setYradius(2);
     obj.rectangle3:setName("rectangle3");
 
-    obj.label2 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label2 = gui.fromHandle(_obj_newObject("label"));
     obj.label2:setParent(obj.scrollBox1);
     obj.label2:setLeft(683);
     obj.label2:setTop(7);
@@ -106,7 +106,7 @@ local function constructNew_Tormenta04()
     obj.label2:setText("Magias Preparadas");
     obj.label2:setName("label2");
 
-    obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout2 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout2:setParent(obj.scrollBox1);
     obj.layout2:setLeft(510);
     obj.layout2:setTop(32);
@@ -114,7 +114,7 @@ local function constructNew_Tormenta04()
     obj.layout2:setHeight(656);
     obj.layout2:setName("layout2");
 
-    obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor2 = gui.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor2:setParent(obj.layout2);
     obj.textEditor2:setAlign("client");
     obj.textEditor2:setField("mpreparadas");
@@ -148,23 +148,9 @@ local function constructNew_Tormenta04()
 
     obj:endUpdate();
 
+     __o_rrpgObjs.endObjectsLoading();
+
     return obj;
-end;
-
-function newTormenta04()
-    local retObj = nil;
-    __o_rrpgObjs.beginObjectsLoading();
-
-    __o_Utils.tryFinally(
-      function()
-        retObj = constructNew_Tormenta04();
-      end,
-      function()
-        __o_rrpgObjs.endObjectsLoading();
-      end);
-
-    assert(retObj ~= nil);
-    return retObj;
 end;
 
 local _Tormenta04 = {
@@ -178,6 +164,6 @@ local _Tormenta04 = {
     description=""};
 
 Tormenta04 = _Tormenta04;
-Firecast.registrarForm(_Tormenta04);
+rrpg.registrarForm(_Tormenta04);
 
 return _Tormenta04;
