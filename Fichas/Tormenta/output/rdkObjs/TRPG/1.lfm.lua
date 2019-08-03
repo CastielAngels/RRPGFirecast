@@ -1198,7 +1198,6 @@ local function constructNew_Tormenta01()
     obj.ca3:setHorzTextAlign("center");
     obj.ca3:setFontSize(15.0);
     lfm_setPropAsString(obj.ca3, "fontStyle",  "bold");
-    obj.ca3:setHitTest(false);
 
     obj.rectangle28 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle28:setParent(obj.layout16);
@@ -1259,7 +1258,6 @@ local function constructNew_Tormenta01()
     obj.ca4:setHorzTextAlign("center");
     obj.ca4:setFontSize(15.0);
     lfm_setPropAsString(obj.ca4, "fontStyle",  "bold");
-    obj.ca4:setHitTest(false);
 
     obj.rectangle30 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle30:setParent(obj.layout16);
@@ -3223,8 +3221,6 @@ local function constructNew_Tormenta01()
 				self.totalca.hitTest = false;
 				self.ca1.hitTest = false;
 				self.ca2.hitTest = false;
-				self.ca3.hitTest = false;
-				self.ca4.hitTest = false;
 
 				self.totalfort.hitTest = false;
 				self.fort1.hitTest = false;
@@ -3258,8 +3254,6 @@ local function constructNew_Tormenta01()
 				self.totalca.hitTest = true;
 				self.ca1.hitTest = true;
 				self.ca2.hitTest = true;
-				self.ca3.hitTest = true;
-				self.ca4.hitTest = true;
 
 				self.totalfort.hitTest = true;
 				self.fort1.hitTest = true;

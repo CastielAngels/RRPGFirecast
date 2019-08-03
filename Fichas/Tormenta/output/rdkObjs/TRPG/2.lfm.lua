@@ -4011,7 +4011,7 @@ local function constructNew_Tormenta02()
 
     obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj);
-    obj.dataLink1:setFields({'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel'});
+    obj.dataLink1:setFields({'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel'});
     obj.dataLink1:setName("dataLink1");
 
 
@@ -4209,10 +4209,10 @@ local function constructNew_Tormenta02()
             				sheet.modacrobacia = sheet.moddestreza or 0;
             				if self.cbxacrobacia.checked then
             					sheet.gradacrobacia = (math.floor((sheet.nivel)+3 or 0));
-            					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
+            					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
             				else
             					sheet.gradacrobacia = (math.floor((sheet.metadenivel)or 0));
-            					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
+            					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
             				end;
             			end;
         end, obj);
@@ -4279,10 +4279,10 @@ local function constructNew_Tormenta02()
             				sheet.modcavalgar = sheet.moddestreza or 0;
             				if self.cbxcavalgar.checked then
             					sheet.gradcavalgar = (math.floor((sheet.nivel)+3 or 0));
-            					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
+            					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
             				else
             					sheet.gradcavalgar = (math.floor((sheet.metadenivel)or 0));
-            					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
+            					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
             				end;
             			end;
         end, obj);
@@ -4363,10 +4363,10 @@ local function constructNew_Tormenta02()
             				sheet.modfurtividade = sheet.moddestreza or 0;
             				if self.cbxfurtividade.checked then
             					sheet.gradfurtividade = (math.floor((sheet.nivel)+3 or 0));
-            					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
+            					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
             				else
             					sheet.gradfurtividade = (math.floor((sheet.metadenivel)or 0));
-            					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
+            					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
             				end;
             			end;
         end, obj);
@@ -4391,10 +4391,10 @@ local function constructNew_Tormenta02()
             				sheet.modiniciativa = sheet.moddestreza or 0;
             				if self.cbxiniciativa.checked then
             					sheet.gradiniciativa = (math.floor((sheet.nivel)+3 or 0));
-            					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
+            					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
             				else
             					sheet.gradiniciativa = (math.floor((sheet.metadenivel)or 0));
-            					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
+            					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
             				end;
             			end;
         end, obj);
@@ -4433,10 +4433,10 @@ local function constructNew_Tormenta02()
             				sheet.modladinagem = sheet.moddestreza or 0;
             				if self.cbxladinagem.checked then
             					sheet.gradladinagem = (math.floor((sheet.nivel)+3 or 0));
-            					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
+            					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
             				else
             					sheet.gradladinagem = (math.floor((sheet.metadenivel)or 0));
-            					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
+            					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
             				end;
             			end;
         end, obj);

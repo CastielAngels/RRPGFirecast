@@ -119,14 +119,14 @@
 
 		<rectangle left="429" top="3" color="Gainsboro" width="54" height="15" xradius="2" yradius="2"/>
 		<label left="432" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Armadura"/>
-		<edit left="426" top="15" width="60" height="25" name="ca3" field="ca3" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		<edit left="426" top="15" width="60" height="25" name="ca3" field="ca3" type="number" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 
 		<rectangle left="496" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 		<label left="499" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
 		
 		<rectangle left="537" top="3" color="Gainsboro" width="40" height="15" xradius="2" yradius="2"/>
 		<label left="540" top="5" width="48" height="8" fontSize="10" fontStyle="bold" fontColor="black" text="Escudo"/>
-		<edit left="527" top="15" width="60" height="25" name="ca4" field="ca4" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+		<edit left="527" top="15" width="60" height="25" name="ca4" field="ca4" type="number" max="99" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 		
 		<rectangle left="597" top="20" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 		<label left="600" top="18" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
@@ -514,8 +514,6 @@
 				self.totalca.hitTest = false;
 				self.ca1.hitTest = false;
 				self.ca2.hitTest = false;
-				self.ca3.hitTest = false;
-				self.ca4.hitTest = false;
 
 				self.totalfort.hitTest = false;
 				self.fort1.hitTest = false;
@@ -549,8 +547,6 @@
 				self.totalca.hitTest = true;
 				self.ca1.hitTest = true;
 				self.ca2.hitTest = true;
-				self.ca3.hitTest = true;
-				self.ca4.hitTest = true;
 
 				self.totalfort.hitTest = true;
 				self.fort1.hitTest = true;

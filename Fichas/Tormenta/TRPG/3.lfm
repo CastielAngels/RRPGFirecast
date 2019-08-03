@@ -3,7 +3,6 @@
 
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
-
 		<layout left="10" top="13" width="585" height="677">
 				<image left="131" top="60" width="274" height="500" src="img/silhouette.png"/>
 			<layout left="19" top="59" width="200" height="125">
@@ -12,32 +11,69 @@
 				<rectangle left="1" top="31" width="200" height="90" color="Gray" xradius="2" yradius="2"/>
 				<edit left="3" top="33" width="195" height="25" name="narmadura" field="narmadura" horzTextAlign="center" fontStyle="bold"/>
 				<label left="18" top="63" width="30" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="CA"/>
-				<edit left="13" top="84" width="40" height="25" name="caarmadura" field="caarmadura" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-
+				<edit left="13" top="84" width="40" height="25" name="caarmadura" field="ca3" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 				<label left="63" top="63" width="30" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="PEN"/>
 				<edit left="58" top="84" width="40" height="25" name="penarmadura" field="penarmadura" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-
 				<label left="101" top="63" width="45" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="DES M."/>
 				<edit left="103" top="84" width="40" height="25" name="desmnarmadura" field="desmarmadura" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-
 				<label left="154" top="63" width="30" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="F. M."/>
 				<edit left="148" top="84" width="40" height="25" name="falhamarmadura" field="falhamarmadura" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 			</layout>
-			<layout left="370" top="189" width="200" height="125">
+			<layout left="370" top="229" width="200" height="125">
 				<rectangle left="6" top="17" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
 				<label left="9" top="16" width="98" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Escudo"/>
 				<rectangle left="1" top="31" width="200" height="90" color="Gray" xradius="2" yradius="2"/>
 				<edit left="3" top="33" width="195" height="25" name="nescudo" field="nescudo" horzTextAlign="center" fontStyle="bold"/>
-
 				<label left="41" top="63" width="30" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="CA"/>
-				<edit left="36" top="84" width="40" height="25" name="caescudo" field="caescudo" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-
+				<edit left="36" top="84" width="40" height="25" name="caescudo" field="ca4" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 				<label left="86" top="63" width="30" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="PEN"/>
 				<edit left="81" top="84" width="40" height="25" name="penescudo" field="penescudo" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
-
 				<label left="132" top="63" width="30" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="F. M."/>
 				<edit left="126" top="84" width="40" height="25" name="falhamescudo" field="falhamescudo" type="number" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 			</layout>
+			<layout left="290" top="0" width="200" height="125">
+				<rectangle left="6" top="17" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
+				<label left="9" top="16" width="98" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Cabeça"/>
+				<rectangle left="1" top="31" width="200" height="90" color="Gray" xradius="2" yradius="2"/>
+				<edit left="3" top="33" width="195" height="25" name="ncabeca" field="ncabeca" horzTextAlign="center" fontStyle="bold"/>
+				<label left="5" top="63" width="90" height="15" fontSize="13" horzTextAlign="leading" fontStyle="bold" fontColor="black" text="Descrição:"/>
+				<edit left="3" top="84" width="195" height="35" name="desccabeca" field="desccabeca" horzTextAlign="leading" fontSize="12.0" fontStyle="bold"/>
+			</layout>
+			<layout left="350" top="110" width="200" height="125">
+				<rectangle left="6" top="17" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
+				<label left="9" top="16" width="98" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Pescoço"/>
+				<rectangle left="1" top="31" width="200" height="90" color="Gray" xradius="2" yradius="2"/>
+				<edit left="3" top="33" width="195" height="25" name="npescoco" field="npescoco" horzTextAlign="center" fontStyle="bold"/>
+				<label left="5" top="63" width="90" height="15" fontSize="13" horzTextAlign="leading" fontStyle="bold" fontColor="black" text="Descrição:"/>
+				<edit left="3" top="84" width="195" height="35" name="descpescoco" field="descpescoco" horzTextAlign="leading" fontSize="12.0" fontStyle="bold"/>
+			</layout>
+			<layout left="0" top="179" width="200" height="125">
+				<rectangle left="6" top="17" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
+				<label left="9" top="16" width="98" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Mãos"/>
+				<rectangle left="1" top="31" width="200" height="90" color="Gray" xradius="2" yradius="2"/>
+				<edit left="3" top="33" width="195" height="25" name="nmaos" field="nmaos" horzTextAlign="center" fontStyle="bold"/>
+				<label left="5" top="63" width="90" height="15" fontSize="13" horzTextAlign="leading" fontStyle="bold" fontColor="black" text="Descrição:"/>
+				<edit left="3" top="84" width="195" height="35" name="descmaos" field="descmaos" horzTextAlign="leading" fontSize="12.0" fontStyle="bold"/>
+			</layout>
+			<layout left="10" top="314" width="200" height="125">
+				<rectangle left="6" top="17" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
+				<label left="9" top="16" width="98" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Cintura"/>
+				<rectangle left="1" top="31" width="200" height="90" color="Gray" xradius="2" yradius="2"/>
+				<edit left="3" top="33" width="195" height="25" name="ncintura" field="ncintura" horzTextAlign="center" fontStyle="bold"/>
+				<label left="5" top="63" width="90" height="15" fontSize="13" horzTextAlign="leading" fontStyle="bold" fontColor="black" text="Descrição:"/>
+				<edit left="3" top="84" width="195" height="35" name="desccintura" field="desccintura" horzTextAlign="leading" fontSize="12.0" fontStyle="bold"/>
+			</layout>
+			<layout left="350" top="384" width="200" height="125">
+				<rectangle left="6" top="17" color="Gainsboro" width="104" height="15" xradius="2" yradius="2"/>
+				<label left="9" top="16" width="98" height="15" fontSize="13" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Pés"/>
+				<rectangle left="1" top="31" width="200" height="90" color="Gray" xradius="2" yradius="2"/>
+				<edit left="3" top="33" width="195" height="25" name="npes" field="npes" horzTextAlign="center" fontStyle="bold"/>
+				<label left="5" top="63" width="90" height="15" fontSize="13" horzTextAlign="leading" fontStyle="bold" fontColor="black" text="Descrição:"/>
+				<edit left="3" top="84" width="195" height="35" name="descpes" field="descpes" horzTextAlign="leading" fontSize="12.0" fontStyle="bold"/>
+			</layout>
+
+
+
 		</layout>
 
 		<layout left="605" top="0" width="395" height="700">
