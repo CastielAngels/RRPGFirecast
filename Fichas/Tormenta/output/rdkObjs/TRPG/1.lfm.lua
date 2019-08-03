@@ -3260,71 +3260,53 @@ function newTormenta01()
 
 		function desCalculos();
 			if self.calculos.checked then
-
 				self.modforca.hitTest = false;
 				self.moddestreza.hitTest = false;
 				self.modconstituicao.hitTest = false;
 				self.modinteligencia.hitTest = false;
 				self.modsabedoria.hitTest = false;
 				self.modcarisma.hitTest = false;
-
 				self.nivel.hitTest = false;
-
 				self.totalca.hitTest = false;
 				self.ca1.hitTest = false;
 				self.ca2.hitTest = false;
-
 				self.totalfort.hitTest = false;
 				self.fort1.hitTest = false;
 				self.fort2.hitTest = false;
-
 				self.totalref.hitTest = false;
 				self.ref1.hitTest = false;
 				self.ref2.hitTest = false;
-
 				self.totalvon.hitTest = false;
 				self.von1.hitTest = false;
 				self.von2.hitTest = false;
-
 				self.totalcac.hitTest = false;
 				self.cac2.hitTest = false;
-
 				self.totaldis.hitTest = false;
 				self.dis2.hitTest = false;
-
 			else
-				
 				self.modforca.hitTest = true;
 				self.moddestreza.hitTest = true;
 				self.modconstituicao.hitTest = true;
 				self.modinteligencia.hitTest = true;
 				self.modsabedoria.hitTest = true;
 				self.modcarisma.hitTest = true;
-
 				self.nivel.hitTest = true;
-
 				self.totalca.hitTest = true;
 				self.ca1.hitTest = true;
 				self.ca2.hitTest = true;
-
 				self.totalfort.hitTest = true;
 				self.fort1.hitTest = true;
 				self.fort2.hitTest = true;
-
 				self.totalref.hitTest = true;
 				self.ref1.hitTest = true;
 				self.ref2.hitTest = true;
-
 				self.totalvon.hitTest = true;
 				self.von1.hitTest = true;
 				self.von2.hitTest = true;
-
 				self.totalcac.hitTest = true;
 				self.cac2.hitTest = true;
-
 				self.totaldis.hitTest = true;
 				self.dis2.hitTest = true;
-
 			end;
 		end;
 	

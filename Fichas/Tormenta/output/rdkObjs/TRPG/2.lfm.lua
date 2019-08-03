@@ -4108,176 +4108,133 @@ function newTormenta02()
 				self.totalacrobacia.hitTest = false;
 				self.gradacrobacia.hitTest = false;
 				self.modacrobacia.hitTest = false;
-
 				self.totaladestrar.hitTest = false;
 				self.gradadestrar.hitTest = false;
 				self.modadestrar.hitTest = false;
-
 				self.totalatletismo.hitTest = false;
 				self.gradatletismo.hitTest = false;
 				self.modatletismo.hitTest = false;
-
 				self.totalatuacao1.hitTest = false;
 				self.gradatuacao1.hitTest = false;
 				self.modatuacao1.hitTest = false;
-
 				self.totaljogatina.hitTest = false;
 				self.gradjogatina.hitTest = false;
 				self.modjogatina.hitTest = false;
-
 				self.totalcavalgar.hitTest = false;
 				self.gradcavalgar.hitTest = false;
 				self.modcavalgar.hitTest = false;
-
 				self.totalconhecimento1.hitTest = false;
 				self.gradconhecimento1.hitTest = false;
 				self.modconhecimento1.hitTest = false;
-
 				self.totalconhecimento2.hitTest = false;
 				self.gradconhecimento2.hitTest = false;
 				self.modconhecimento2.hitTest = false;
-
 				self.totalcura.hitTest = false;
 				self.gradcura.hitTest = false;
 				self.modcura.hitTest = false;
-
 				self.totaldiplomacia.hitTest = false;
 				self.graddiplomacia.hitTest = false;
 				self.moddiplomacia.hitTest = false;
-
 				self.totalenganacao.hitTest = false;
 				self.gradenganacao.hitTest = false;
 				self.modenganacao.hitTest = false;
-
 				self.totalfurtividade.hitTest = false;
 				self.gradfurtividade.hitTest = false;
 				self.modfurtividade.hitTest = false;
-
 				self.totalimagia.hitTest = false;
 				self.gradimagia.hitTest = false;
 				self.modimagia.hitTest = false;
-
 				self.totaliniciativa.hitTest = false;
 				self.gradiniciativa.hitTest = false;
 				self.modiniciativa.hitTest = false;
-
 				self.totalintimidacao.hitTest = false;
 				self.gradintimidacao.hitTest = false;
 				self.modintimidacao.hitTest = false;
-
 				self.totalintuicao.hitTest = false;
 				self.gradintuicao.hitTest = false;
 				self.modintuicao.hitTest = false;
-
 				self.totalladinagem.hitTest = false;
 				self.gradladinagem.hitTest = false;
 				self.modladinagem.hitTest = false;
-
 				self.totaloinformacao.hitTest = false;
 				self.gradoinformacao.hitTest = false;
 				self.modoinformacao.hitTest = false;
-
 				self.totaloficio1.hitTest = false;
 				self.gradoficio1.hitTest = false;
 				self.modoficio1.hitTest = false;
-
 				self.totalmeditacao.hitTest = false;
 				self.gradmeditacao.hitTest = false;
 				self.modmeditacao.hitTest = false;
-
 				self.totalpercepcao.hitTest = false;
 				self.gradpercepcao.hitTest = false;
 				self.modpercepcao.hitTest = false;
-
 				self.totalsobrevivencia.hitTest = false;
 				self.gradsobrevivencia.hitTest = false;
 				self.modsobrevivencia.hitTest = false;
-
 			else
 				self.totalacrobacia.hitTest = true;
 				self.gradacrobacia.hitTest = true;
 				self.modacrobacia.hitTest = true;
-
 				self.totaladestrar.hitTest = true;
 				self.gradadestrar.hitTest = true;
 				self.modadestrar.hitTest = true;
-
 				self.totalatletismo.hitTest = true;
 				self.gradatletismo.hitTest = true;
 				self.modatletismo.hitTest = true;
-
 				self.totalatuacao1.hitTest = true;
 				self.gradatuacao1.hitTest = true;
 				self.modatuacao1.hitTest = true;
-
 				self.totaljogatina.hitTest = true;
 				self.gradjogatina.hitTest = true;
 				self.modjogatina.hitTest = true;
-
 				self.totalcavalgar.hitTest = true;
 				self.gradcavalgar.hitTest = true;
 				self.modcavalgar.hitTest = true;
-
 				self.totalconhecimento1.hitTest = true;
 				self.gradconhecimento1.hitTest = true;
 				self.modconhecimento1.hitTest = true;
-
 				self.totalconhecimento2.hitTest = true;
 				self.gradconhecimento2.hitTest = true;
 				self.modconhecimento2.hitTest = true;
-
 				self.totalcura.hitTest = true;
 				self.gradcura.hitTest = true;
 				self.modcura.hitTest = true;
-
 				self.totaldiplomacia.hitTest = true;
 				self.graddiplomacia.hitTest = true;
 				self.moddiplomacia.hitTest = true;
-
 				self.totalenganacao.hitTest = true;
 				self.gradenganacao.hitTest = true;
 				self.modenganacao.hitTest = true;
-
 				self.totalfurtividade.hitTest = true;
 				self.gradfurtividade.hitTest = true;
 				self.modfurtividade.hitTest = true;
-
 				self.totalimagia.hitTest = true;
 				self.gradimagia.hitTest = true;
 				self.modimagia.hitTest = true;
-
 				self.totaliniciativa.hitTest = true;
 				self.gradiniciativa.hitTest = true;
 				self.modiniciativa.hitTest = true;
-
 				self.totalintimidacao.hitTest = true;
 				self.gradintimidacao.hitTest = true;
 				self.modintimidacao.hitTest = true;
-
 				self.totalintuicao.hitTest = true;
 				self.gradintuicao.hitTest = true;
 				self.modintuicao.hitTest = true;
-
 				self.totalladinagem.hitTest = true;
 				self.gradladinagem.hitTest = true;
 				self.modladinagem.hitTest = true;
-
 				self.totaloinformacao.hitTest = true;
 				self.gradoinformacao.hitTest = true;
 				self.modoinformacao.hitTest = true;
-
 				self.totaloficio1.hitTest = true;
 				self.gradoficio1.hitTest = true;
 				self.modoficio1.hitTest = true;
-
 				self.totalmeditacao.hitTest = true;
 				self.gradmeditacao.hitTest = true;
 				self.modmeditacao.hitTest = true;
-
 				self.totalpercepcao.hitTest = true;
 				self.gradpercepcao.hitTest = true;
 				self.modpercepcao.hitTest = true;
-
 				self.totalsobrevivencia.hitTest = true;
 				self.gradsobrevivencia.hitTest = true;
 				self.modsobrevivencia.hitTest = true;

@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="Tormenta05" align="client" theme="dark" lockWhileNodeIsLoading="true">
-
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
-
 		<layout left="10" top="8" width="980" height="300">
 			<rectangle left="448" top="3" color="Gainsboro" width="77" height="28" xradius="2" yradius="2"/>
 			<label left="453" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="História"/>
 			<richEdit left="10" top="27" backgroundColor="#333333" defaultFontColor="white" field="background" width="970" height="272"/>
 		</layout>
-
 		<layout left="21" top="316" width="969" height="358">
-
 			<rectangle left="86" top="3" color="Gainsboro" width="128" height="28" xradius="2" yradius="2"/>
 			<label left="90" top="6" width="120" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="Personalidade"/>
 			<textEditor left="0" top="30" width="300" height="328" field="personalidade"/>
-
 			<rectangle left="435" top="3" color="Gainsboro" width="93" height="28" xradius="2" yradius="2"/>
 			<label left="439" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="Aparência"/>
 			<textEditor left="334" top="30" width="300" height="328" field="aparencia"/>
-
 			<rectangle left="770" top="3" color="Gainsboro" width="97" height="28" xradius="2" yradius="2"/>
 			<label left="774" top="6" width="100" height="20" fontSize="18.0" fontStyle="bold" fontColor="black" text="Anotações"/>
 			<textEditor left="669" top="30" width="300" height="328" field="anotacoes"/>
 		</layout>
 	</scrollBox>
-	
 </form>

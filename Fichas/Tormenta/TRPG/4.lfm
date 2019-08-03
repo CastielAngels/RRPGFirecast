@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="Tormenta04" align="client" theme="dark" lockWhileNodeIsLoading="true">
-
 	<scrollBox align="client">
 		<rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
 		<rectangle left="175" top="6" color="Gainsboro" width="160" height="28" xradius="2" yradius="2"/>
@@ -14,5 +13,4 @@
 			<textEditor align="client" field="mpreparadas" fontStyle="bold"/>
 		</layout>
 	</scrollBox>
-	
 </form>
