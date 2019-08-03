@@ -76,18 +76,18 @@
 				</layout>
 				<layout left="0" top="125" width="420" height="32">
 					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxatuacao2" field="cbxatuacao2"/>
-					<label left="28" top="2" width="150" height="20" text="Atuação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-					<edit left="165" top="0" width="40" height="25" name="totalatuacao2" field="totalatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxjogatina" field="cbxjogatina"/>
+					<label left="28" top="2" width="150" height="20" text="Jogatina" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totaljogatina" field="totaljogatina" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
-					<edit left="235" top="0" width="40" height="25" name="gradatuacao2" field="gradatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<edit left="235" top="0" width="40" height="25" name="gradjogatina" field="gradjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-					<edit left="305" top="0" width="40" height="25" name="modatuacao2" field="modatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<edit left="305" top="0" width="40" height="25" name="modjogatina" field="modjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-					<edit left="375" top="0" width="40" height="25" name="outrosatuacao2" field="outrosatuacao2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosjogatina" field="outrosjogatina" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 				</layout>
 				<layout left="0" top="155" width="420" height="32">
 					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
@@ -301,18 +301,18 @@
 				</layout>
 				<layout left="0" top="575" width="420" height="32">
 					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
-					<checkBox left="7" top="3" width="20" height="20" name="cbxoficio2" field="cbxoficio2"/>
-					<label left="28" top="2" width="150" height="20" text="Ofício" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
-					<edit left="165" top="0" width="40" height="25" name="totaloficio2" field="totaloficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<checkBox left="7" top="3" width="20" height="20" name="cbxmeditacao" field="cbxmeditacao"/>
+					<label left="28" top="2" width="150" height="20" text="Meditação" horzTextAlign="leading" fontSize="15.0" fontStyle="bold" fontColor="black"/>
+					<edit left="165" top="0" width="40" height="25" name="totalmeditacao" field="totalmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 					<rectangle left="210" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 					<label left="213" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="="/>
-					<edit left="235" top="0" width="40" height="25" name="gradoficio2" field="gradoficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<edit left="235" top="0" width="40" height="25" name="gradmeditacao" field="gradmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 					<rectangle left="280" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 					<label left="283" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-					<edit left="305" top="0" width="40" height="25" name="modoficio2" field="modoficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
+					<edit left="305" top="0" width="40" height="25" name="modmeditacao" field="modmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold" hitTest="false"/>
 					<rectangle left="350" top="5" color="Gainsboro" width="20" height="15" xradius="2" yradius="2"/>
 					<label left="353" top="3" width="20" height="15" fontSize="20" fontStyle="bold" fontColor="black" text="+"/>
-					<edit left="375" top="0" width="40" height="25" name="outrosoficio2" field="outrosoficio2" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
+					<edit left="375" top="0" width="40" height="25" name="outrosmeditacao" field="outrosmeditacao" type="number" min="-999" max="999" horzTextAlign="center" fontSize="15.0" fontStyle="bold"/>
 				</layout>
 				<layout left="0" top="605" width="420" height="32">
 					<rectangle left="5" top="0" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
@@ -374,7 +374,7 @@
 		</layout>
 		
 	</scrollBox>
-	<dataLink fields="{'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel'}">
+	<dataLink fields="{'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel'}">
 		<event name="onChange">
 			if self.calculos.checked == false then
 				sheet.modacrobacia = sheet.moddestreza or 0;
@@ -425,13 +425,13 @@
 		</event>
 		<event name="onChange">
 			if self.calculos.checked == false then
-				sheet.modatuacao2 = sheet.modcarisma or 0;
-				if self.cbxatuacao2.checked then
-					sheet.gradatuacao2 = (math.floor((sheet.nivel)+3 or 0));
-					sheet.totalatuacao2 = (math.floor((sheet.gradatuacao2)or 0)+math.floor((sheet.modatuacao2) or 0)+math.floor((sheet.outrosatuacao2)or 0));
+				sheet.modjogatina = sheet.modcarisma or 0;
+				if self.cbxjogatina.checked then
+					sheet.gradjogatina = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totaljogatina = (math.floor((sheet.gradjogatina)or 0)+math.floor((sheet.modjogatina) or 0)+math.floor((sheet.outrosjogatina)or 0));
 				else
-					sheet.gradatuacao2 = (math.floor((sheet.metadenivel)or 0));
-					sheet.totalatuacao2 = (math.floor((sheet.gradatuacao2)or 0)+math.floor((sheet.modatuacao2) or 0)+math.floor((sheet.outrosatuacao2)or 0));
+					sheet.gradjogatina = (math.floor((sheet.metadenivel)or 0));
+					sheet.totaljogatina = (math.floor((sheet.gradjogatina)or 0)+math.floor((sheet.modjogatina) or 0)+math.floor((sheet.outrosjogatina)or 0));
 				end;
 			end;
 		</event>
@@ -605,13 +605,13 @@
 		</event>
 		<event name="onChange">
 			if self.calculos.checked == false then
-				sheet.modoficio2 = sheet.modinteligencia or 0;
-				if self.cbxoficio2.checked then
-					sheet.gradoficio2 = (math.floor((sheet.nivel)+3 or 0));
-					sheet.totaloficio2 = (math.floor((sheet.gradoficio2)or 0)+math.floor((sheet.modoficio2) or 0)+math.floor((sheet.outrosoficio2)or 0));
+				sheet.modmeditacao = sheet.modsabedoria or 0;
+				if self.cbxmeditacao.checked then
+					sheet.gradmeditacao = (math.floor((sheet.nivel)+3 or 0));
+					sheet.totalmeditacao = (math.floor((sheet.gradmeditacao)or 0)+math.floor((sheet.modmeditacao) or 0)+math.floor((sheet.outrosmeditacao)or 0));
 				else
-					sheet.gradoficio2 = (math.floor((sheet.metadenivel)or 0));
-					sheet.totaloficio2 = (math.floor((sheet.gradoficio2)or 0)+math.floor((sheet.modoficio2) or 0)+math.floor((sheet.outrosoficio2)or 0));
+					sheet.gradmeditacao = (math.floor((sheet.metadenivel)or 0));
+					sheet.totalmeditacao = (math.floor((sheet.gradmeditacao)or 0)+math.floor((sheet.modmeditacao) or 0)+math.floor((sheet.outrosmeditacao)or 0));
 				end;
 			end;
 		</event>
@@ -659,9 +659,9 @@
 				self.gradatuacao1.hitTest = false;
 				self.modatuacao1.hitTest = false;
 
-				self.totalatuacao2.hitTest = false;
-				self.gradatuacao2.hitTest = false;
-				self.modatuacao2.hitTest = false;
+				self.totaljogatina.hitTest = false;
+				self.gradjogatina.hitTest = false;
+				self.modjogatina.hitTest = false;
 
 				self.totalcavalgar.hitTest = false;
 				self.gradcavalgar.hitTest = false;
@@ -719,9 +719,9 @@
 				self.gradoficio1.hitTest = false;
 				self.modoficio1.hitTest = false;
 
-				self.totaloficio2.hitTest = false;
-				self.gradoficio2.hitTest = false;
-				self.modoficio2.hitTest = false;
+				self.totalmeditacao.hitTest = false;
+				self.gradmeditacao.hitTest = false;
+				self.modmeditacao.hitTest = false;
 
 				self.totalpercepcao.hitTest = false;
 				self.gradpercepcao.hitTest = false;
@@ -748,9 +748,9 @@
 				self.gradatuacao1.hitTest = true;
 				self.modatuacao1.hitTest = true;
 
-				self.totalatuacao2.hitTest = true;
-				self.gradatuacao2.hitTest = true;
-				self.modatuacao2.hitTest = true;
+				self.totaljogatina.hitTest = true;
+				self.gradjogatina.hitTest = true;
+				self.modjogatina.hitTest = true;
 
 				self.totalcavalgar.hitTest = true;
 				self.gradcavalgar.hitTest = true;
@@ -808,9 +808,9 @@
 				self.gradoficio1.hitTest = true;
 				self.modoficio1.hitTest = true;
 
-				self.totaloficio2.hitTest = true;
-				self.gradoficio2.hitTest = true;
-				self.modoficio2.hitTest = true;
+				self.totalmeditacao.hitTest = true;
+				self.gradmeditacao.hitTest = true;
+				self.modmeditacao.hitTest = true;
 
 				self.totalpercepcao.hitTest = true;
 				self.gradpercepcao.hitTest = true;

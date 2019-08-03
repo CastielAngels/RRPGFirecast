@@ -872,14 +872,14 @@ function newTormenta02()
     obj.rectangle23:setYradius(2);
     obj.rectangle23:setName("rectangle23");
 
-    obj.cbxatuacao2 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.cbxatuacao2:setParent(obj.layout7);
-    obj.cbxatuacao2:setLeft(7);
-    obj.cbxatuacao2:setTop(3);
-    obj.cbxatuacao2:setWidth(20);
-    obj.cbxatuacao2:setHeight(20);
-    obj.cbxatuacao2:setName("cbxatuacao2");
-    obj.cbxatuacao2:setField("cbxatuacao2");
+    obj.cbxjogatina = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.cbxjogatina:setParent(obj.layout7);
+    obj.cbxjogatina:setLeft(7);
+    obj.cbxjogatina:setTop(3);
+    obj.cbxjogatina:setWidth(20);
+    obj.cbxjogatina:setHeight(20);
+    obj.cbxjogatina:setName("cbxjogatina");
+    obj.cbxjogatina:setField("cbxjogatina");
 
     obj.label21 = gui.fromHandle(_obj_newObject("label"));
     obj.label21:setParent(obj.layout7);
@@ -887,28 +887,28 @@ function newTormenta02()
     obj.label21:setTop(2);
     obj.label21:setWidth(150);
     obj.label21:setHeight(20);
-    obj.label21:setText("Atuação");
+    obj.label21:setText("Jogatina");
     obj.label21:setHorzTextAlign("leading");
     obj.label21:setFontSize(15.0);
     lfm_setPropAsString(obj.label21, "fontStyle",  "bold");
     obj.label21:setFontColor("black");
     obj.label21:setName("label21");
 
-    obj.totalatuacao2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.totalatuacao2:setParent(obj.layout7);
-    obj.totalatuacao2:setLeft(165);
-    obj.totalatuacao2:setTop(0);
-    obj.totalatuacao2:setWidth(40);
-    obj.totalatuacao2:setHeight(25);
-    obj.totalatuacao2:setName("totalatuacao2");
-    obj.totalatuacao2:setField("totalatuacao2");
-    obj.totalatuacao2:setType("number");
-    obj.totalatuacao2:setMin(-999);
-    obj.totalatuacao2:setMax(999);
-    obj.totalatuacao2:setHorzTextAlign("center");
-    obj.totalatuacao2:setFontSize(15.0);
-    lfm_setPropAsString(obj.totalatuacao2, "fontStyle",  "bold");
-    obj.totalatuacao2:setHitTest(false);
+    obj.totaljogatina = gui.fromHandle(_obj_newObject("edit"));
+    obj.totaljogatina:setParent(obj.layout7);
+    obj.totaljogatina:setLeft(165);
+    obj.totaljogatina:setTop(0);
+    obj.totaljogatina:setWidth(40);
+    obj.totaljogatina:setHeight(25);
+    obj.totaljogatina:setName("totaljogatina");
+    obj.totaljogatina:setField("totaljogatina");
+    obj.totaljogatina:setType("number");
+    obj.totaljogatina:setMin(-999);
+    obj.totaljogatina:setMax(999);
+    obj.totaljogatina:setHorzTextAlign("center");
+    obj.totaljogatina:setFontSize(15.0);
+    lfm_setPropAsString(obj.totaljogatina, "fontStyle",  "bold");
+    obj.totaljogatina:setHitTest(false);
 
     obj.rectangle24 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle24:setParent(obj.layout7);
@@ -933,21 +933,21 @@ function newTormenta02()
     obj.label22:setText("=");
     obj.label22:setName("label22");
 
-    obj.gradatuacao2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.gradatuacao2:setParent(obj.layout7);
-    obj.gradatuacao2:setLeft(235);
-    obj.gradatuacao2:setTop(0);
-    obj.gradatuacao2:setWidth(40);
-    obj.gradatuacao2:setHeight(25);
-    obj.gradatuacao2:setName("gradatuacao2");
-    obj.gradatuacao2:setField("gradatuacao2");
-    obj.gradatuacao2:setType("number");
-    obj.gradatuacao2:setMin(-999);
-    obj.gradatuacao2:setMax(999);
-    obj.gradatuacao2:setHorzTextAlign("center");
-    obj.gradatuacao2:setFontSize(15.0);
-    lfm_setPropAsString(obj.gradatuacao2, "fontStyle",  "bold");
-    obj.gradatuacao2:setHitTest(false);
+    obj.gradjogatina = gui.fromHandle(_obj_newObject("edit"));
+    obj.gradjogatina:setParent(obj.layout7);
+    obj.gradjogatina:setLeft(235);
+    obj.gradjogatina:setTop(0);
+    obj.gradjogatina:setWidth(40);
+    obj.gradjogatina:setHeight(25);
+    obj.gradjogatina:setName("gradjogatina");
+    obj.gradjogatina:setField("gradjogatina");
+    obj.gradjogatina:setType("number");
+    obj.gradjogatina:setMin(-999);
+    obj.gradjogatina:setMax(999);
+    obj.gradjogatina:setHorzTextAlign("center");
+    obj.gradjogatina:setFontSize(15.0);
+    lfm_setPropAsString(obj.gradjogatina, "fontStyle",  "bold");
+    obj.gradjogatina:setHitTest(false);
 
     obj.rectangle25 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle25:setParent(obj.layout7);
@@ -972,21 +972,21 @@ function newTormenta02()
     obj.label23:setText("+");
     obj.label23:setName("label23");
 
-    obj.modatuacao2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.modatuacao2:setParent(obj.layout7);
-    obj.modatuacao2:setLeft(305);
-    obj.modatuacao2:setTop(0);
-    obj.modatuacao2:setWidth(40);
-    obj.modatuacao2:setHeight(25);
-    obj.modatuacao2:setName("modatuacao2");
-    obj.modatuacao2:setField("modatuacao2");
-    obj.modatuacao2:setType("number");
-    obj.modatuacao2:setMin(-999);
-    obj.modatuacao2:setMax(999);
-    obj.modatuacao2:setHorzTextAlign("center");
-    obj.modatuacao2:setFontSize(15.0);
-    lfm_setPropAsString(obj.modatuacao2, "fontStyle",  "bold");
-    obj.modatuacao2:setHitTest(false);
+    obj.modjogatina = gui.fromHandle(_obj_newObject("edit"));
+    obj.modjogatina:setParent(obj.layout7);
+    obj.modjogatina:setLeft(305);
+    obj.modjogatina:setTop(0);
+    obj.modjogatina:setWidth(40);
+    obj.modjogatina:setHeight(25);
+    obj.modjogatina:setName("modjogatina");
+    obj.modjogatina:setField("modjogatina");
+    obj.modjogatina:setType("number");
+    obj.modjogatina:setMin(-999);
+    obj.modjogatina:setMax(999);
+    obj.modjogatina:setHorzTextAlign("center");
+    obj.modjogatina:setFontSize(15.0);
+    lfm_setPropAsString(obj.modjogatina, "fontStyle",  "bold");
+    obj.modjogatina:setHitTest(false);
 
     obj.rectangle26 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle26:setParent(obj.layout7);
@@ -1011,20 +1011,20 @@ function newTormenta02()
     obj.label24:setText("+");
     obj.label24:setName("label24");
 
-    obj.outrosatuacao2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.outrosatuacao2:setParent(obj.layout7);
-    obj.outrosatuacao2:setLeft(375);
-    obj.outrosatuacao2:setTop(0);
-    obj.outrosatuacao2:setWidth(40);
-    obj.outrosatuacao2:setHeight(25);
-    obj.outrosatuacao2:setName("outrosatuacao2");
-    obj.outrosatuacao2:setField("outrosatuacao2");
-    obj.outrosatuacao2:setType("number");
-    obj.outrosatuacao2:setMin(-999);
-    obj.outrosatuacao2:setMax(999);
-    obj.outrosatuacao2:setHorzTextAlign("center");
-    obj.outrosatuacao2:setFontSize(15.0);
-    lfm_setPropAsString(obj.outrosatuacao2, "fontStyle",  "bold");
+    obj.outrosjogatina = gui.fromHandle(_obj_newObject("edit"));
+    obj.outrosjogatina:setParent(obj.layout7);
+    obj.outrosjogatina:setLeft(375);
+    obj.outrosjogatina:setTop(0);
+    obj.outrosjogatina:setWidth(40);
+    obj.outrosjogatina:setHeight(25);
+    obj.outrosjogatina:setName("outrosjogatina");
+    obj.outrosjogatina:setField("outrosjogatina");
+    obj.outrosjogatina:setType("number");
+    obj.outrosjogatina:setMin(-999);
+    obj.outrosjogatina:setMax(999);
+    obj.outrosjogatina:setHorzTextAlign("center");
+    obj.outrosjogatina:setFontSize(15.0);
+    lfm_setPropAsString(obj.outrosjogatina, "fontStyle",  "bold");
 
     obj.layout8 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout8:setParent(obj.layout2);
@@ -3467,14 +3467,14 @@ function newTormenta02()
     obj.rectangle83:setYradius(2);
     obj.rectangle83:setName("rectangle83");
 
-    obj.cbxoficio2 = gui.fromHandle(_obj_newObject("checkBox"));
-    obj.cbxoficio2:setParent(obj.layout22);
-    obj.cbxoficio2:setLeft(7);
-    obj.cbxoficio2:setTop(3);
-    obj.cbxoficio2:setWidth(20);
-    obj.cbxoficio2:setHeight(20);
-    obj.cbxoficio2:setName("cbxoficio2");
-    obj.cbxoficio2:setField("cbxoficio2");
+    obj.cbxmeditacao = gui.fromHandle(_obj_newObject("checkBox"));
+    obj.cbxmeditacao:setParent(obj.layout22);
+    obj.cbxmeditacao:setLeft(7);
+    obj.cbxmeditacao:setTop(3);
+    obj.cbxmeditacao:setWidth(20);
+    obj.cbxmeditacao:setHeight(20);
+    obj.cbxmeditacao:setName("cbxmeditacao");
+    obj.cbxmeditacao:setField("cbxmeditacao");
 
     obj.label81 = gui.fromHandle(_obj_newObject("label"));
     obj.label81:setParent(obj.layout22);
@@ -3482,28 +3482,28 @@ function newTormenta02()
     obj.label81:setTop(2);
     obj.label81:setWidth(150);
     obj.label81:setHeight(20);
-    obj.label81:setText("Ofício");
+    obj.label81:setText("Meditação");
     obj.label81:setHorzTextAlign("leading");
     obj.label81:setFontSize(15.0);
     lfm_setPropAsString(obj.label81, "fontStyle",  "bold");
     obj.label81:setFontColor("black");
     obj.label81:setName("label81");
 
-    obj.totaloficio2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.totaloficio2:setParent(obj.layout22);
-    obj.totaloficio2:setLeft(165);
-    obj.totaloficio2:setTop(0);
-    obj.totaloficio2:setWidth(40);
-    obj.totaloficio2:setHeight(25);
-    obj.totaloficio2:setName("totaloficio2");
-    obj.totaloficio2:setField("totaloficio2");
-    obj.totaloficio2:setType("number");
-    obj.totaloficio2:setMin(-999);
-    obj.totaloficio2:setMax(999);
-    obj.totaloficio2:setHorzTextAlign("center");
-    obj.totaloficio2:setFontSize(15.0);
-    lfm_setPropAsString(obj.totaloficio2, "fontStyle",  "bold");
-    obj.totaloficio2:setHitTest(false);
+    obj.totalmeditacao = gui.fromHandle(_obj_newObject("edit"));
+    obj.totalmeditacao:setParent(obj.layout22);
+    obj.totalmeditacao:setLeft(165);
+    obj.totalmeditacao:setTop(0);
+    obj.totalmeditacao:setWidth(40);
+    obj.totalmeditacao:setHeight(25);
+    obj.totalmeditacao:setName("totalmeditacao");
+    obj.totalmeditacao:setField("totalmeditacao");
+    obj.totalmeditacao:setType("number");
+    obj.totalmeditacao:setMin(-999);
+    obj.totalmeditacao:setMax(999);
+    obj.totalmeditacao:setHorzTextAlign("center");
+    obj.totalmeditacao:setFontSize(15.0);
+    lfm_setPropAsString(obj.totalmeditacao, "fontStyle",  "bold");
+    obj.totalmeditacao:setHitTest(false);
 
     obj.rectangle84 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle84:setParent(obj.layout22);
@@ -3528,21 +3528,21 @@ function newTormenta02()
     obj.label82:setText("=");
     obj.label82:setName("label82");
 
-    obj.gradoficio2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.gradoficio2:setParent(obj.layout22);
-    obj.gradoficio2:setLeft(235);
-    obj.gradoficio2:setTop(0);
-    obj.gradoficio2:setWidth(40);
-    obj.gradoficio2:setHeight(25);
-    obj.gradoficio2:setName("gradoficio2");
-    obj.gradoficio2:setField("gradoficio2");
-    obj.gradoficio2:setType("number");
-    obj.gradoficio2:setMin(-999);
-    obj.gradoficio2:setMax(999);
-    obj.gradoficio2:setHorzTextAlign("center");
-    obj.gradoficio2:setFontSize(15.0);
-    lfm_setPropAsString(obj.gradoficio2, "fontStyle",  "bold");
-    obj.gradoficio2:setHitTest(false);
+    obj.gradmeditacao = gui.fromHandle(_obj_newObject("edit"));
+    obj.gradmeditacao:setParent(obj.layout22);
+    obj.gradmeditacao:setLeft(235);
+    obj.gradmeditacao:setTop(0);
+    obj.gradmeditacao:setWidth(40);
+    obj.gradmeditacao:setHeight(25);
+    obj.gradmeditacao:setName("gradmeditacao");
+    obj.gradmeditacao:setField("gradmeditacao");
+    obj.gradmeditacao:setType("number");
+    obj.gradmeditacao:setMin(-999);
+    obj.gradmeditacao:setMax(999);
+    obj.gradmeditacao:setHorzTextAlign("center");
+    obj.gradmeditacao:setFontSize(15.0);
+    lfm_setPropAsString(obj.gradmeditacao, "fontStyle",  "bold");
+    obj.gradmeditacao:setHitTest(false);
 
     obj.rectangle85 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle85:setParent(obj.layout22);
@@ -3567,21 +3567,21 @@ function newTormenta02()
     obj.label83:setText("+");
     obj.label83:setName("label83");
 
-    obj.modoficio2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.modoficio2:setParent(obj.layout22);
-    obj.modoficio2:setLeft(305);
-    obj.modoficio2:setTop(0);
-    obj.modoficio2:setWidth(40);
-    obj.modoficio2:setHeight(25);
-    obj.modoficio2:setName("modoficio2");
-    obj.modoficio2:setField("modoficio2");
-    obj.modoficio2:setType("number");
-    obj.modoficio2:setMin(-999);
-    obj.modoficio2:setMax(999);
-    obj.modoficio2:setHorzTextAlign("center");
-    obj.modoficio2:setFontSize(15.0);
-    lfm_setPropAsString(obj.modoficio2, "fontStyle",  "bold");
-    obj.modoficio2:setHitTest(false);
+    obj.modmeditacao = gui.fromHandle(_obj_newObject("edit"));
+    obj.modmeditacao:setParent(obj.layout22);
+    obj.modmeditacao:setLeft(305);
+    obj.modmeditacao:setTop(0);
+    obj.modmeditacao:setWidth(40);
+    obj.modmeditacao:setHeight(25);
+    obj.modmeditacao:setName("modmeditacao");
+    obj.modmeditacao:setField("modmeditacao");
+    obj.modmeditacao:setType("number");
+    obj.modmeditacao:setMin(-999);
+    obj.modmeditacao:setMax(999);
+    obj.modmeditacao:setHorzTextAlign("center");
+    obj.modmeditacao:setFontSize(15.0);
+    lfm_setPropAsString(obj.modmeditacao, "fontStyle",  "bold");
+    obj.modmeditacao:setHitTest(false);
 
     obj.rectangle86 = gui.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle86:setParent(obj.layout22);
@@ -3606,20 +3606,20 @@ function newTormenta02()
     obj.label84:setText("+");
     obj.label84:setName("label84");
 
-    obj.outrosoficio2 = gui.fromHandle(_obj_newObject("edit"));
-    obj.outrosoficio2:setParent(obj.layout22);
-    obj.outrosoficio2:setLeft(375);
-    obj.outrosoficio2:setTop(0);
-    obj.outrosoficio2:setWidth(40);
-    obj.outrosoficio2:setHeight(25);
-    obj.outrosoficio2:setName("outrosoficio2");
-    obj.outrosoficio2:setField("outrosoficio2");
-    obj.outrosoficio2:setType("number");
-    obj.outrosoficio2:setMin(-999);
-    obj.outrosoficio2:setMax(999);
-    obj.outrosoficio2:setHorzTextAlign("center");
-    obj.outrosoficio2:setFontSize(15.0);
-    lfm_setPropAsString(obj.outrosoficio2, "fontStyle",  "bold");
+    obj.outrosmeditacao = gui.fromHandle(_obj_newObject("edit"));
+    obj.outrosmeditacao:setParent(obj.layout22);
+    obj.outrosmeditacao:setLeft(375);
+    obj.outrosmeditacao:setTop(0);
+    obj.outrosmeditacao:setWidth(40);
+    obj.outrosmeditacao:setHeight(25);
+    obj.outrosmeditacao:setName("outrosmeditacao");
+    obj.outrosmeditacao:setField("outrosmeditacao");
+    obj.outrosmeditacao:setType("number");
+    obj.outrosmeditacao:setMin(-999);
+    obj.outrosmeditacao:setMax(999);
+    obj.outrosmeditacao:setHorzTextAlign("center");
+    obj.outrosmeditacao:setFontSize(15.0);
+    lfm_setPropAsString(obj.outrosmeditacao, "fontStyle",  "bold");
 
     obj.layout23 = gui.fromHandle(_obj_newObject("layout"));
     obj.layout23:setParent(obj.layout2);
@@ -4099,7 +4099,7 @@ function newTormenta02()
 
     obj.dataLink1 = gui.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj);
-    obj.dataLink1:setFields({'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosatuacao2', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosoficio2', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxatuacao2', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxoficio2', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel'});
+    obj.dataLink1:setFields({'penarmadura', 'penescudo', 'outrosacrobacia', 'outrosadestrar', 'outrosatletismo', 'outrosatuacao1', 'outrosjogatina', 'outroscavalgar', 'outrosconhecimento1', 'outrosconhecimento2', 'outroscura', 'outrosdiplomacia', 'outrosenganacao', 'outrosfurtividade', 'outrosimagia', 'outrosiniciativa', 'outrosintimidacao', 'outrosintuicao', 'outrosladinagem', 'outrosoinformacao', 'outrosoficio1', 'outrosmeditacao', 'outrospercepcao', 'outrossobrevivencia', 'cbxacrobacia', 'cbxadestrar', 'cbxatletismo', 'cbxatuacao1', 'cbxjogatina', 'cbxcavalgar', 'cbxconhecimento1', 'cbxconhecimento2', 'cbxcura', 'cbxdiplomacia', 'cbxenganacao', 'cbxfurtividade', 'cbximagia', 'cbxiniciativa', 'cbxintimidacao', 'cbxintuicao', 'cbxladinagem', 'cbxoinformacao', 'cbxoficio1', 'cbxmeditacao', 'cbxpercepcao', 'cbxsobrevivencia', 'forca', 'modforca', 'destreza', 'moddestreza', 'constituicao', 'modconstituicao', 'inteligencia', 'modinteligencia', 'sabedoria', 'modsabedoria', 'carisma', 'modcarisma', 'nivel'});
     obj.dataLink1:setName("dataLink1");
 
 
@@ -4121,9 +4121,9 @@ function newTormenta02()
 				self.gradatuacao1.hitTest = false;
 				self.modatuacao1.hitTest = false;
 
-				self.totalatuacao2.hitTest = false;
-				self.gradatuacao2.hitTest = false;
-				self.modatuacao2.hitTest = false;
+				self.totaljogatina.hitTest = false;
+				self.gradjogatina.hitTest = false;
+				self.modjogatina.hitTest = false;
 
 				self.totalcavalgar.hitTest = false;
 				self.gradcavalgar.hitTest = false;
@@ -4181,9 +4181,9 @@ function newTormenta02()
 				self.gradoficio1.hitTest = false;
 				self.modoficio1.hitTest = false;
 
-				self.totaloficio2.hitTest = false;
-				self.gradoficio2.hitTest = false;
-				self.modoficio2.hitTest = false;
+				self.totalmeditacao.hitTest = false;
+				self.gradmeditacao.hitTest = false;
+				self.modmeditacao.hitTest = false;
 
 				self.totalpercepcao.hitTest = false;
 				self.gradpercepcao.hitTest = false;
@@ -4210,9 +4210,9 @@ function newTormenta02()
 				self.gradatuacao1.hitTest = true;
 				self.modatuacao1.hitTest = true;
 
-				self.totalatuacao2.hitTest = true;
-				self.gradatuacao2.hitTest = true;
-				self.modatuacao2.hitTest = true;
+				self.totaljogatina.hitTest = true;
+				self.gradjogatina.hitTest = true;
+				self.modjogatina.hitTest = true;
 
 				self.totalcavalgar.hitTest = true;
 				self.gradcavalgar.hitTest = true;
@@ -4270,9 +4270,9 @@ function newTormenta02()
 				self.gradoficio1.hitTest = true;
 				self.modoficio1.hitTest = true;
 
-				self.totaloficio2.hitTest = true;
-				self.gradoficio2.hitTest = true;
-				self.modoficio2.hitTest = true;
+				self.totalmeditacao.hitTest = true;
+				self.gradmeditacao.hitTest = true;
+				self.modmeditacao.hitTest = true;
 
 				self.totalpercepcao.hitTest = true;
 				self.gradpercepcao.hitTest = true;
@@ -4350,13 +4350,13 @@ function newTormenta02()
     obj._e_event5 = obj.dataLink1:addEventListener("onChange",
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
-            				sheet.modatuacao2 = sheet.modcarisma or 0;
-            				if self.cbxatuacao2.checked then
-            					sheet.gradatuacao2 = (math.floor((sheet.nivel)+3 or 0));
-            					sheet.totalatuacao2 = (math.floor((sheet.gradatuacao2)or 0)+math.floor((sheet.modatuacao2) or 0)+math.floor((sheet.outrosatuacao2)or 0));
+            				sheet.modjogatina = sheet.modcarisma or 0;
+            				if self.cbxjogatina.checked then
+            					sheet.gradjogatina = (math.floor((sheet.nivel)+3 or 0));
+            					sheet.totaljogatina = (math.floor((sheet.gradjogatina)or 0)+math.floor((sheet.modjogatina) or 0)+math.floor((sheet.outrosjogatina)or 0));
             				else
-            					sheet.gradatuacao2 = (math.floor((sheet.metadenivel)or 0));
-            					sheet.totalatuacao2 = (math.floor((sheet.gradatuacao2)or 0)+math.floor((sheet.modatuacao2) or 0)+math.floor((sheet.outrosatuacao2)or 0));
+            					sheet.gradjogatina = (math.floor((sheet.metadenivel)or 0));
+            					sheet.totaljogatina = (math.floor((sheet.gradjogatina)or 0)+math.floor((sheet.modjogatina) or 0)+math.floor((sheet.outrosjogatina)or 0));
             				end;
             			end;
         end, obj);
@@ -4560,13 +4560,13 @@ function newTormenta02()
     obj._e_event20 = obj.dataLink1:addEventListener("onChange",
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
-            				sheet.modoficio2 = sheet.modinteligencia or 0;
-            				if self.cbxoficio2.checked then
-            					sheet.gradoficio2 = (math.floor((sheet.nivel)+3 or 0));
-            					sheet.totaloficio2 = (math.floor((sheet.gradoficio2)or 0)+math.floor((sheet.modoficio2) or 0)+math.floor((sheet.outrosoficio2)or 0));
+            				sheet.modmeditacao = sheet.modsabedoria or 0;
+            				if self.cbxmeditacao.checked then
+            					sheet.gradmeditacao = (math.floor((sheet.nivel)+3 or 0));
+            					sheet.totalmeditacao = (math.floor((sheet.gradmeditacao)or 0)+math.floor((sheet.modmeditacao) or 0)+math.floor((sheet.outrosmeditacao)or 0));
             				else
-            					sheet.gradoficio2 = (math.floor((sheet.metadenivel)or 0));
-            					sheet.totaloficio2 = (math.floor((sheet.gradoficio2)or 0)+math.floor((sheet.modoficio2) or 0)+math.floor((sheet.outrosoficio2)or 0));
+            					sheet.gradmeditacao = (math.floor((sheet.metadenivel)or 0));
+            					sheet.totalmeditacao = (math.floor((sheet.gradmeditacao)or 0)+math.floor((sheet.modmeditacao) or 0)+math.floor((sheet.outrosmeditacao)or 0));
             				end;
             			end;
         end, obj);
@@ -4658,8 +4658,8 @@ function newTormenta02()
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
         if self.rectangle46 ~= nil then self.rectangle46:destroy(); self.rectangle46 = nil; end;
         if self.cbxadestrar ~= nil then self.cbxadestrar:destroy(); self.cbxadestrar = nil; end;
-        if self.totaloficio2 ~= nil then self.totaloficio2:destroy(); self.totaloficio2 = nil; end;
         if self.rectangle85 ~= nil then self.rectangle85:destroy(); self.rectangle85 = nil; end;
+        if self.modmeditacao ~= nil then self.modmeditacao:destroy(); self.modmeditacao = nil; end;
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
         if self.label92 ~= nil then self.label92:destroy(); self.label92 = nil; end;
         if self.rectangle16 ~= nil then self.rectangle16:destroy(); self.rectangle16 = nil; end;
@@ -4668,7 +4668,6 @@ function newTormenta02()
         if self.label63 ~= nil then self.label63:destroy(); self.label63 = nil; end;
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
         if self.label70 ~= nil then self.label70:destroy(); self.label70 = nil; end;
-        if self.outrosoficio2 ~= nil then self.outrosoficio2:destroy(); self.outrosoficio2 = nil; end;
         if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
         if self.totalcavalgar ~= nil then self.totalcavalgar:destroy(); self.totalcavalgar = nil; end;
@@ -4717,7 +4716,6 @@ function newTormenta02()
         if self.rectangle28 ~= nil then self.rectangle28:destroy(); self.rectangle28 = nil; end;
         if self.rectangle89 ~= nil then self.rectangle89:destroy(); self.rectangle89 = nil; end;
         if self.label16 ~= nil then self.label16:destroy(); self.label16 = nil; end;
-        if self.modatuacao2 ~= nil then self.modatuacao2:destroy(); self.modatuacao2 = nil; end;
         if self.label52 ~= nil then self.label52:destroy(); self.label52 = nil; end;
         if self.label47 ~= nil then self.label47:destroy(); self.label47 = nil; end;
         if self.cbxcavalgar ~= nil then self.cbxcavalgar:destroy(); self.cbxcavalgar = nil; end;
@@ -4820,24 +4818,23 @@ function newTormenta02()
         if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
         if self.gradatletismo ~= nil then self.gradatletismo:destroy(); self.gradatletismo = nil; end;
         if self.modatletismo ~= nil then self.modatletismo:destroy(); self.modatletismo = nil; end;
-        if self.gradatuacao2 ~= nil then self.gradatuacao2:destroy(); self.gradatuacao2 = nil; end;
         if self.totalconhecimento2 ~= nil then self.totalconhecimento2:destroy(); self.totalconhecimento2 = nil; end;
         if self.label44 ~= nil then self.label44:destroy(); self.label44 = nil; end;
-        if self.gradadestrar ~= nil then self.gradadestrar:destroy(); self.gradadestrar = nil; end;
         if self.rectangle76 ~= nil then self.rectangle76:destroy(); self.rectangle76 = nil; end;
+        if self.gradadestrar ~= nil then self.gradadestrar:destroy(); self.gradadestrar = nil; end;
         if self.modoficio1 ~= nil then self.modoficio1:destroy(); self.modoficio1 = nil; end;
         if self.rectangle86 ~= nil then self.rectangle86:destroy(); self.rectangle86 = nil; end;
-        if self.rectangle56 ~= nil then self.rectangle56:destroy(); self.rectangle56 = nil; end;
         if self.label95 ~= nil then self.label95:destroy(); self.label95 = nil; end;
+        if self.rectangle56 ~= nil then self.rectangle56:destroy(); self.rectangle56 = nil; end;
         if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
         if self.label83 ~= nil then self.label83:destroy(); self.label83 = nil; end;
         if self.cbxconhecimento1 ~= nil then self.cbxconhecimento1:destroy(); self.cbxconhecimento1 = nil; end;
         if self.moddiplomacia ~= nil then self.moddiplomacia:destroy(); self.moddiplomacia = nil; end;
+        if self.gradmeditacao ~= nil then self.gradmeditacao:destroy(); self.gradmeditacao = nil; end;
         if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
         if self.label55 ~= nil then self.label55:destroy(); self.label55 = nil; end;
         if self.label73 ~= nil then self.label73:destroy(); self.label73 = nil; end;
         if self.rectangle21 ~= nil then self.rectangle21:destroy(); self.rectangle21 = nil; end;
-        if self.outrosatuacao2 ~= nil then self.outrosatuacao2:destroy(); self.outrosatuacao2 = nil; end;
         if self.gradconhecimento1 ~= nil then self.gradconhecimento1:destroy(); self.gradconhecimento1 = nil; end;
         if self.label66 ~= nil then self.label66:destroy(); self.label66 = nil; end;
         if self.rectangle79 ~= nil then self.rectangle79:destroy(); self.rectangle79 = nil; end;
@@ -4856,11 +4853,11 @@ function newTormenta02()
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.gradimagia ~= nil then self.gradimagia:destroy(); self.gradimagia = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.totalatuacao2 ~= nil then self.totalatuacao2:destroy(); self.totalatuacao2 = nil; end;
         if self.label61 ~= nil then self.label61:destroy(); self.label61 = nil; end;
+        if self.label65 ~= nil then self.label65:destroy(); self.label65 = nil; end;
         if self.label60 ~= nil then self.label60:destroy(); self.label60 = nil; end;
         if self.label64 ~= nil then self.label64:destroy(); self.label64 = nil; end;
-        if self.label65 ~= nil then self.label65:destroy(); self.label65 = nil; end;
+        if self.cbxladinagem ~= nil then self.cbxladinagem:destroy(); self.cbxladinagem = nil; end;
         if self.modconhecimento2 ~= nil then self.modconhecimento2:destroy(); self.modconhecimento2 = nil; end;
         if self.totaldiplomacia ~= nil then self.totaldiplomacia:destroy(); self.totaldiplomacia = nil; end;
         if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
@@ -4869,8 +4866,8 @@ function newTormenta02()
         if self.modcavalgar ~= nil then self.modcavalgar:destroy(); self.modcavalgar = nil; end;
         if self.outrosfurtividade ~= nil then self.outrosfurtividade:destroy(); self.outrosfurtividade = nil; end;
         if self.cbximagia ~= nil then self.cbximagia:destroy(); self.cbximagia = nil; end;
-        if self.cbxladinagem ~= nil then self.cbxladinagem:destroy(); self.cbxladinagem = nil; end;
         if self.layout25 ~= nil then self.layout25:destroy(); self.layout25 = nil; end;
+        if self.cbxmeditacao ~= nil then self.cbxmeditacao:destroy(); self.cbxmeditacao = nil; end;
         if self.label93 ~= nil then self.label93:destroy(); self.label93 = nil; end;
         if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
         if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
@@ -4885,7 +4882,6 @@ function newTormenta02()
         if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
         if self.rectangle45 ~= nil then self.rectangle45:destroy(); self.rectangle45 = nil; end;
         if self.outrosdiplomacia ~= nil then self.outrosdiplomacia:destroy(); self.outrosdiplomacia = nil; end;
-        if self.cbxatuacao2 ~= nil then self.cbxatuacao2:destroy(); self.cbxatuacao2 = nil; end;
         if self.outrospercepcao ~= nil then self.outrospercepcao:destroy(); self.outrospercepcao = nil; end;
         if self.rectangle97 ~= nil then self.rectangle97:destroy(); self.rectangle97 = nil; end;
         if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
@@ -4906,27 +4902,33 @@ function newTormenta02()
         if self.label80 ~= nil then self.label80:destroy(); self.label80 = nil; end;
         if self.label42 ~= nil then self.label42:destroy(); self.label42 = nil; end;
         if self.rectangle20 ~= nil then self.rectangle20:destroy(); self.rectangle20 = nil; end;
-        if self.gradcura ~= nil then self.gradcura:destroy(); self.gradcura = nil; end;
+        if self.totaljogatina ~= nil then self.totaljogatina:destroy(); self.totaljogatina = nil; end;
         if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
+        if self.gradcura ~= nil then self.gradcura:destroy(); self.gradcura = nil; end;
         if self.rectangle62 ~= nil then self.rectangle62:destroy(); self.rectangle62 = nil; end;
         if self.cbxenganacao ~= nil then self.cbxenganacao:destroy(); self.cbxenganacao = nil; end;
         if self.rectangle49 ~= nil then self.rectangle49:destroy(); self.rectangle49 = nil; end;
         if self.rectangle69 ~= nil then self.rectangle69:destroy(); self.rectangle69 = nil; end;
+        if self.totalmeditacao ~= nil then self.totalmeditacao:destroy(); self.totalmeditacao = nil; end;
         if self.outrosconhecimento1 ~= nil then self.outrosconhecimento1:destroy(); self.outrosconhecimento1 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.label81 ~= nil then self.label81:destroy(); self.label81 = nil; end;
         if self.cbxintuicao ~= nil then self.cbxintuicao:destroy(); self.cbxintuicao = nil; end;
+        if self.outrosjogatina ~= nil then self.outrosjogatina:destroy(); self.outrosjogatina = nil; end;
         if self.rectangle27 ~= nil then self.rectangle27:destroy(); self.rectangle27 = nil; end;
         if self.rectangle73 ~= nil then self.rectangle73:destroy(); self.rectangle73 = nil; end;
-        if self.totaloficio1 ~= nil then self.totaloficio1:destroy(); self.totaloficio1 = nil; end;
         if self.modconhecimento1 ~= nil then self.modconhecimento1:destroy(); self.modconhecimento1 = nil; end;
         if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
         if self.modcura ~= nil then self.modcura:destroy(); self.modcura = nil; end;
         if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
         if self.modiniciativa ~= nil then self.modiniciativa:destroy(); self.modiniciativa = nil; end;
         if self.gradladinagem ~= nil then self.gradladinagem:destroy(); self.gradladinagem = nil; end;
+        if self.totaloficio1 ~= nil then self.totaloficio1:destroy(); self.totaloficio1 = nil; end;
+        if self.outrosmeditacao ~= nil then self.outrosmeditacao:destroy(); self.outrosmeditacao = nil; end;
+        if self.cbxjogatina ~= nil then self.cbxjogatina:destroy(); self.cbxjogatina = nil; end;
         if self.rectangle95 ~= nil then self.rectangle95:destroy(); self.rectangle95 = nil; end;
         if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
+        if self.modjogatina ~= nil then self.modjogatina:destroy(); self.modjogatina = nil; end;
         if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
         if self.rectangle30 ~= nil then self.rectangle30:destroy(); self.rectangle30 = nil; end;
         if self.label85 ~= nil then self.label85:destroy(); self.label85 = nil; end;
@@ -4943,14 +4945,13 @@ function newTormenta02()
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.label20 ~= nil then self.label20:destroy(); self.label20 = nil; end;
         if self.rectangle74 ~= nil then self.rectangle74:destroy(); self.rectangle74 = nil; end;
-        if self.cbxoficio2 ~= nil then self.cbxoficio2:destroy(); self.cbxoficio2 = nil; end;
-        if self.gradoficio2 ~= nil then self.gradoficio2:destroy(); self.gradoficio2 = nil; end;
-        if self.label87 ~= nil then self.label87:destroy(); self.label87 = nil; end;
         if self.totalsobrevivencia ~= nil then self.totalsobrevivencia:destroy(); self.totalsobrevivencia = nil; end;
+        if self.outrossobrevivencia ~= nil then self.outrossobrevivencia:destroy(); self.outrossobrevivencia = nil; end;
+        if self.label87 ~= nil then self.label87:destroy(); self.label87 = nil; end;
         if self.rectangle36 ~= nil then self.rectangle36:destroy(); self.rectangle36 = nil; end;
         if self.gradintimidacao ~= nil then self.gradintimidacao:destroy(); self.gradintimidacao = nil; end;
-        if self.outrossobrevivencia ~= nil then self.outrossobrevivencia:destroy(); self.outrossobrevivencia = nil; end;
         if self.totalpercepcao ~= nil then self.totalpercepcao:destroy(); self.totalpercepcao = nil; end;
+        if self.gradjogatina ~= nil then self.gradjogatina:destroy(); self.gradjogatina = nil; end;
         if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
         if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
         if self.label50 ~= nil then self.label50:destroy(); self.label50 = nil; end;
@@ -4965,7 +4966,6 @@ function newTormenta02()
         if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
         if self.label84 ~= nil then self.label84:destroy(); self.label84 = nil; end;
         if self.gradiniciativa ~= nil then self.gradiniciativa:destroy(); self.gradiniciativa = nil; end;
-        if self.modoficio2 ~= nil then self.modoficio2:destroy(); self.modoficio2 = nil; end;
         if self.totalintimidacao ~= nil then self.totalintimidacao:destroy(); self.totalintimidacao = nil; end;
         if self.outrosintuicao ~= nil then self.outrosintuicao:destroy(); self.outrosintuicao = nil; end;
         if self.rectangle24 ~= nil then self.rectangle24:destroy(); self.rectangle24 = nil; end;
