@@ -3453,7 +3453,7 @@ function newTormenta01()
         function (self, field, oldValue, newValue)
             -- Corpo a corpo
             			if self.calculos.checked == false then
-            				if self.acuidade.checked then
+            				if sheet.acuidade then
             					sheet.cac2 = sheet.moddestreza;
             				else
             					sheet.cac2 = sheet.modforca;

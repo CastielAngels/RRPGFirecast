@@ -8923,7 +8923,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             -- Corpo a corpo
             			if self.calculos.checked == false then
-            				if self.acuidade.checked then
+            				if sheet.acuidade then
             					sheet.cac2 = sheet.moddestreza;
             				else
             					sheet.cac2 = sheet.modforca;
@@ -8954,7 +8954,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modacrobacia = sheet.moddestreza or 0;
-            				if self.cbxacrobacia.checked then
+            				if sheet.cbxacrobacia then
             					sheet.gradacrobacia = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalacrobacia = (math.floor((sheet.gradacrobacia)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modacrobacia) or 0)+math.floor((sheet.outrosacrobacia)or 0));
             				else
@@ -8968,7 +8968,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modadestrar = sheet.modcarisma or 0;
-            				if self.cbxadestrar.checked then
+            				if sheet.cbxadestrar then
             					sheet.gradadestrar = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totaladestrar = (math.floor((sheet.gradadestrar)or 0)+math.floor((sheet.modadestrar) or 0)+math.floor((sheet.outrosadestrar)or 0));
             				else
@@ -8982,7 +8982,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modatletismo = sheet.modforca or 0;
-            				if self.cbxatletismo.checked then
+            				if sheet.cbxatletismo then
             					sheet.gradatletismo = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
             				else
@@ -8996,7 +8996,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modatuacao1 = sheet.modcarisma or 0;
-            				if self.cbxatuacao1.checked then
+            				if sheet.cbxatuacao1 then
             					sheet.gradatuacao1 = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalatuacao1 = (math.floor((sheet.gradatuacao1)or 0)+math.floor((sheet.modatuacao1) or 0)+math.floor((sheet.outrosatuacao1)or 0));
             				else
@@ -9010,7 +9010,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modjogatina = sheet.modcarisma or 0;
-            				if self.cbxjogatina.checked then
+            				if sheet.cbxjogatina then
             					sheet.gradjogatina = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totaljogatina = (math.floor((sheet.gradjogatina)or 0)+math.floor((sheet.modjogatina) or 0)+math.floor((sheet.outrosjogatina)or 0));
             				else
@@ -9024,7 +9024,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modcavalgar = sheet.moddestreza or 0;
-            				if self.cbxcavalgar.checked then
+            				if sheet.cbxcavalgar then
             					sheet.gradcavalgar = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
             				else
@@ -9038,7 +9038,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modconhecimento1 = sheet.modinteligencia or 0;
-            				if self.cbxconhecimento1.checked then
+            				if sheet.cbxconhecimento1 then
             					sheet.gradconhecimento1 = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalconhecimento1 = (math.floor((sheet.gradconhecimento1)or 0)+math.floor((sheet.modconhecimento1) or 0)+math.floor((sheet.outrosconhecimento1)or 0));
             				else
@@ -9052,7 +9052,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modconhecimento2 = sheet.modinteligencia or 0;
-            				if self.cbxconhecimento2.checked then
+            				if sheet.cbxconhecimento2 then
             					sheet.gradconhecimento2 = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalconhecimento2 = (math.floor((sheet.gradconhecimento2)or 0)+math.floor((sheet.modconhecimento2) or 0)+math.floor((sheet.outrosconhecimento2)or 0));
             				else
@@ -9066,7 +9066,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modcura = sheet.modsabedoria or 0;
-            				if self.cbxcura.checked then
+            				if sheet.cbxcura then
             					sheet.gradcura = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalcura = (math.floor((sheet.gradcura)or 0)+math.floor((sheet.modcura) or 0)+math.floor((sheet.outroscura)or 0));
             				else
@@ -9080,7 +9080,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.moddiplomacia = sheet.modcarisma or 0;
-            				if self.cbxdiplomacia.checked then
+            				if sheet.cbxdiplomacia then
             					sheet.graddiplomacia = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totaldiplomacia = (math.floor((sheet.graddiplomacia)or 0)+math.floor((sheet.moddiplomacia) or 0)+math.floor((sheet.outrosdiplomacia)or 0));
             				else
@@ -9094,7 +9094,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modenganacao = sheet.modcarisma or 0;
-            				if self.cbxenganacao.checked then
+            				if sheet.cbxenganacao then
             					sheet.gradenganacao = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalenganacao = (math.floor((sheet.gradenganacao)or 0)+math.floor((sheet.modenganacao) or 0)+math.floor((sheet.outrosenganacao)or 0));
             				else
@@ -9108,7 +9108,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modfurtividade = sheet.moddestreza or 0;
-            				if self.cbxfurtividade.checked then
+            				if sheet.cbxfurtividade then
             					sheet.gradfurtividade = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalfurtividade = (math.floor((sheet.gradfurtividade)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modfurtividade) or 0)+math.floor((sheet.outrosfurtividade)or 0));
             				else
@@ -9122,7 +9122,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modimagia = sheet.modinteligencia or 0;
-            				if self.cbximagia.checked then
+            				if sheet.cbximagia then
             					sheet.gradimagia = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalimagia = (math.floor((sheet.gradimagia)or 0)+math.floor((sheet.modimagia) or 0)+math.floor((sheet.outrosimagia)or 0));
             				else
@@ -9136,7 +9136,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modiniciativa = sheet.moddestreza or 0;
-            				if self.cbxiniciativa.checked then
+            				if sheet.cbxiniciativa then
             					sheet.gradiniciativa = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
             				else
@@ -9150,7 +9150,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modintimidacao = sheet.modcarisma or 0;
-            				if self.cbxintimidacao.checked then
+            				if sheet.cbxintimidacao then
             					sheet.gradintimidacao = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalintimidacao = (math.floor((sheet.gradintimidacao)or 0)+math.floor((sheet.modintimidacao) or 0)+math.floor((sheet.outrosintimidacao)or 0));
             				else
@@ -9164,7 +9164,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modintuicao = sheet.modsabedoria or 0;
-            				if self.cbxintuicao.checked then
+            				if sheet.cbxintuicao then
             					sheet.gradintuicao = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalintuicao = (math.floor((sheet.gradintuicao)or 0)+math.floor((sheet.modintuicao) or 0)+math.floor((sheet.outrosintuicao)or 0));
             				else
@@ -9178,7 +9178,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modladinagem = sheet.moddestreza or 0;
-            				if self.cbxladinagem.checked then
+            				if sheet.cbxladinagem then
             					sheet.gradladinagem = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalladinagem = (math.floor((sheet.gradladinagem)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modladinagem) or 0)+math.floor((sheet.outrosladinagem)or 0));
             				else
@@ -9192,7 +9192,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modoinformacao = sheet.modcarisma or 0;
-            				if self.cbxoinformacao.checked then
+            				if sheet.cbxoinformacao then
             					sheet.gradoinformacao = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totaloinformacao = (math.floor((sheet.gradoinformacao)or 0)+math.floor((sheet.modoinformacao) or 0)+math.floor((sheet.outrosoinformacao)or 0));
             				else
@@ -9206,7 +9206,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modoficio1 = sheet.modinteligencia or 0;
-            				if self.cbxoficio1.checked then
+            				if sheet.cbxoficio1 then
             					sheet.gradoficio1 = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totaloficio1 = (math.floor((sheet.gradoficio1)or 0)+math.floor((sheet.modoficio1) or 0)+math.floor((sheet.outrosoficio1)or 0));
             				else
@@ -9220,7 +9220,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modmeditacao = sheet.modsabedoria or 0;
-            				if self.cbxmeditacao.checked then
+            				if sheet.cbxmeditacao then
             					sheet.gradmeditacao = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalmeditacao = (math.floor((sheet.gradmeditacao)or 0)+math.floor((sheet.modmeditacao) or 0)+math.floor((sheet.outrosmeditacao)or 0));
             				else
@@ -9234,7 +9234,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modpercepcao = sheet.modsabedoria or 0;
-            				if self.cbxpercepcao.checked then
+            				if sheet.cbxpercepcao then
             					sheet.gradpercepcao = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalpercepcao = (math.floor((sheet.gradpercepcao)or 0)+math.floor((sheet.modpercepcao) or 0)+math.floor((sheet.outrospercepcao)or 0));
             				else
@@ -9248,7 +9248,7 @@ function newTormentaCastfrm()
         function (self, field, oldValue, newValue)
             if self.calculos.checked == false then
             				sheet.modsobrevivencia = sheet.modsabedoria or 0;
-            				if self.cbxsobrevivencia.checked then
+            				if sheet.cbxsobrevivencia then
             					sheet.gradsobrevivencia = (math.floor((sheet.nivel)+3 or 0));
             					sheet.totalsobrevivencia = (math.floor((sheet.gradsobrevivencia)or 0)+math.floor((sheet.modsobrevivencia) or 0)+math.floor((sheet.outrossobrevivencia)or 0));
             				else
