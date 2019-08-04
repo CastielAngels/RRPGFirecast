@@ -66,7 +66,7 @@ function newTormenta05()
 
     obj.label1 = gui.fromHandle(_obj_newObject("label"));
     obj.label1:setParent(obj.layout1);
-    obj.label1:setLeft(453);
+    obj.label1:setLeft(455);
     obj.label1:setTop(6);
     obj.label1:setWidth(100);
     obj.label1:setHeight(20);

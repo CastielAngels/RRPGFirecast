@@ -8532,7 +8532,7 @@ function newTormentaCastfrm()
 
     obj.label194 = gui.fromHandle(_obj_newObject("label"));
     obj.label194:setParent(obj.layout71);
-    obj.label194:setLeft(453);
+    obj.label194:setLeft(455);
     obj.label194:setTop(6);
     obj.label194:setWidth(100);
     obj.label194:setHeight(20);
@@ -8667,6 +8667,11 @@ function newTormentaCastfrm()
     obj.OsMundosDosMortosC:setName("OsMundosDosMortosC");
     obj.OsMundosDosMortosC:setAlign("client");
     obj.OsMundosDosMortosC:setTheme("dark");
+
+
+		local GUI = require("gui.lua");
+	
+
 
     obj.flowLayout1 = gui.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout1:setParent(obj.OsMundosDosMortosC);

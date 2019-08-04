@@ -30,6 +30,11 @@ function newOsMundosDosMortosC()
     obj:setAlign("client");
     obj:setTheme("dark");
 
+
+		local GUI = require("gui.lua");
+	
+
+
     obj.flowLayout1 = gui.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout1:setParent(obj);
     obj.flowLayout1:setAlign("client");

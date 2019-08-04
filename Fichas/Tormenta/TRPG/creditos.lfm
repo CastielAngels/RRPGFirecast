@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="OsMundosDosMortosC" align="client" theme="dark">
+	<script>
+		local GUI = require("gui.lua");
+	</script>
 	<flowLayout align="client" horzAlign="center">
 		<flowPart minWidth="500" maxWidth="510" height="350">
 			<rectangle top="10" width="500" height="200" color="Gray" xradius="10" yradius="10"/>
