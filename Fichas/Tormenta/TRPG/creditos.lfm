@@ -10,7 +10,7 @@
 			<layout left="140" top="18" width="250" height="200">
 				<label left="0" top="30" width="250" fontColor="silver" height="20" text="Programador: CastielAngels" horzTextAlign="center"/>
 				<label left="0" top="55" width="250" fontColor="silver" height="20" text="Tormenta RPG RRPG Firecast" horzTextAlign="center"/>
-				<label left="0" top="80" width="250" fontColor="silver" height="20" text="Versão: 1.0 03/08/19" horzTextAlign="center" fontSize="13"/>
+				<label left="0" top="80" width="250" fontColor="silver" height="20" text="Versão: 1.1 08/08/19" horzTextAlign="center" fontSize="13"/>
 				<label left="0" top="105" width="250" fontColor="silver" height="20" text="Por favor, mantenha seu plugin atualizado." horzTextAlign="center" fontSize="13"/>
 				<label left="3" top="130" width="250" fontColor="silver" height="20" text="Clique aqui para acessar o repositório." horzTextAlign="center" fontSize="13"/>
 			</layout>

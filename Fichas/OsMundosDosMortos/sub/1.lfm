@@ -87,16 +87,16 @@
 		</layout>
 		<layout left="8" top="245" width="235" height="160">
 			<rectangle align="client"/>
-			<label left="86" top="11" width="65" height="20" text="Músculos" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<layout top="32" width="215" height="20">
+			<label left="86" top="9" width="65" height="20" text="Músculos" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
+			<layout top="30" width="215" height="20">
 				<Tenbox field="musc"/>
 			</layout>
-			<label left="91" top="56" width="60" height="20" text="Cérebro" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<layout top="77" width="215" height="20">
+			<label left="91" top="54" width="60" height="20" text="Cérebro" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
+			<layout top="75" width="215" height="20">
 				<Tenbox field="cereb"/>
 			</layout>
-			<label left="91" top="101" width="60" height="20" text="Coração" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
-			<layout top="122" width="215" height="20">
+			<label left="91" top="99" width="60" height="20" text="Coração" horzTextAlign="leading" fontStyle="bold" fontSize="14" fontColor="black"/>
+			<layout top="120" width="215" height="20">
 				<Tenbox field="corac"/>
 			</layout>
 		</layout>
@@ -130,18 +130,6 @@
 			<edit field="vcoracao" left="104" top="123" width="25" height="25" fontSize="16" horzTextAlign="center" hitTest="false" readOnly="true" type="number" max="10" transparent="true" fontColor="black" fontStyle="bold"/>
 			<image left="102" top="121" width="30" height="30" src="img/blackhole.png"/>
 		</layout>
-
-
-
-
-------------------
-
-
-
-
-
-
-
 		<layout left="10" top="457" width="860" height="320">
 			<rectangle align="client"/>
 			<label left="100" top="10" width="130" height="20" text="Minhas Habilidades" horzTextAlign="leading" fontStyle="bold" fontSize="13" fontColor="black"/>
@@ -206,4 +194,14 @@
 			</layout>
 		</layout>
 	</scrollBox>
+	<dataLink fields="{'musc_1', 'musc_2', 'musc_3', 'musc_4', 'musc_5', 'musc_6', 'musc_7', 'musc_8', 'musc_9', 'musc_10', 'cereb_1', 'cereb_2', 'cereb_3', 'cereb_4', 'cereb_5', 'cereb_6', 'cereb_7', 'cereb_8', 'cereb_9', 'cereb_10', 'corac_1', 'corac_2', 'corac_3', 'corac_4', 'corac_5', 'corac_6', 'corac_7', 'corac_8', 'corac_9', 'corac_10'}">
+		<event name="onChange">
+			function booton(value)
+  				return value and 1 or 0
+			end
+			sheet.vmusculos = math.floor(booton(self.musc_n1.checked) or 0)+math.floor(booton(self.musc_n2.checked) or 0)+math.floor(booton(self.musc_n3.checked) or 0)+math.floor(booton(self.musc_n4.checked) or 0)+math.floor(booton(self.musc_n5.checked) or 0)+math.floor(booton(self.musc_n6.checked) or 0)+math.floor(booton(self.musc_n7.checked) or 0)+math.floor(booton(self.musc_n8.checked) or 0)+math.floor(booton(self.musc_n9.checked) or 0)+math.floor(booton(self.musc_n10.checked) or 0)
+			sheet.vcerebro = math.floor(booton(self.cereb_n1.checked) or 0)+math.floor(booton(self.cereb_n2.checked) or 0)+math.floor(booton(self.cereb_n3.checked) or 0)+math.floor(booton(self.cereb_n4.checked) or 0)+math.floor(booton(self.cereb_n5.checked) or 0)+math.floor(booton(self.cereb_n6.checked) or 0)+math.floor(booton(self.cereb_n7.checked) or 0)+math.floor(booton(self.cereb_n8.checked) or 0)+math.floor(booton(self.cereb_n9.checked) or 0)+math.floor(booton(self.cereb_n10.checked) or 0)
+			sheet.vcoracao = math.floor(booton(self.corac_n1.checked) or 0)+math.floor(booton(self.corac_n2.checked) or 0)+math.floor(booton(self.corac_n3.checked) or 0)+math.floor(booton(self.corac_n4.checked) or 0)+math.floor(booton(self.corac_n5.checked) or 0)+math.floor(booton(self.corac_n6.checked) or 0)+math.floor(booton(self.corac_n7.checked) or 0)+math.floor(booton(self.corac_n8.checked) or 0)+math.floor(booton(self.corac_n9.checked) or 0)+math.floor(booton(self.corac_n10.checked) or 0)
+		</event>
+	</dataLink>
 </form>

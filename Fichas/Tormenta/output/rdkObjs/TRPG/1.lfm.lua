@@ -3249,7 +3249,7 @@ function newTormenta01()
     obj.button1:setOpacity(0.0);
     obj.button1:setCanFocus(false);
     obj.button1:setCursor("handPoint");
-    obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.0");
+    obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.1");
     obj.button1:setName("button1");
 
     obj.dataLink1 = gui.fromHandle(_obj_newObject("dataLink"));

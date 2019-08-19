@@ -649,7 +649,7 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.label17 = GUI.fromHandle(_obj_newObject("label"));
     obj.label17:setParent(obj.layout14);
     obj.label17:setLeft(86);
-    obj.label17:setTop(11);
+    obj.label17:setTop(9);
     obj.label17:setWidth(65);
     obj.label17:setHeight(20);
     obj.label17:setText("Músculos");
@@ -661,7 +661,7 @@ local function constructNew_OsMundosDosMortosfrm()
 
     obj.layout15 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout15:setParent(obj.layout14);
-    obj.layout15:setTop(32);
+    obj.layout15:setTop(30);
     obj.layout15:setWidth(215);
     obj.layout15:setHeight(20);
     obj.layout15:setName("layout15");
@@ -769,7 +769,7 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.label18 = GUI.fromHandle(_obj_newObject("label"));
     obj.label18:setParent(obj.layout14);
     obj.label18:setLeft(91);
-    obj.label18:setTop(56);
+    obj.label18:setTop(54);
     obj.label18:setWidth(60);
     obj.label18:setHeight(20);
     obj.label18:setText("Cérebro");
@@ -781,7 +781,7 @@ local function constructNew_OsMundosDosMortosfrm()
 
     obj.layout16 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout16:setParent(obj.layout14);
-    obj.layout16:setTop(77);
+    obj.layout16:setTop(75);
     obj.layout16:setWidth(215);
     obj.layout16:setHeight(20);
     obj.layout16:setName("layout16");
@@ -889,7 +889,7 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.label19 = GUI.fromHandle(_obj_newObject("label"));
     obj.label19:setParent(obj.layout14);
     obj.label19:setLeft(91);
-    obj.label19:setTop(101);
+    obj.label19:setTop(99);
     obj.label19:setWidth(60);
     obj.label19:setHeight(20);
     obj.label19:setText("Coração");
@@ -901,7 +901,7 @@ local function constructNew_OsMundosDosMortosfrm()
 
     obj.layout17 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout17:setParent(obj.layout14);
-    obj.layout17:setTop(122);
+    obj.layout17:setTop(120);
     obj.layout17:setWidth(215);
     obj.layout17:setHeight(20);
     obj.layout17:setName("layout17");
@@ -1341,22 +1341,6 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.image10:setHeight(30);
     obj.image10:setSRC("/sub/img/blackhole.png");
     obj.image10:setName("image10");
-
-
-			function booToNumer(value)
-				if value then
-					return 0
-				else
-					return 1
-				end;
-			end;
-			function verifyCB(cbx, check)
-				for i,v in ipairs(cbx) do
-					showMessage(i,v)
-				end;
-			end;
-		
-
 
     obj.layout20 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout20:setParent(obj.scrollBox1);
@@ -2415,6 +2399,11 @@ local function constructNew_OsMundosDosMortosfrm()
     obj.edit30:setTransparent(true);
     obj.edit30:setName("edit30");
 
+    obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink1:setParent(obj.OsMundosDosMortos1);
+    obj.dataLink1:setFields({'musc_1', 'musc_2', 'musc_3', 'musc_4', 'musc_5', 'musc_6', 'musc_7', 'musc_8', 'musc_9', 'musc_10', 'cereb_1', 'cereb_2', 'cereb_3', 'cereb_4', 'cereb_5', 'cereb_6', 'cereb_7', 'cereb_8', 'cereb_9', 'cereb_10', 'corac_1', 'corac_2', 'corac_3', 'corac_4', 'corac_5', 'corac_6', 'corac_7', 'corac_8', 'corac_9', 'corac_10'});
+    obj.dataLink1:setName("dataLink1");
+
     obj.tab2 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab2:setParent(obj.tabControl1);
     obj.tab2:setTitle("Verso");
@@ -2836,162 +2825,22 @@ local function constructNew_OsMundosDosMortosfrm()
             Dialogs.selectImageURL('', function(url) sheet.backgroundimg = url end)
         end, obj);
 
-    obj._e_event1 = obj.musc_n1:addEventListener("onChange",
-        function (_)
-            verifyCB(self.musc_n1, self.musc_n1.checked)
+    obj._e_event1 = obj.dataLink1:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
+            function booton(value)
+              				return value and 1 or 0
+            			end
+            			sheet.vmusculos = math.floor(booton(self.musc_n1.checked) or 0)+math.floor(booton(self.musc_n2.checked) or 0)+math.floor(booton(self.musc_n3.checked) or 0)+math.floor(booton(self.musc_n4.checked) or 0)+math.floor(booton(self.musc_n5.checked) or 0)+math.floor(booton(self.musc_n6.checked) or 0)+math.floor(booton(self.musc_n7.checked) or 0)+math.floor(booton(self.musc_n8.checked) or 0)+math.floor(booton(self.musc_n9.checked) or 0)+math.floor(booton(self.musc_n10.checked) or 0)
+            			sheet.vcerebro = math.floor(booton(self.cereb_n1.checked) or 0)+math.floor(booton(self.cereb_n2.checked) or 0)+math.floor(booton(self.cereb_n3.checked) or 0)+math.floor(booton(self.cereb_n4.checked) or 0)+math.floor(booton(self.cereb_n5.checked) or 0)+math.floor(booton(self.cereb_n6.checked) or 0)+math.floor(booton(self.cereb_n7.checked) or 0)+math.floor(booton(self.cereb_n8.checked) or 0)+math.floor(booton(self.cereb_n9.checked) or 0)+math.floor(booton(self.cereb_n10.checked) or 0)
+            			sheet.vcoracao = math.floor(booton(self.corac_n1.checked) or 0)+math.floor(booton(self.corac_n2.checked) or 0)+math.floor(booton(self.corac_n3.checked) or 0)+math.floor(booton(self.corac_n4.checked) or 0)+math.floor(booton(self.corac_n5.checked) or 0)+math.floor(booton(self.corac_n6.checked) or 0)+math.floor(booton(self.corac_n7.checked) or 0)+math.floor(booton(self.corac_n8.checked) or 0)+math.floor(booton(self.corac_n9.checked) or 0)+math.floor(booton(self.corac_n10.checked) or 0)
         end, obj);
 
-    obj._e_event2 = obj.musc_n2:addEventListener("onChange",
-        function (_)
-            verifyCB(musc_n2, self.musc_n2.checked)
-        end, obj);
-
-    obj._e_event3 = obj.musc_n3:addEventListener("onChange",
-        function (_)
-            verifyCB(musc_n3, self.musc_n3.checked)
-        end, obj);
-
-    obj._e_event4 = obj.musc_n4:addEventListener("onChange",
-        function (_)
-            verifyCB(musc_n4, self.musc_n4.checked)
-        end, obj);
-
-    obj._e_event5 = obj.musc_n5:addEventListener("onChange",
-        function (_)
-            verifyCB(musc_n5, self.musc_n5.checked)
-        end, obj);
-
-    obj._e_event6 = obj.musc_n6:addEventListener("onChange",
-        function (_)
-            verifyCB(musc_n6, self.musc_n6.checked)
-        end, obj);
-
-    obj._e_event7 = obj.musc_n7:addEventListener("onChange",
-        function (_)
-            verifyCB(musc_n7, self.musc_n7.checked)
-        end, obj);
-
-    obj._e_event8 = obj.musc_n8:addEventListener("onChange",
-        function (_)
-            verifyCB(musc_n8, self.musc_n8.checked)
-        end, obj);
-
-    obj._e_event9 = obj.musc_n9:addEventListener("onChange",
-        function (_)
-            verifyCB(musc_n9, self.musc_n9.checked)
-        end, obj);
-
-    obj._e_event10 = obj.musc_n10:addEventListener("onChange",
-        function (_)
-            verifyCB(musc_n10, self.musc_n10.checked)
-        end, obj);
-
-    obj._e_event11 = obj.cereb_n1:addEventListener("onChange",
-        function (_)
-            verifyCB(self.cereb_n1, self.cereb_n1.checked)
-        end, obj);
-
-    obj._e_event12 = obj.cereb_n2:addEventListener("onChange",
-        function (_)
-            verifyCB(cereb_n2, self.cereb_n2.checked)
-        end, obj);
-
-    obj._e_event13 = obj.cereb_n3:addEventListener("onChange",
-        function (_)
-            verifyCB(cereb_n3, self.cereb_n3.checked)
-        end, obj);
-
-    obj._e_event14 = obj.cereb_n4:addEventListener("onChange",
-        function (_)
-            verifyCB(cereb_n4, self.cereb_n4.checked)
-        end, obj);
-
-    obj._e_event15 = obj.cereb_n5:addEventListener("onChange",
-        function (_)
-            verifyCB(cereb_n5, self.cereb_n5.checked)
-        end, obj);
-
-    obj._e_event16 = obj.cereb_n6:addEventListener("onChange",
-        function (_)
-            verifyCB(cereb_n6, self.cereb_n6.checked)
-        end, obj);
-
-    obj._e_event17 = obj.cereb_n7:addEventListener("onChange",
-        function (_)
-            verifyCB(cereb_n7, self.cereb_n7.checked)
-        end, obj);
-
-    obj._e_event18 = obj.cereb_n8:addEventListener("onChange",
-        function (_)
-            verifyCB(cereb_n8, self.cereb_n8.checked)
-        end, obj);
-
-    obj._e_event19 = obj.cereb_n9:addEventListener("onChange",
-        function (_)
-            verifyCB(cereb_n9, self.cereb_n9.checked)
-        end, obj);
-
-    obj._e_event20 = obj.cereb_n10:addEventListener("onChange",
-        function (_)
-            verifyCB(cereb_n10, self.cereb_n10.checked)
-        end, obj);
-
-    obj._e_event21 = obj.corac_n1:addEventListener("onChange",
-        function (_)
-            verifyCB(self.corac_n1, self.corac_n1.checked)
-        end, obj);
-
-    obj._e_event22 = obj.corac_n2:addEventListener("onChange",
-        function (_)
-            verifyCB(corac_n2, self.corac_n2.checked)
-        end, obj);
-
-    obj._e_event23 = obj.corac_n3:addEventListener("onChange",
-        function (_)
-            verifyCB(corac_n3, self.corac_n3.checked)
-        end, obj);
-
-    obj._e_event24 = obj.corac_n4:addEventListener("onChange",
-        function (_)
-            verifyCB(corac_n4, self.corac_n4.checked)
-        end, obj);
-
-    obj._e_event25 = obj.corac_n5:addEventListener("onChange",
-        function (_)
-            verifyCB(corac_n5, self.corac_n5.checked)
-        end, obj);
-
-    obj._e_event26 = obj.corac_n6:addEventListener("onChange",
-        function (_)
-            verifyCB(corac_n6, self.corac_n6.checked)
-        end, obj);
-
-    obj._e_event27 = obj.corac_n7:addEventListener("onChange",
-        function (_)
-            verifyCB(corac_n7, self.corac_n7.checked)
-        end, obj);
-
-    obj._e_event28 = obj.corac_n8:addEventListener("onChange",
-        function (_)
-            verifyCB(corac_n8, self.corac_n8.checked)
-        end, obj);
-
-    obj._e_event29 = obj.corac_n9:addEventListener("onChange",
-        function (_)
-            verifyCB(corac_n9, self.corac_n9.checked)
-        end, obj);
-
-    obj._e_event30 = obj.corac_n10:addEventListener("onChange",
-        function (_)
-            verifyCB(corac_n10, self.corac_n10.checked)
-        end, obj);
-
-    obj._e_event31 = obj.button1:addEventListener("onClick",
+    obj._e_event2 = obj.button1:addEventListener("onClick",
         function (_)
             self.rclListaDosItens:append();
         end, obj);
 
-    obj._e_event32 = obj.rclListaDosItens:addEventListener("onSelect",
+    obj._e_event3 = obj.rclListaDosItens:addEventListener("onSelect",
         function (_)
             local node = self.rclListaDosItens.selectedNode;  
                                      self.boxDetalhesDoItem.node = node;                       
@@ -2999,35 +2848,6 @@ local function constructNew_OsMundosDosMortosfrm()
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event32);
-        __o_rrpgObjs.removeEventListenerById(self._e_event31);
-        __o_rrpgObjs.removeEventListenerById(self._e_event30);
-        __o_rrpgObjs.removeEventListenerById(self._e_event29);
-        __o_rrpgObjs.removeEventListenerById(self._e_event28);
-        __o_rrpgObjs.removeEventListenerById(self._e_event27);
-        __o_rrpgObjs.removeEventListenerById(self._e_event26);
-        __o_rrpgObjs.removeEventListenerById(self._e_event25);
-        __o_rrpgObjs.removeEventListenerById(self._e_event24);
-        __o_rrpgObjs.removeEventListenerById(self._e_event23);
-        __o_rrpgObjs.removeEventListenerById(self._e_event22);
-        __o_rrpgObjs.removeEventListenerById(self._e_event21);
-        __o_rrpgObjs.removeEventListenerById(self._e_event20);
-        __o_rrpgObjs.removeEventListenerById(self._e_event19);
-        __o_rrpgObjs.removeEventListenerById(self._e_event18);
-        __o_rrpgObjs.removeEventListenerById(self._e_event17);
-        __o_rrpgObjs.removeEventListenerById(self._e_event16);
-        __o_rrpgObjs.removeEventListenerById(self._e_event15);
-        __o_rrpgObjs.removeEventListenerById(self._e_event14);
-        __o_rrpgObjs.removeEventListenerById(self._e_event13);
-        __o_rrpgObjs.removeEventListenerById(self._e_event12);
-        __o_rrpgObjs.removeEventListenerById(self._e_event11);
-        __o_rrpgObjs.removeEventListenerById(self._e_event10);
-        __o_rrpgObjs.removeEventListenerById(self._e_event9);
-        __o_rrpgObjs.removeEventListenerById(self._e_event8);
-        __o_rrpgObjs.removeEventListenerById(self._e_event7);
-        __o_rrpgObjs.removeEventListenerById(self._e_event6);
-        __o_rrpgObjs.removeEventListenerById(self._e_event5);
-        __o_rrpgObjs.removeEventListenerById(self._e_event4);
         __o_rrpgObjs.removeEventListenerById(self._e_event3);
         __o_rrpgObjs.removeEventListenerById(self._e_event2);
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
@@ -3280,6 +3100,7 @@ local function constructNew_OsMundosDosMortosfrm()
         if self.expatual ~= nil then self.expatual:destroy(); self.expatual = nil; end;
         if self.imageCheckBox5 ~= nil then self.imageCheckBox5:destroy(); self.imageCheckBox5 = nil; end;
         if self.imageCheckBox42 ~= nil then self.imageCheckBox42:destroy(); self.imageCheckBox42 = nil; end;
+        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.imageCheckBox29 ~= nil then self.imageCheckBox29:destroy(); self.imageCheckBox29 = nil; end;
         if self.imageCheckBox16 ~= nil then self.imageCheckBox16:destroy(); self.imageCheckBox16 = nil; end;
         if self.rectangle27 ~= nil then self.rectangle27:destroy(); self.rectangle27 = nil; end;

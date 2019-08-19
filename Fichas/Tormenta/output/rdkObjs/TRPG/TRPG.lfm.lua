@@ -3268,7 +3268,7 @@ function newTormentaCastfrm()
     obj.button1:setOpacity(0.0);
     obj.button1:setCanFocus(false);
     obj.button1:setCursor("handPoint");
-    obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.0");
+    obj.button1:setHint("Baixa a versão mais recente da ficha. Versão instalada: 1.1");
     obj.button1:setName("button1");
 
     obj.dataLink1 = gui.fromHandle(_obj_newObject("dataLink"));
@@ -8659,11 +8659,37 @@ function newTormentaCastfrm()
 
     obj.tab6 = gui.fromHandle(_obj_newObject("tab"));
     obj.tab6:setParent(obj.tabControl1);
-    obj.tab6:setTitle("Créditos");
+    obj.tab6:setTitle("Ataques e defesas");
     obj.tab6:setName("tab6");
 
+    obj.Tormenta06 = gui.fromHandle(_obj_newObject("form"));
+    obj.Tormenta06:setParent(obj.tab6);
+    obj.Tormenta06:setName("Tormenta06");
+    obj.Tormenta06:setAlign("client");
+    obj.Tormenta06:setTheme("dark");
+    obj.Tormenta06:setLockWhileNodeIsLoading(true);
+
+    obj.scrollBox6 = gui.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox6:setParent(obj.Tormenta06);
+    obj.scrollBox6:setAlign("client");
+    obj.scrollBox6:setName("scrollBox6");
+
+    obj.rectangle204 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle204:setParent(obj.scrollBox6);
+    obj.rectangle204:setWidth(1010);
+    obj.rectangle204:setHeight(700);
+    obj.rectangle204:setColor("DimGray");
+    obj.rectangle204:setXradius(10);
+    obj.rectangle204:setYradius(10);
+    obj.rectangle204:setName("rectangle204");
+
+    obj.tab7 = gui.fromHandle(_obj_newObject("tab"));
+    obj.tab7:setParent(obj.tabControl1);
+    obj.tab7:setTitle("Créditos");
+    obj.tab7:setName("tab7");
+
     obj.OsMundosDosMortosC = gui.fromHandle(_obj_newObject("form"));
-    obj.OsMundosDosMortosC:setParent(obj.tab6);
+    obj.OsMundosDosMortosC:setParent(obj.tab7);
     obj.OsMundosDosMortosC:setName("OsMundosDosMortosC");
     obj.OsMundosDosMortosC:setAlign("client");
     obj.OsMundosDosMortosC:setTheme("dark");
@@ -8686,15 +8712,15 @@ function newTormentaCastfrm()
     obj.flowPart1:setHeight(350);
     obj.flowPart1:setName("flowPart1");
 
-    obj.rectangle204 = gui.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle204:setParent(obj.flowPart1);
-    obj.rectangle204:setTop(10);
-    obj.rectangle204:setWidth(500);
-    obj.rectangle204:setHeight(200);
-    obj.rectangle204:setColor("Gray");
-    obj.rectangle204:setXradius(10);
-    obj.rectangle204:setYradius(10);
-    obj.rectangle204:setName("rectangle204");
+    obj.rectangle205 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle205:setParent(obj.flowPart1);
+    obj.rectangle205:setTop(10);
+    obj.rectangle205:setWidth(500);
+    obj.rectangle205:setHeight(200);
+    obj.rectangle205:setColor("Gray");
+    obj.rectangle205:setXradius(10);
+    obj.rectangle205:setYradius(10);
+    obj.rectangle205:setName("rectangle205");
 
     obj.path1 = gui.fromHandle(_obj_newObject("path"));
     obj.path1:setParent(obj.flowPart1);
@@ -8747,7 +8773,7 @@ function newTormentaCastfrm()
     obj.label200:setWidth(250);
     obj.label200:setFontColor("silver");
     obj.label200:setHeight(20);
-    obj.label200:setText("Versão: 1.0 03/08/19");
+    obj.label200:setText("Versão: 1.1 08/08/19");
     obj.label200:setHorzTextAlign("center");
     obj.label200:setFontSize(13);
     obj.label200:setName("label200");
@@ -9263,12 +9289,18 @@ function newTormentaCastfrm()
             			end;
         end, obj);
 
-    obj._e_event39 = obj.button2:addEventListener("onClick",
+    obj._e_event39 = obj.Tormenta06:addEventListener("onNodeReady",
+        function (self)
+            desCalculos();
+        end, obj);
+
+    obj._e_event40 = obj.button2:addEventListener("onClick",
         function (self)
             GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast');
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event40);
         __o_rrpgObjs.removeEventListenerById(self._e_event39);
         __o_rrpgObjs.removeEventListenerById(self._e_event38);
         __o_rrpgObjs.removeEventListenerById(self._e_event37);
@@ -9384,6 +9416,7 @@ function newTormentaCastfrm()
         if self.rectangle59 ~= nil then self.rectangle59:destroy(); self.rectangle59 = nil; end;
         if self.layout62 ~= nil then self.layout62:destroy(); self.layout62 = nil; end;
         if self.modsabedoria ~= nil then self.modsabedoria:destroy(); self.modsabedoria = nil; end;
+        if self.Tormenta06 ~= nil then self.Tormenta06:destroy(); self.Tormenta06 = nil; end;
         if self.label186 ~= nil then self.label186:destroy(); self.label186 = nil; end;
         if self.rectangle103 ~= nil then self.rectangle103:destroy(); self.rectangle103 = nil; end;
         if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
@@ -9789,9 +9822,10 @@ function newTormentaCastfrm()
         if self.edit10 ~= nil then self.edit10:destroy(); self.edit10 = nil; end;
         if self.caarmadura ~= nil then self.caarmadura:destroy(); self.caarmadura = nil; end;
         if self.edit31 ~= nil then self.edit31:destroy(); self.edit31 = nil; end;
-        if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
+        if self.rectangle205 ~= nil then self.rectangle205:destroy(); self.rectangle205 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
         if self.cbxcavalgar ~= nil then self.cbxcavalgar:destroy(); self.cbxcavalgar = nil; end;
+        if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.rectangle26 ~= nil then self.rectangle26:destroy(); self.rectangle26 = nil; end;
         if self.label78 ~= nil then self.label78:destroy(); self.label78 = nil; end;
         if self.label101 ~= nil then self.label101:destroy(); self.label101 = nil; end;
@@ -9819,6 +9853,7 @@ function newTormentaCastfrm()
         if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
         if self.label197 ~= nil then self.label197:destroy(); self.label197 = nil; end;
         if self.label56 ~= nil then self.label56:destroy(); self.label56 = nil; end;
+        if self.tab7 ~= nil then self.tab7:destroy(); self.tab7 = nil; end;
         if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
         if self.gradcavalgar ~= nil then self.gradcavalgar:destroy(); self.gradcavalgar = nil; end;
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
@@ -10023,6 +10058,7 @@ function newTormentaCastfrm()
         if self.label46 ~= nil then self.label46:destroy(); self.label46 = nil; end;
         if self.label85 ~= nil then self.label85:destroy(); self.label85 = nil; end;
         if self.rectangle196 ~= nil then self.rectangle196:destroy(); self.rectangle196 = nil; end;
+        if self.scrollBox6 ~= nil then self.scrollBox6:destroy(); self.scrollBox6 = nil; end;
         if self.gradoficio1 ~= nil then self.gradoficio1:destroy(); self.gradoficio1 = nil; end;
         if self.rectangle31 ~= nil then self.rectangle31:destroy(); self.rectangle31 = nil; end;
         if self.label183 ~= nil then self.label183:destroy(); self.label183 = nil; end;

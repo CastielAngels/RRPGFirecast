@@ -16,6 +16,9 @@
 		<tab title="Histórico">
 			<import file="5.lfm"/>
 		</tab>
+		<tab title="Ataques e defesas">
+			<import file="6.lfm"/>
+		</tab>
 		<tab title="Créditos">
 			<import file="creditos.lfm"/>
 		</tab>
