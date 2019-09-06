@@ -282,7 +282,7 @@
 			<imageCheckBox name="acuidade" field="acuidade" left="34" top="136" checkedImage="img/hand.png" uncheckedImage="img/closedhand.png" hint="Muda o modificador em jogadas de ataque corpo-a-corpo. FOR ou DES." width="15" height="15"/>
 			<imageCheckBox name="pontaria" field="pontaria" left="54" top="136" checkedImage="img/wisdom.png" uncheckedImage="img/bow.png" hint="Muda o modificador em jogadas de ataque à distância. DES ou SAB." width="15" height="15"/>
 			<image left="74" top="136" name="update" src="img/update.gif" width="15" height="15"/>
-			<button left="74" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.1" onClick="GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');"/>
+			<button left="74" top="136" width="15" height="15" opacity="0.0" canFocus="false" cursor="handPoint" hint="Baixa a versão mais recente da ficha. Versão instalada: 1.2" onClick="GUI.openInBrowser('https://github.com/CastielAngels/RRPGFirecast/raw/master/Fichas/Tormenta/output/Tormenta.rpk');"/>
 		</layout>
 	</scrollBox>
 	<dataLink fields="{'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'ca1', 'ca2', 'ca3', 'ca4', 'ca5', 'fort1', 'fort2', 'fort3', 'ref1', 'ref2', 'ref3', 'von1', 'von2', 'von3', 'acuidade', 'modforca', 'cac1', 'cac2', 'cac3', 'cac4', 'pontaria', 'bba', 'dis1', 'dis2', 'dis3', 'dis4', 'nvclasse1', 'nvclasse2', 'nvclasse3', 'nvclasse4', 'nvclasse5', 'nvclasse6', 'nvclasse7', 'nvclasse8', 'nvclasse9', 'nvclasse10'}">

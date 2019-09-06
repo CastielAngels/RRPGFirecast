@@ -394,10 +394,10 @@
 				sheet.modatletismo = sheet.modforca or 0;
 				if sheet.cbxatletismo then
 					sheet.gradatletismo = (math.floor((sheet.nivel)+3 or 0));
-					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
+					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
 				else
 					sheet.gradatletismo = (math.floor((sheet.metadenivel)or 0));
-					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
+					sheet.totalatletismo = (math.floor((sheet.gradatletismo)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modatletismo) or 0)+math.floor((sheet.outrosatletismo)or 0));
 				end;
 			end;
 		</event>
@@ -430,10 +430,10 @@
 				sheet.modcavalgar = sheet.moddestreza or 0;
 				if sheet.cbxcavalgar then
 					sheet.gradcavalgar = (math.floor((sheet.nivel)+3 or 0));
-					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
+					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
 				else
 					sheet.gradcavalgar = (math.floor((sheet.metadenivel)or 0));
-					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
+					sheet.totalcavalgar = (math.floor((sheet.gradcavalgar)or 0)+math.floor((sheet.modcavalgar) or 0)+math.floor((sheet.outroscavalgar)or 0));
 				end;
 			end;
 		</event>
@@ -526,10 +526,10 @@
 				sheet.modiniciativa = sheet.moddestreza or 0;
 				if sheet.cbxiniciativa then
 					sheet.gradiniciativa = (math.floor((sheet.nivel)+3 or 0));
-					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
+					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
 				else
 					sheet.gradiniciativa = (math.floor((sheet.metadenivel)or 0));
-					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.penescudo) or 0)+math.floor((sheet.penarmadura) or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
+					sheet.totaliniciativa = (math.floor((sheet.gradiniciativa)or 0)+math.floor((sheet.modiniciativa) or 0)+math.floor((sheet.outrosiniciativa)or 0));
 				end;
 			end;
 		</event>
