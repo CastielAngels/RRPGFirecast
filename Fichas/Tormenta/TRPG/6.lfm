@@ -2,5 +2,47 @@
 <form name="Tormenta06" align="client" theme="dark" lockWhileNodeIsLoading="true" onNodeReady="desCalculos();">
     <scrollBox align="client">
         <rectangle width="1010" height="700" color="DimGray" xradius="10" yradius="10"/>
+        <layout left="5" top="5" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="5" top="105" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="5" top="205" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="5" top="305" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="5" top="405" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="5" top="505" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="5" top="605" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="510" top="5" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="510" top="105" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="510" top="205" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="510" top="305" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="510" top="405" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="510" top="505" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
+        <layout left="510" top="605" width="497" height="95">
+            <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
+        </layout>
     </scrollBox>
 </form>
