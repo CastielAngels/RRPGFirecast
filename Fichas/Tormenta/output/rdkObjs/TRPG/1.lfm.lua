@@ -3237,6 +3237,7 @@ local function constructNew_Tormenta01()
     obj.update:setLeft(74);
     obj.update:setTop(136);
     obj.update:setName("update");
+    lfm_setPropAsString(obj.update, "animate",  "true");
     obj.update:setSRC("/TRPG/img/update.gif");
     obj.update:setWidth(15);
     obj.update:setHeight(15);
