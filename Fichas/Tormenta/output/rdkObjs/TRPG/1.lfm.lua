@@ -2113,6 +2113,7 @@ local function constructNew_Tormenta01()
     obj.image2:setLeft(667);
     obj.image2:setTop(421);
     obj.image2:setField("imagempersona");
+    lfm_setPropAsString(obj.image2, "animate",  "true");
     obj.image2:setEditable(true);
     obj.image2:setStyle("stretch");
     obj.image2:setSRC("");

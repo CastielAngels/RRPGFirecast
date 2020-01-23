@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="Odisseia01" align="client" theme="dark" lockWhileNodeIsLoading="true" onNodeReady="desCalculos();">
     <scrollBox align="client">
-		<image width="809" height="1145" src="img/01.jpg"/>
+		<image width="809" height="1145" src="img/01.png"/>
 	</scrollBox>
 </form>

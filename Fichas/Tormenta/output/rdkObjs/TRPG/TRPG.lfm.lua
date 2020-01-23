@@ -2132,6 +2132,7 @@ local function constructNew_TormentaCastfrm()
     obj.image2:setLeft(667);
     obj.image2:setTop(421);
     obj.image2:setField("imagempersona");
+    lfm_setPropAsString(obj.image2, "animate",  "true");
     obj.image2:setEditable(true);
     obj.image2:setStyle("stretch");
     obj.image2:setSRC("");
@@ -8547,6 +8548,7 @@ local function constructNew_TormentaCastfrm()
     obj.richEdit1:setLeft(10);
     obj.richEdit1:setTop(27);
     lfm_setPropAsString(obj.richEdit1, "backgroundColor",  "#333333");
+    lfm_setPropAsString(obj.richEdit1, "animateImages",  "true");
     lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "white");
     obj.richEdit1:setField("background");
     obj.richEdit1:setWidth(970);

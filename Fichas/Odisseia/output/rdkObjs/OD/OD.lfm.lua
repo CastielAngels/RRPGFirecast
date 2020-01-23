@@ -59,7 +59,7 @@ function newOdisseiaCastfrm()
     obj.image1:setParent(obj.scrollBox1);
     obj.image1:setWidth(809);
     obj.image1:setHeight(1145);
-    obj.image1:setSRC("/OD/img/01.jpg");
+    obj.image1:setSRC("/OD/img/01.png");
     obj.image1:setName("image1");
 
     obj.tab2 = gui.fromHandle(_obj_newObject("tab"));

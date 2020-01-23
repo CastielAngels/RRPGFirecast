@@ -182,7 +182,7 @@
 		</layout>
 		<rectangle left="663" top="417" color="#333333" width="341" height="278" xradius="2" yradius="2"/>
 		<rectangle left="668" top="422" color="#696969" width="331" height="268" xradius="2" yradius="2"/>
-		<image left="667" top="421" field="imagempersona" editable="true" style="stretch" src="" width="333" height="270"/>
+		<image left="667" top="421" field="imagempersona" animate="true" editable="true" style="stretch" src="" width="333" height="270"/>
 		<layout left="6" top="421" width="688" height="41">
 			<rectangle left="5" top="15" color="Gainsboro" width="155" height="25" xradius="2" yradius="2"/>
 			<label left="27" top="15" width="105" height="25" fontSize="15" horzTextAlign="center" fontStyle="bold" fontColor="black" text="Corpo-a-corpo"/>

@@ -40,7 +40,7 @@ function newOdisseia01()
     obj.image1:setParent(obj.scrollBox1);
     obj.image1:setWidth(809);
     obj.image1:setHeight(1145);
-    obj.image1:setSRC("/OD/img/01.jpg");
+    obj.image1:setSRC("/OD/img/01.png");
     obj.image1:setName("image1");
 
     obj._e_event0 = obj:addEventListener("onNodeReady",
