@@ -94,7 +94,7 @@ local function constructNew_Tormenta06()
     obj.edit1:setTop(24);
     obj.edit1:setWidth(185);
     obj.edit1:setHeight(20);
-    obj.edit1:setFontSize(15);
+    obj.edit1:setFontSize(14);
     lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
     obj.edit1:setField("atkname1");
     obj.edit1:setHorzTextAlign("center");
@@ -130,7 +130,7 @@ local function constructNew_Tormenta06()
     obj.edit2:setTop(24);
     obj.edit2:setWidth(105);
     obj.edit2:setHeight(20);
-    obj.edit2:setFontSize(15);
+    obj.edit2:setFontSize(14);
     lfm_setPropAsString(obj.edit2, "fontStyle",  "bold");
     obj.edit2:setField("atkba1");
     obj.edit2:setHorzTextAlign("center");
@@ -166,7 +166,7 @@ local function constructNew_Tormenta06()
     obj.edit3:setTop(24);
     obj.edit3:setWidth(105);
     obj.edit3:setHeight(20);
-    obj.edit3:setFontSize(15);
+    obj.edit3:setFontSize(14);
     lfm_setPropAsString(obj.edit3, "fontStyle",  "bold");
     obj.edit3:setField("atkdn1");
     obj.edit3:setHorzTextAlign("center");
@@ -202,7 +202,7 @@ local function constructNew_Tormenta06()
     obj.edit4:setTop(24);
     obj.edit4:setWidth(86);
     obj.edit4:setHeight(20);
-    obj.edit4:setFontSize(15);
+    obj.edit4:setFontSize(14);
     lfm_setPropAsString(obj.edit4, "fontStyle",  "bold");
     obj.edit4:setField("atkcritico1");
     obj.edit4:setHorzTextAlign("center");
@@ -238,7 +238,7 @@ local function constructNew_Tormenta06()
     obj.edit5:setTop(66);
     obj.edit5:setWidth(86);
     obj.edit5:setHeight(20);
-    obj.edit5:setFontSize(15);
+    obj.edit5:setFontSize(14);
     lfm_setPropAsString(obj.edit5, "fontStyle",  "bold");
     obj.edit5:setField("atkalcance1");
     obj.edit5:setHorzTextAlign("center");
@@ -274,7 +274,7 @@ local function constructNew_Tormenta06()
     obj.edit6:setTop(66);
     obj.edit6:setWidth(86);
     obj.edit6:setHeight(20);
-    obj.edit6:setFontSize(15);
+    obj.edit6:setFontSize(14);
     lfm_setPropAsString(obj.edit6, "fontStyle",  "bold");
     obj.edit6:setField("atktipo1");
     obj.edit6:setHorzTextAlign("center");
@@ -310,7 +310,7 @@ local function constructNew_Tormenta06()
     obj.edit7:setTop(66);
     obj.edit7:setWidth(310);
     obj.edit7:setHeight(20);
-    obj.edit7:setFontSize(15);
+    obj.edit7:setFontSize(14);
     lfm_setPropAsString(obj.edit7, "fontStyle",  "bold");
     obj.edit7:setField("atkpropriedades1");
     obj.edit7:setHorzTextAlign("center");
@@ -365,7 +365,7 @@ local function constructNew_Tormenta06()
     obj.edit8:setTop(24);
     obj.edit8:setWidth(185);
     obj.edit8:setHeight(20);
-    obj.edit8:setFontSize(15);
+    obj.edit8:setFontSize(14);
     lfm_setPropAsString(obj.edit8, "fontStyle",  "bold");
     obj.edit8:setField("atkname2");
     obj.edit8:setHorzTextAlign("center");
@@ -401,7 +401,7 @@ local function constructNew_Tormenta06()
     obj.edit9:setTop(24);
     obj.edit9:setWidth(105);
     obj.edit9:setHeight(20);
-    obj.edit9:setFontSize(15);
+    obj.edit9:setFontSize(14);
     lfm_setPropAsString(obj.edit9, "fontStyle",  "bold");
     obj.edit9:setField("atkba2");
     obj.edit9:setHorzTextAlign("center");
@@ -437,7 +437,7 @@ local function constructNew_Tormenta06()
     obj.edit10:setTop(24);
     obj.edit10:setWidth(105);
     obj.edit10:setHeight(20);
-    obj.edit10:setFontSize(15);
+    obj.edit10:setFontSize(14);
     lfm_setPropAsString(obj.edit10, "fontStyle",  "bold");
     obj.edit10:setField("atkdn2");
     obj.edit10:setHorzTextAlign("center");
@@ -473,7 +473,7 @@ local function constructNew_Tormenta06()
     obj.edit11:setTop(24);
     obj.edit11:setWidth(86);
     obj.edit11:setHeight(20);
-    obj.edit11:setFontSize(15);
+    obj.edit11:setFontSize(14);
     lfm_setPropAsString(obj.edit11, "fontStyle",  "bold");
     obj.edit11:setField("atkcritico2");
     obj.edit11:setHorzTextAlign("center");
@@ -509,7 +509,7 @@ local function constructNew_Tormenta06()
     obj.edit12:setTop(66);
     obj.edit12:setWidth(86);
     obj.edit12:setHeight(20);
-    obj.edit12:setFontSize(15);
+    obj.edit12:setFontSize(14);
     lfm_setPropAsString(obj.edit12, "fontStyle",  "bold");
     obj.edit12:setField("atkalcance2");
     obj.edit12:setHorzTextAlign("center");
@@ -545,7 +545,7 @@ local function constructNew_Tormenta06()
     obj.edit13:setTop(66);
     obj.edit13:setWidth(86);
     obj.edit13:setHeight(20);
-    obj.edit13:setFontSize(15);
+    obj.edit13:setFontSize(14);
     lfm_setPropAsString(obj.edit13, "fontStyle",  "bold");
     obj.edit13:setField("atktipo2");
     obj.edit13:setHorzTextAlign("center");
@@ -581,7 +581,7 @@ local function constructNew_Tormenta06()
     obj.edit14:setTop(66);
     obj.edit14:setWidth(310);
     obj.edit14:setHeight(20);
-    obj.edit14:setFontSize(15);
+    obj.edit14:setFontSize(14);
     lfm_setPropAsString(obj.edit14, "fontStyle",  "bold");
     obj.edit14:setField("atkpropriedades2");
     obj.edit14:setHorzTextAlign("center");
@@ -636,7 +636,7 @@ local function constructNew_Tormenta06()
     obj.edit15:setTop(24);
     obj.edit15:setWidth(185);
     obj.edit15:setHeight(20);
-    obj.edit15:setFontSize(15);
+    obj.edit15:setFontSize(14);
     lfm_setPropAsString(obj.edit15, "fontStyle",  "bold");
     obj.edit15:setField("atkname3");
     obj.edit15:setHorzTextAlign("center");
@@ -672,7 +672,7 @@ local function constructNew_Tormenta06()
     obj.edit16:setTop(24);
     obj.edit16:setWidth(105);
     obj.edit16:setHeight(20);
-    obj.edit16:setFontSize(15);
+    obj.edit16:setFontSize(14);
     lfm_setPropAsString(obj.edit16, "fontStyle",  "bold");
     obj.edit16:setField("atkba3");
     obj.edit16:setHorzTextAlign("center");
@@ -708,7 +708,7 @@ local function constructNew_Tormenta06()
     obj.edit17:setTop(24);
     obj.edit17:setWidth(105);
     obj.edit17:setHeight(20);
-    obj.edit17:setFontSize(15);
+    obj.edit17:setFontSize(14);
     lfm_setPropAsString(obj.edit17, "fontStyle",  "bold");
     obj.edit17:setField("atkdn3");
     obj.edit17:setHorzTextAlign("center");
@@ -744,7 +744,7 @@ local function constructNew_Tormenta06()
     obj.edit18:setTop(24);
     obj.edit18:setWidth(86);
     obj.edit18:setHeight(20);
-    obj.edit18:setFontSize(15);
+    obj.edit18:setFontSize(14);
     lfm_setPropAsString(obj.edit18, "fontStyle",  "bold");
     obj.edit18:setField("atkcritico3");
     obj.edit18:setHorzTextAlign("center");
@@ -780,7 +780,7 @@ local function constructNew_Tormenta06()
     obj.edit19:setTop(66);
     obj.edit19:setWidth(86);
     obj.edit19:setHeight(20);
-    obj.edit19:setFontSize(15);
+    obj.edit19:setFontSize(14);
     lfm_setPropAsString(obj.edit19, "fontStyle",  "bold");
     obj.edit19:setField("atkalcance3");
     obj.edit19:setHorzTextAlign("center");
@@ -816,7 +816,7 @@ local function constructNew_Tormenta06()
     obj.edit20:setTop(66);
     obj.edit20:setWidth(86);
     obj.edit20:setHeight(20);
-    obj.edit20:setFontSize(15);
+    obj.edit20:setFontSize(14);
     lfm_setPropAsString(obj.edit20, "fontStyle",  "bold");
     obj.edit20:setField("atktipo3");
     obj.edit20:setHorzTextAlign("center");
@@ -852,7 +852,7 @@ local function constructNew_Tormenta06()
     obj.edit21:setTop(66);
     obj.edit21:setWidth(310);
     obj.edit21:setHeight(20);
-    obj.edit21:setFontSize(15);
+    obj.edit21:setFontSize(14);
     lfm_setPropAsString(obj.edit21, "fontStyle",  "bold");
     obj.edit21:setField("atkpropriedades3");
     obj.edit21:setHorzTextAlign("center");
@@ -907,7 +907,7 @@ local function constructNew_Tormenta06()
     obj.edit22:setTop(24);
     obj.edit22:setWidth(185);
     obj.edit22:setHeight(20);
-    obj.edit22:setFontSize(15);
+    obj.edit22:setFontSize(14);
     lfm_setPropAsString(obj.edit22, "fontStyle",  "bold");
     obj.edit22:setField("atkname4");
     obj.edit22:setHorzTextAlign("center");
@@ -943,7 +943,7 @@ local function constructNew_Tormenta06()
     obj.edit23:setTop(24);
     obj.edit23:setWidth(105);
     obj.edit23:setHeight(20);
-    obj.edit23:setFontSize(15);
+    obj.edit23:setFontSize(14);
     lfm_setPropAsString(obj.edit23, "fontStyle",  "bold");
     obj.edit23:setField("atkba4");
     obj.edit23:setHorzTextAlign("center");
@@ -979,7 +979,7 @@ local function constructNew_Tormenta06()
     obj.edit24:setTop(24);
     obj.edit24:setWidth(105);
     obj.edit24:setHeight(20);
-    obj.edit24:setFontSize(15);
+    obj.edit24:setFontSize(14);
     lfm_setPropAsString(obj.edit24, "fontStyle",  "bold");
     obj.edit24:setField("atkdn4");
     obj.edit24:setHorzTextAlign("center");
@@ -1015,7 +1015,7 @@ local function constructNew_Tormenta06()
     obj.edit25:setTop(24);
     obj.edit25:setWidth(86);
     obj.edit25:setHeight(20);
-    obj.edit25:setFontSize(15);
+    obj.edit25:setFontSize(14);
     lfm_setPropAsString(obj.edit25, "fontStyle",  "bold");
     obj.edit25:setField("atkcritico4");
     obj.edit25:setHorzTextAlign("center");
@@ -1051,7 +1051,7 @@ local function constructNew_Tormenta06()
     obj.edit26:setTop(66);
     obj.edit26:setWidth(86);
     obj.edit26:setHeight(20);
-    obj.edit26:setFontSize(15);
+    obj.edit26:setFontSize(14);
     lfm_setPropAsString(obj.edit26, "fontStyle",  "bold");
     obj.edit26:setField("atkalcance4");
     obj.edit26:setHorzTextAlign("center");
@@ -1087,7 +1087,7 @@ local function constructNew_Tormenta06()
     obj.edit27:setTop(66);
     obj.edit27:setWidth(86);
     obj.edit27:setHeight(20);
-    obj.edit27:setFontSize(15);
+    obj.edit27:setFontSize(14);
     lfm_setPropAsString(obj.edit27, "fontStyle",  "bold");
     obj.edit27:setField("atktipo4");
     obj.edit27:setHorzTextAlign("center");
@@ -1123,7 +1123,7 @@ local function constructNew_Tormenta06()
     obj.edit28:setTop(66);
     obj.edit28:setWidth(310);
     obj.edit28:setHeight(20);
-    obj.edit28:setFontSize(15);
+    obj.edit28:setFontSize(14);
     lfm_setPropAsString(obj.edit28, "fontStyle",  "bold");
     obj.edit28:setField("atkpropriedades4");
     obj.edit28:setHorzTextAlign("center");
@@ -1178,7 +1178,7 @@ local function constructNew_Tormenta06()
     obj.edit29:setTop(24);
     obj.edit29:setWidth(185);
     obj.edit29:setHeight(20);
-    obj.edit29:setFontSize(15);
+    obj.edit29:setFontSize(14);
     lfm_setPropAsString(obj.edit29, "fontStyle",  "bold");
     obj.edit29:setField("atkname5");
     obj.edit29:setHorzTextAlign("center");
@@ -1214,7 +1214,7 @@ local function constructNew_Tormenta06()
     obj.edit30:setTop(24);
     obj.edit30:setWidth(105);
     obj.edit30:setHeight(20);
-    obj.edit30:setFontSize(15);
+    obj.edit30:setFontSize(14);
     lfm_setPropAsString(obj.edit30, "fontStyle",  "bold");
     obj.edit30:setField("atkba5");
     obj.edit30:setHorzTextAlign("center");
@@ -1250,7 +1250,7 @@ local function constructNew_Tormenta06()
     obj.edit31:setTop(24);
     obj.edit31:setWidth(105);
     obj.edit31:setHeight(20);
-    obj.edit31:setFontSize(15);
+    obj.edit31:setFontSize(14);
     lfm_setPropAsString(obj.edit31, "fontStyle",  "bold");
     obj.edit31:setField("atkdn5");
     obj.edit31:setHorzTextAlign("center");
@@ -1286,7 +1286,7 @@ local function constructNew_Tormenta06()
     obj.edit32:setTop(24);
     obj.edit32:setWidth(86);
     obj.edit32:setHeight(20);
-    obj.edit32:setFontSize(15);
+    obj.edit32:setFontSize(14);
     lfm_setPropAsString(obj.edit32, "fontStyle",  "bold");
     obj.edit32:setField("atkcritico5");
     obj.edit32:setHorzTextAlign("center");
@@ -1322,7 +1322,7 @@ local function constructNew_Tormenta06()
     obj.edit33:setTop(66);
     obj.edit33:setWidth(86);
     obj.edit33:setHeight(20);
-    obj.edit33:setFontSize(15);
+    obj.edit33:setFontSize(14);
     lfm_setPropAsString(obj.edit33, "fontStyle",  "bold");
     obj.edit33:setField("atkalcance5");
     obj.edit33:setHorzTextAlign("center");
@@ -1358,7 +1358,7 @@ local function constructNew_Tormenta06()
     obj.edit34:setTop(66);
     obj.edit34:setWidth(86);
     obj.edit34:setHeight(20);
-    obj.edit34:setFontSize(15);
+    obj.edit34:setFontSize(14);
     lfm_setPropAsString(obj.edit34, "fontStyle",  "bold");
     obj.edit34:setField("atktipo5");
     obj.edit34:setHorzTextAlign("center");
@@ -1394,7 +1394,7 @@ local function constructNew_Tormenta06()
     obj.edit35:setTop(66);
     obj.edit35:setWidth(310);
     obj.edit35:setHeight(20);
-    obj.edit35:setFontSize(15);
+    obj.edit35:setFontSize(14);
     lfm_setPropAsString(obj.edit35, "fontStyle",  "bold");
     obj.edit35:setField("atkpropriedades5");
     obj.edit35:setHorzTextAlign("center");
@@ -1449,7 +1449,7 @@ local function constructNew_Tormenta06()
     obj.edit36:setTop(24);
     obj.edit36:setWidth(185);
     obj.edit36:setHeight(20);
-    obj.edit36:setFontSize(15);
+    obj.edit36:setFontSize(14);
     lfm_setPropAsString(obj.edit36, "fontStyle",  "bold");
     obj.edit36:setField("atkname6");
     obj.edit36:setHorzTextAlign("center");
@@ -1485,7 +1485,7 @@ local function constructNew_Tormenta06()
     obj.edit37:setTop(24);
     obj.edit37:setWidth(105);
     obj.edit37:setHeight(20);
-    obj.edit37:setFontSize(15);
+    obj.edit37:setFontSize(14);
     lfm_setPropAsString(obj.edit37, "fontStyle",  "bold");
     obj.edit37:setField("atkba6");
     obj.edit37:setHorzTextAlign("center");
@@ -1521,7 +1521,7 @@ local function constructNew_Tormenta06()
     obj.edit38:setTop(24);
     obj.edit38:setWidth(105);
     obj.edit38:setHeight(20);
-    obj.edit38:setFontSize(15);
+    obj.edit38:setFontSize(14);
     lfm_setPropAsString(obj.edit38, "fontStyle",  "bold");
     obj.edit38:setField("atkdn6");
     obj.edit38:setHorzTextAlign("center");
@@ -1557,7 +1557,7 @@ local function constructNew_Tormenta06()
     obj.edit39:setTop(24);
     obj.edit39:setWidth(86);
     obj.edit39:setHeight(20);
-    obj.edit39:setFontSize(15);
+    obj.edit39:setFontSize(14);
     lfm_setPropAsString(obj.edit39, "fontStyle",  "bold");
     obj.edit39:setField("atkcritico6");
     obj.edit39:setHorzTextAlign("center");
@@ -1593,7 +1593,7 @@ local function constructNew_Tormenta06()
     obj.edit40:setTop(66);
     obj.edit40:setWidth(86);
     obj.edit40:setHeight(20);
-    obj.edit40:setFontSize(15);
+    obj.edit40:setFontSize(14);
     lfm_setPropAsString(obj.edit40, "fontStyle",  "bold");
     obj.edit40:setField("atkalcance6");
     obj.edit40:setHorzTextAlign("center");
@@ -1629,7 +1629,7 @@ local function constructNew_Tormenta06()
     obj.edit41:setTop(66);
     obj.edit41:setWidth(86);
     obj.edit41:setHeight(20);
-    obj.edit41:setFontSize(15);
+    obj.edit41:setFontSize(14);
     lfm_setPropAsString(obj.edit41, "fontStyle",  "bold");
     obj.edit41:setField("atktipo6");
     obj.edit41:setHorzTextAlign("center");
@@ -1665,7 +1665,7 @@ local function constructNew_Tormenta06()
     obj.edit42:setTop(66);
     obj.edit42:setWidth(310);
     obj.edit42:setHeight(20);
-    obj.edit42:setFontSize(15);
+    obj.edit42:setFontSize(14);
     lfm_setPropAsString(obj.edit42, "fontStyle",  "bold");
     obj.edit42:setField("atkpropriedades6");
     obj.edit42:setHorzTextAlign("center");
@@ -1720,7 +1720,7 @@ local function constructNew_Tormenta06()
     obj.edit43:setTop(24);
     obj.edit43:setWidth(185);
     obj.edit43:setHeight(20);
-    obj.edit43:setFontSize(15);
+    obj.edit43:setFontSize(14);
     lfm_setPropAsString(obj.edit43, "fontStyle",  "bold");
     obj.edit43:setField("atkname7");
     obj.edit43:setHorzTextAlign("center");
@@ -1756,7 +1756,7 @@ local function constructNew_Tormenta06()
     obj.edit44:setTop(24);
     obj.edit44:setWidth(105);
     obj.edit44:setHeight(20);
-    obj.edit44:setFontSize(15);
+    obj.edit44:setFontSize(14);
     lfm_setPropAsString(obj.edit44, "fontStyle",  "bold");
     obj.edit44:setField("atkba7");
     obj.edit44:setHorzTextAlign("center");
@@ -1792,7 +1792,7 @@ local function constructNew_Tormenta06()
     obj.edit45:setTop(24);
     obj.edit45:setWidth(105);
     obj.edit45:setHeight(20);
-    obj.edit45:setFontSize(15);
+    obj.edit45:setFontSize(14);
     lfm_setPropAsString(obj.edit45, "fontStyle",  "bold");
     obj.edit45:setField("atkdn7");
     obj.edit45:setHorzTextAlign("center");
@@ -1828,7 +1828,7 @@ local function constructNew_Tormenta06()
     obj.edit46:setTop(24);
     obj.edit46:setWidth(86);
     obj.edit46:setHeight(20);
-    obj.edit46:setFontSize(15);
+    obj.edit46:setFontSize(14);
     lfm_setPropAsString(obj.edit46, "fontStyle",  "bold");
     obj.edit46:setField("atkcritico7");
     obj.edit46:setHorzTextAlign("center");
@@ -1864,7 +1864,7 @@ local function constructNew_Tormenta06()
     obj.edit47:setTop(66);
     obj.edit47:setWidth(86);
     obj.edit47:setHeight(20);
-    obj.edit47:setFontSize(15);
+    obj.edit47:setFontSize(14);
     lfm_setPropAsString(obj.edit47, "fontStyle",  "bold");
     obj.edit47:setField("atkalcance7");
     obj.edit47:setHorzTextAlign("center");
@@ -1900,7 +1900,7 @@ local function constructNew_Tormenta06()
     obj.edit48:setTop(66);
     obj.edit48:setWidth(86);
     obj.edit48:setHeight(20);
-    obj.edit48:setFontSize(15);
+    obj.edit48:setFontSize(14);
     lfm_setPropAsString(obj.edit48, "fontStyle",  "bold");
     obj.edit48:setField("atktipo7");
     obj.edit48:setHorzTextAlign("center");
@@ -1936,7 +1936,7 @@ local function constructNew_Tormenta06()
     obj.edit49:setTop(66);
     obj.edit49:setWidth(310);
     obj.edit49:setHeight(20);
-    obj.edit49:setFontSize(15);
+    obj.edit49:setFontSize(14);
     lfm_setPropAsString(obj.edit49, "fontStyle",  "bold");
     obj.edit49:setField("atkpropriedades7");
     obj.edit49:setHorzTextAlign("center");
@@ -1991,7 +1991,7 @@ local function constructNew_Tormenta06()
     obj.edit50:setTop(24);
     obj.edit50:setWidth(185);
     obj.edit50:setHeight(20);
-    obj.edit50:setFontSize(15);
+    obj.edit50:setFontSize(14);
     lfm_setPropAsString(obj.edit50, "fontStyle",  "bold");
     obj.edit50:setField("defname1");
     obj.edit50:setHorzTextAlign("center");
@@ -2027,7 +2027,7 @@ local function constructNew_Tormenta06()
     obj.edit51:setTop(24);
     obj.edit51:setWidth(105);
     obj.edit51:setHeight(20);
-    obj.edit51:setFontSize(15);
+    obj.edit51:setFontSize(14);
     lfm_setPropAsString(obj.edit51, "fontStyle",  "bold");
     obj.edit51:setField("deftipo1");
     obj.edit51:setHorzTextAlign("center");
@@ -2063,7 +2063,7 @@ local function constructNew_Tormenta06()
     obj.edit52:setTop(24);
     obj.edit52:setWidth(105);
     obj.edit52:setHeight(20);
-    obj.edit52:setFontSize(15);
+    obj.edit52:setFontSize(14);
     lfm_setPropAsString(obj.edit52, "fontStyle",  "bold");
     obj.edit52:setField("defca1");
     obj.edit52:setHorzTextAlign("center");
@@ -2099,7 +2099,7 @@ local function constructNew_Tormenta06()
     obj.edit53:setTop(24);
     obj.edit53:setWidth(86);
     obj.edit53:setHeight(20);
-    obj.edit53:setFontSize(15);
+    obj.edit53:setFontSize(14);
     lfm_setPropAsString(obj.edit53, "fontStyle",  "bold");
     obj.edit53:setField("defdes1");
     obj.edit53:setHorzTextAlign("center");
@@ -2135,7 +2135,7 @@ local function constructNew_Tormenta06()
     obj.edit54:setTop(66);
     obj.edit54:setWidth(86);
     obj.edit54:setHeight(20);
-    obj.edit54:setFontSize(15);
+    obj.edit54:setFontSize(14);
     lfm_setPropAsString(obj.edit54, "fontStyle",  "bold");
     obj.edit54:setField("defpen1");
     obj.edit54:setHorzTextAlign("center");
@@ -2171,7 +2171,7 @@ local function constructNew_Tormenta06()
     obj.edit55:setTop(66);
     obj.edit55:setWidth(86);
     obj.edit55:setHeight(20);
-    obj.edit55:setFontSize(15);
+    obj.edit55:setFontSize(14);
     lfm_setPropAsString(obj.edit55, "fontStyle",  "bold");
     obj.edit55:setField("deffalha1");
     obj.edit55:setHorzTextAlign("center");
@@ -2207,7 +2207,7 @@ local function constructNew_Tormenta06()
     obj.edit56:setTop(66);
     obj.edit56:setWidth(310);
     obj.edit56:setHeight(20);
-    obj.edit56:setFontSize(15);
+    obj.edit56:setFontSize(14);
     lfm_setPropAsString(obj.edit56, "fontStyle",  "bold");
     obj.edit56:setField("defpropriedades1");
     obj.edit56:setHorzTextAlign("center");
@@ -2262,7 +2262,7 @@ local function constructNew_Tormenta06()
     obj.edit57:setTop(24);
     obj.edit57:setWidth(185);
     obj.edit57:setHeight(20);
-    obj.edit57:setFontSize(15);
+    obj.edit57:setFontSize(14);
     lfm_setPropAsString(obj.edit57, "fontStyle",  "bold");
     obj.edit57:setField("defname2");
     obj.edit57:setHorzTextAlign("center");
@@ -2298,7 +2298,7 @@ local function constructNew_Tormenta06()
     obj.edit58:setTop(24);
     obj.edit58:setWidth(105);
     obj.edit58:setHeight(20);
-    obj.edit58:setFontSize(15);
+    obj.edit58:setFontSize(14);
     lfm_setPropAsString(obj.edit58, "fontStyle",  "bold");
     obj.edit58:setField("deftipo2");
     obj.edit58:setHorzTextAlign("center");
@@ -2334,7 +2334,7 @@ local function constructNew_Tormenta06()
     obj.edit59:setTop(24);
     obj.edit59:setWidth(105);
     obj.edit59:setHeight(20);
-    obj.edit59:setFontSize(15);
+    obj.edit59:setFontSize(14);
     lfm_setPropAsString(obj.edit59, "fontStyle",  "bold");
     obj.edit59:setField("defca2");
     obj.edit59:setHorzTextAlign("center");
@@ -2370,7 +2370,7 @@ local function constructNew_Tormenta06()
     obj.edit60:setTop(24);
     obj.edit60:setWidth(86);
     obj.edit60:setHeight(20);
-    obj.edit60:setFontSize(15);
+    obj.edit60:setFontSize(14);
     lfm_setPropAsString(obj.edit60, "fontStyle",  "bold");
     obj.edit60:setField("defdes2");
     obj.edit60:setHorzTextAlign("center");
@@ -2406,7 +2406,7 @@ local function constructNew_Tormenta06()
     obj.edit61:setTop(66);
     obj.edit61:setWidth(86);
     obj.edit61:setHeight(20);
-    obj.edit61:setFontSize(15);
+    obj.edit61:setFontSize(14);
     lfm_setPropAsString(obj.edit61, "fontStyle",  "bold");
     obj.edit61:setField("defpen2");
     obj.edit61:setHorzTextAlign("center");
@@ -2442,7 +2442,7 @@ local function constructNew_Tormenta06()
     obj.edit62:setTop(66);
     obj.edit62:setWidth(86);
     obj.edit62:setHeight(20);
-    obj.edit62:setFontSize(15);
+    obj.edit62:setFontSize(14);
     lfm_setPropAsString(obj.edit62, "fontStyle",  "bold");
     obj.edit62:setField("deffalha2");
     obj.edit62:setHorzTextAlign("center");
@@ -2478,7 +2478,7 @@ local function constructNew_Tormenta06()
     obj.edit63:setTop(66);
     obj.edit63:setWidth(310);
     obj.edit63:setHeight(20);
-    obj.edit63:setFontSize(15);
+    obj.edit63:setFontSize(14);
     lfm_setPropAsString(obj.edit63, "fontStyle",  "bold");
     obj.edit63:setField("defpropriedades2");
     obj.edit63:setHorzTextAlign("center");
@@ -2533,7 +2533,7 @@ local function constructNew_Tormenta06()
     obj.edit64:setTop(24);
     obj.edit64:setWidth(185);
     obj.edit64:setHeight(20);
-    obj.edit64:setFontSize(15);
+    obj.edit64:setFontSize(14);
     lfm_setPropAsString(obj.edit64, "fontStyle",  "bold");
     obj.edit64:setField("defname3");
     obj.edit64:setHorzTextAlign("center");
@@ -2569,7 +2569,7 @@ local function constructNew_Tormenta06()
     obj.edit65:setTop(24);
     obj.edit65:setWidth(105);
     obj.edit65:setHeight(20);
-    obj.edit65:setFontSize(15);
+    obj.edit65:setFontSize(14);
     lfm_setPropAsString(obj.edit65, "fontStyle",  "bold");
     obj.edit65:setField("deftipo3");
     obj.edit65:setHorzTextAlign("center");
@@ -2605,7 +2605,7 @@ local function constructNew_Tormenta06()
     obj.edit66:setTop(24);
     obj.edit66:setWidth(105);
     obj.edit66:setHeight(20);
-    obj.edit66:setFontSize(15);
+    obj.edit66:setFontSize(14);
     lfm_setPropAsString(obj.edit66, "fontStyle",  "bold");
     obj.edit66:setField("defca3");
     obj.edit66:setHorzTextAlign("center");
@@ -2641,7 +2641,7 @@ local function constructNew_Tormenta06()
     obj.edit67:setTop(24);
     obj.edit67:setWidth(86);
     obj.edit67:setHeight(20);
-    obj.edit67:setFontSize(15);
+    obj.edit67:setFontSize(14);
     lfm_setPropAsString(obj.edit67, "fontStyle",  "bold");
     obj.edit67:setField("defdes3");
     obj.edit67:setHorzTextAlign("center");
@@ -2677,7 +2677,7 @@ local function constructNew_Tormenta06()
     obj.edit68:setTop(66);
     obj.edit68:setWidth(86);
     obj.edit68:setHeight(20);
-    obj.edit68:setFontSize(15);
+    obj.edit68:setFontSize(14);
     lfm_setPropAsString(obj.edit68, "fontStyle",  "bold");
     obj.edit68:setField("defpen3");
     obj.edit68:setHorzTextAlign("center");
@@ -2713,7 +2713,7 @@ local function constructNew_Tormenta06()
     obj.edit69:setTop(66);
     obj.edit69:setWidth(86);
     obj.edit69:setHeight(20);
-    obj.edit69:setFontSize(15);
+    obj.edit69:setFontSize(14);
     lfm_setPropAsString(obj.edit69, "fontStyle",  "bold");
     obj.edit69:setField("deffalha3");
     obj.edit69:setHorzTextAlign("center");
@@ -2749,7 +2749,7 @@ local function constructNew_Tormenta06()
     obj.edit70:setTop(66);
     obj.edit70:setWidth(310);
     obj.edit70:setHeight(20);
-    obj.edit70:setFontSize(15);
+    obj.edit70:setFontSize(14);
     lfm_setPropAsString(obj.edit70, "fontStyle",  "bold");
     obj.edit70:setField("defpropriedades3");
     obj.edit70:setHorzTextAlign("center");
@@ -2804,7 +2804,7 @@ local function constructNew_Tormenta06()
     obj.edit71:setTop(24);
     obj.edit71:setWidth(185);
     obj.edit71:setHeight(20);
-    obj.edit71:setFontSize(15);
+    obj.edit71:setFontSize(14);
     lfm_setPropAsString(obj.edit71, "fontStyle",  "bold");
     obj.edit71:setField("defname4");
     obj.edit71:setHorzTextAlign("center");
@@ -2840,7 +2840,7 @@ local function constructNew_Tormenta06()
     obj.edit72:setTop(24);
     obj.edit72:setWidth(105);
     obj.edit72:setHeight(20);
-    obj.edit72:setFontSize(15);
+    obj.edit72:setFontSize(14);
     lfm_setPropAsString(obj.edit72, "fontStyle",  "bold");
     obj.edit72:setField("deftipo4");
     obj.edit72:setHorzTextAlign("center");
@@ -2876,7 +2876,7 @@ local function constructNew_Tormenta06()
     obj.edit73:setTop(24);
     obj.edit73:setWidth(105);
     obj.edit73:setHeight(20);
-    obj.edit73:setFontSize(15);
+    obj.edit73:setFontSize(14);
     lfm_setPropAsString(obj.edit73, "fontStyle",  "bold");
     obj.edit73:setField("defca4");
     obj.edit73:setHorzTextAlign("center");
@@ -2912,7 +2912,7 @@ local function constructNew_Tormenta06()
     obj.edit74:setTop(24);
     obj.edit74:setWidth(86);
     obj.edit74:setHeight(20);
-    obj.edit74:setFontSize(15);
+    obj.edit74:setFontSize(14);
     lfm_setPropAsString(obj.edit74, "fontStyle",  "bold");
     obj.edit74:setField("defdes4");
     obj.edit74:setHorzTextAlign("center");
@@ -2948,7 +2948,7 @@ local function constructNew_Tormenta06()
     obj.edit75:setTop(66);
     obj.edit75:setWidth(86);
     obj.edit75:setHeight(20);
-    obj.edit75:setFontSize(15);
+    obj.edit75:setFontSize(14);
     lfm_setPropAsString(obj.edit75, "fontStyle",  "bold");
     obj.edit75:setField("defpen4");
     obj.edit75:setHorzTextAlign("center");
@@ -2984,7 +2984,7 @@ local function constructNew_Tormenta06()
     obj.edit76:setTop(66);
     obj.edit76:setWidth(86);
     obj.edit76:setHeight(20);
-    obj.edit76:setFontSize(15);
+    obj.edit76:setFontSize(14);
     lfm_setPropAsString(obj.edit76, "fontStyle",  "bold");
     obj.edit76:setField("deffalha4");
     obj.edit76:setHorzTextAlign("center");
@@ -3020,7 +3020,7 @@ local function constructNew_Tormenta06()
     obj.edit77:setTop(66);
     obj.edit77:setWidth(310);
     obj.edit77:setHeight(20);
-    obj.edit77:setFontSize(15);
+    obj.edit77:setFontSize(14);
     lfm_setPropAsString(obj.edit77, "fontStyle",  "bold");
     obj.edit77:setField("defpropriedades4");
     obj.edit77:setHorzTextAlign("center");
@@ -3075,7 +3075,7 @@ local function constructNew_Tormenta06()
     obj.edit78:setTop(24);
     obj.edit78:setWidth(185);
     obj.edit78:setHeight(20);
-    obj.edit78:setFontSize(15);
+    obj.edit78:setFontSize(14);
     lfm_setPropAsString(obj.edit78, "fontStyle",  "bold");
     obj.edit78:setField("defname5");
     obj.edit78:setHorzTextAlign("center");
@@ -3111,7 +3111,7 @@ local function constructNew_Tormenta06()
     obj.edit79:setTop(24);
     obj.edit79:setWidth(105);
     obj.edit79:setHeight(20);
-    obj.edit79:setFontSize(15);
+    obj.edit79:setFontSize(14);
     lfm_setPropAsString(obj.edit79, "fontStyle",  "bold");
     obj.edit79:setField("deftipo5");
     obj.edit79:setHorzTextAlign("center");
@@ -3147,7 +3147,7 @@ local function constructNew_Tormenta06()
     obj.edit80:setTop(24);
     obj.edit80:setWidth(105);
     obj.edit80:setHeight(20);
-    obj.edit80:setFontSize(15);
+    obj.edit80:setFontSize(14);
     lfm_setPropAsString(obj.edit80, "fontStyle",  "bold");
     obj.edit80:setField("defca5");
     obj.edit80:setHorzTextAlign("center");
@@ -3183,7 +3183,7 @@ local function constructNew_Tormenta06()
     obj.edit81:setTop(24);
     obj.edit81:setWidth(86);
     obj.edit81:setHeight(20);
-    obj.edit81:setFontSize(15);
+    obj.edit81:setFontSize(14);
     lfm_setPropAsString(obj.edit81, "fontStyle",  "bold");
     obj.edit81:setField("defdes5");
     obj.edit81:setHorzTextAlign("center");
@@ -3219,7 +3219,7 @@ local function constructNew_Tormenta06()
     obj.edit82:setTop(66);
     obj.edit82:setWidth(86);
     obj.edit82:setHeight(20);
-    obj.edit82:setFontSize(15);
+    obj.edit82:setFontSize(14);
     lfm_setPropAsString(obj.edit82, "fontStyle",  "bold");
     obj.edit82:setField("defpen5");
     obj.edit82:setHorzTextAlign("center");
@@ -3255,7 +3255,7 @@ local function constructNew_Tormenta06()
     obj.edit83:setTop(66);
     obj.edit83:setWidth(86);
     obj.edit83:setHeight(20);
-    obj.edit83:setFontSize(15);
+    obj.edit83:setFontSize(14);
     lfm_setPropAsString(obj.edit83, "fontStyle",  "bold");
     obj.edit83:setField("deffalha5");
     obj.edit83:setHorzTextAlign("center");
@@ -3291,7 +3291,7 @@ local function constructNew_Tormenta06()
     obj.edit84:setTop(66);
     obj.edit84:setWidth(310);
     obj.edit84:setHeight(20);
-    obj.edit84:setFontSize(15);
+    obj.edit84:setFontSize(14);
     lfm_setPropAsString(obj.edit84, "fontStyle",  "bold");
     obj.edit84:setField("defpropriedades5");
     obj.edit84:setHorzTextAlign("center");
@@ -3346,7 +3346,7 @@ local function constructNew_Tormenta06()
     obj.edit85:setTop(24);
     obj.edit85:setWidth(185);
     obj.edit85:setHeight(20);
-    obj.edit85:setFontSize(15);
+    obj.edit85:setFontSize(14);
     lfm_setPropAsString(obj.edit85, "fontStyle",  "bold");
     obj.edit85:setField("defname6");
     obj.edit85:setHorzTextAlign("center");
@@ -3382,7 +3382,7 @@ local function constructNew_Tormenta06()
     obj.edit86:setTop(24);
     obj.edit86:setWidth(105);
     obj.edit86:setHeight(20);
-    obj.edit86:setFontSize(15);
+    obj.edit86:setFontSize(14);
     lfm_setPropAsString(obj.edit86, "fontStyle",  "bold");
     obj.edit86:setField("deftipo6");
     obj.edit86:setHorzTextAlign("center");
@@ -3418,7 +3418,7 @@ local function constructNew_Tormenta06()
     obj.edit87:setTop(24);
     obj.edit87:setWidth(105);
     obj.edit87:setHeight(20);
-    obj.edit87:setFontSize(15);
+    obj.edit87:setFontSize(14);
     lfm_setPropAsString(obj.edit87, "fontStyle",  "bold");
     obj.edit87:setField("defca6");
     obj.edit87:setHorzTextAlign("center");
@@ -3454,7 +3454,7 @@ local function constructNew_Tormenta06()
     obj.edit88:setTop(24);
     obj.edit88:setWidth(86);
     obj.edit88:setHeight(20);
-    obj.edit88:setFontSize(15);
+    obj.edit88:setFontSize(14);
     lfm_setPropAsString(obj.edit88, "fontStyle",  "bold");
     obj.edit88:setField("defdes6");
     obj.edit88:setHorzTextAlign("center");
@@ -3490,7 +3490,7 @@ local function constructNew_Tormenta06()
     obj.edit89:setTop(66);
     obj.edit89:setWidth(86);
     obj.edit89:setHeight(20);
-    obj.edit89:setFontSize(15);
+    obj.edit89:setFontSize(14);
     lfm_setPropAsString(obj.edit89, "fontStyle",  "bold");
     obj.edit89:setField("defpen6");
     obj.edit89:setHorzTextAlign("center");
@@ -3526,7 +3526,7 @@ local function constructNew_Tormenta06()
     obj.edit90:setTop(66);
     obj.edit90:setWidth(86);
     obj.edit90:setHeight(20);
-    obj.edit90:setFontSize(15);
+    obj.edit90:setFontSize(14);
     lfm_setPropAsString(obj.edit90, "fontStyle",  "bold");
     obj.edit90:setField("deffalha6");
     obj.edit90:setHorzTextAlign("center");
@@ -3562,7 +3562,7 @@ local function constructNew_Tormenta06()
     obj.edit91:setTop(66);
     obj.edit91:setWidth(310);
     obj.edit91:setHeight(20);
-    obj.edit91:setFontSize(15);
+    obj.edit91:setFontSize(14);
     lfm_setPropAsString(obj.edit91, "fontStyle",  "bold");
     obj.edit91:setField("defpropriedades6");
     obj.edit91:setHorzTextAlign("center");
@@ -3617,7 +3617,7 @@ local function constructNew_Tormenta06()
     obj.edit92:setTop(24);
     obj.edit92:setWidth(185);
     obj.edit92:setHeight(20);
-    obj.edit92:setFontSize(15);
+    obj.edit92:setFontSize(14);
     lfm_setPropAsString(obj.edit92, "fontStyle",  "bold");
     obj.edit92:setField("defname7");
     obj.edit92:setHorzTextAlign("center");
@@ -3653,7 +3653,7 @@ local function constructNew_Tormenta06()
     obj.edit93:setTop(24);
     obj.edit93:setWidth(105);
     obj.edit93:setHeight(20);
-    obj.edit93:setFontSize(15);
+    obj.edit93:setFontSize(14);
     lfm_setPropAsString(obj.edit93, "fontStyle",  "bold");
     obj.edit93:setField("deftipo7");
     obj.edit93:setHorzTextAlign("center");
@@ -3689,7 +3689,7 @@ local function constructNew_Tormenta06()
     obj.edit94:setTop(24);
     obj.edit94:setWidth(105);
     obj.edit94:setHeight(20);
-    obj.edit94:setFontSize(15);
+    obj.edit94:setFontSize(14);
     lfm_setPropAsString(obj.edit94, "fontStyle",  "bold");
     obj.edit94:setField("defca7");
     obj.edit94:setHorzTextAlign("center");
@@ -3725,7 +3725,7 @@ local function constructNew_Tormenta06()
     obj.edit95:setTop(24);
     obj.edit95:setWidth(86);
     obj.edit95:setHeight(20);
-    obj.edit95:setFontSize(15);
+    obj.edit95:setFontSize(14);
     lfm_setPropAsString(obj.edit95, "fontStyle",  "bold");
     obj.edit95:setField("defdes7");
     obj.edit95:setHorzTextAlign("center");
@@ -3761,7 +3761,7 @@ local function constructNew_Tormenta06()
     obj.edit96:setTop(66);
     obj.edit96:setWidth(86);
     obj.edit96:setHeight(20);
-    obj.edit96:setFontSize(15);
+    obj.edit96:setFontSize(14);
     lfm_setPropAsString(obj.edit96, "fontStyle",  "bold");
     obj.edit96:setField("defpen7");
     obj.edit96:setHorzTextAlign("center");
@@ -3797,7 +3797,7 @@ local function constructNew_Tormenta06()
     obj.edit97:setTop(66);
     obj.edit97:setWidth(86);
     obj.edit97:setHeight(20);
-    obj.edit97:setFontSize(15);
+    obj.edit97:setFontSize(14);
     lfm_setPropAsString(obj.edit97, "fontStyle",  "bold");
     obj.edit97:setField("deffalha7");
     obj.edit97:setHorzTextAlign("center");
@@ -3833,7 +3833,7 @@ local function constructNew_Tormenta06()
     obj.edit98:setTop(66);
     obj.edit98:setWidth(310);
     obj.edit98:setHeight(20);
-    obj.edit98:setFontSize(15);
+    obj.edit98:setFontSize(14);
     lfm_setPropAsString(obj.edit98, "fontStyle",  "bold");
     obj.edit98:setField("defpropriedades7");
     obj.edit98:setHorzTextAlign("center");

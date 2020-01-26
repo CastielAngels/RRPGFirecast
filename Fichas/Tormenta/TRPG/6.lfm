@@ -7,434 +7,434 @@
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Ataque"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="atkname1" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="atkname1" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Acerto"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkba1" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkba1" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Dano"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkdn1" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkdn1" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Crítico"/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="atkcritico1" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="atkcritico1" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Alcance"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atkalcance1" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atkalcance1" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atktipo1" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atktipo1" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="atkpropriedades1" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="atkpropriedades1" horzTextAlign="Center"/>
         </layout>
         <layout left="5" top="105" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Ataque"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="atkname2" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="atkname2" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Acerto"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkba2" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkba2" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Dano"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkdn2" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkdn2" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Crítico"/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="atkcritico2" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="atkcritico2" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Alcance"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atkalcance2" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atkalcance2" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atktipo2" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atktipo2" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="atkpropriedades2" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="atkpropriedades2" horzTextAlign="Center"/>
         </layout>
         <layout left="5" top="205" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Ataque"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="atkname3" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="atkname3" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Acerto"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkba3" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkba3" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Dano"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkdn3" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkdn3" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Crítico"/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="atkcritico3" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="atkcritico3" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Alcance"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atkalcance3" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atkalcance3" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atktipo3" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atktipo3" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="atkpropriedades3" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="atkpropriedades3" horzTextAlign="Center"/>
         </layout>
         <layout left="5" top="305" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Ataque"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="atkname4" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="atkname4" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Acerto"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkba4" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkba4" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Dano"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkdn4" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkdn4" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Crítico"/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="atkcritico4" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="atkcritico4" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Alcance"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atkalcance4" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atkalcance4" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atktipo4" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atktipo4" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="atkpropriedades4" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="atkpropriedades4" horzTextAlign="Center"/>
         </layout>
         <layout left="5" top="405" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Ataque"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="atkname5" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="atkname5" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Acerto"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkba5" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkba5" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Dano"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkdn5" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkdn5" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Crítico"/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="atkcritico5" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="atkcritico5" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Alcance"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atkalcance5" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atkalcance5" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atktipo5" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atktipo5" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="atkpropriedades5" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="atkpropriedades5" horzTextAlign="Center"/>
         </layout>
         <layout left="5" top="505" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Ataque"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="atkname6" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="atkname6" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Acerto"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkba6" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkba6" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Dano"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkdn6" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkdn6" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Crítico"/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="atkcritico6" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="atkcritico6" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Alcance"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atkalcance6" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atkalcance6" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atktipo6" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atktipo6" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="atkpropriedades6" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="atkpropriedades6" horzTextAlign="Center"/>
         </layout>
         <layout left="5" top="605" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Ataque"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="atkname7" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="atkname7" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Acerto"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkba7" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkba7" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Dano"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="atkdn7" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="atkdn7" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Crítico"/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="atkcritico7" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="atkcritico7" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Alcance"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atkalcance7" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atkalcance7" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="atktipo7" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="atktipo7" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="atkpropriedades7" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="atkpropriedades7" horzTextAlign="Center"/>
         </layout>
         <layout left="510" top="5" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Defesa"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="defname1" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="defname1" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="deftipo1" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="deftipo1" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="B. CA"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="defca1" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="defca1" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="DES. M."/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="defdes1" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="defdes1" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Penalidade"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="defpen1" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="defpen1" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Falha M."/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="deffalha1" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="deffalha1" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="defpropriedades1" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="defpropriedades1" horzTextAlign="Center"/>
         </layout>
         <layout left="510" top="105" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Defesa"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="defname2" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="defname2" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="deftipo2" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="deftipo2" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="B. CA"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="defca2" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="defca2" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="DES. M."/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="defdes2" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="defdes2" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Penalidade"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="defpen2" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="defpen2" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Falha M."/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="deffalha2" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="deffalha2" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="defpropriedades2" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="defpropriedades2" horzTextAlign="Center"/>
         </layout>
         <layout left="510" top="205" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Defesa"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="defname3" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="defname3" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="deftipo3" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="deftipo3" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="B. CA"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="defca3" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="defca3" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="DES. M."/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="defdes3" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="defdes3" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Penalidade"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="defpen3" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="defpen3" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Falha M."/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="deffalha3" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="deffalha3" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="defpropriedades3" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="defpropriedades3" horzTextAlign="Center"/>
         </layout>
         <layout left="510" top="305" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Defesa"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="defname4" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="defname4" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="deftipo4" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="deftipo4" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="B. CA"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="defca4" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="defca4" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="DES. M."/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="defdes4" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="defdes4" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Penalidade"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="defpen4" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="defpen4" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Falha M."/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="deffalha4" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="deffalha4" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="defpropriedades4" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="defpropriedades4" horzTextAlign="Center"/>
         </layout>
         <layout left="510" top="405" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Defesa"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="defname5" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="defname5" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="deftipo5" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="deftipo5" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="B. CA"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="defca5" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="defca5" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="DES. M."/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="defdes5" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="defdes5" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Penalidade"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="defpen5" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="defpen5" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Falha M."/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="deffalha5" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="deffalha5" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="defpropriedades5" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="defpropriedades5" horzTextAlign="Center"/>
         </layout>
         <layout left="510" top="505" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Defesa"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="defname6" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="defname6" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="deftipo6" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="deftipo6" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="B. CA"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="defca6" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="defca6" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="DES. M."/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="defdes6" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="defdes6" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Penalidade"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="defpen6" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="defpen6" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Falha M."/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="deffalha6" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="deffalha6" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="defpropriedades6" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="defpropriedades6" horzTextAlign="Center"/>
         </layout>
         <layout left="510" top="605" width="497" height="95">
             <rectangle left="0" top="0" width="495" height="90" color="Gray" xradius="2" yradius="2"/>
 			
 			<rectangle left="7" top="5" color="Gainsboro" width="181" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="5" width="181" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Defesa"/>
-			<edit left="5" top="24" width="185" height="20" fontSize="15" fontStyle="bold" field="defname7" horzTextAlign="Center"/>
+			<edit left="5" top="24" width="185" height="20" fontSize="14" fontStyle="bold" field="defname7" horzTextAlign="Center"/>
 			
 			<rectangle left="193" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="193" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Tipo"/>
-			<edit left="191" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="deftipo7" horzTextAlign="Center"/>
+			<edit left="191" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="deftipo7" horzTextAlign="Center"/>
 			
 			<rectangle left="299" top="5" color="Gainsboro" width="101" height="20" xradius="2" yradius="2"/>
 			<label left="299" top="5" width="101" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="B. CA"/>
-			<edit left="297" top="24" width="105" height="20" fontSize="15" fontStyle="bold" field="defca7" horzTextAlign="Center"/>
+			<edit left="297" top="24" width="105" height="20" fontSize="14" fontStyle="bold" field="defca7" horzTextAlign="Center"/>
 			
 			<rectangle left="405" top="5" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="405" top="5" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="DES. M."/>
-			<edit left="403" top="24" width="86" height="20" fontSize="15" fontStyle="bold" field="defdes7" horzTextAlign="Center"/>
+			<edit left="403" top="24" width="86" height="20" fontSize="14" fontStyle="bold" field="defdes7" horzTextAlign="Center"/>
 			
 			<rectangle left="7" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="7" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Penalidade"/>
-			<edit left="5" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="defpen7" horzTextAlign="Center"/>
+			<edit left="5" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="defpen7" horzTextAlign="Center"/>
 			
 			<rectangle left="94" top="47" color="Gainsboro" width="82" height="20" xradius="2" yradius="2"/>
 			<label left="94" top="47" width="82" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Falha M."/>
-			<edit left="92" top="66" width="86" height="20" fontSize="15" fontStyle="bold" field="deffalha7" horzTextAlign="Center"/>
+			<edit left="92" top="66" width="86" height="20" fontSize="14" fontStyle="bold" field="deffalha7" horzTextAlign="Center"/>
 			
 			<rectangle left="181" top="47" color="Gainsboro" width="306" height="20" xradius="2" yradius="2"/>
 			<label left="181" top="47" width="306" height="20" fontSize="15" fontStyle="bold" horzTextAlign="Center" fontColor="black" text="Propriedades"/>
-			<edit left="179" top="66" width="310" height="20" fontSize="15" fontStyle="bold" field="defpropriedades7" horzTextAlign="Center"/>
+			<edit left="179" top="66" width="310" height="20" fontSize="14" fontStyle="bold" field="defpropriedades7" horzTextAlign="Center"/>
         </layout>
     </scrollBox>
 </form>
