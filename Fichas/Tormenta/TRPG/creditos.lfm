@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="OsMundosDosMortosC" align="client" theme="dark">
+<form name="TormentaC" align="client" theme="dark">
 	<script>
 		local GUI = require("gui.lua");
 	</script>

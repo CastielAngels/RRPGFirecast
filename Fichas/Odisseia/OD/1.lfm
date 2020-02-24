@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="Odisseia01" align="client" theme="dark" lockWhileNodeIsLoading="true" onNodeReady="desCalculos();">
+<form name="Odisseia01" align="client" theme="dark" lockWhileNodeIsLoading="true">
     <scrollBox align="client">
 		<image width="809" height="1145" src="img/01.png"/>
+		
+		<layout left="139" top="414" width="459" height="112">
+			<rectangle align="client" color="yellow"/>
+		</layout>
+		
+		<layout left="628" top="436" width="63" height="63">
+			<rectangle align="client" color="yellow"/>
+		</layout>
+		
+		<layout left="101" top="670" width="254" height="264">
+			<rectangle align="client" color="yellow"/>
+		</layout>
+		
+		<layout left="534" top="660" width="234" height="132">
+			<rectangle align="client" color="yellow"/>
+		</layout>
+		
+		<layout left="423" top="865" width="151" height="111">
+			<rectangle align="client" color="yellow"/>
+		</layout>
+		
+		<layout left="607" top="865" width="151" height="111">
+			<rectangle align="client" color="yellow"/>
+		</layout>
+		
+		
 	</scrollBox>
 </form>

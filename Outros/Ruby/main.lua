@@ -76,6 +76,12 @@ function ChatMessage(msg)
 			else
 				msg.chat:enviarNarracao(prefix .. "-- Eu não sei de nada...")
 			end;
+		elseif txt == ".cego" then
+			if msg.jogador.isCego then
+				msg.jogador:requestSetCego(false)
+			else
+				msg.jogador:requestSetCego(true)
+			end;
 		end;
 	end, math.random(1000, 3000))
 end;

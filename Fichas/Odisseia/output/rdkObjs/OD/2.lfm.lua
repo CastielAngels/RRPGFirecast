@@ -43,13 +43,49 @@ function newOdisseia02()
     obj.image1:setSRC("/OD/img/02.png");
     obj.image1:setName("image1");
 
-    obj._e_event0 = obj:addEventListener("onNodeReady",
-        function (self)
-            desCalculos();
-        end, obj);
+    obj.layout1 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout1:setParent(obj.scrollBox1);
+    obj.layout1:setLeft(297);
+    obj.layout1:setTop(269);
+    obj.layout1:setWidth(390);
+    obj.layout1:setHeight(249);
+    obj.layout1:setName("layout1");
+
+    obj.rectangle1 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle1:setParent(obj.layout1);
+    obj.rectangle1:setAlign("client");
+    obj.rectangle1:setColor("yellow");
+    obj.rectangle1:setName("rectangle1");
+
+    obj.layout2 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout2:setParent(obj.scrollBox1);
+    obj.layout2:setLeft(304);
+    obj.layout2:setTop(605);
+    obj.layout2:setWidth(415);
+    obj.layout2:setHeight(337);
+    obj.layout2:setName("layout2");
+
+    obj.rectangle2 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle2:setParent(obj.layout2);
+    obj.rectangle2:setAlign("client");
+    obj.rectangle2:setColor("yellow");
+    obj.rectangle2:setName("rectangle2");
+
+    obj.layout3 = gui.fromHandle(_obj_newObject("layout"));
+    obj.layout3:setParent(obj.scrollBox1);
+    obj.layout3:setLeft(534);
+    obj.layout3:setTop(978);
+    obj.layout3:setWidth(118);
+    obj.layout3:setHeight(33);
+    obj.layout3:setName("layout3");
+
+    obj.rectangle3 = gui.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle3:setParent(obj.layout3);
+    obj.rectangle3:setAlign("client");
+    obj.rectangle3:setColor("yellow");
+    obj.rectangle3:setName("rectangle3");
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event0);
     end;
 
     obj._oldLFMDestroy = obj.destroy;
@@ -61,7 +97,13 @@ function newOdisseia02()
           self:setNodeDatabase(nil);
         end;
 
+        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
+        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
         if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
         self:_oldLFMDestroy();
     end;
